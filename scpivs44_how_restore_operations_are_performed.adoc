@@ -1,0 +1,71 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_how_restore_operations_are_performed.html 
+keywords:  
+summary: 'Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Das Plug-in für vVol VMs verwendet ONTAP Single File Snapshot Restore und SnapMirror Restore für Restore-Vorgänge.' 
+---
+= Durchführen von Restore-Vorgängen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Für vVol VMs verwendet das Plug-in ONTAP Single File Snapshot Restore (ONTAP SFSR) und SnapMirror Restore für Restore-Vorgänge. Die folgende Tabelle zeigt, wie Wiederherstellungsvorgänge durchgeführt werden.
+
+|===
+| Restore-Vorgänge | Von | Durchgeführt mit 
+
+
+| VMs und VMDKs | Primäre Backups | NFS-Umgebungen: ONTAP Single File SnapRestore VMFS-Umgebungen: Klonen und Mounten mit Storage VMotion 
+
+
+| VMs und VMDKs | Sekundäre Backups | NFS-Umgebungen: ONTAP Single File SnapRestore VMFS-Umgebungen: Klonen und Mounten mit Storage VMotion 
+
+
+| Gelöschte VMs und VMDKs | Primäre Backups | NFS-Umgebungen: ONTAP Single File SnapRestore VMFS-Umgebungen: Klonen und Mounten mit Storage VMotion 
+
+
+| Gelöschte VMs und VMDKs | Sekundäre Backups | NFS-Umgebungen: Klonen und Mounten mit Storage VMotion VMFS-Umgebungen: Klonen und Mounten mit Storage VMotion 
+
+
+| VMs und VMDKs | VM-konsistente primäre Backups | NFS-Umgebungen: ONTAP Single File SnapRestore VMFS-Umgebungen: Klonen und Mounten mit Storage VMotion 
+
+
+| VMs und VMDKs | VM-konsistente sekundäre Backups | NFS-Umgebungen: Klonen und Mounten mit Storage VMotion VMFS-Umgebungen: Klonen und Mounten mit Storage VMotion 
+
+
+| VVol VMs | Absturzkonsistente primäre Backups | Single File SnapRestore von ONTAP für alle Protokolle 
+
+
+| VVol VMs | Absturzkonsistente sekundäre Backups | ONTAP SnapMirror Restore für alle Protokolle 
+
+
+| FlexGroup-VMs | Primäre Backups  a| 
+NFS-Umgebungen: * ONTAP Single File SnapRestore, wenn Sie ONTAP Version 9.10.1 und höher verwenden * Klonen und Mounten mit Storage VMotion auf früheren Versionen von ONTAP
+
+VMFS-Umgebungen: Nicht unterstützt für FlexGroups
+
+
+
+| FlexGroup-VMs | Sekundäre Backups  a| 
+NFS-Umgebungen:
+
+* ONTAP SnapMirror Wiederherstellen, wenn Sie ONTAP Version 9.10.1 und höher verwenden
+* Klonen und Mounten mit Storage VMotion für ONTAP vorherige Versionen
+
+
+VMFS-Umgebungen: Nicht unterstützt für FlexGroups
+
+|===
+
+NOTE: Nach dem Ausgleich von vVol Containern können Sie keine vVol VM wiederherstellen.
+
+Die Wiederherstellung von Gastdateien erfolgt sowohl mit Klon- als auch Mount-Vorgängen (nicht Storage VMotion) in NFS- und VMFS-Umgebungen.
+
+
+IMPORTANT: Während eines Wiederherstellungsvorgangs tritt möglicherweise der Fehler auf `Host unresolved volumes is null` Oder `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` Dies geschieht, wenn das SnapCenter VMware Plug-in versucht, den Klon erneut zu signieren. Aufgrund der Beschränkungen von VMware kann das SnapCenter VMware Plug-in den automatischen Neusignatur-Wert in erweiterten ESXi-Konfigurationen nicht steuern.
+
+Weitere Informationen zum Fehler finden Sie unter {Link-with-unters}[KB Artikel: SCV Clone oder Restore schlagen mit Fehler 'Host unresolved Volumes is null^].

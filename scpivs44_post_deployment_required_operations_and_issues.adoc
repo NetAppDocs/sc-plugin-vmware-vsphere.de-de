@@ -1,0 +1,116 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_post_deployment_required_operations_and_issues.html 
+keywords:  
+summary: Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere müssen Sie die Installation abschließen. 
+---
+= Nach der Implementierung erforderliche Betriebsabläufe und Probleme
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+
+
+== Erforderliche Vorgänge nach der Implementierung
+
+Als neuer SnapCenter Benutzer müssen Sie SnapCenter Storage-VMs hinzufügen, bevor Sie Datensicherungsvorgänge durchführen können. Geben Sie beim Hinzufügen von Storage VMs die Management-LIF an. Sie können auch ein Cluster hinzufügen und die Cluster-Management-LIF angeben. Informationen zum Hinzufügen von Speicher finden Sie unter link:scpivs44_add_storage_01.html["Erweitern Sie Ihren Storage"^].
+
+
+
+== Möglicherweise treten Bereitstellungsprobleme auf
+
+* Nach der Bereitstellung der virtuellen Appliance wird die Registerkarte * Sicherungsjobs* auf dem Dashboard möglicherweise in den folgenden Szenarien nicht geladen:
++
+** Sie führen IPv4 aus und verfügen über zwei IP-Adressen für den SnapCenter VMware vSphere Host. Daher wird die Jobanforderung an eine IP-Adresse gesendet, die vom SnapCenter-Server nicht erkannt wird. Um dieses Problem zu vermeiden, fügen Sie die IP-Adresse, die Sie verwenden möchten, wie folgt hinzu:
++
+... Navigieren Sie zu dem Speicherort, an dem das SnapCenter VMware Plug-in bereitgestellt wird: `/opt/netapp/scvservice/standalone_aegis/etc`
+... Öffnen Sie das Dateinetzwerk- interface.properties.
+... Im `network.interface=10.10.10.10` Geben Sie die IP-Adresse ein, die Sie verwenden möchten.
+
+
+** Sie haben zwei NICs.
+
+
+* Nach der Bereitstellung des SnapCenter VMware Plug-ins wird im MOB-Eintrag in vCenter für SnapCenter Plug-in für VMware vSphere möglicherweise immer noch die alte Versionsnummer angezeigt. Dies kann auftreten, wenn andere Jobs in vCenter ausgeführt werden. VCenter wird den Eintrag schließlich aktualisieren.
+
+
+Gehen Sie wie folgt vor, um eine dieser Probleme zu beheben:
+
+. Löschen Sie den Browser-Cache, und überprüfen Sie dann, ob die GUI ordnungsgemäß funktioniert.
++
+Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere Web-Client-Dienst neu
+
++
+image:scpivs44_image5.png["Fehler: Fehlendes Grafikbild"]
+
+. Melden Sie sich bei vCenter an, klicken Sie dann in der Symbolleiste auf *Menü* und wählen Sie dann *SnapCenter Plug-in für VMware vSphere*.
+
+
+
+
+== Management von Authentifizierungsfehlern
+
+Wenn Sie die Administratoranmeldedaten nicht verwenden, erhalten Sie möglicherweise einen Authentifizierungsfehler nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere oder nach der Migration. Wenn ein Authentifizierungsfehler auftritt, müssen Sie den Dienst neu starten.
+
+.Schritte
+. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `https://<appliance-IP-address>:8080`.
+. Starten Sie den Dienst neu.
+
+
+
+
+== Registrieren Sie das SnapCenter Plug-in für VMware vSphere mit SnapCenter Server
+
+Wenn Sie Applikations-Over-VMDK-Workflows in SnapCenter ausführen möchten (applikationsbasierte Sicherungs-Workflows für virtualisierte Datenbanken und Filesysteme), müssen Sie das SnapCenter Plug-in für VMware vSphere mit dem SnapCenter Server registrieren.
+
+.Bevor Sie beginnen
+* Sie müssen SnapCenter Server 4.2 oder höher ausführen.
+* Sie müssen das SnapCenter Plug-in für VMware vSphere implementieren und aktivieren.
+
+
+.Über diese Aufgabe
+* Sie registrieren SnapCenter-Plug-in für VMware vSphere mit SnapCenter-Server, indem Sie die SnapCenter-GUI verwenden, um einen Host vom Typ „vsphere“ hinzuzufügen.
++
+Port 8144 ist für die Kommunikation innerhalb des SnapCenter VMware Plug-ins vordefiniert.
+
++
+Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf demselben SnapCenter-Server registrieren, um applikationsbasierte Datensicherungsvorgänge auf VMs zu unterstützen. Sie können nicht dasselbe SnapCenter Plug-in für VMware vSphere auf mehreren SnapCenter Servern registrieren.
+
+* Bei vCenters im Linked Mode müssen Sie das SnapCenter Plug-in für VMware vSphere für jedes vCenter registrieren.
+
+
+.Schritte
+. Klicken Sie im linken Navigationsbereich der SnapCenter-GUI auf *Hosts*.
+. Überprüfen Sie, ob die Registerkarte *verwaltete Hosts* oben ausgewählt ist. Suchen Sie anschließend den Host-Namen der virtuellen Appliance und überprüfen Sie, ob diese vom SnapCenter-Server aufgelöst wird.
+. Klicken Sie auf *Hinzufügen*, um den Assistenten zu starten.
+. Geben Sie im Dialogfeld *Hosts hinzufügen* den Host an, den Sie dem SnapCenter-Server hinzufügen möchten, wie in der folgenden Tabelle aufgeführt:
++
+|===
+| Für dieses Feld… | Do this… 
+
+
+| Host-Typ | Wählen Sie *vSphere* als Host-Typ aus. 
+
+
+| Host-Name | Überprüfen Sie die IP-Adresse der virtuellen Appliance. 
+
+
+| Anmeldedaten | Geben Sie den Benutzernamen und das Kennwort für das SnapCenter-VMware-Plug-in ein, das während der Bereitstellung bereitgestellt wurde. 
+|===
+. Klicken Sie Auf *Absenden*.
++
+Wenn der VM-Host erfolgreich hinzugefügt wurde, wird er auf der Registerkarte Managed Hosts angezeigt.
+
+. Klicken Sie im linken Navigationsbereich auf *Einstellungen*, dann auf die Registerkarte *Credential* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen* zum Hinzufügen von Anmeldeinformationen für das virtuelle Gerät.
+. Geben Sie die Anmeldeinformationen an, die während der Bereitstellung des SnapCenter Plug-ins für VMware vSphere angegeben wurden.
++
+
+NOTE: Sie müssen Linux für das Feld Authentifizierung auswählen.
+
+
+
+Wenn das SnapCenter-Plug-in für VMware vSphere-Anmeldedaten geändert werden, müssen Sie die Registrierung im SnapCenter-Server über die Seite SnapCenter Managed Hosts aktualisieren.

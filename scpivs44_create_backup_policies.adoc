@@ -1,0 +1,21 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies.html 
+keywords:  
+summary:  
+---
+= Backup-Richtlinien erstellen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Richtlinien*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] * Neue Richtlinien*.
+. Geben Sie auf der Seite *Neue Sicherungsrichtlinie* die Konfigurationsdaten der Richtlinie ein und klicken Sie dann auf *Hinzufügen*.
++
+Wenn die Richtlinie für Mirror-Vault-Beziehungen verwendet wird, müssen Sie im Feld Replikation nur die Option *Update SnapVault after Backup* auswählen, wenn Sie Backups auf die Mirror-Vault Ziele kopieren möchten.
+
+

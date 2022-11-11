@@ -1,0 +1,99 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage_01.html 
+keywords:  
+summary: Durch Hinzufügen von Storage kann das SnapCenter Plug-in für VMware vSphere Backup- und Restore-Vorgänge in vCenter erkennen und managen. 
+---
+= Erweitern Sie Ihren Storage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor Sie VMs sichern oder wiederherstellen können, müssen Sie Storage-Cluster oder Storage-VMs hinzufügen. Durch Hinzufügen von Storage kann das SnapCenter Plug-in für VMware vSphere Backup- und Restore-Vorgänge in vCenter erkennen und managen.
+
+* Welche GUI verwendet werden soll
++
+Verwenden Sie den VMware vSphere Web-Client, um Speicher hinzuzufügen.
+
+* Große LUNs
++
+Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastores mit großen LUN-Größen bis zu 128 TB auf ASA Aggregaten. Bei großen LUNs unterstützt SnapCenter nur über Thick Provisioning bereitgestellte LUNs, um Latenz zu vermeiden.
+
+* VMware Virtual Volumes (VVols)
++
+Sie müssen zunächst das VVols Storage-System zu ONTAP Tools für VMware vSphere hinzufügen und dann das VVols Storage-System zum SnapCenter Plug-in für VMware vSphere hinzufügen.
+
++
+Weitere Informationen finden Sie unter https://docs.netapp.com/vapp-98/index.jsp["ONTAP Tools für VMware vSphere"^]
+
+
+
+Der ESXi Server, das SnapCenter VMware Plug-in und jedes vCenter müssen zur gleichen Zeit synchronisiert werden. Wenn Sie versuchen, Speicher hinzuzufügen, aber die Zeiteinstellungen für Ihre vCenters nicht synchronisiert sind, schlägt der Vorgang möglicherweise mit einem Java-Zertifikatfehler fehl.
+
+Das SnapCenter VMware Plug-in führt Backup- und Restore-Vorgänge auf direkt verbundenen Storage-VMs und auf Storage-VMs in einem Storage-Cluster aus.
+
+
+NOTE: Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung applikationsbasierter Backups auf VMDKs verwenden, müssen Sie über die grafische Benutzeroberfläche von SnapCenter Storage-Anmeldedaten eingeben und Speichersysteme registrieren.
+
+* Bei vCenters im Linked-Modus müssen Sie jedem vCenter separat Storage-Systeme hinzufügen.
+* Die Namen für Storage VMs müssen für das Management LIFs aufgelöst werden.
++
+Wenn Sie in SnapCenter Host-Einträge für Storage-VM-Namen hinzugefügt haben, müssen Sie überprüfen, dass sie auch von der virtuellen Appliance aus lösbar sind.
+
++
+Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-LIF auflöst, schlagen geplante Backup-Jobs fehl, da das Plug-in keine Datenspeicher oder Volumes auf dieser Storage-VM finden kann. Falls dies der Fall ist, fügen Sie entweder die Storage VM zur SnapCenter hinzu und geben Sie die Management-LIF an, oder fügen Sie einen Cluster hinzu, der die Storage-VM enthält, und geben Sie die Cluster-Management-LIF an.
+
+* Storage-Anmeldedaten werden nicht zwischen mehreren Instanzen des SnapCenter VMware Plug-ins oder zwischen Windows SnapCenter Server und dem SnapCenter Plug-in in in vCenter gemeinsam genutzt.
+
+
+.Schritte
+. Klicken Sie im linken Navigator-Bereich des vSphere Web-Clients auf *Storage Systems*.
+. Klicken Sie auf der Seite Storage Systems auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
++
+image:scpivs44_image12.png["Fehler: Fehlendes Grafikbild"]
+
+. Geben Sie im Assistenten * Storage System* die grundlegenden Speicher-VM oder Cluster-Informationen ein, wie in der folgenden Tabelle aufgeführt:
++
+|===
+| Für dieses Feld… | Do this… 
+
+
+| Storage-System | Geben Sie den FQDN oder die IP-Adresse eines Speicherclusters oder einer Speicher-VM ein. Das SnapCenter VMware Plug-in unterstützt nicht mehrere Storage-Systeme mit demselben Namen auf verschiedenen Clustern. Jedes von SnapCenter unterstützte Storage-System muss über eine eindeutige LIF-IP-Adresse für Daten verfügen. 
+
+
+| Plattform | Wählen Sie die Plattform aus. 
+
+
+| Benutzername | Geben Sie den ONTAP-Benutzernamen ein, der zur Anmeldung bei der Storage-VM verwendet wird. 
+
+
+| Passwort | Geben Sie das Anmeldekennwort für die Storage-VM ein. 
+
+
+| Protokoll | Wählen Sie das Storage-Protokoll aus. 
+
+
+| Port | Wählen Sie Port 443 (Standard) oder Port 80, um mit vCenter zu kommunizieren. Port 443 wird für die Kommunikation zwischen dem Storage-VM-Host für das SnapCenter Plug-in für VMware vSphere und vCenter verwendet, wenn Backup- und Restore-Vorgänge für VMs und Datenspeicher durchgeführt werden. Sie müssen den Standardport 443 auswählen, wenn Sie vVol VMs schützen möchten. 
+
+
+| Zeitüberschreitung | Geben Sie die Anzahl der Sekunden ein, die vCenter warten soll, bevor der Vorgang abgeschlossen wird. Der Standardwert beträgt 60 Sekunden. 
+
+
+| Bevorzugte IP | Wenn die Storage-VM mehr als eine Management-IP-Adresse hat, aktivieren Sie dieses Kontrollkästchen und geben Sie die IP-Adresse ein, die von SnapCenter verwendet werden soll. *Hinweis:* Verwenden Sie keine eckigen Klammern ([]), wenn Sie die IP-Adresse eingeben. 
+
+
+| Protokollieren von SnapCenter-Serverereignissen im Syslog | Aktivieren Sie das Kontrollkästchen, um Ereignisse für das SnapCenter VMware Plug-in zu protokollieren. 
+
+
+| AutoSupport-Benachrichtigung für fehlgeschlagenen Vorgang an das Speichersystem senden | Aktivieren Sie das Kontrollkästchen, wenn AutoSupport-Benachrichtigungen für fehlgeschlagene Datensicherungsaufträge angezeigt werden sollen. Sie müssen auch AutoSupport auf der Storage VM aktivieren und die AutoSupport E-Mail-Einstellungen konfigurieren. 
+|===
+. Klicken Sie Auf *Hinzufügen*.
++
+Wenn Sie ein Storage-Cluster hinzugefügt haben, werden alle Storage-VMs in diesem Cluster automatisch hinzugefügt. Automatisch hinzugefügte Speicher-VMs (manchmal auch „implizite“ Speicher-VMs genannt) werden auf der Cluster-Übersichtsseite mit einem Bindestrich (-) anstelle eines Benutzernamens angezeigt. Benutzernamen werden nur für explizite Speichereinheiten angezeigt.
+
+

@@ -1,0 +1,37 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_search_for_backups.html 
+keywords:  
+summary: Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM oder eines Datenspeichers suchen. Nachdem Sie ein Backup gefunden haben, können Sie es dann wiederherstellen. 
+---
+= Suche nach Backups
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM oder eines Datenspeichers suchen. Nachdem Sie ein Backup gefunden haben, können Sie es dann wiederherstellen.
+
+.Schritte
+. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und führen Sie dann einen der folgenden Schritte aus:
++
+|===
+| So zeigen Sie Backups für… an | Gehen Sie wie folgt vor… 
+
+
+| VMs | Klicken Sie auf die Menüoption *Hosts und Cluster*, wählen Sie dann eine VM aus, klicken Sie dann auf die Registerkarte *Configure* und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*. 
+
+
+| Datenspeicher | Klicken Sie auf die Menüoption *Speicherung*, wählen Sie dann einen Datenspeicher aus, klicken Sie dann auf die Registerkarte *Konfigurieren* und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*. 
+|===
+. Erweitern Sie im linken Navigator-Fensterbereich das Rechenzentrum, das die VM oder den Datastore enthält.
+. Optional: Klicken Sie mit der rechten Maustaste auf eine VM oder einen Datenspeicher, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus.
+. Geben Sie im Assistenten * Wiederherstellen* einen Suchnamen ein und klicken Sie auf *Suchen*.
++
+Sie können die Sicherungsliste filtern, indem Sie auf klicken image:scpivs44_image41.png["Fehler: Fehlendes Grafikbild"] Filtern Sie das Symbol, und wählen Sie einen Datums- und Zeitbereich aus. Wählen Sie aus, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Sie gemountete Backups und den Speicherort verwenden möchten. Klicken Sie auf *OK*.
+
+

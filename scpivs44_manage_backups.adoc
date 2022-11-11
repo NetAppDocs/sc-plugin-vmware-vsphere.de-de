@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_backups.html 
+keywords:  
+summary: Sie können Backups umbenennen und löschen, die vom SnapCenter Plug-in für VMware vSphere durchgeführt wurden. Sie können auch mehrere Backups gleichzeitig löschen. 
+---
+= Backup-Management
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können Backups umbenennen und löschen, die vom SnapCenter Plug-in für VMware vSphere durchgeführt wurden. Sie können auch mehrere Backups gleichzeitig löschen.
+
+
+
+== Backups umbenennen
+
+Sie können das SnapCenter Plug-in für VMware vSphere Backups umbenennen, wenn Sie einen besseren Namen geben möchten, um die Suchbarkeit zu verbessern.
+
+.Schritte
+. Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster*, wählen Sie dann eine VM aus, wählen Sie dann die Registerkarte *Konfigurieren* aus und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*.
++
+image:scpivs44_image14.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie auf der Registerkarte Konfigurieren ein Backup aus und klicken Sie auf *Umbenennen*.
+. Geben Sie im Dialogfeld *Backup umbenennen* den neuen Namen ein und klicken Sie auf *OK*.
++
+Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: & * € # @ ! \ / : * ? " < > - ; ' , . Ein Unterstrich (_) ist zulässig.
+
+
+
+
+
+== Backups löschen
+
+Das SnapCenter Plug-in für VMware vSphere Backups kann gelöscht werden, wenn das Backup für andere Datensicherungsvorgänge nicht mehr benötigt wird. Sie können ein Backup löschen oder mehrere Backups gleichzeitig löschen.
+
+Sie können keine Backups löschen, die angehängt sind. Sie müssen die Bereitstellung einer Sicherung aufheben, bevor Sie sie löschen können.
+
+Snapshot-Kopien auf sekundärem Storage werden über die ONTAP Aufbewahrungseinstellungen verwaltet, nicht über das SnapCenter VMware Plug-in. Wenn Sie das SnapCenter VMware Plug-in zum Löschen eines Backups verwenden, werden Snapshot-Kopien auf dem Primärspeicher gelöscht, Snapshot-Kopien jedoch auf dem Sekundärspeicher nicht gelöscht. Falls noch eine Snapshot Kopie auf dem Sekundärspeicher vorhanden ist, behalten die VMware Plug-in von SnapCenter die dem Backup zugeordneten Metadaten bei, um Wiederherstellungsanforderungen zu unterstützen. Wenn der ONTAP Aufbewahrungsvorgang die sekundäre Snapshot Kopie löscht, löscht das SnapCenter VMware Plug-in die Metadaten mithilfe eines Spüljobs, der in regelmäßigen Abständen ausgeführt wird.
+
+. Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster*, wählen Sie dann eine VM aus, wählen Sie dann die Registerkarte *Konfigurieren* aus und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*.
++
+image:scpivs44_image14.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie eine oder mehrere Backups aus und klicken Sie auf *Löschen*.
++
+Sie können maximal 40 Backups zum Löschen auswählen.
+
+. Klicken Sie auf *OK*, um den Löschvorgang zu bestätigen.
+. Aktualisieren Sie die Backup-Liste, indem Sie auf das Aktualisierungssymbol in der linken Menüleiste von vSphere klicken.
+

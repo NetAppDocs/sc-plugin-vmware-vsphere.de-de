@@ -1,0 +1,137 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_vms_from_backups.html 
+keywords:  
+summary: Wenn Sie eine VM wiederherstellen, können Sie den vorhandenen Inhalt mit der von Ihnen ausgewählten Backup-Kopie überschreiben oder eine Kopie der VM erstellen. 
+---
+= Wiederherstellung von VMs aus Backups
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie eine VM wiederherstellen, können Sie den vorhandenen Inhalt mit der von Ihnen ausgewählten Backup-Kopie überschreiben oder eine Kopie der VM erstellen.
+
+Sie können VMs an folgenden Orten wiederherstellen:
+
+* Wiederherstellung am ursprünglichen Speicherort
++
+** In den ursprünglichen Datastore, der auf dem ursprünglichen ESXi-Host gemountet wird (dadurch wird die ursprüngliche VM überschrieben)
+
+
+* Wiederherstellung an einem alternativen Speicherort
++
+** Auf einem anderen Datastore, der auf dem ursprünglichen ESXi-Host gemountet wird
+** Auf den ursprünglichen Datastore, der auf einem anderen ESXi-Host gemountet wird und von demselben vCenter gemanagt wird
+** In einem anderen Datastore, der auf einem anderen ESXi-Host gemountet wird und von demselben vCenter gemanagt wird
+** Auf einem anderen Datastore, der auf einem anderen ESXi Host gemountet wird und von einem anderen vCenter im verknüpften Modus verwaltet wird
+
+
+
+
+
+NOTE: Sie können vVol VMs nicht auf einem alternativen Host wiederherstellen.
+
+
+NOTE: Der folgende Wiederherstellungs-Workflow wird nicht unterstützt: Fügen Sie eine Storage-VM hinzu, führen Sie ein Backup dieser VM aus, löschen Sie dann die Storage-VM, fügen Sie einen Cluster hinzu, der die gleiche Storage-VM enthält, und versuchen Sie dann, das ursprüngliche Backup wiederherzustellen.
+
+
+TIP: Um die Performance von Restore-Vorgängen in NFS-Umgebungen zu verbessern, aktivieren Sie vStorage API for Array Integration (VAAI) für VMware Applikation.
+
+.Bevor Sie beginnen
+* Ein Backup muss vorhanden sein.
++
+Sie müssen ein Backup der VM mithilfe des SnapCenter VMware Plug-ins erstellt haben, bevor Sie die VM wiederherstellen können.
+
++
+
+NOTE: Wiederherstellungsvorgänge können nicht erfolgreich abgeschlossen werden, wenn Snapshot Kopien der VM vorhanden sind, die von anderen Software-Versionen als dem SnapCenter Plug-in für VMware vSphere durchgeführt wurden.
+
+* Der Ziel-Datastore muss bereit sein.
++
+** Der Ziel-Datastore für den Wiederherstellungsvorgang muss über genügend Speicherplatz für eine Kopie aller VM-Dateien (z. B. vmdk, vmx, vmsd) verfügen.
+** Der Ziel-Datastore darf keine veralteten VM-Dateien nach dem Ausfall des vorherigen Wiederherstellungsvorgangs enthalten. Veraltete Dateien haben das Namensformat `restore_xxx_xxxxxx_<filename>`.
+
+
+* Die VM darf nicht während der Übertragung sein.
++
+Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von vMotion oder Storage vMotion befinden.
+
+* FEHLER bei DER HA-Konfiguration
++
+Stellen Sie sicher, dass auf dem Bildschirm vCenter ESXi Host Summary keine HA-Konfigurationsfehler angezeigt werden, bevor Sie Backups an einen anderen Ort wiederherstellen.
+
+* Wiederherstellung an einem anderen Speicherort
++
+** Beim Wiederherstellen an einem anderen Standort muss das SnapCenter Plug-in für VMware vSphere in vCenter ausgeführt werden, das Ziel für den Restore-Vorgang ist. Der Ziel-Datastore muss über ausreichend Speicherplatz verfügen.
+** Das Ziel-vCenter im Feld Wiederherstellen zu einem alternativen Speicherort muss DNS resolable sein.
+
+
+
+
+.Über diese Aufgabe
+* VM ist nicht registriert und erneut registriert
++
+Der Wiederherstellungsvorgang für VMs entmacht die ursprüngliche VM, stellt die VM aus einer Backup Snapshot Kopie wieder her und registriert die wiederhergestellte VM mit demselben Namen und derselben Konfiguration auf demselben ESXi Server. Nach der Wiederherstellung müssen Sie die VMs manuell den Ressourcengruppen hinzufügen.
+
+* Wiederherstellen von Datenspeichern
++
+Sie können zwar keine Datenspeicher wiederherstellen, aber Sie können jede VM im Datastore wiederherstellen.
+
+* Wiederherstellung von vVol VMs
++
+** VVol Datastores, die über VMs verfügen, werden nicht unterstützt. Da angeschlossene VMDKs in einem VM-Spanning-VVol Datastore nicht gesichert werden, enthalten die wiederhergestellten VMs nur teilweise VMDKs.
+** Sie können ein vVol nicht auf einem alternativen Host wiederherstellen.
+** Der automatische Lastausgleich von vVol wird nicht unterstützt.
+
+
+* VMware Konsistenz Snapshot-Fehler bei einer VM
++
+Auch wenn ein VMware Konsistenz-Snapshot für eine VM ausfällt, wird die VM trotzdem gesichert. Sie können die Einheiten, die in der Backup-Kopie im Wiederherstellungsassistenten enthalten sind, anzeigen und für Wiederherstellungsvorgänge verwenden.
+
+* Ein Wiederherstellungsvorgang kann fehlschlagen, wenn der Storage Tier der FabricPool, auf dem sich die VM befindet, nicht verfügbar ist.
+
+
+.Schritte
+. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
++
+
+NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die zum SnapCenter VMware Plug-in hinzugefügten Speicher-VM-Anmeldeinformationen lauten `vsadmin` Oder ein Benutzerkonto, das alle gleichen Berechtigungen hat wie `vsadmin`. Der Host muss sich auf einem Storage-System mit ONTAP 8.2.2 oder höher befindet.
+
+. Klicken Sie im linken Navigator mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus, um den Assistenten zu starten.
+. Wählen Sie im Assistenten *Restore* auf der Seite *Select Backup* die Backup Snapshot Kopie aus, die Sie wiederherstellen möchten.
++
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups oder den Speicherort möchten. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
+
+. Wählen Sie auf der Seite *Bereich auswählen* im Feld *Umfang wiederherstellen* *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus, und geben Sie dann die Zielinformationen ein, auf denen das Backup gemountet werden soll.
++
+Wenn im Feld *VM Name* derselbe VM-Name existiert, dann ist das neue VM-Namensformat `<vm_name>_<timestamp>`.
+
++
+Bei der Wiederherstellung von Teilersicherungen wird die Seite *Bereich auswählen* mit dem Wiederherstellungsvorgang übersprungen.
+
+. Wählen Sie auf der Seite *Standort auswählen* den Speicherort für den wiederhergestellten Datastore aus.
++
+Im SnapCenter Plug-in für VMware vSphere 4.5 und höher können Sie sekundären Storage für FlexGroup Volumes auswählen.
+
+. Überprüfen Sie die Übersichtsseite und klicken Sie dann auf *Fertig stellen*.
+. Optional: Überwachen Sie den Arbeitsfortschritt, indem Sie unten auf dem Bildschirm auf *Letzte Aufgaben* klicken.
++
+Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
+
+
+
+.Nachdem Sie fertig sind
+* IP-Adresse ändern
++
+Wenn Sie an einem anderen Standort wiederhergestellt haben, müssen Sie die IP-Adresse der neu erstellten VM ändern, um einen IP-Adressenkonflikt zu vermeiden, wenn statische IP-Adressen konfiguriert werden.
+
+* Fügen Sie wiederhergestellte VMs zu Ressourcengruppen hinzu
++
+Die VMs werden zwar wiederhergestellt, können aber nicht automatisch zu ihren ehemaligen Ressourcengruppen hinzugefügt werden. Daher müssen Sie die wiederhergestellten VMs manuell den entsprechenden Ressourcengruppen hinzufügen.
+
+

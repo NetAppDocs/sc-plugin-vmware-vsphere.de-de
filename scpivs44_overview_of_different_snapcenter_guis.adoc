@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_overview_of_different_snapcenter_guis.html 
+keywords:  
+summary: Das SnapCenter Plug-in für VMware vSphere ist ein Standalone-Plug-in, das sich von anderen SnapCenter-Plug-ins unterscheidet. Sie müssen die VMware vSphere Web Client GUI in vCenter für alle Backup- und Restore-Vorgänge für VMs, VMDKs und Datastores nutzen. 
+---
+= Überblick über die verschiedenen SnapCenter GUIs
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+In Ihrer SnapCenter-Umgebung müssen die Datensicherung und das Management über die entsprechende GUI durchgeführt werden.
+
+Das SnapCenter Plug-in für VMware vSphere ist ein Standalone-Plug-in, das sich von anderen SnapCenter-Plug-ins unterscheidet. Sie müssen die VMware vSphere Web Client GUI in vCenter für alle Backup- und Restore-Vorgänge für VMs, VMDKs und Datastores nutzen. Darüber hinaus verwenden Sie das Web-Client-GUI-Dashboard, um die Liste der geschützten und nicht geschützten VMs zu überwachen. Für alle anderen SnapCenter-Plug-ins (applikationsspezifische Plug-ins) wird die GUI von SnapCenter für Backup- und Restore-Vorgänge sowie Job-Monitoring verwendet.
+
+Das SnapCenter VMware Plug-in unterstützt HTML5 vSphere Web-Clients. Es unterstützt vCenter Flex oder Thick Clients nicht.
+
+Zum Schutz von VMs und Datastores nutzen Sie die VMware vSphere Web-Client-Schnittstelle. Die Web-Client-GUI ist in die NetApp Snapshot-Kopiertechnologie im Storage-System integriert. So können Sie VMs und Datenspeicher in Sekundenschnelle sichern und VMs wiederherstellen, ohne einen ESXi Host offline zu schalten.
+
+Zudem steht eine Management-GUI zur Verfügung, um administrative Vorgänge am SnapCenter VMware Plug-in durchzuführen.
+
+In der folgenden Tabelle werden die von den einzelnen SnapCenter GUI durchgeführten Vorgänge dargestellt.
+
+|===
+| Verwenden Sie diese GUI… | Zur Ausführung dieser Vorgänge... | Und für den Zugriff auf diese Backups... 
+
+
+| SnapCenter vSphere Web-Client-GUI | VM- und Datastore-Backup VMDK-Anbindung und -Trennung Datastore-Mount und unmounten Sie VM und VMDK Restore der Gastdatei und Ordner | Backups von VMs und Datenspeichern, die mithilfe der VMware vSphere Web-Client-GUI durchgeführt wurden 
+
+
+| SnapCenter GUI | Backup und Restore von Datenbanken und Applikationen auf VMs, einschließlich der Sicherung von Datenbanken für Microsoft SQL Server, Microsoft Exchange und Oracle. Datenbankklone | Backups, die über die Benutzeroberfläche von SnapCenter durchgeführt werden 
+
+
+| SnapCenter Plug-in für Management-GUI von VMware vSphere | Ändern der Netzwerkkonfiguration Erstellen Sie ein Supportpaket Ändern der NTP-Servereinstellungen Deaktivieren/Aktivieren des Plug-ins | N.A. 
+
+
+| VCenter GUI | Hinzufügen von SCV-Rollen zu vCenter Active Directory-Benutzern Hinzufügen von Ressourcenzugriff für Benutzer oder Gruppen | N.A. 
+|===
+Für VM-konsistente Backup- und Restore-Vorgänge müssen Sie die VMware vSphere Web-Client-GUI verwenden. Obwohl einige Vorgänge mithilfe von VMware Tools beispielsweise beim Mounten oder Umbenennen eines Datastores möglich sind, werden diese Vorgänge nicht im SnapCenter Repository registriert und werden nicht erkannt.
+
+SnapCenter unterstützt keine einzigen Snapshot-Kopien von Datenbanken und VMs zusammen. Backups für VMs und Datenbanken müssen geplant und unabhängig ausgeführt werden. Dadurch werden separate Snapshot Kopien erstellt, selbst wenn die Datenbanken und VMs im selben Volume gehostet werden. Applikationskonsistente Backups müssen über die SnapCenter GUI geplant werden. VM-konsistente Backups müssen über die VMware vSphere Web-Client GUI geplant werden.

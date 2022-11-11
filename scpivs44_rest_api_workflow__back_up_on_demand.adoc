@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflow__back_up_on_demand.html 
+keywords:  
+summary: Um Backup-Vorgänge On-Demand mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen. 
+---
+= REST-API-Workflow für Backup nach Bedarf
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um Backup-Vorgänge On-Demand mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen.
+
+Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+
+|===
+| Schritt | REST API | Kommentare 
+
+
+| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Ruft die Liste der Ressourcengruppen von VMware vSphere Web-Clients ab. Beachten Sie die *resourceGroupID* und die *Policy ID* für die Ressourcengruppe, die Sie sichern möchten. 
+
+
+| 2 | `/4.1/resource-groups/backupnow` | `Run a backup on a Resource Group` Sichert die Ressourcengruppe nach Bedarf. Übergeben Sie die *resourceGroupID* und die *policyId* aus Schritt 1. 
+|===

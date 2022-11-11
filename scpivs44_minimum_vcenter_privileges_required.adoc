@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_minimum_vcenter_privileges_required.html 
+keywords:  
+summary: Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere beginnen, sollten Sie sicherstellen, dass die erforderlichen Mindestberechtigungen für vCenter vorhanden sind. 
+---
+= Minimale vCenter-Berechtigungen erforderlich
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere beginnen, sollten Sie sicherstellen, dass die erforderlichen Mindestberechtigungen für vCenter vorhanden sind.
+
+
+
+== Erforderliche Berechtigungen für vCenter Admin-Rolle
+
+System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.Delete Datastore.Browse VirtualDatastore.FileManagement Datastore.AllocateSpace Network.AssigHost.Config.Storage Host.Config.AdvancedConfig.Mitarbeiter Host.Config.Einstellungen Host.Local.VirtualVM VirtualMachine.Inventory.Inventory.VirtualMachine.Snapshot.Snapshot.Remoconfigure.VirtualMachine.Snapshot.RemounVM.Configuration.VirtualMachine.Snapshot.CondVM.Remounregistriert VirtualMachine.Cont.Snapshot.RemoundeCont.VM.VM.Cont.VM.VM.VM.Remounregistriert VirtualMachine VirtualMachine VirtualMachine.Cont.Snapshot.Cont.Snapshot.Cont.VM
+
+
+
+== Erforderliche Berechtigungen für SnapCenter Plug-in für VMware vCenter
+
+NetappSCV.Guest.RestoreFile netappSCV.Recovery.MountUnMount netappSCV.Backup.DeletZeitplanBackupJob netappSCV.Configure.ConfigureStorageSystems.netappSCV.View netappSCV.Recovery.netappSCV.netappSCV.netappSCV.Configure.netappSCV.Guest.Configure.netappSCV.netappBackupCenterConfigure

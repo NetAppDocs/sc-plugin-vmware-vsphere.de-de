@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_maintenance_console.html 
+keywords:  
+summary: Sie können ein Support-Bundle von der Wartungskonsole generieren. 
+---
+= Generieren Sie ein Support-Bundle über die Wartungskonsole
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+.Schritte
+. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Klicken Sie mit der rechten Maustaste auf die VM und anschließend auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten oder Webkonsole starten*, um ein Fenster der Wartungskonsole zu öffnen und sich dann anzumelden.
++
+Informationen zum Zugriff auf und zur Anmeldung bei der Wartungskonsole finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
+
++
+image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]
+
+. Geben Sie im Hauptmenü die Option *4) Support und Diagnose* ein.
+. Geben Sie im Menü Support und Diagnose die Option *1) Supportpaket generieren* ein.
+
+
+Um auf das Support-Paket zuzugreifen, geben Sie im Menü Support und Diagnose die Option *2) Zugriff auf Diagnose Shell* ein. Navigieren Sie in der Konsole zu `/support/support/<bundle_name>.tar.gz`.

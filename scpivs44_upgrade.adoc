@@ -1,0 +1,66 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_upgrade.html 
+keywords:  
+summary: Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwenden, können Sie ein Upgrade auf eine neuere Version durchführen. 
+---
+= Upgrade von einer früheren Version des SnapCenter Plug-ins für VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwenden, können Sie ein Upgrade auf eine neuere Version durchführen.
+
+Siehe link:scpivs44_release_notes.html["SnapCenter Plug-in für VMware vSphere – Versionsinformationen"] Weitere Informationen zu unterstützten Upgrade-Pfaden.
+
+
+TIP: Sichern Sie das SnapCenter Plug-in für VMware vSphere OVA, bevor Sie ein Upgrade starten.
+
+
+NOTE: Das Umschalten der Netzwerkkonfiguration von statisch auf DHCP wird nicht unterstützt.
+
+.Schritte
+. Bereiten Sie sich auf das Upgrade vor, indem Sie das SnapCenter Plug-in für VMware vSphere deaktivieren.
++
+.. Melden Sie sich im SnapCenter Plug-in für die Management-GUI von VMware vSphere an. Die IP wird angezeigt, wenn Sie das SnapCenter VMware Plug-in bereitstellen.
+.. Klicken Sie im linken Navigationsbereich auf *Konfiguration* und dann im Abschnitt Plug-in-Details auf die Option *Service*, um das Plug-in zu deaktivieren.
+
+
+. Laden Sie das Upgrade herunter `.iso` Datei:
++
+.. Loggen Sie sich auf der NetApp Support Site ein (https://mysupport.netapp.com/products/index.html)[].
+.. Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* und klicken Sie dann auf die Schaltfläche *NEUESTE VERSION HERUNTERLADEN*.
+.. Laden Sie das Upgrade zum SnapCenter Plug-in für VMware vSphere herunter `.iso` Datei an jedem Speicherort.
+
+
+. Installieren Sie das Upgrade.
++
+.. Navigieren Sie im Browser zu VMware vSphere vCenter.
+.. Klicken Sie auf der vCenter GUI auf *vSphere Web Client (HTML)*.
+.. Melden Sie sich auf der Seite *VMware vCenter Single Sign-On* an.
+.. Klicken Sie im Navigator-Fenster auf die VM, die Sie aktualisieren möchten, und klicken Sie dann auf die Registerkarte *Zusammenfassung*.
+.. Klicken Sie im Fensterbereich *Related Objects* auf einen beliebigen Datenspeicher in der Liste und dann auf die Registerkarte *Summary*.
+.. Klicken Sie auf der Registerkarte *Dateien* für den ausgewählten Datenspeicher auf einen beliebigen Ordner in der Liste und dann auf *Dateien hochladen*.
+.. Navigieren Sie auf dem Pop-up-Bildschirm zum Speicherort, an dem Sie das heruntergeladen haben `.iso` Datei und dann auf das klicken `.iso` Datei Bild, und klicken Sie dann auf *Öffnen*. Die Datei wird in den Datastore hochgeladen.
+.. Navigieren Sie zurück zu VM, die Sie aktualisieren möchten, und klicken Sie auf die Registerkarte *Zusammenfassung*. Im Fenster *VM Hardware* im Feld CD/DVD sollte der Wert „getrennt“ sein.
+.. Klicken Sie auf das Verbindungssymbol im Feld CD/DVD und wählen Sie *mit CD/DVD-Image verbinden auf einem Datastore* aus.
++
+image:scpivs44_image42.png["Fehler: Fehlendes Grafikbild"]
+
+.. Gehen Sie im Assistenten wie folgt vor:
++
+... Wählen Sie in der Spalte Datastores den Datenspeicher aus, auf den Sie den hochgeladen haben `.iso` Datei:
+... Navigieren Sie in der Spalte Inhalt zu `.iso` Datei, die Sie hochgeladen haben, stellen Sie sicher, dass „ISO-Image“ im Feld Dateityp ausgewählt ist, und klicken Sie dann auf *OK*. Warten Sie, bis der Status „verbunden“ angezeigt wird.
+
+
+.. Melden Sie sich an der Wartungskonsole an, indem Sie auf die Registerkarte *Zusammenfassung* des virtuellen Geräts zugreifen und dann auf den grünen Laufpfeil klicken, um die Wartungskonsole zu starten.
+.. Geben Sie *2* für die Systemkonfiguration ein, und geben Sie dann *8* für die Aktualisierung ein.
+.. Geben Sie *y* ein, um mit dem Upgrade fortzufahren und zu starten.
+
+
+

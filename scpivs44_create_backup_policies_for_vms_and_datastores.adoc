@@ -1,0 +1,138 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_backup_policies_for_vms_and_datastores.html 
+keywords:  
+summary: Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für VMware vSphere zum Backup von VMs und Datastores verwenden. 
+---
+= Erstellen von Backup-Richtlinien für VMs und Datastores
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für VMware vSphere zum Backup von VMs und Datastores verwenden.
+
+.Bevor Sie beginnen
+* Sie müssen die Voraussetzungen gelesen haben.
+* Sie müssen sekundäre Storage-Beziehungen konfiguriert haben.
++
+** Wenn Sie Snapshot Kopien auf einen gespiegelten oder sekundären Vault-Storage replizieren, müssen die Beziehungen konfiguriert sein. Der SnapCenter Administrator muss Ihnen die Storage-VMs sowohl für die Quell- als auch die Ziel-Volumes zugewiesen haben.
+** Um Snapshot Kopien für versionsflexible Beziehungen auf einem NFS- oder VMFS-Datenspeicher erfolgreich in sekundären Storage zu übertragen, stellen Sie sicher, dass der Richtlinientyp von SnapMirror asynchronen Spiegel ist und dass die Option „all_Source_Snapshots“ aktiviert ist.
+** Wenn die Anzahl der Snapshot-Kopien auf dem sekundären Storage (Mirror-Vault) die Obergrenze erreicht, schlägt die Aktivität zur Registrierung von Backup und zur Anwendung der Aufbewahrung im Backup-Vorgang mit dem folgenden Fehler fehl: `This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationships. Deleting the Snapshot copy can cause future SnapMirror operations to fail.`
++
+Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror Aufbewahrungsrichtlinie für den sekundären Storage, um das maximale Limit von Snapshot Kopien zu vermeiden.
+
++
+Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie im https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^].
+
+
+
+* Wenn Sie VM-konsistente Backups wünschen, müssen VMware Tools installiert und ausgeführt werden. Um VMs stillzulegen, sind VMware Tools erforderlich. VM-konsistente Backups werden für vVol VMs nicht unterstützt.
+
+
+Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den folgenden Informationen werden einige der Felder beschrieben, für die Sie möglicherweise eine Anleitung benötigen.
+
+.Schritte
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Richtlinien*.
+. Klicken Sie auf der Seite *Richtlinien* auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen* um den Assistenten zu starten.
++
+image:scpivs44_image15.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie auf der Seite *New Backup Policy* den vCenter Server aus, der die Richtlinie verwendet, und geben Sie dann den Namen der Richtlinie und eine Beschreibung ein.
++
+** Verknüpfter Modus
++
+Im Linked-Modus besitzt jedes vCenter eine separate virtuelle Appliance. Daher können Sie doppelte Namen in allen vCenters verwenden. Sie müssen die Richtlinie jedoch im selben vCenter wie die Ressourcengruppe erstellen.
+
+** Nicht unterstützte Zeichen
++
+Verwenden Sie nicht die folgenden Sonderzeichen in VMs, Datenspeicher, Cluster, Richtlinien, Backups, Oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - ; ' , .
+
++
+Ein Unterstrich (_) ist zulässig.
+
+
+
+. Legen Sie die Aufbewahrungseinstellungen fest.
++
+
+IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstellen, wenn Sie die SnapVault-Replikation aktivieren möchten. Wenn Sie die Aufbewahrungsanzahl auf 1 Backup gesetzt haben, kann der Aufbewahrungsvorgang fehlschlagen. Dies liegt daran, dass die erste Snapshot Kopie die Referenzkopie für die SnapVault-Beziehung ist, bis die neuere Snapshot Kopie auf das Ziel repliziert wird.
+
++
+
+NOTE: Der maximale Aufbewahrungswert sind 1018 Backups für Ressourcen auf ONTAP 9.4 oder höher und 254 Backups für Ressourcen auf ONTAP 9.3 oder früher. Backups schlagen fehl, wenn die Aufbewahrung auf einen Wert festgelegt ist, der höher ist, als die zugrunde liegende ONTAP Version unterstützt. Das gilt auch für das Spanning von Datenspeichern. Wenn ein Spanning Datastore Ressourcen sowohl auf ONTAP 9.3 als auch früher sowie auf ONTAP 9.4 und höher enthält, müssen Sie den Aufbewahrungswert unter 254 festlegen.
+
+. Geben Sie die Frequenzeinstellungen an.
++
+Die Richtlinie gibt nur die Backup-Häufigkeit an. Der spezifische Schutzzeitplan für das Sichern ist in der Ressourcengruppe festgelegt. Daher können zwei oder mehr Ressourcengruppen dieselbe Richtlinien- und Backup-Häufigkeit teilen, jedoch unterschiedliche Backup-Pläne haben.
+
+. Geben Sie in den Feldern *Replikation* den Replikationstyp auf sekundären Speicher an, wie in der folgenden Tabelle dargestellt:
++
+|===
+| Für dieses Feld… | Do this… 
+
+
+| Aktualisierung von SnapMirror nach dem Backup  a| 
+Wählen Sie diese Option aus, um Spiegelkopien von Backup-Sets auf einem anderen Volume zu erstellen, das über eine SnapMirror Beziehung zum primären Backup Volume verfügt. Wenn ein Volume mit einer Mirror-Vault-Beziehung konfiguriert ist, müssen Sie nur die Option *Update SnapVault after Backup* auswählen, wenn Sie Backups auf die Mirror-Vault Ziele kopieren möchten.
+
+
+NOTE: Diese Option wird für Datastores in FlexGroup Volumes im SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt.
+
+
+
+| SnapVault nach Backup aktualisieren  a| 
+Wählen Sie diese Option aus, um Disk-to-Disk Backup-Replikation auf einem anderen Volume mit einer SnapVault-Beziehung zum primären Backup Volume durchzuführen.
+
+
+IMPORTANT: Wenn ein Volume mit einer Mirror-Vault-Beziehung konfiguriert ist, müssen Sie nur diese Option auswählen, wenn Sie Backups auf die Mirror-Vault Ziele kopieren möchten.
+
+
+NOTE: Diese Option wird für Datastores in FlexGroup Volumes im SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt.
+
+
+
+| Snapshot-Etikett  a| 
+Geben Sie ein optionales, benutzerdefiniertes Label ein, das zu SnapVault und SnapMirror Snapshot Kopien hinzugefügt werden soll, die mit dieser Richtlinie erstellt werden. Das Snapshot-Label hilft, mit dieser Richtlinie erstellte Snapshots von anderen Snapshots auf dem sekundären Storage-System zu unterscheiden.
+
+
+NOTE: Für Etiketten der Snapshot Kopien sind maximal 31 Zeichen zulässig.
+
+|===
+. Optional: Wählen Sie in den Feldern *Erweitert* die gewünschten Felder aus. In der folgenden Tabelle sind die Details zum Advanced Field Portal aufgeführt.
++
+|===
+| Für dieses Feld… | Do this… 
+
+
+| VM-Konsistenz  a| 
+Aktivieren Sie dieses Kontrollkästchen, um die VMs stillzulegen und jedes Mal, wenn der Backup-Job ausgeführt wird, einen VMware-Snapshot zu erstellen.
+
+Diese Option wird für VVols nicht unterstützt. Bei vVol VMs werden nur absturzkonsistente Backups durchgeführt.
+
+
+IMPORTANT: Sie müssen VMware Tools auf der VM ausführen, um VM-konsistente Backups durchzuführen. Wenn VMware Tools nicht ausgeführt wird, wird stattdessen ein absturzkonsistentes Backup durchgeführt.
+
+
+NOTE: Wenn Sie das Kontrollkästchen für die Konsistenz der VM aktivieren, können Backup-Vorgänge länger dauern und mehr Speicherplatz benötigen. In diesem Szenario werden die VMs zuerst stillgelegt, dann führt VMware einen VM-konsistenten Snapshot durch, dann führt SnapCenter seinen Backup-Vorgang durch und anschließend werden die VM-Vorgänge wieder aufgenommen. Der VM-Gastspeicher ist nicht in den Konsistenz-Snapshots der VMs enthalten.
+
+
+
+| Einbeziehen von Datastores mit unabhängigen Festplatten | Aktivieren Sie dieses Kontrollkästchen, um alle Datenspeicher mit unabhängigen Festplatten, die temporäre Daten enthalten, in das Backup einzubeziehen. 
+
+
+| Skripte  a| 
+Geben Sie den vollständig qualifizierten Pfad des Prescript oder Postscript ein, das das SnapCenter VMware Plug-in vor oder nach dem Backup ausführen soll. Sie können beispielsweise ein Skript ausführen, um SNMP-Traps zu aktualisieren, Warnmeldungen zu automatisieren und Protokolle zu senden. Der Skriptpfad wird zum Zeitpunkt der Ausführung des Skripts validiert.
+
+
+NOTE: Prescripts und Postscripts müssen auf der VM der virtuellen Appliance liegen. Um mehrere Skripte einzugeben, drücken Sie nach jedem Skriptpfad *Enter*, um jedes Skript in einer eigenen Zeile aufzulisten. Das Zeichen „;“ ist nicht zulässig.
+
+|===
+. Klicken Sie Auf *Hinzufügen.*
++
+Sie können die Erstellung der Richtlinie überprüfen und die Richtlinienkonfiguration überprüfen, indem Sie die Richtlinie auf der Seite Richtlinien auswählen.
+
+

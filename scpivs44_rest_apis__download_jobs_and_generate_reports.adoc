@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
+keywords:  
+summary: Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Web-Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden. 
+---
+= REST-APIs zum Herunterladen von Jobs und zum Generieren von Berichten
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Web-Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden.
+
+Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+
+
+
+== Verwenden Sie die folgenden REST-APIs im Abschnitt Jobs, um detaillierte Informationen über Jobs zu erhalten:
+
+|===
+| REST API | Kommentare 
+
+
+| `/4.1/jobs` | `Get all jobs` Ruft die Job-Details für mehrere Jobs ab. Sie können den Umfang der Anforderung eingrenzen, indem Sie einen Jobtyp angeben, z. B. `backup`, `mountBackup`, Oder `restore`. 
+
+
+| `/4.1/jobs/{id}` | `Get job details` Ruft detaillierte Informationen für den angegebenen Job ab. 
+|===
+
+
+== Verwenden Sie die folgende REST-API im Abschnitt Jobs zum Herunterladen von Jobprotokollen:
+
+|===
+| REST API | Kommentare 
+
+
+| `/4.1/jobs/{id}/logs` | `getJobLogsById` lädt die Protokolle für den angegebenen Job herunter. 
+|===
+
+
+== Verwenden Sie die folgenden REST-APIs im Abschnitt Berichte zum Generieren von Berichten:
+
+|===
+| REST API | Kommentare 
+
+
+| `4.1/reports/protectedVM` | `Get Protected VM List` Erhalten Sie in den letzten sieben Tagen eine Liste der geschützten VMs. 
+
+
+| `/4.1/reports/
+unProtectedVM` | `Get Unprotected VM List` Erhalten eine Liste der ungeschützten VMs in den letzten sieben Tagen. 
+|===

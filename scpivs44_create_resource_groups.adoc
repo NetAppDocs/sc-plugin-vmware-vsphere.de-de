@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_create_resource_groups.html 
+keywords:  
+summary:  
+---
+= Erstellen von Ressourcengruppen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Resource Groups*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen*.
+. Geben Sie auf jeder Seite des Assistenten zum Erstellen von Ressourcengruppen die erforderlichen Informationen ein, wählen Sie VMs und Datenspeicher aus, die in die Ressourcengruppe aufgenommen werden sollen, und wählen Sie dann die Backup-Richtlinien aus, die auf die Ressourcengruppe angewendet werden sollen, und geben Sie den Backup-Zeitplan an.
+
+
+Backups werden gemäß den für die Ressourcengruppe konfigurierten Backup-Richtlinien durchgeführt.
+
+Sie können auf der Seite *Ressourcengruppen* eine Sicherung nach Bedarf durchführen, indem Sie auf klicken image:scpivs44_image38.png["Fehler: Fehlendes Grafikbild"] *Jetzt Laufen*.

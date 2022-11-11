@@ -1,0 +1,33 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_protect_data_overview.html 
+keywords:  
+summary: Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die eine oder mehrere VMs und Datastores beliebig kombinieren können. Sie können Backups nach Bedarf oder gemäß einem definierten Schutzzeitplan erstellen. 
+---
+= Datensicherungs-Workflow
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Nutzen Sie den SnapCenter vSphere Web-Client, um Datensicherungsvorgänge für VMs, VMDKs und Datastores durchzuführen. Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die eine oder mehrere VMs und Datastores beliebig kombinieren können. Sie können Backups nach Bedarf oder gemäß einem definierten Schutzzeitplan erstellen.
+
+Wenn Sie einen Datenspeicher sichern, sichern Sie alle VMs in diesem Datenspeicher.
+
+Backup- und Wiederherstellungsvorgänge können nicht gleichzeitig auf derselben Ressourcengruppe durchgeführt werden.
+
+Sie sollten alle Informationen dazu lesen, was das SnapCenter VMware Plug-in leistet und nicht unterstützt.link:scpivs44_deployment_planning_and_requirements.html["Implementierungsplanung und -Anforderungen"]
+
+In MetroCluster Konfigurationen:
+
+* Das SnapCenter VMware Plug-in kann nach einem Failover möglicherweise keine Sicherungsbeziehung erkennen. Siehe https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["KB-Artikel: Kann die SnapMirror oder SnapVault-Beziehung nach dem MetroCluster Failover nicht erkennen"^].
+* Wenn Backups mit dem Fehler fehlschlagen `Unable to discover resources on SCV: <xxx>…` Starten Sie bei NFS und VMFS VMs nach Umschaltung/Switch wieder die SnapCenter VMware Services von der Wartungskonsole aus neu.
+
+
+Die folgende Workflow-Abbildung zeigt die Reihenfolge, in der Sie Sicherungsvorgänge ausführen müssen:
+
+image:scpivs44_image13.png["Fehler: Fehlendes Grafikbild"]

@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html 
+keywords:  
+summary: Jede vorhandene Ressourcengruppe, die durch das SnapCenter Plug-in für VMware vSphere gemanagt wird, kann rasch eine einzelne VM oder einen Datenspeicher hinzugefügt werden. 
+---
+= Fügen Sie eine einzelne VM oder einen Datenspeicher zu einer Ressourcengruppe hinzu
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Jede vorhandene Ressourcengruppe, die durch das SnapCenter Plug-in für VMware vSphere gemanagt wird, kann rasch eine einzelne VM oder einen Datenspeicher hinzugefügt werden.
+
+Fügen Sie SAN- und NAS-Datastores hinzu, aber nicht VSAN oder VVOL Datastores.
+
+.Schritte
+. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und navigieren Sie zu der VM oder dem Datastore, den Sie hinzufügen möchten.
+. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf die VM oder den Datenspeicher, wählen Sie in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *zur Ressourcengruppe hinzufügen* aus.
++
+Das System überprüft zunächst, ob SnapCenter verwaltet und mit dem Speichersystem kompatibel ist, auf dem sich die ausgewählte VM befindet, und zeigt dann die Seite *zur Ressourcengruppe hinzufügen* an. Wenn die Meldung angezeigt wird `SnapCenter Compatibility Error` Wird angezeigt, dann ist die ausgewählte VM nicht mit SnapCenter kompatibel und Sie müssen zuerst die entsprechende Storage-VM zu SnapCenter hinzufügen.
+
+. Wählen Sie auf der Seite *zu Ressourcengruppe hinzufügen* eine Ressourcengruppe aus und klicken Sie dann auf *OK*.
++
+Wenn Sie auf *OK* klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten VMs oder Datastores befinden.
+
++
+Wenn die Meldung angezeigt wird `Selected <resource-name> is not SnapCenter compatible` Wird angezeigt, dann ist eine ausgewählte VM oder ein ausgewählter Datastore nicht mit SnapCenter kompatibel. Siehe link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Managen Sie Fehler bei der Kompatibilitätsprüfung"] Finden Sie weitere Informationen.
+
+

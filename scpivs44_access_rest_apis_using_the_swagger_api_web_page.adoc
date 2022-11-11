@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
+keywords:  
+summary: REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen, sowie einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs, um Sicherungsvorgänge für VMs und Datastores durchzuführen. 
+---
+= Greifen Sie über die Swagger API-Webseite auf REST-APIs zu
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um entweder den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen und einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs zur Durchführung von Vorgängen bei VMs und Datastores.
+
+Das Plug-in hat verschiedene Swagger-Webseiten von den SnapCenter-Serverdolch-Webseiten.
+
+Beim SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie entweder die IP-Adresse oder den Host-Namen des SnapCenter VMware Plug-ins kennen.
+
+
+NOTE: Das Plug-in unterstützt nur REST APIs zur Integration mit Applikationen anderer Anbieter. PowerShell Commandlets oder CLI werden nicht unterstützt.
+
+.Schritte
+. Geben Sie in einem Browser die URL ein, um auf die Plug-in Swagger Webseite zuzugreifen:
++
+`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html`
+
++
+
+IMPORTANT: Verwenden Sie nicht die folgenden Zeichen in DER REST-API-URL: +, . , % Und &.
+
++
+Zugriff auf die SnapCenter VMware Plug-in REST-APIs:
+
++
+`https://192.0.2.82:8144/api/swagger-ui.html`
+`https://OVAhost:8144/api/swagger-ui.html`
+
++
+Melden Sie sich mit dem vCenter-Authentifizierungsmechanismus an, um das Token zu generieren.
+
+. Klicken Sie auf einen API-Ressourcentyp, um die APIs in diesem Ressourcentyp anzuzeigen.
+

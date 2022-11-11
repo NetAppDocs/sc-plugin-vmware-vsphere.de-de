@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_attach_vmdks_to_a_vm.html 
+keywords:  
+summary: Sie können eine oder mehrere VMDKs aus einem Backup an die übergeordnete VM oder an eine alternative VM auf demselben ESXi Host oder an eine alternative VM auf einem alternativen ESXi Host anschließen, der im verknüpften Modus von demselben vCenter oder einem anderen vCenter gemanagt wird. VMs in herkömmlichen Datenspeichern und in vVol Datastores werden unterstützt. 
+---
+= Weisen Sie VMDKs an eine VM oder vVol VM zu
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können eine oder mehrere VMDKs aus einem Backup an die übergeordnete VM oder an eine alternative VM auf demselben ESXi Host oder an eine alternative VM auf einem alternativen ESXi Host anschließen, der im verknüpften Modus von demselben vCenter oder einem anderen vCenter gemanagt wird. VMs in herkömmlichen Datenspeichern und in vVol Datastores werden unterstützt.
+
+Somit ist es einfacher, eine oder mehrere einzelne Dateien von einem Laufwerk wiederherzustellen, anstatt das gesamte Laufwerk wiederherzustellen. Sie können die VMDK trennen, nachdem Sie die Dateien wiederhergestellt haben oder auf die Sie zugreifen möchten.
+
+Sie haben die folgenden Zusatzoptionen:
+
+* Sie können virtuelle Laufwerke von einem primären oder einem sekundären Backup hinzufügen.
+* Sie können virtuelle Laufwerke an die übergeordnete VM (die gleiche VM, mit der die virtuelle Festplatte ursprünglich verknüpft war) oder an eine andere VM auf demselben ESXi-Host anschließen.
+
+
+Die folgenden Einschränkungen gelten für das Anbinden virtueller Laufwerke:
+
+* Vorgänge zum Verbinden und Trennen werden für VM-Vorlagen nicht unterstützt.
+* Sind mehr als 15 VMDKs an einen iSCSI-Controller angeschlossen, kann die Virtual Machine für das SnapCenter Plug-in für VMware vSphere aufgrund der Einschränkungen von VMware keine VMDK-Gerätenummern über 15 finden.
++
+Fügen Sie in diesem Fall die SCSI-Controller manuell hinzu, und versuchen Sie es erneut.
+
+* Sie können keine virtuelle Festplatte manuell anschließen, die als Teil eines Wiederherstellungsvorgangs für die Gastdatei angehängt oder angehängt wurde.
+* Verbinden Sie VMDKs über den Standard-SCSI-Controller und stellen Sie Wiederherstellungsvorgänge her. VMDKs, die mit einem NVME-Controller an eine VM angeschlossen sind, werden gesichert, doch für Anschluss- und Restore-Vorgänge werden sie über einen SCSI-Controller zurückverbunden.
+
+
+.Schritte
+. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Hosts und Cluster* aus.
+. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *virtuelles Laufwerk anhängen* aus.
++
+image:scpivs44_image22.png["Fehler: Fehlendes Grafikbild"]
+
+. Wählen Sie im Fenster *Virtuelles Laufwerk anhängen* im Abschnitt *Sicherung* ein Backup aus.
++
+Sie können die Sicherungsliste filtern, indem Sie auf klicken image:scpivs44_image41.png["Fehler: Fehlendes Grafikbild"] Filtern Sie das Symbol und wählen Sie ein Datum und einen Zeitbereich aus. Wählen Sie aus, ob Backups mit VMware Snapshot Kopien, ob gemountete Backups oder der Speicherort gespeichert werden sollen. Klicken Sie auf *OK*.
+
+. Wählen Sie im Abschnitt *Select Disks* ein oder mehrere Festplatten aus, die Sie verbinden möchten, und den Speicherort, an den Sie anschließen möchten (primäre oder sekundäre).
++
+Sie können den Filter so ändern, dass primäre und sekundäre Standorte angezeigt werden.
+
+. Standardmäßig sind die ausgewählten virtuellen Laufwerke an die übergeordnete VM angeschlossen. Klicken Sie hier, um die ausgewählten virtuellen Laufwerke an eine alternative VM im selben ESXi-Host anzuhängen und geben Sie die alternative VM an.
+. Klicken Sie Auf *Anhängen*.
+. Optional: Überwachen Sie den Arbeitsfortschritt im Abschnitt * Letzte Aufgaben*.
++
+Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
+
+. Stellen Sie sicher, dass das virtuelle Laufwerk angeschlossen ist, indem Sie Folgendes durchführen:
++
+.. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+.. Klicken Sie im linken Navigator-Fenster mit der rechten Maustaste auf eine VM und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
+.. Erweitern Sie im Fenster *Einstellungen bearbeiten* die Liste für jede Festplatte, um die Liste der Festplattendateien anzuzeigen.
++
+image:scpivs44_image23.png["Fehler: Fehlendes Grafikbild"]
+
++
+Auf der Seite „Einstellungen bearbeiten“ werden die Festplatten auf der VM aufgeführt. Sie können die Details für jede Festplatte erweitern, um die Liste der verbundenen virtuellen Laufwerke anzuzeigen.
+
+
+
+
+
+Sie können vom Host-Betriebssystem auf die angeschlossenen Laufwerke zugreifen und die erforderlichen Informationen von den Festplatten abrufen.

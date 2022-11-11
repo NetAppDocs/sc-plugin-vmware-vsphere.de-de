@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_add_storage.html 
+keywords:  
+summary:  
+---
+= Erweitern Sie Ihren Storage
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Storage Systems* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
+. Geben Sie im Dialogfeld Add Storage System die grundlegenden SVM- oder Clusterinformationen ein, und klicken Sie dann auf *Add*.
+

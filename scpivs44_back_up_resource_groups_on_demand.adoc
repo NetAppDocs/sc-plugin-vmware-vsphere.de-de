@@ -1,0 +1,36 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_back_up_resource_groups_on_demand.html 
+keywords:  
+summary: Backup-Vorgänge werden für alle in einer Ressourcengruppe definierten Ressourcen durchgeführt. Wenn eine Ressourcengruppe über eine Richtlinie und einen konfigurierten Zeitplan verfügt, werden die Backups automatisch gemäß dem Zeitplan durchgeführt. 
+---
+= Bei Bedarf das Sichern von Ressourcengruppen sichern
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Backup-Vorgänge werden für alle in einer Ressourcengruppe definierten Ressourcen durchgeführt. Wenn eine Ressourcengruppe über eine Richtlinie und einen konfigurierten Zeitplan verfügt, werden die Backups automatisch gemäß dem Zeitplan durchgeführt.
+
+Sie müssen eine Ressourcengruppe mit einer angehängten Richtlinie erstellt haben.
+
+
+IMPORTANT: Starten Sie keinen On-Demand Backup-Job, wenn bereits ein Job zum Sichern der SnapCenter VMware Plug-in MySQL Datenbank ausgeführt wird. Verwenden Sie die Wartungskonsole, um den konfigurierten Backup-Zeitplan für die MySQL-Datenbank anzuzeigen.
+
+In früheren Versionen der Virtual Storage Console (VSC) können Sie ein On-Demand-Backup durchführen, ohne einen Backup-Job für eine VM oder einen Datastore konfigurieren zu müssen. Für das SnapCenter-VMware-Plug-in müssen sich VMs und Datastores jedoch vor der Durchführung von Backups in einer Ressourcengruppe befinden.
+
+.Schritte
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Resource Groups*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie dann auf image:scpivs44_image38.png["Fehler: Fehlendes Grafikbild"] *Jetzt ausführen* um die Sicherung zu starten.
++
+image:scpivs44_image20.png["Fehler: Fehlendes Grafikbild"]
+
+. Wenn die Ressourcengruppe mehrere Richtlinien konfiguriert hat, wählen Sie im Dialogfeld *Jetzt sichern* die Richtlinie aus, die Sie für diesen Sicherungsvorgang verwenden möchten.
+. Klicken Sie auf *OK*, um die Sicherung zu starten.
+. Optional: Überwachen Sie den Betriebsfortschritt, indem Sie unten im Fenster auf *Letzte Aufgaben* oder auf dem Dashboard *Job Monitor* klicken, um weitere Informationen zu erhalten. .Result
+
+
+Wenn der Quiesce-Vorgang für eine der VMs im Backup fehlschlägt, dann wird der Backup mit einer Warnung abgeschlossen und als nicht VM konsistent markiert, auch wenn für die ausgewählte Richtlinie die VM-Konsistenz ausgewählt ist. In diesem Fall ist es möglich, dass einige der VMs erfolgreich stillgelegt wurden. In der Job-Überwachung zeigt die Detailbeschreibung für fehlgeschlagene VM das Quiesce als fehlgeschlagen an.

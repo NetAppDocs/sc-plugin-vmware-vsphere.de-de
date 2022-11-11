@@ -1,0 +1,18 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_deployment_workflow_for_existing_users.html 
+keywords:  
+summary: Sie können diesen Workflow verwenden, wenn Sie SnapCenter Benutzer sind und über SnapCenter-Backups verfügen. 
+---
+= Implementierungs-Workflow für vorhandene Benutzer
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Wenn Sie SnapCenter Benutzer sind und über SnapCenter-Backups verfügen, können Sie mit dem folgenden Workflow beginnen.
+
+image:scpivs44_image3.png["Fehler: Fehlendes Grafikbild"]

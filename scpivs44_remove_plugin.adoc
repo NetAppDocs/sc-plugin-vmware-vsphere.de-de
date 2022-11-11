@@ -1,0 +1,45 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_remove_plugin.html 
+keywords:  
+summary: Wenn Sie die Datensicherungsfunktionen von SnapCenter nicht mehr verwenden müssen, müssen Sie das SnapCenter VMware Plug-in deaktivieren, um es von vCenter aus wiederzuregistrieren, dann das SnapCenter VMware Plug-in aus vCenter zu entfernen und übrig gebliebene Dateien manuell zu löschen. 
+---
+= Entfernen Sie das SnapCenter Plug-in für VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie die Datensicherungsfunktionen von SnapCenter nicht mehr verwenden müssen, müssen Sie das SnapCenter VMware Plug-in deaktivieren, um es von vCenter aus wiederzuregistrieren, dann das SnapCenter VMware Plug-in aus vCenter zu entfernen und übrig gebliebene Dateien manuell zu löschen.
+
+.Bevor Sie beginnen
+* Sie müssen über Administratorrechte verfügen.
+* Stellen Sie sicher, dass keine SnapCenter-Jobs ausgeführt werden.
+
+
+.Schritte
+. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `https://<OVA-IP-address>:8080`.
++
+Die IP des SnapCenter-VMware-Plug-ins wird bei der Bereitstellung des Plug-ins angezeigt.
+
+. Klicken Sie im linken Navigationsbereich auf *Konfiguration* und dann im Abschnitt *Plug-in-Details* auf die Option Service, um das Plug-in zu deaktivieren.
+. Melden Sie sich bei VMware vSphere an.
+. Klicken Sie im linken Navigationsbildschirm mit der rechten Maustaste auf die Instanz des SnapCenter-VMware-Plug-ins (der Name des `.ova` Datei, die verwendet wurde, wenn die virtuelle Appliance bereitgestellt wurde) und wählen Sie *Löschen von Datenträger*.
+. Navigieren Sie zu `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` Und die folgenden Dateien im Pickup-Ordner des vCenter-Servers manuell löschen:
++
+`vsc-httpclient3-security.jar`
+`scv-api-model.jar`
+`scvm_webui_service.jar`
+`scvm_webui_ui.war`
+`gson-2.5.jar`
+
+. Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung anderer SnapCenter Plug-ins für applikationskonsistente Backups verwendet haben, melden Sie sich bei SnapCenter an und entfernen Sie den vSphere Host.
+
+
+Die virtuelle Appliance wird weiterhin bereitgestellt, das SnapCenter VMware Plug-in wird jedoch entfernt.
+
+Nach dem Entfernen der Host-VM für das SnapCenter-VMware-Plug-in bleibt das Plug-in möglicherweise bis zur Aktualisierung des lokalen vCenter Caches im vCenter verfügbar. Da das Plug-in entfernt wurde, können auf diesem Host jedoch keine SnapCenter VMware vSphere Vorgänge durchgeführt werden. Wenn Sie den lokalen vCenter-Cache aktualisieren möchten, stellen Sie zunächst sicher, dass sich die Appliance auf der Konfigurationsseite des SnapCenter VMware Plug-ins in einem deaktivierten Zustand befindet, und starten Sie dann den vCenter Web-Client-Service neu.

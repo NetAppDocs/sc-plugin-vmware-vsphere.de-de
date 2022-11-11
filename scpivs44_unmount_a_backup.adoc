@@ -1,0 +1,31 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_unmount_a_backup.html 
+keywords:  
+summary: Sie können die Bereitstellung eines Backups aufheben, wenn Sie nicht mehr auf die Dateien im Datastore zugreifen müssen. 
+---
+= Heben Sie die Bereitstellung eines Backups auf
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die Bereitstellung eines Backups aufheben, wenn Sie nicht mehr auf die Dateien im Datastore zugreifen müssen.
+
+Wenn ein Backup als in der VMware vSphere Web-Client-GUI eingebunden aufgeführt ist, aber nicht im unmounted Backup-Bildschirm aufgeführt ist, müssen Sie die REST-API verwenden `/backup/{backup-Id}/cleanup` Um die Out-of-gebundene Datastores zu bereinigen und dann die Unmount-Prozedur erneut zu versuchen.
+
+Wenn Sie versuchen, eine Backup-Kopie eines NFS-Datenspeichers auf einer Storage-VM (SVM) mit dem Root-Volume in einer Mirror-Beziehung zur Lastverteilung bereitzustellen, kann dies möglicherweise zu einem Fehler führen `You may have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` Um dieses Problem zu vermeiden, ändern Sie die Einstellung für maximale Volumes, indem Sie zu *ESX* > *Verwalten* > *Einstellungen* > *Advance System Settings* navigieren und den Wert NFS.MaxVolumes ändern. Der maximale Wert ist 256.
+
+.Schritte
+. Klicken Sie im VMware vSphere Web-Client in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
+. Klicken Sie im linken Navigator-Fenster mit der rechten Maustaste auf einen Datenspeicher, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste Unmount aus.
++
+
+IMPORTANT: Stellen Sie sicher, dass Sie den richtigen Datastore zum Aufheben der Bereitstellung auswählen. Andernfalls können Sie Auswirkungen auf die Produktionsarbeit haben.
+
+. Wählen Sie im Dialogfeld *geklonter Datastore* einen Datastore aus, aktivieren Sie das Kontrollkästchen *Unmount the geklonten Datastore* und klicken Sie dann auf *Unmount*.
+

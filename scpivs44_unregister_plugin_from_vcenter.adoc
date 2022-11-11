@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_unregister_plugin_from_vcenter.html 
+keywords:  
+summary: Wenn Sie den SnapCenter VMware Plug-in-Service in einem vCenter beenden, das sich im verknüpften Modus befindet, sind Ressourcengruppen in allen verknüpften vCenters nicht verfügbar, selbst wenn der SnapCenter VMware Plug-in-Service in den anderen verknüpften vCenters ausgeführt wird. Sie müssen die SnapCenter-VMware-Plug-in-Erweiterungen manuell aufheben. 
+---
+= Heben Sie das SnapCenter Plug-in für VMware vSphere vom vCenter ab
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Wenn Sie den SnapCenter VMware Plug-in-Service in einem vCenter beenden, das sich im verknüpften Modus befindet, sind Ressourcengruppen in allen verknüpften vCenters nicht verfügbar, selbst wenn der SnapCenter VMware Plug-in-Service in den anderen verknüpften vCenters ausgeführt wird.
+
+Sie müssen die SnapCenter-VMware-Plug-in-Erweiterungen manuell aufheben.
+
+.Schritte
+. Navigieren Sie im verknüpften vCenter mit dem SnapCenter-VMware-Plug-in-Service angehalten zum Managed Object Reference (MOB)-Manager.
+. Wählen Sie in der Option Eigenschaften in der Spalte Wert die Option *Inhalt* aus, und wählen Sie dann im nächsten Bildschirm in der Spalte Wert die Option *ExtensionManager* aus, um eine Liste der registrierten Erweiterungen anzuzeigen.
+. Deaktivieren Sie die Registrierung der Erweiterungen `com.netapp.scvm.webclient` Und `com.netapp.aegis`.
+

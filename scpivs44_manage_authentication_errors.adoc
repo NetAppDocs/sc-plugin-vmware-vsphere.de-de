@@ -1,0 +1,22 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_authentication_errors.html 
+keywords:  
+summary: Wenn Sie die Administratoranmeldedaten nicht verwenden, erhalten Sie möglicherweise einen Authentifizierungsfehler nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere oder nach der Migration. Wenn ein Authentifizierungsfehler auftritt, müssen Sie den Dienst neu starten. 
+---
+= Management von Authentifizierungsfehlern
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie die Administratoranmeldedaten nicht verwenden, erhalten Sie möglicherweise einen Authentifizierungsfehler nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere oder nach der Migration. Wenn ein Authentifizierungsfehler auftritt, müssen Sie den Dienst neu starten.
+
+.Schritte
+. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `https://<OVA-IP-address>:8080.`
+. Starten Sie den Dienst neu.
+

@@ -1,0 +1,57 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflow__restore_vmdks.html 
+keywords:  
+summary: Um Restore-Vorgänge für VMDKs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
+---
+= REST-API-Workflow zur Wiederherstellung von VMDKs
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um Restore-Vorgänge für VMDKs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
+
+Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+
+|===
+| Schritt | REST API | Kommentare 
+
+
+| 1 | Gehen Sie zu `http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, in der sich die VMDK befindet. 
+
+
+| 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Ruft eine Liste von Backups für die angegebene VM ab. Übergeben Sie den *moref* von Schritt 1. Beachten Sie die *Backupid* des Backups, das Sie wiederherstellen möchten. 
+
+
+| 3 | `/4.1/vm/backups/{backupId}/
+snapshotlocations` | `Get snapshot locations` Ruft den Speicherort der Snapshot-Kopie für das angegebene Backup ab. Übergeben Sie die *Backupid* aus Schritt 2. Beachten Sie die *snapshotStandorteList* Informationen. 
+
+
+| 4 | `/4.1/vm/{moref}/backups/
+vmdklocations` | `Get Vmdk Locations` Ruft eine Liste von VMDKs für die angegebene VM ab. Beachten Sie die *vmdk-StandorteList*-Informationen. 
+
+
+| 5 | `/4.1/vm/{ moref}/backups/
+{backupId}/
+availabledatastores` | `Get Available Datastores` Ruft eine Liste von Datenspeichern ab, die für den Wiederherstellungsvorgang verfügbar sind. Übergeben Sie den *moref* von Schritt 1. Übergeben Sie die *Backupid* aus Schritt 2. Beachten Sie die *DatastoreNameList*-Informationen. 
+
+
+| 6 | `/4.1/vm/{moref}/backups/
+availableesxhosts` | `Get available ESX Hosts` Ruft die Informationen für den Host ab, auf dem das Backup gespeichert ist. Übergeben Sie den *moref* von Schritt 1. Beachten Sie die *verfügbarEsxHostsList* Informationen. 
+
+
+| 7 | `/4.1/vm/{moref}/backups/
+{backupId}/restorevmdks`  a| 
+`Restore a VMDK from a backup` Stellt die angegebene VMDK aus dem angegebenen Backup wieder her. Geben Sie im Attribut *esxHost* die Informationen aus *availEsxHostsList* in Schritt 6 weiter. Geben Sie die Informationen von den Schritten 3 bis 5 an das Attribut *VMDKs RestoreLocations* weiter:
+
+* Geben Sie im Attribut RestoresFromLocation die Informationen aus snapshotStandorteList in Schritt 3 weiter.
+* Geben Sie im Attribut VMDKs-ToRestore die Informationen aus VMDKs-StandorteList in Schritt 4 weiter.
+* Geben Sie im Attribut restoreToDatastore die Informationen aus DatastoreNameList in Schritt 5 weiter.
+
+
+|===

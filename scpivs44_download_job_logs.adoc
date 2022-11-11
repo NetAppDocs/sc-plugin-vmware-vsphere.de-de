@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_download_job_logs.html 
+keywords:  
+summary: Sie können die Jobprotokolle von der Registerkarte Job Monitor auf dem Dashboard des SnapCenter VMware vSphere Web-Client herunterladen. 
+---
+= Job-Protokolle herunterladen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können die Jobprotokolle von der Registerkarte Job Monitor auf dem Dashboard des SnapCenter VMware vSphere Web-Client herunterladen.
+
+Wenn bei der Verwendung des VMware vSphere Web-Clients ein unerwartetes Verhalten auftritt, können Sie mithilfe der Protokolldateien die Ursache identifizieren und das Problem lösen.
+
+
+NOTE: Der Standardwert für die Aufbewahrung von Jobprotokollen beträgt 30 Tage; der Standardwert für die Beibehaltung von Jobs beträgt 90 Tage. Job-Protokolle und Jobs, die älter als die konfigurierte Aufbewahrung sind, werden alle sechs Stunden gelöscht. Sie können die Konfiguration verwenden `jobs/cleanup` REST-APIs ändern, wie lange Jobs und Job-Logs aufbewahrt werden. Der Spülzeitplan kann nicht geändert werden.
+
+.Schritte
+. Klicken Sie im linken Navigator-Bereich des vSphere Web-Clients auf *Dashboard*, wählen Sie einen vCenter Server aus und klicken Sie dann auf die Registerkarte *Job Monitor*.
++
+image:scpivs44_image9.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf das image:scpivs44_image37.png["Fehler: Fehlendes Grafikbild"] Download-Symbol in der Titelleiste des Job-Monitors.
++
+Möglicherweise müssen Sie nach rechts blättern, um das Symbol zu sehen.
+
++
+Sie können auch auf einen Job doppelklicken, um auf das Fenster Job Details zuzugreifen und dann auf *Job Logs herunterladen* klicken.
+
+
+
+Job-Protokolle befinden sich auf dem Linux VM-Host, auf dem das SnapCenter VMware Plug-in bereitgestellt wird. Der Standard-Job-Log-Speicherort ist `/var/log/netapp`.
+
+Wenn Sie versucht haben, Jobprotokolle herunterzuladen, aber die Protokolldatei mit dem Namen in der Fehlermeldung gelöscht wurde, kann es zu folgendem Fehler kommen: `HTTP ERROR 500 Problem accessing /export-scv-logs`. Um diesen Fehler zu beheben, überprüfen Sie den Zugriffsstatus und die Berechtigungen für die Datei mit dem Namen in der Fehlermeldung und beheben Sie das Zugriffsproblem.

@@ -1,0 +1,46 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflows__create_and_modify_resource_groups.html 
+keywords:  
+summary: Zum Erstellen und Ändern von Gruppenoperationen über das SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen. 
+---
+= REST-API-Workflows zum Erstellen und Ändern von Ressourcengruppen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Zum Erstellen und Ändern von Gruppenoperationen über das SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen.
+
+Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+
+Gehen Sie zum Erstellen von Ressourcengruppen wie folgt vor:
+
+|===
+| Schritt | REST API | Kommentare 
+
+
+| 1 | `/4.1/policies` | `Get Policies` Ruft die Liste der VMware vSphere Web-Client-Richtlinien ab. Beachten Sie die *RichtlinieID*, die Sie beim Erstellen der Ressourcengruppe und der Richtlinie *Frequency* verwenden möchten. Wenn keine Richtlinien aufgeführt sind, verwenden Sie das `Create Policy` REST API zur Erstellung einer neuen Richtlinie 
+
+
+| 2 | `/4.1/resource-groups` | `Create a Resource Group` Erstellt eine Ressourcengruppe mit der angegebenen Richtlinie. Geben Sie die *RichtlinieID* aus Schritt 1 ein und geben Sie zusätzlich zu allen anderen erforderlichen Attributen die Richtlinie *Frequenz*-Details ein. 
+|===
+Gehen Sie wie folgt vor, um Ressourcengruppen zu ändern:
+
+|===
+| Schritt | REST API | Kommentare 
+
+
+| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Ruft die Liste der Ressourcengruppen von VMware vSphere Web-Clients ab. Beachten Sie die *resourceGroupID*, die Sie ändern möchten. 
+
+
+| 2 | `/4.1/policies` | Wenn Sie die zugewiesenen Richtlinien ändern möchten, `Get Policies` Ruft die Liste der VMware vSphere Web-Client-Richtlinien ab. Beachten Sie die *Policy ID*, die Sie beim Ändern der Ressourcengruppe und der Richtlinie *Frequency* verwenden möchten. 
+
+
+| 3 | `/4.1/resource-groups/
+{resouceGroupId}` | `Update a Resource Group` Ändert die angegebene Ressourcengruppe. Übergeben Sie die *resourceGroupID* von Schritt 1. Übergeben Sie optional die *policyID* aus Schritt 2 und geben Sie zusätzlich zu allen anderen erforderlichen Attributen die *Frequency*-Details ein. 
+|===

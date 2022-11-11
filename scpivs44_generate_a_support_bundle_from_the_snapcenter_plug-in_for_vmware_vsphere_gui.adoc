@@ -1,0 +1,34 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html 
+keywords:  
+summary: Über das SnapCenter Plug-in für VMware vSphere können Sie ein Support Bundle generieren. 
+---
+= Generieren Sie ein Support Bundle aus dem SnapCenter Plug-in für VMware vSphere
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um sich beim SnapCenter Plug-in für die Management-GUI von VMware vSphere anzumelden, müssen Sie die IP-Adresse und die Anmeldedaten kennen.
+
+* Die IP-Adresse wurde bei der Bereitstellung des SnapCenter-VMware-Plug-ins angezeigt.
+* Verwenden Sie die Login-Anmeldedaten, die bei der Bereitstellung des SnapCenter VMware Plug-ins oder einer späteren Änderung zur Verfügung gestellt werden.
+
+
+.Schritte
+. Melden Sie sich im SnapCenter Plug-in für VMware vSphere an.
++
+Verwenden Sie das Format `https://<OVA-IP-address>:8080`.
+
+. Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
++
+image:scpivs44_image10.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Support* auf *Support* Paket generieren.
+. Nachdem das Support Bundle generiert wurde, klicken Sie auf den Link, der zur Verfügung steht, um das Bundle auf NetApp herunterzuladen.
+

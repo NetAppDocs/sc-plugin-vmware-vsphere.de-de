@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_modify_the_time_zones.html 
+keywords:  
+summary: Wenn Sie einen Backup-Zeitplan für ein SnapCenter-Plug-in für VMware vSphere Ressourcengruppe konfigurieren, wird automatisch der Zeitplan für die Zeitzone festgelegt, in der das SnapCenter VMware Plug-in bereitgestellt wird. Diese Zeitzone können Sie mit dem SnapCenter Plug-in für VMware vSphere Management-GUI oder der Wartungskonsole ändern. 
+---
+= Ändern der Zeitzonen für Backups
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+Wenn Sie einen Backup-Zeitplan für ein SnapCenter-Plug-in für VMware vSphere Ressourcengruppe konfigurieren, wird automatisch der Zeitplan für die Zeitzone festgelegt, in der das SnapCenter VMware Plug-in bereitgestellt wird. Diese Zeitzone können Sie mit dem SnapCenter Plug-in für VMware vSphere Management-GUI oder der Wartungskonsole ändern.
+
+Sie müssen die IP-Adresse und die Anmeldedaten für das SnapCenter Plug-in für die Management-GUI von VMware vSphere kennen.
+
+* Die IP-Adresse wurde bei der Bereitstellung des SnapCenter-VMware-Plug-ins angezeigt.
+* Verwenden Sie die Login-Anmeldedaten, die bei der Bereitstellung des SnapCenter VMware Plug-ins oder einer späteren Änderung zur Verfügung gestellt werden.
+
+
+.Schritte
+. Melden Sie sich bei der Management-GUI von SnapCenter VMware Plug-in an.
++
+Verwenden Sie das Format `https://<appliance-IP-address>:8080`
+
+. Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
++
+image:scpivs44_image28.jpg["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Datum und Uhrzeit* auf *Bearbeiten*.
+. Wählen Sie die neue Zeitzone aus und klicken Sie auf *Speichern*.
++
+Die neue Zeitzone wird für alle Backups verwendet, die vom SnapCenter VMware Plug-in durchgeführt werden.
+
+

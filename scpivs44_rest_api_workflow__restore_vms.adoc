@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_rest_api_workflow__restore_vms.html 
+keywords:  
+summary: Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
+---
+= REST-API-Workflow zur Wiederherstellung von VMs
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
+
+Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+
+|===
+| Schritt | REST API | Kommentare 
+
+
+| 1 | Gehen Sie zu `http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, die Sie wiederherstellen möchten. 
+
+
+| 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Ruft eine Liste von Backups für die angegebene VM ab. Übergeben Sie den *moref* von Schritt 1. Beachten Sie die *Backupid* des Backups, das Sie wiederherstellen möchten. 
+
+
+| 3 | `/4.1/vm/backups/{backupId}/
+snapshotlocations` | `Get snapshot locations` Ruft den Speicherort der Snapshot-Kopie für das angegebene Backup ab. Übergeben Sie die *Backupid* aus Schritt 2. Beachten Sie die *snapshotStandorteList* Informationen. 
+
+
+| 4 | `/4.1/vm/{moref}/backups/
+availableesxhosts` | `Get available ESX Hosts` Ruft die Informationen für den Host ab, auf dem das Backup gespeichert ist. Beachten Sie die *verfügbarEsxHostsList* Informationen. 
+
+
+| 5 | `/4.1/vm/{moref}/backups/
+{backupId}/restore`  a| 
+`Restore a VM from a backup` Stellt das angegebene Backup wieder her. Geben Sie die Informationen aus den Schritten 3 und 4 im Attribut *restoreLocations* weiter.
+
+
+NOTE: Wenn es sich bei der VM-Sicherung um ein partielles Backup handelt, legen Sie den fest `restartVM` Parameter auf „false“.
+
+
+NOTE: Sie können keine VM wiederherstellen, die eine Vorlage ist.
+
+|===

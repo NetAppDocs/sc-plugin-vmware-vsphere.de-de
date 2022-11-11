@@ -1,0 +1,40 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_back_up_the_snapcenter_plug-in_for_vmware_vsphere_mysql_database.html 
+keywords:  
+summary: 'Das SnapCenter VMware Plug-in beinhaltet eine MySQL-Datenbank (auch als NSM-Datenbank bezeichnet), die die Metadaten für alle vom Plug-in ausgeführten Aufgaben enthält. Sie sollten dieses Repository regelmäßig sichern.' 
+---
+= Sichern Sie das SnapCenter Plug-in für VMware vSphere MySQL Datenbank
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Das SnapCenter VMware Plug-in beinhaltet eine MySQL-Datenbank (auch als NSM-Datenbank bezeichnet), die die Metadaten für alle vom Plug-in ausgeführten Aufgaben enthält. Sie sollten dieses Repository regelmäßig sichern.
+
+Sie sollten zudem ein Backup des Repositorys vor Migrationen oder Upgrades durchführen.
+
+Starten Sie keinen Job zum Backup der MySQL Datenbank, wenn bereits ein On-Demand-Backup ausgeführt wird.
+
+.Schritte
+. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten* *oder Webkonsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
++
+image:scpivs44_image21.png["Fehler: Fehlendes Grafikbild"]
+
+. Geben Sie im Hauptmenü die Option *1) Anwendungskonfiguration ein.*
+. Geben Sie im Menü Anwendungskonfiguration die Option *6) MySQL-Sicherung und -Wiederherstellung ein.*
+. Geben Sie im Menü MySQL Backup and Restore Configuration die Option *1) MySQL Backup konfigurieren* ein.
+. Geben Sie an der Eingabeaufforderung den Backup-Speicherort für das Repository ein, die Anzahl der zu bewahrenden Backups und die Zeit, zu der das Backup gestartet werden soll.
++
+Alle Eingaben werden gespeichert, wenn Sie sie eingeben. Wenn die Nummer der Backup-Aufbewahrung erreicht ist, werden ältere Backups gelöscht, wenn neue Backups durchgeführt werden.
+
++
+
+TIP: Repository-Backups werden mit dem Namen „Backup-<date>“ benannt. Da die Repository-Wiederherstellungsfunktion nach dem Präfix „Backup“ sucht, sollten Sie es nicht ändern.
+
+

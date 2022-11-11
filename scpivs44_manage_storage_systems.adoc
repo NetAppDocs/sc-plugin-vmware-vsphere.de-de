@@ -1,0 +1,73 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_manage_storage_systems.html 
+keywords:  
+summary: Bevor Sie VMs oder Datastores über den VMware vSphere Web-Client sichern oder wiederherstellen können, müssen Sie den Storage hinzufügen. 
+---
+= Management von Storage-Systemen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Bevor Sie VMs oder Datastores über den VMware vSphere Web-Client sichern oder wiederherstellen können, müssen Sie den Storage hinzufügen.
+
+
+
+== Ändern Sie Storage-VMs
+
+Mit dem VMware vSphere Web-Client können Sie die Konfigurationen der Cluster und Storage-VMs, die im SnapCenter Plug-in für VMware vSphere registriert und für VM-Datensicherungsvorgänge verwendet werden, ändern.
+
+Wenn Sie eine Storage-VM ändern, die automatisch als Teil eines Clusters hinzugefügt wurde (manchmal auch als implizite Storage-VM bezeichnet), dann ändert sich diese Storage-VM in eine explizite Storage-VM und kann separat gelöscht werden, ohne die restlichen Storage-VMs in diesem Cluster zu ändern. Auf der Seite Storage Systems wird der Benutzername für implizite Storage VMs als „-“ angezeigt. Benutzernamen werden nur für explizite Storage VMs in der Cluster-Liste angezeigt und lassen das ExplicitSVM-Flag auf true setzen. Alle Storage-VMs werden immer unter dem zugehörigen Cluster aufgeführt.
+
+
+IMPORTANT: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgänge über die SnapCenter GUI hinzugefügt haben, müssen Sie diese Storage-VMs über dieselbe GUI ändern.
+
+.Schritte
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Storage Systems*.
+. Wählen Sie auf der Seite *Storage Systems* die zu bearbeitenden Speicher-VM aus und klicken Sie dann auf image:scpivs44_image25.png["Fehler: Fehlendes Grafikbild"] *Bearbeiten*.
+. Geben Sie im Fenster *Speichersystem bearbeiten* die neuen Werte ein und klicken Sie dann auf *Aktualisieren*, um die Änderungen anzuwenden.
++
+image:scpivs44_image26.png["Fehler: Fehlendes Grafikbild"]
+
+
+
+
+
+== Benennen Sie Storage-VMs um
+
+Wenn Sie eine VM umbenennen, nachdem Sie sie einer Ressourcengruppe hinzugefügt haben, wird der neue Name möglicherweise nicht auf der Seite Ressourcen angezeigt, da das SnapCenter-Plug-in für VMware vSphere die VM-UUID verwendet, nicht der Name.
+
+Gehen Sie wie folgt vor, um sicherzustellen, dass neue VM-Namen auf der Seite Ressourcen angezeigt werden.
+
+. Bearbeiten Sie die Ressourcengruppe, und entfernen Sie die VM.
+. Benennen Sie die VM um.
+. Fügen Sie die VM erneut der Ressourcengruppe hinzu.
+
+
+
+
+== Storage-VMs entfernen
+
+Sie können den VMware vSphere Web-Client verwenden, um Speicher-VMs aus dem Inventar in vCenter zu entfernen.
+
+
+NOTE: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgänge über die SnapCenter GUI hinzugefügt haben, müssen Sie diese Storage-VMs über dieselbe GUI ändern.
+
+Sie müssen alle Datenspeicher in der Storage-VM unmounten, bevor Sie die Storage-VM entfernen können.
+
+Wenn eine Ressourcengruppe Backups enthält, die sich auf einer Speicher-VM befinden, die Sie entfernen, dann schlagen nachfolgende Backups für diese Ressourcengruppe fehl.
+
+.Schritte
+. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Storage Systems*.
+. Wählen Sie auf der Seite *Storage Systems* die zu entfernenden Speicher-VM aus und klicken Sie dann auf *Löschen*.
+. Aktivieren Sie im Bestätigungsfeld *Speichersystem entfernen* das Kontrollkästchen für *Speichersysteme löschen* und klicken Sie dann zur Bestätigung auf *Ja*.
+. Wenn die entfernte Speicher-VM von einem ESXi 6.7-Server verwaltet wurde, müssen Sie den Web-Client-Service neu starten.
++
+link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere Web-Client-Service neu"].
+
+

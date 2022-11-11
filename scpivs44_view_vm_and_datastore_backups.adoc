@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_view_vm_and_datastore_backups.html 
+keywords:  
+summary: Wenn Sie das Backup oder die Wiederherstellung einer VM oder eines Datenspeichers vorbereiten, sollten Sie eventuell alle Backups sehen, die für die Ressource verfügbar sind, und die Details zu diesen Backups anzeigen. 
+---
+= Zeigen Sie VM- und Datastore-Backups an
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn Sie das Backup oder die Wiederherstellung einer VM oder eines Datenspeichers vorbereiten, sollten Sie eventuell alle Backups sehen, die für die Ressource verfügbar sind, und die Details zu diesen Backups anzeigen.
+
+Das Durchsuchen von großen Dateiordnern, z. B. 10k-Dateiordnern, kann beim ersten Mal ein oder mehrere Minuten dauern. Nachfolgende Browsersitzungen nehmen weniger Zeit in Anspruch.
+
+.Schritte
+. Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster*, wählen Sie dann eine VM aus, wählen Sie dann die Registerkarte *Konfigurieren* aus und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*.
++
+image:scpivs44_image14.png["Fehler: Fehlendes Grafikbild"]
+
+. Klicken Sie auf das Backup, das Sie anzeigen möchten.
+

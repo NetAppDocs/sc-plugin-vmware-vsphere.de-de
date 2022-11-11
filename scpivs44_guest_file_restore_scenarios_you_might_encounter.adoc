@@ -1,0 +1,49 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html 
+keywords:  
+summary: Beim Versuch, eine Gastdatei wiederherzustellen, treten möglicherweise Szenarien auf, in denen die Sitzung zur Wiederherstellung der Gastdatei leer ist, der Vorgang zur Wiederherstellung der Gastdatei schlägt fehl, oder die Backups werden nach dem Abbruch der Wiederherstellungssession für die Gastdatei nicht mehr getrennt. 
+---
+= Szenario zur Wiederherstellung von Gastdateien, in denen Sie möglicherweise auftreten können
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Beim Versuch, eine Gastdatei wiederherzustellen, kann es zu einem der folgenden Szenarien kommen.
+
+
+
+== Die Sitzung zur Wiederherstellung der Gastdatei ist leer
+
+Dieses Problem tritt auf, wenn Sie eine Gastdateiwiederherstellungssitzung erstellen und während diese Sitzung aktiv war, wird das Gastbetriebssystem neu gestartet. Wenn diese Funktion eintritt, bleiben VMDKs im Gastbetriebssystem möglicherweise offline. Wenn Sie versuchen, die Sitzung zur Wiederherstellung der Gastdatei zu durchsuchen, ist die Liste leer.
+
+Um das Problem zu beheben, legen Sie die VMDKs manuell wieder im Gastbetriebssystem online. Wenn die VMDKs online sind, wird in der Wiederherstellungssitzung der Gastdatei der korrekte Inhalt angezeigt.
+
+
+
+== Der Vorgang zum Wiederherstellen der Gastdatei schlägt fehl
+
+Dieses Problem tritt auf, wenn Sie eine Wiederherstellung einer Gastdatei starten, aber der Vorgang der angebundenen Festplatte schlägt fehl, obwohl VMware-Tools ausgeführt werden und die Anmeldedaten des Gastbetriebssystems korrekt sind. In diesem Fall wird der folgende Fehler zurückgegeben:
+
+`Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMWare tools is running properly on system and account used is Administrator account, Error is SystemError vix error codes = (3016, 0).`
+
+Um das Problem zu beheben, starten Sie den Windows-Dienst für VMware-Tools auf dem Gastbetriebssystem neu, und wiederholen Sie dann den Wiederherstellungsvorgang für die Gastdatei.
+
+
+
+== Gast-E-Mail zeigt ???? Für den Dateinamen
+
+Dieses Problem tritt auf, wenn Sie die Funktion zum Wiederherstellen von Gastdateien verwenden, um Dateien oder Ordner mit nicht-englischen Zeichen in den Namen wiederherzustellen und die E-Mail-Benachrichtigung „???????“ anzeigt. " Für die wiederhergestellten Dateinamen. Der E-Mail-Anhang enthält die Namen der wiederhergestellten Dateien und Ordner korrekt.
+
+
+
+== Backups werden nach dem Abbruch der Sitzung zur Wiederherstellung von Gastdateien nicht mehr getrennt
+
+Dieses Problem tritt auf, wenn Sie eine Gastdatei über ein VM-konsistentes Backup wiederherstellen. Während die Wiederherstellungssitzung für die Gastdatei aktiv ist, wird ein weiteres VM-konsistentes Backup für dieselbe VM durchgeführt. Wenn die Sitzung zur Wiederherstellung der Gastdatei getrennt wird, entweder manuell oder automatisch nach 24 Stunden, werden die Backups für die Sitzung nicht getrennt.
+
+Um das Problem zu beheben, trennen Sie die VMDKs, die an die aktive Gastdateiwiederherstellungssitzung angeschlossen wurden, manuell.

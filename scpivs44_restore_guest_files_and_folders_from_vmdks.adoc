@@ -1,0 +1,171 @@
+---
+sidebar: sidebar 
+permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html 
+keywords:  
+summary: Sie können eine oder mehrere Dateien oder Ordner von einer VMDK auf einem Windows Gastbetriebssystem wiederherstellen. 
+---
+= Wiederherstellung von Gastdateien und Ordnern über VMDKs
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Sie können eine oder mehrere Dateien oder Ordner von einer VMDK auf einem Windows Gastbetriebssystem wiederherstellen.
+
+Standardmäßig ist das verbundene virtuelle Laufwerk 24 Stunden lang verfügbar und wird automatisch getrennt. Sie können im Assistenten wählen, ob die Sitzung automatisch gelöscht wird, wenn der Wiederherstellungsvorgang abgeschlossen ist, oder Sie können die Gastdateiwiederherstellungssitzung jederzeit manuell löschen oder die Zeit auf der Seite *Gastkonfiguration* verlängern.
+
+Die Performance der Wiederherstellung von Gastdateien oder Ordnern hängt von zwei Faktoren ab: Der Größe der wiederherzustellenden Dateien oder Ordner und der Anzahl der wiederherzustellenden Dateien oder Ordner. Das Wiederherstellen einer großen Anzahl von kleinen Dateien kann sehr viel Zeit in Anspruch nehmen als erwartet, im Vergleich zur Wiederherstellung einer kleinen Anzahl großer Dateien, wenn der wiederherzustellende Datensatz von derselben Größe entspricht.
+
+
+IMPORTANT: Auf einer VM kann nur ein Attach- oder Restore-Vorgang gleichzeitig ausgeführt werden. Sie können auf derselben VM keine parallelen Attached- oder Restore-Vorgänge ausführen.
+
+
+IMPORTANT: Mit der Gastwiederherstellungsfunktion können Sie System- und verborgene Dateien anzeigen und wiederherstellen sowie verschlüsselte Dateien anzeigen. Versuchen Sie nicht, eine vorhandene Systemdatei zu überschreiben oder verschlüsselte Dateien in einem verschlüsselten Ordner wiederherzustellen. Während der Wiederherstellung bleiben die verborgenen, System- und verschlüsselten Attribute von Gastdateien nicht in der wiederhergestellten Datei erhalten. Das Anzeigen oder Durchsuchen von reservierten Partitionen kann zu einem Fehler führen.
+
+.Schritte
+. Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster* aus, wählen Sie dann eine VM aus, wählen Sie dann *NetApp SnapCenter* aus und klicken Sie dann auf *Wiederherstellung der Gastdatei*.
+. Klicken Sie im VMware vSphere Web-Client in der sekundären Dropdown-Liste auf *Guest File Restore*, um den Assistenten zu starten.
+. Geben Sie auf der Seite *Wiederherstellungsumfang* das Backup an, das das virtuelle Laufwerk enthält, das Sie anhängen möchten, indem Sie wie folgt vorgehen:
++
+.. Wählen Sie in der Tabelle *Backup Name* das Backup aus, das das virtuelle Laufwerk enthält, das Sie anhängen möchten.
+.. Wählen Sie in der Tabelle *VMDK* das virtuelle Laufwerk aus, das die Dateien oder Ordner enthält, die Sie wiederherstellen möchten.
+.. Wählen Sie in der Tabelle *Locations* den primären oder sekundären Speicherort des virtuellen Laufwerks aus, das Sie verbinden möchten.
+
+
+. Gehen Sie auf der Seite *Gästedetails* wie folgt vor.
++
+.. Wählen Sie, wo das virtuelle Laufwerk angeschlossen werden soll:
++
+|===
+| Wählen Sie diese Option… | Wenn… 
+
+
+| Verwenden Sie die Gast-VM  a| 
+Sie möchten das virtuelle Laufwerk an die VM anhängen, auf die Sie vor dem Start des Assistenten mit der rechten Maustaste geklickt haben, und dann die Anmeldedaten für die VM auswählen, auf die Sie mit der rechten Maustaste geklickt haben.
+
+
+NOTE: Für die VM müssen bereits Anmeldedaten erstellt werden.
+
+
+
+| Verwenden Sie die Proxy-VM zur Wiederherstellung der Gastdatei  a| 
+Sie möchten das virtuelle Laufwerk mit einer Proxy-VM verbinden und dann die Proxy-VM auswählen.
+
+
+NOTE: Die Proxy-VM muss konfiguriert werden, bevor der Anfügen- und Wiederherstellungsvorgang beginnt.
+
+|===
+.. Wählen Sie die Option *E-Mail-Benachrichtigung senden* aus.
++
+Diese Option ist erforderlich, wenn Sie benachrichtigt werden möchten, wenn der Anhängevorgang abgeschlossen ist, und das virtuelle Laufwerk verfügbar ist. Die Benachrichtigungs-E-Mail enthält den Namen des virtuellen Laufwerks, den VM-Namen und den neu zugewiesenen Laufwerksbuchstaben für die VMDK.
+
++
+
+TIP: Aktivieren Sie diese Option, da es sich bei der Wiederherstellung einer Gastdatei um einen asynchronen Vorgang handelt, und es kann zu einer Verzögerung bei der Festlegung einer Gastsitzung für Sie kommen.
+
++
+Diese Option verwendet die E-Mail-Einstellungen, die beim Einrichten des VMware vSphere Web-Clients in vCenter konfiguriert sind.
+
+
+
+. Überprüfen Sie die Zusammenfassung und klicken Sie dann auf *Fertig stellen*.
++
+Bevor Sie auf *Fertig stellen* klicken, können Sie zu einer beliebigen Seite im Assistenten zurückkehren und die Informationen ändern.
+
+. Warten Sie, bis der Attach-Vorgang abgeschlossen ist.
++
+Sie können den Fortschritt des Vorgangs in der Job-Überwachung des Dashboards anzeigen oder auf die E-Mail-Benachrichtigung warten.
+
+. Um die Dateien zu finden, die Sie von der angeschlossenen virtuellen Festplatte wiederherstellen möchten, klicken Sie auf *Menü > SnapCenter-Plug-in für VMware vSphere*, dann im linken Navigator-Bereich klicken Sie *Gastdateiwiederherstellung* und wählen Sie die Registerkarte *Gastkonfiguration*.
++
+In der Tabelle Gastsession Monitor können Sie zusätzliche Informationen zu einer Sitzung anzeigen, indem Sie auf *... klicken. *In der rechten Spalte.
+
+. Wählen Sie die Wiederherstellungssitzung der Gastdatei für das virtuelle Laufwerk aus, das in der Benachrichtigungs-E-Mail aufgeführt wurde.
++
+Allen Partitionen wird ein Laufwerksbuchstabe zugewiesen, einschließlich systemreservierter Partitionen. Wenn eine VMDK über mehrere Partitionen verfügt, können Sie ein bestimmtes Laufwerk auswählen, indem Sie das Laufwerk in der Dropdown-Liste im Laufwerkfeld oben auf der Seite „Durchsuchen der Gastdatei“ auswählen.
+
+. Klicken Sie auf das Symbol *Dateien durchsuchen*, um eine Liste von Dateien und Ordnern auf dem virtuellen Laufwerk anzuzeigen.
++
+Wenn Sie zum Durchsuchen und Auswählen einzelner Dateien auf einen Ordner doppelklicken, kann es zu einer bestimmten Zeit kommen, während die Liste der Dateien abgerufen wird, da der Abrufvorgang zur Laufzeit durchgeführt wird.
+
++
+Um das Durchsuchen zu vereinfachen, können Sie Filter in Ihrer Suchzeichenfolge verwenden. Bei den Filtern handelt es sich um Groß- und Kleinschreibung-Perlausdrücke ohne Leerzeichen. Der standardmäßige Suchstring lautet `.`*. Die folgende Tabelle zeigt ein Beispiel für Perl-Suchausdrücke.
+
++
+|===
+| Dieser Ausdruck… | Sucht nach… 
+
+
+| . | Alle Zeichen außer einem neuen Zeichen. 
+
+
+| .* | Beliebige Zeichenfolge. Dies ist die Standardeinstellung. 
+
+
+| A | Das Zeichen a. 
+
+
+| ab | Der String ab. 
+
+
+| Ein [vertikaler Balken] b | Das Zeichen A oder B. 
+
+
+| A* | Null oder mehr Instanzen des Zeichens a. 
+
+
+| A+ | Ein oder mehrere Instanzen des Zeichens a. 
+
+
+| A? | Null oder eine Instanz des Zeichens a. 
+
+
+| A{x} | Genau x Anzahl der Instanzen des Zeichens a. 
+
+
+| A{x,} | Mindestens x Anzahl der Instanzen des Zeichens a. 
+
+
+| A{x,y} | Mindestens x Anzahl der Instanzen des Zeichens A und höchstens y Zahl. 
+
+
+| \ | Entgeht einem besonderen Charakter. 
+|===
++
+Auf der Seite „Durchsuchen der Gastdatei“ werden alle verborgenen Dateien und Ordner sowie alle anderen Dateien und Ordner angezeigt.
+
+. Wählen Sie eine oder mehrere Dateien oder Ordner aus, die wiederhergestellt werden sollen, und klicken Sie dann auf *Speicherort wiederherstellen*.
++
+Die wiederherzustellenden Dateien und Ordner sind in der Tabelle Ausgewählte Dateien aufgeführt.
+
+. Geben Sie auf der Seite *Speicherort wiederherstellen* Folgendes an:
++
+|===
+| Option | Beschreibung 
+
+
+| Wiederherstellen des Pfads | Geben Sie den UNC-Freigabepfad zum Gast ein, auf dem die ausgewählten Dateien wiederhergestellt werden. IPv4-Beispiel: `\\10.60.136.65\c$`IPv6-Beispiel: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore` 
+
+
+| Wenn Originaldatei(en) vorhanden ist  a| 
+Wählen Sie die Aktion aus, die ausgeführt werden soll, wenn die wiederherzustellende Datei oder der wiederherzustellende Ordner bereits auf dem Wiederherstellungsziel vorhanden ist: Immer überschreiben oder immer überspringen.
+
+
+NOTE: Wenn der Ordner bereits vorhanden ist, wird der Inhalt des Ordners mit dem vorhandenen Ordner zusammengeführt.
+
+
+
+| Trennen Sie die Gastsitzung nach erfolgreicher Wiederherstellung | Wählen Sie diese Option aus, wenn die Wiederherstellungssitzung der Gastdatei gelöscht werden soll, wenn der Wiederherstellungsvorgang abgeschlossen ist. 
+|===
+. Klicken Sie Auf *Wiederherstellen*.
++
+Sie können den Fortschritt des Wiederherstellungsvorgangs in der Job-Überwachung des Dashboards anzeigen oder auf die E-Mail-Benachrichtigung warten. Die Zeit, die benötigt wird, bis die E-Mail-Benachrichtigung gesendet wird, hängt von der Dauer ab, die der Wiederherstellungsvorgang dauert.
+
++
+Die Benachrichtigungs-E-Mail enthält einen Anhang mit der Ausgabe aus dem Wiederherstellungsvorgang. Wenn der Wiederherstellungsvorgang fehlschlägt, öffnen Sie den Anhang, um weitere Informationen zu erhalten.
+
+
