@@ -54,6 +54,7 @@ Bevor Sie die VMDKs auf dieser VM wiederherstellen können, müssen Sie ein Back
 
 TIP: Um die Performance von Restore-Vorgängen in NFS-Umgebungen zu verbessern, aktivieren Sie vStorage API for Array Integration (VAAI) für VMware Applikation.
 
+.Über diese Aufgabe
 Sie können zwar keine Datenspeicher wiederherstellen, aber Sie können jede VM im Datastore wiederherstellen.
 
 Ein Wiederherstellungsvorgang kann fehlschlagen, wenn der Storage Tier der FabricPool, auf dem sich die VM befindet, nicht verfügbar ist.

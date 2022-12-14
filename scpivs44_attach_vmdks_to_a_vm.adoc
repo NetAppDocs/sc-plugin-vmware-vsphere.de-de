@@ -18,6 +18,7 @@ Sie können eine oder mehrere VMDKs aus einem Backup an die übergeordnete VM od
 
 Somit ist es einfacher, eine oder mehrere einzelne Dateien von einem Laufwerk wiederherzustellen, anstatt das gesamte Laufwerk wiederherzustellen. Sie können die VMDK trennen, nachdem Sie die Dateien wiederhergestellt haben oder auf die Sie zugreifen möchten.
 
+.Über diese Aufgabe
 Sie haben die folgenden Zusatzoptionen:
 
 * Sie können virtuelle Laufwerke von einem primären oder einem sekundären Backup hinzufügen.
@@ -70,4 +71,5 @@ Auf der Seite „Einstellungen bearbeiten“ werden die Festplatten auf der VM a
 
 
 
+.Ergebnis
 Sie können vom Host-Betriebssystem auf die angeschlossenen Laufwerke zugreifen und die erforderlichen Informationen von den Festplatten abrufen.

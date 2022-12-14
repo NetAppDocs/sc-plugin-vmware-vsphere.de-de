@@ -16,6 +16,7 @@ summary: Wenn Sie das Backup oder die Wiederherstellung einer VM oder eines Date
 [role="lead"]
 Wenn Sie das Backup oder die Wiederherstellung einer VM oder eines Datenspeichers vorbereiten, sollten Sie eventuell alle Backups sehen, die für die Ressource verfügbar sind, und die Details zu diesen Backups anzeigen.
 
+.Über diese Aufgabe
 Das Durchsuchen von großen Dateiordnern, z. B. 10k-Dateiordnern, kann beim ersten Mal ein oder mehrere Minuten dauern. Nachfolgende Browsersitzungen nehmen weniger Zeit in Anspruch.
 
 .Schritte

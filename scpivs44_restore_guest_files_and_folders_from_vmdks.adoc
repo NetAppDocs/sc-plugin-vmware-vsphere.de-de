@@ -16,6 +16,7 @@ summary: Sie können eine oder mehrere Dateien oder Ordner von einer VMDK auf ei
 [role="lead"]
 Sie können eine oder mehrere Dateien oder Ordner von einer VMDK auf einem Windows Gastbetriebssystem wiederherstellen.
 
+.Über diese Aufgabe
 Standardmäßig ist das verbundene virtuelle Laufwerk 24 Stunden lang verfügbar und wird automatisch getrennt. Sie können im Assistenten wählen, ob die Sitzung automatisch gelöscht wird, wenn der Wiederherstellungsvorgang abgeschlossen ist, oder Sie können die Gastdateiwiederherstellungssitzung jederzeit manuell löschen oder die Zeit auf der Seite *Gastkonfiguration* verlängern.
 
 Die Performance der Wiederherstellung von Gastdateien oder Ordnern hängt von zwei Faktoren ab: Der Größe der wiederherzustellenden Dateien oder Ordner und der Anzahl der wiederherzustellenden Dateien oder Ordner. Das Wiederherstellen einer großen Anzahl von kleinen Dateien kann sehr viel Zeit in Anspruch nehmen als erwartet, im Vergleich zur Wiederherstellung einer kleinen Anzahl großer Dateien, wenn der wiederherzustellende Datensatz von derselben Größe entspricht.

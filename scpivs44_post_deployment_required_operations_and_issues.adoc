@@ -113,4 +113,5 @@ NOTE: Sie müssen Linux für das Feld Authentifizierung auswählen.
 
 
 
+.Nachdem Sie fertig sind
 Wenn das SnapCenter-Plug-in für VMware vSphere-Anmeldedaten geändert werden, müssen Sie die Registrierung im SnapCenter-Server über die Seite SnapCenter Managed Hosts aktualisieren.

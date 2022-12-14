@@ -34,6 +34,7 @@ Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finde
 * Wenn Sie VM-konsistente Backups wünschen, müssen VMware Tools installiert und ausgeführt werden. Um VMs stillzulegen, sind VMware Tools erforderlich. VM-konsistente Backups werden für vVol VMs nicht unterstützt.
 
 
+.Über diese Aufgabe
 Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den folgenden Informationen werden einige der Felder beschrieben, für die Sie möglicherweise eine Anleitung benötigen.
 
 .Schritte

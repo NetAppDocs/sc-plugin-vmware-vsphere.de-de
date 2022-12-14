@@ -16,6 +16,7 @@ summary: Wenn das SnapCenter Plug-in für VMware vSphere bereitgestellt wird, wi
 [role="lead"]
 Wenn das SnapCenter Plug-in für VMware vSphere bereitgestellt wird, wird ein VMware vSphere Web-Client in vCenter installiert, der zusammen mit anderen vSphere Web-Clients im vCenter-Bildschirm angezeigt wird.
 
+.Bevor Sie beginnen
 Transport Layer Security (TLS) muss in vCenter aktiviert sein. Lesen Sie die VMware-Dokumentation.
 
 .Schritte

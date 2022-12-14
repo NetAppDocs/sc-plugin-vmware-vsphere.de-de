@@ -16,6 +16,7 @@ summary: Standardmäßig ist eine angeschlossene Gastdatei-Wiederherstellung VMD
 [role="lead"]
 Standardmäßig ist eine angeschlossene Gastdatei-Wiederherstellung VMDK für 24 Stunden verfügbar und wird automatisch getrennt. Sie können die Zeit auf der Seite *Gastkonfiguration* verlängern.
 
+.Über diese Aufgabe
 Es ist vielleicht möglich, eine Wiederherstellungssitzung für Gastdateien zu erweitern, wenn Sie zu einem späteren Zeitpunkt zusätzliche Dateien oder Ordner aus der beigefügten VMDK wiederherstellen möchten. Da allerdings für die Wiederherstellung von Gastdateien viele Ressourcen verwendet werden, sollte die Sitzungsdauer nur gelegentlich verlängert werden.
 
 .Schritte

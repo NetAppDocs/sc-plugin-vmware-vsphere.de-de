@@ -15,6 +15,7 @@ summary: Wenn Sie einen Backup-Zeitplan für ein SnapCenter-Plug-in für VMware 
 
 Wenn Sie einen Backup-Zeitplan für ein SnapCenter-Plug-in für VMware vSphere Ressourcengruppe konfigurieren, wird automatisch der Zeitplan für die Zeitzone festgelegt, in der das SnapCenter VMware Plug-in bereitgestellt wird. Diese Zeitzone können Sie mit dem SnapCenter Plug-in für VMware vSphere Management-GUI oder der Wartungskonsole ändern.
 
+.Bevor Sie beginnen
 Sie müssen die IP-Adresse und die Anmeldedaten für das SnapCenter Plug-in für die Management-GUI von VMware vSphere kennen.
 
 * Die IP-Adresse wurde bei der Bereitstellung des SnapCenter-VMware-Plug-ins angezeigt.

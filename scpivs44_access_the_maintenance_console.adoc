@@ -16,6 +16,7 @@ summary: Applikations-, System- und Netzwerkkonfigurationen können über die Wa
 [role="lead"]
 Applikations-, System- und Netzwerkkonfigurationen können über die Wartungskonsole für das SnapCenter Plug-in für VMware vSphere gemanagt werden. Sie können Ihr Administratorpasswort, das Wartungspasswort, das Generieren von Support Bundles und das Starten der Remote Diagnostics ändern.
 
+.Bevor Sie beginnen
 Bevor Sie das SnapCenter-Plug-in für VMware vSphere anhalten und neu starten, sollten Sie alle Zeitpläne unterbrechen.
 
 .Über diese Aufgabe

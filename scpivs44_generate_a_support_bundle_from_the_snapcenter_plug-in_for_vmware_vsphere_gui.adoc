@@ -13,6 +13,7 @@ summary: Über das SnapCenter Plug-in für VMware vSphere können Sie ein Suppor
 :imagesdir: ./media/
 
 
+.Bevor Sie beginnen
 [role="lead"]
 Um sich beim SnapCenter Plug-in für die Management-GUI von VMware vSphere anzumelden, müssen Sie die IP-Adresse und die Anmeldedaten kennen.
 

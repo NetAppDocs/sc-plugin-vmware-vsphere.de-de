@@ -58,8 +58,10 @@ Sie können den VMware vSphere Web-Client verwenden, um Speicher-VMs aus dem Inv
 
 NOTE: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgänge über die SnapCenter GUI hinzugefügt haben, müssen Sie diese Storage-VMs über dieselbe GUI ändern.
 
+.Bevor Sie beginnen
 Sie müssen alle Datenspeicher in der Storage-VM unmounten, bevor Sie die Storage-VM entfernen können.
 
+.Über diese Aufgabe
 Wenn eine Ressourcengruppe Backups enthält, die sich auf einer Speicher-VM befinden, die Sie entfernen, dann schlagen nachfolgende Backups für diese Ressourcengruppe fehl.
 
 .Schritte

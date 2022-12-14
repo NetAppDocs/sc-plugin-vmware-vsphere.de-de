@@ -16,11 +16,13 @@ summary: Backup-Vorgänge werden für alle in einer Ressourcengruppe definierten
 [role="lead"]
 Backup-Vorgänge werden für alle in einer Ressourcengruppe definierten Ressourcen durchgeführt. Wenn eine Ressourcengruppe über eine Richtlinie und einen konfigurierten Zeitplan verfügt, werden die Backups automatisch gemäß dem Zeitplan durchgeführt.
 
+.Bevor Sie beginnen
 Sie müssen eine Ressourcengruppe mit einer angehängten Richtlinie erstellt haben.
 
 
 IMPORTANT: Starten Sie keinen On-Demand Backup-Job, wenn bereits ein Job zum Sichern der SnapCenter VMware Plug-in MySQL Datenbank ausgeführt wird. Verwenden Sie die Wartungskonsole, um den konfigurierten Backup-Zeitplan für die MySQL-Datenbank anzuzeigen.
 
+.Über diese Aufgabe
 In früheren Versionen der Virtual Storage Console (VSC) können Sie ein On-Demand-Backup durchführen, ohne einen Backup-Job für eine VM oder einen Datastore konfigurieren zu müssen. Für das SnapCenter-VMware-Plug-in müssen sich VMs und Datastores jedoch vor der Durchführung von Backups in einer Ressourcengruppe befinden.
 
 .Schritte

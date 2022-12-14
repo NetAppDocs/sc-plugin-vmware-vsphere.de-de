@@ -33,6 +33,7 @@ Da ESXi nur eine eindeutige LUN pro Datenspeicher feststellen kann, schlägt der
 
 
 
+.Über diese Aufgabe
 Der Mount-Vorgang kann fehlschlagen, wenn die Storage-Tier der FabricPool, auf der sich der Datastore befindet, nicht verfügbar ist.
 
 .Schritte

@@ -22,6 +22,7 @@ Wenn der SnapCenter VMware vSphere Web-Client falsch verhält, müssen Sie mögl
 
 Wenn sich vCenter auf einer Linux Appliance befindet, müssen Sie den SnapCenter VMware vSphere Web-Client-Service mit Linux-Befehlen neu starten.
 
+.Bevor Sie beginnen
 Sie müssen vCenter 6.5 oder höher ausführen.
 
 .Schritte
@@ -54,6 +55,7 @@ IMPORTANT: Entfernen Sie die Pakete VASA oder VSC7.x und höher nicht.
 
 Wenn sich vCenter auf einem Windows-Host befindet, müssen Sie den SnapCenter Web-Client-Service mit Windows-Befehlen neu starten.
 
+.Bevor Sie beginnen
 Sie müssen vCenter 6.5 oder höher ausführen.
 
 .Schritte

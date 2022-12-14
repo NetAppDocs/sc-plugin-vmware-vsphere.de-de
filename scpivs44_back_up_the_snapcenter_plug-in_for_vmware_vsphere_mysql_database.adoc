@@ -18,6 +18,7 @@ Das SnapCenter VMware Plug-in beinhaltet eine MySQL-Datenbank (auch als NSM-Date
 
 Sie sollten zudem ein Backup des Repositorys vor Migrationen oder Upgrades durchführen.
 
+.Bevor Sie beginnen
 Starten Sie keinen Job zum Backup der MySQL Datenbank, wenn bereits ein On-Demand-Backup ausgeführt wird.
 
 .Schritte

@@ -16,6 +16,7 @@ summary: Jede vorhandene Ressourcengruppe, die durch das SnapCenter Plug-in für
 [role="lead"]
 Jede vorhandene Ressourcengruppe, die durch das SnapCenter Plug-in für VMware vSphere gemanagt wird, kann rasch eine einzelne VM oder einen Datenspeicher hinzugefügt werden.
 
+.Über diese Aufgabe
 Fügen Sie SAN- und NAS-Datastores hinzu, aber nicht VSAN oder VVOL Datastores.
 
 .Schritte

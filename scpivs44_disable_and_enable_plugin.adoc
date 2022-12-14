@@ -20,6 +20,7 @@ Wenn Sie die Datensicherungsfunktionen von SnapCenter nicht mehr benötigen, mü
 * Stellen Sie sicher, dass keine SnapCenter-Jobs ausgeführt werden.
 
 
+.Über diese Aufgabe
 Wenn Sie das SnapCenter VMware Plug-in deaktivieren, werden alle Ressourcengruppen ausgesetzt und das Plug-in wird als Erweiterung in vCenter nicht registriert.
 
 Wenn Sie das SnapCenter VMware Plug-in aktivieren, wird das Plug-in als Erweiterung in vCenter registriert. Alle Ressourcengruppen befinden sich im Produktionsmodus und alle Zeitpläne sind aktiviert.

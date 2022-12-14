@@ -35,6 +35,7 @@ Sie können auch auf einen Job doppelklicken, um auf das Fenster Job Details zuz
 
 
 
+.Ergebnis
 Job-Protokolle befinden sich auf dem Linux VM-Host, auf dem das SnapCenter VMware Plug-in bereitgestellt wird. Der Standard-Job-Log-Speicherort ist `/var/log/netapp`.
 
 Wenn Sie versucht haben, Jobprotokolle herunterzuladen, aber die Protokolldatei mit dem Namen in der Fehlermeldung gelöscht wurde, kann es zu folgendem Fehler kommen: `HTTP ERROR 500 Problem accessing /export-scv-logs`. Um diesen Fehler zu beheben, überprüfen Sie den Zugriffsstatus und die Berechtigungen für die Datei mit dem Namen in der Fehlermeldung und beheben Sie das Zugriffsproblem.

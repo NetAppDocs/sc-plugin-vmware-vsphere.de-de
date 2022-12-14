@@ -40,6 +40,7 @@ Die IP des SnapCenter-VMware-Plug-ins wird bei der Bereitstellung des Plug-ins a
 . Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung anderer SnapCenter Plug-ins für applikationskonsistente Backups verwendet haben, melden Sie sich bei SnapCenter an und entfernen Sie den vSphere Host.
 
 
+.Nachdem Sie fertig sind
 Die virtuelle Appliance wird weiterhin bereitgestellt, das SnapCenter VMware Plug-in wird jedoch entfernt.
 
 Nach dem Entfernen der Host-VM für das SnapCenter-VMware-Plug-in bleibt das Plug-in möglicherweise bis zur Aktualisierung des lokalen vCenter Caches im vCenter verfügbar. Da das Plug-in entfernt wurde, können auf diesem Host jedoch keine SnapCenter VMware vSphere Vorgänge durchgeführt werden. Wenn Sie den lokalen vCenter-Cache aktualisieren möchten, stellen Sie zunächst sicher, dass sich die Appliance auf der Konfigurationsseite des SnapCenter VMware Plug-ins in einem deaktivierten Zustand befindet, und starten Sie dann den vCenter Web-Client-Service neu.

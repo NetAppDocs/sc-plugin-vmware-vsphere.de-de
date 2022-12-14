@@ -22,6 +22,7 @@ Backup-Richtlinien für das SnapCenter Plug-in für VMware vSphere lassen sich e
 
 Sie können Richtlinien aus einer SnapCenter VMware Plug-in-Ressourcengruppe trennen, wenn diese Richtlinien nicht mehr für die Datensicherung der Ressourcen sorgen sollen. Sie müssen eine Richtlinie trennen, bevor Sie sie entfernen können oder bevor Sie die Zeitplanfrequenz ändern.
 
+.Über diese Aufgabe
 Die Richtlinien zum Trennen von Richtlinien von SnapCenter VMware Plug-in-Ressourcengruppen unterscheiden sich von den Richtlinien für SnapCenter-Ressourcengruppen. Bei einer VMware vSphere Web-Client-Ressourcengruppe können alle Richtlinien abgetrennt werden, wodurch die Ressourcengruppe ohne Richtlinie bleibt. Um jedoch Datensicherungsvorgänge an dieser Ressourcengruppe durchzuführen, müssen Sie mindestens eine Richtlinie anhängen.
 
 .Schritte
@@ -39,6 +40,7 @@ Sie können der Ressourcengruppe auch eine Richtlinie hinzufügen, indem Sie die
 
 Sie können Richtlinien für ein SnapCenter Plug-in für eine VMware vSphere Ressourcengruppe ändern. Sie können die Häufigkeit, die Replizierungsoptionen, die Aufbewahrungseinstellungen für Snapshot Kopien oder die Informationen zu Skripten ändern, während eine Richtlinie einer Ressourcengruppe zugeordnet ist.
 
+.Über diese Aufgabe
 Das Ändern der Backup-Richtlinien für das SnapCenter VMware Plug-in unterscheidet sich von der Änderung der Backup-Richtlinien für applikationsbasierte SnapCenter Plug-ins. Wenn Sie die Plug-in-Richtlinien ändern, müssen Sie keine Richtlinien von Ressourcengruppen trennen.
 
 Bevor Sie die Replizierungs- oder Aufbewahrungseinstellungen ändern, sollten Sie die möglichen Folgen berücksichtigen.
@@ -70,6 +72,7 @@ Die Änderungen werden wirksam, wenn das nächste geplante Backup durchgeführt 
 
 Wenn Sie keine konfigurierte Backup-Richtlinie mehr für das SnapCenter Plug-in für VMware vSphere benötigen, möchten Sie sie möglicherweise löschen.
 
+.Bevor Sie beginnen
 Sie müssen die Richtlinie von allen Ressourcengruppen in der virtuellen Appliance für SnapCenter getrennt haben, bevor Sie sie löschen können.
 
 .Schritte

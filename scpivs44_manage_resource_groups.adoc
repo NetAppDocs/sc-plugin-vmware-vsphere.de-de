@@ -33,6 +33,7 @@ image:scpivs44_image24.png["Fehler: Fehlendes Grafikbild"]
 . Klicken Sie im Bestätigungsfeld zur Bestätigung auf *OK*.
 
 
+.Nachdem Sie fertig sind
 Auf der Seite Ressourcengruppen lautet der Job-Status für die gesperrte Ressource `Under_Maintenance`. Möglicherweise müssen Sie nach rechts in der Tabelle blättern, um die Spalte Job Status anzuzeigen.
 
 Nachdem die Sicherungsvorgänge wieder aufgenommen wurden, ändert sich der Job-Status in `Production`.
@@ -43,6 +44,7 @@ Nachdem die Sicherungsvorgänge wieder aufgenommen wurden, ändert sich der Job-
 
 Ressourcen in Ressourcengruppen in vCenter können entfernt oder hinzugefügt, Richtlinien abgetrennt oder zugewiesen, Zeitpläne geändert oder andere Optionen für Ressourcengruppen geändert werden.
 
+.Über diese Aufgabe
 Wenn Sie den Namen einer Ressourcengruppe ändern möchten, verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen:
 
 % & * # @ ! \ / : * ? " < > - ; ' , .
@@ -64,6 +66,7 @@ Sie können Änderungen in mehreren Kategorien vornehmen.
 
 Sie können eine Ressourcengruppe in vCenter löschen, wenn Sie die Ressourcen in der Ressourcengruppe nicht mehr schützen müssen. Sie müssen sicherstellen, dass alle Ressourcengruppen gelöscht werden, bevor Sie das SnapCenter Plug-in für VMware vSphere aus vCenter entfernen.
 
+.Über diese Aufgabe
 Alle Löschvorgänge der Ressourcengruppe werden als erzwang Löschvorgänge ausgeführt. Mit dem Löschvorgang werden alle Richtlinien aus der vCenter-Ressourcengruppe entfernt, die Ressourcengruppe aus dem SnapCenter-Plug-in für VMware vSphere entfernt und alle Backups und Snapshot-Kopien der Ressourcengruppe gelöscht.
 
 

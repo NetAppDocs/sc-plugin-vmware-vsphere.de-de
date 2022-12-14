@@ -55,10 +55,12 @@ TIP: Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Data
 
 IMPORTANT: Fügen Sie keine VMs hinzu, die sich in einem nicht zugänglichen Zustand befinden. Obwohl es möglich ist, eine Ressourcengruppe zu erstellen, die nicht zugängliche VMs enthält, schlägt die Erstellung von Backups für diese Ressourcengruppe fehl.
 
+.Bevor Sie beginnen
 ONTAP Tools für VMware müssen bereitgestellt werden, bevor Sie eine Ressourcengruppe erstellen, die vVol VMs enthält.
 
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["ONTAP Tools für VMware vSphere"^].
 
+.Über diese Aufgabe
 Sie können jederzeit Ressourcen einer Ressourcengruppe hinzufügen oder aus dieser entfernen.
 
 * Sicherung einer einzelnen Ressource
@@ -89,7 +91,7 @@ Es ist zwar möglich, eine Ressourcengruppe ohne Sicherungsrichtlinie zu erstell
 Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfungen durch.
 
 +
- compatibility check failures
+<<Managen Sie Fehler bei der Kompatibilitätsprüfung>>
 
 
 
@@ -168,10 +170,10 @@ Wenn Sie für die Namen der Snapshot Kopie ein benutzerdefiniertes Format verwen
 Wenn Sie auf *Weiter* klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten Ressourcen befinden.
 
 +
-Wenn die Meldung angezeigt wird `Selected <resource-name> is not SnapCenter compatible` Wird angezeigt, und eine ausgewählte Ressource ist nicht mit SnapCenter kompatibel. Siehe  compatibility check failures Finden Sie weitere Informationen.
+Wenn die Meldung angezeigt wird `Selected <resource-name> is not SnapCenter compatible` Wird angezeigt, und eine ausgewählte Ressource ist nicht mit SnapCenter kompatibel. Siehe <<Managen Sie Fehler bei der Kompatibilitätsprüfung>> Finden Sie weitere Informationen.
 
 +
-Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie im den Namen des Datenspeichers angeben `global.ds.exclusion.pattern` Das Hotel befindet sich im `scbr.override` Konfigurationsdatei Siehe #Properties you can override,Eigenschaften, die Sie überschreiben können.
+Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie im den Namen des Datenspeichers angeben `global.ds.exclusion.pattern` Das Hotel befindet sich im `scbr.override` Konfigurationsdatei Siehe <<scpivs44_properties_you_can_override.adoc#Properties you can override,Eigenschaften, die Sie überschreiben können>>.
 
 . Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
 +
