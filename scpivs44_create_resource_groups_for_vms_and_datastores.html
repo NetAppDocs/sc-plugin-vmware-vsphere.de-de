@@ -1805,7 +1805,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 05:28:50 +0000">11/17/2022</time>
+    <time datetime="2022-12-14 18:06:19 +0000">12/14/2022</time>
     
   
 
@@ -1903,12 +1903,14 @@ Fügen Sie keine VMs hinzu, die sich in einem nicht zugänglichen Zustand befind
 </table>
 </div>
 <div class="paragraph">
+<div class="title">Bevor Sie beginnen</div>
 <p>ONTAP Tools für VMware müssen bereitgestellt werden, bevor Sie eine Ressourcengruppe erstellen, die vVol VMs enthält.</p>
 </div>
 <div class="paragraph">
 <p>Weitere Informationen finden Sie unter <a href="https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html" target="_blank" rel="noopener">"ONTAP Tools für VMware vSphere"</a>.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Sie können jederzeit Ressourcen einer Ressourcengruppe hinzufügen oder aus dieser entfernen.</p>
 </div>
 <div class="ulist">
@@ -1951,10 +1953,8 @@ Fügen Sie keine VMs hinzu, die sich in einem nicht zugänglichen Zustand befind
 <div class="paragraph">
 <p>Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfungen durch.</p>
 </div>
-<div class="literalblock">
-<div class="content">
-<pre>compatibility check failures</pre>
-</div>
+<div class="paragraph">
+<p><a href="#managen-sie-fehler-bei-der-kompatibilitätsprüfung">Managen Sie Fehler bei der Kompatibilitätsprüfung</a></p>
 </div>
 </li>
 </ul>
@@ -2095,10 +2095,10 @@ A <code>_recent</code> Für jede Richtlinie, die einer Ressourcengruppe zugeordn
 <p>Wenn Sie auf <strong>Weiter</strong> klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten Ressourcen befinden.</p>
 </div>
 <div class="paragraph">
-<p>Wenn die Meldung angezeigt wird <code>Selected &lt;resource-name&gt; is not SnapCenter compatible</code> Wird angezeigt, und eine ausgewählte Ressource ist nicht mit SnapCenter kompatibel. Siehe  compatibility check failures Finden Sie weitere Informationen.</p>
+<p>Wenn die Meldung angezeigt wird <code>Selected &lt;resource-name&gt; is not SnapCenter compatible</code> Wird angezeigt, und eine ausgewählte Ressource ist nicht mit SnapCenter kompatibel. Siehe <a href="#managen-sie-fehler-bei-der-kompatibilitätsprüfung">Managen Sie Fehler bei der Kompatibilitätsprüfung</a> Finden Sie weitere Informationen.</p>
 </div>
 <div class="paragraph">
-<p>Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie im den Namen des Datenspeichers angeben <code>global.ds.exclusion.pattern</code> Das Hotel befindet sich im <code>scbr.override</code> Konfigurationsdatei Siehe #Properties you can override,Eigenschaften, die Sie überschreiben können.</p>
+<p>Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie im den Namen des Datenspeichers angeben <code>global.ds.exclusion.pattern</code> Das Hotel befindet sich im <code>scbr.override</code> Konfigurationsdatei Siehe <a href="scpivs44_properties_you_can_override.html#Properties you can override">Eigenschaften, die Sie überschreiben können</a>.</p>
 </div>
 </li>
 <li>

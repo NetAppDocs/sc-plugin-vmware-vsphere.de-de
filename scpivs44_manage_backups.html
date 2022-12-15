@@ -1805,7 +1805,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-11-17 05:28:50 +0000">11/17/2022</time>
+    <time datetime="2022-12-14 18:06:19 +0000">12/14/2022</time>
     
   
 
@@ -1857,9 +1857,11 @@
 <p>Das SnapCenter Plug-in für VMware vSphere Backups kann gelöscht werden, wenn das Backup für andere Datensicherungsvorgänge nicht mehr benötigt wird. Sie können ein Backup löschen oder mehrere Backups gleichzeitig löschen.</p>
 </div>
 <div class="paragraph">
+<div class="title">Bevor Sie beginnen</div>
 <p>Sie können keine Backups löschen, die angehängt sind. Sie müssen die Bereitstellung einer Sicherung aufheben, bevor Sie sie löschen können.</p>
 </div>
 <div class="paragraph">
+<div class="title">Über diese Aufgabe</div>
 <p>Snapshot-Kopien auf sekundärem Storage werden über die ONTAP Aufbewahrungseinstellungen verwaltet, nicht über das SnapCenter VMware Plug-in. Wenn Sie das SnapCenter VMware Plug-in zum Löschen eines Backups verwenden, werden Snapshot-Kopien auf dem Primärspeicher gelöscht, Snapshot-Kopien jedoch auf dem Sekundärspeicher nicht gelöscht. Falls noch eine Snapshot Kopie auf dem Sekundärspeicher vorhanden ist, behalten die VMware Plug-in von SnapCenter die dem Backup zugeordneten Metadaten bei, um Wiederherstellungsanforderungen zu unterstützen. Wenn der ONTAP Aufbewahrungsvorgang die sekundäre Snapshot Kopie löscht, löscht das SnapCenter VMware Plug-in die Metadaten mithilfe eines Spüljobs, der in regelmäßigen Abständen ausgeführt wird.</p>
 </div>
 <div class="olist arabic">
