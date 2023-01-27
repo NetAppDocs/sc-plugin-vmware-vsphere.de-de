@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html 
 keywords:  
-summary: Um integrierte Zeitpläne für VMware vSphere Web-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu ändern, müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen. 
+summary: Um integrierte Zeitpläne für VMware vSphere Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu ändern, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
 ---
 = REST-API-Workflow zum Ändern integrierter Zeitpläne
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Um integrierte Zeitpläne für VMware vSphere Web-Client-Jobs mit dem S
 
 
 [role="lead"]
-Um integrierte Zeitpläne für VMware vSphere Web-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu ändern, müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen.
+Um integrierte Zeitpläne für VMware vSphere Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu ändern, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
 
 Integrierte Zeitpläne sind die Zeitpläne, die als Teil des Produkts bereitgestellt werden, z. B. der Zeitplan für den MySQL-Datenbank-Dump. Sie können die folgenden Zeitpläne ändern:
 `Schedule-DatabaseDump`

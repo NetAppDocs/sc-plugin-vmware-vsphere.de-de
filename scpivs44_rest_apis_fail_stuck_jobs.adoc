@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis_fail_stuck_jobs.html 
 keywords:  
-summary: Um Job-IDs für VMware vSphere Web-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu finden, müssen SIE DIE REST-API-Aufrufe für VMware vSphere verwenden. 
+summary: Um Job-IDs für VMware vSphere-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu finden, müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden. 
 ---
 = REST-API zum Markieren von eingeklemmten Jobs als fehlgeschlagen
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Um Job-IDs für VMware vSphere Web-Client-Jobs mit dem SnapCenter Plug-
 
 
 [role="lead"]
-Um Job-IDs für VMware vSphere Web-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu finden, müssen SIE DIE REST-API-Aufrufe für VMware vSphere verwenden. Diese REST-APIs wurden im SnapCenter Plug-in für VMware vSphere 4.4 hinzugefügt.
+Um Job-IDs für VMware vSphere-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu finden, müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden. Diese REST-APIs wurden im SnapCenter Plug-in für VMware vSphere 4.4 hinzugefügt.
 
 Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 

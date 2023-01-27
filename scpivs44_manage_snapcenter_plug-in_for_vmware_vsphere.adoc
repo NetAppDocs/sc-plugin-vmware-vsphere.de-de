@@ -26,7 +26,7 @@ Applikations-, System- und Netzwerkkonfigurationen können über die Wartungskon
 Bevor Sie das SnapCenter-Plug-in für VMware vSphere anhalten und neu starten, sollten Sie alle Zeitpläne unterbrechen.
 
 .Über diese Aufgabe
-* Die Standardeinstellungen sind „maint“ als Benutzername und „admin123“ als Passwort zur Anmeldung an der Wartungskonsole für SnapCenter-Plug-in für VMware vSphere.
+* Der Standardbenutzername und das Standardpasswort werden Ihnen zur Verfügung gestellt.
 +
 
 TIP: Ändern Sie nach der Bereitstellung die Standard-Anmeldeinformationen.
@@ -38,13 +38,10 @@ Um die Root-Benutzerberechtigung zum Ausführen des Befehls zu erhalten, verwend
 
 
 .Schritte
-. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
 . Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
 +
-Folgende Anmeldestandards sind für die Wartungskonsole des SnapCenter VMware Plug-ins standardmäßig aktiviert:
-
-+
-Benutzername: `maint`Kennwort: `admin123`
+Loggen Sie sich mit dem bereitgestellten Standardbenutzernamen und Passwort für die Wartungskonsole ein.
 
 +
 image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]
@@ -81,16 +78,13 @@ Wenn Sie das Admin-Passwort für das SnapCenter-Plug-in für die Management-GUI 
 Bevor Sie das SnapCenter-Plug-in für VMware vSphere anhalten und neu starten, sollten Sie alle Zeitpläne unterbrechen.
 
 .Über diese Aufgabe
-Sie müssen den Standardwert verwenden `“maint”` Als Benutzername und `“admin123”` Als Passwort, um sich bei der Wartungskonsole des SnapCenter VMware Plug-ins anzumelden.
+Verwenden Sie das Standard-Benutzername-Passwort, um sich bei der Wartungskonsole des SnapCenter VMware Plug-ins anzumelden.
 
 .Schritte
-. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
 . Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
 +
-Folgende Anmeldestandards sind für die Wartungskonsole des SnapCenter VMware Plug-ins standardmäßig aktiviert:
-
-+
-Benutzername: `maint`Kennwort: `admin123`
+Loggen Sie sich mit dem bereitgestellten Standardbenutzernamen und Passwort für die Wartungskonsole ein.
 
 +
 image:scpivs44_image29.jpg["Fehler: Fehlendes Grafikbild"]
@@ -120,7 +114,7 @@ Sie müssen die SnapCenter-VMware-Plug-in-Erweiterungen manuell aufheben.
 .Schritte
 . Navigieren Sie im verknüpften vCenter mit dem SnapCenter-VMware-Plug-in-Service angehalten zum Managed Object Reference (MOB)-Manager.
 . Wählen Sie unter Eigenschaften die Option Extension Manager aus, um eine Liste der registrierten Erweiterungen anzuzeigen.
-. Deaktivieren Sie die Registrierung der Erweiterungen `com.netapp.scvm.webclient` Und `com.netapp.aegis`.
+. Deaktivieren Sie die Registrierung der Erweiterungen `com.netapp.scv.client` Und `com.netapp.aegis`.
 
 
 
@@ -188,7 +182,7 @@ Die IP des SnapCenter-VMware-Plug-ins wird bei der Bereitstellung des Plug-ins a
 
 . Klicken Sie im linken Navigationsbereich auf *Konfiguration* und dann im Abschnitt *Plug-in-Details* auf die Option Service, um das Plug-in zu deaktivieren.
 . Melden Sie sich bei VMware vSphere an.
-. Klicken Sie im linken Navigationsbildschirm mit der rechten Maustaste auf die Instanz des SnapCenter-VMware-Plug-ins (der Name des `.ova` Datei, die verwendet wurde, wenn die virtuelle Appliance bereitgestellt wurde) und wählen Sie *Löschen von Datenträger*.
+. Klicken Sie im linken Navigationsbildschirm mit der rechten Maustaste auf die Instanz des SnapCenter-VMware-Plug-ins (der Name des `.tar` Datei, die verwendet wurde, wenn die virtuelle Appliance bereitgestellt wurde) und wählen Sie *Löschen von Datenträger*.
 . Löschen Sie die folgenden Dateien manuell in `/etc/vmware/vsphere-ui/vc-packages/vsphere-client-serenity/com.netapp.scvm.webclient-4.5.0.5942045/plugins` Ordner des vCenter Servers:
 +
 `vsc-httpclient3-security.jar`

@@ -22,7 +22,7 @@ Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite
 | Schritt | REST API | Kommentare 
 
 
-| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Ruft die Liste der Ressourcengruppen von VMware vSphere Web-Clients ab. Beachten Sie die *resourceGroupID* und die *Policy ID* für die Ressourcengruppe, die Sie sichern möchten. 
+| 1 | `/4.1/resource-groups` | `Get List of Resource Groups` Ruft die Liste der VMware vSphere Client Ressourcengruppen ab. Beachten Sie die *resourceGroupID* und die *Policy ID* für die Ressourcengruppe, die Sie sichern möchten. 
 
 
 | 2 | `/4.1/resource-groups/backupnow` | `Run a backup on a Resource Group` Sichert die Ressourcengruppe nach Bedarf. Übergeben Sie die *resourceGroupID* und die *policyId* aus Schritt 1. 

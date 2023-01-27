@@ -38,11 +38,8 @@ Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finde
 Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den folgenden Informationen werden einige der Felder beschrieben, für die Sie möglicherweise eine Anleitung benötigen.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Richtlinien*.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Richtlinien*.
 . Klicken Sie auf der Seite *Richtlinien* auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen* um den Assistenten zu starten.
-+
-image:scpivs44_image15.png["Fehler: Fehlendes Grafikbild"]
-
 . Wählen Sie auf der Seite *New Backup Policy* den vCenter Server aus, der die Richtlinie verwendet, und geben Sie dann den Namen der Richtlinie und eine Beschreibung ein.
 +
 ** Verknüpfter Modus

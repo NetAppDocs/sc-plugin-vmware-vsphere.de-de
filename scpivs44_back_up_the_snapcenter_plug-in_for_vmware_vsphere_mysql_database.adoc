@@ -22,7 +22,7 @@ Sie sollten zudem ein Backup des Repositorys vor Migrationen oder Upgrades durch
 Starten Sie keinen Job zum Backup der MySQL Datenbank, wenn bereits ein On-Demand-Backup ausgeführt wird.
 
 .Schritte
-. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
 . Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten* *oder Webkonsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
 +
 image:scpivs44_image21.png["Fehler: Fehlendes Grafikbild"]

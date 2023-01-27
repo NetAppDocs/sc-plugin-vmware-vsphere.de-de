@@ -17,7 +17,7 @@ summary: Nachdem Sie ein virtuelles Laufwerk zur Wiederherstellung einzelner Dat
 Nachdem Sie ein virtuelles Laufwerk zur Wiederherstellung einzelner Dateien angeschlossen haben, können Sie das virtuelle Laufwerk von der übergeordneten VM trennen.
 
 .Schritte
-. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
 . Wählen Sie im linken Navigator eine VM aus.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf die VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Virtual Disk trennen* aus.
 . Wählen Sie auf dem Bildschirm *Virtuelles Laufwerk trennen* eine oder mehrere Festplatten aus, die Sie entfernen möchten, und aktivieren Sie dann das Kontrollkästchen *Ausgewählte Datenträger trennen* und klicken Sie auf *ENTFERNEN*.

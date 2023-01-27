@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: scpivs44_download_the_snapcenter_plug-in_for_vmware_vsphere_ova_open_virtual_appliance.html 
+permalink: scv48_add_certificates_to_certificate_store.html 
 keywords:  
-summary: Sie können die .tar-Datei für das SnapCenter Plug-in für VMware vSphere von der NetApp Support-Website herunterladen. 
+summary: Fügen Sie die Root- und Intermediate-Zertifikate der Zertifizierungsstelle zum VMware vCenter hinzu, um dem Zertifikat und den Artefakten zu vertrauen, die damit signiert sind. 
 ---
-= Open Virtual Appliance (OVA) herunterladen
+= Fügen Sie Zertifikate zum VMware Certificate Store hinzu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -19,13 +19,6 @@ Fügen Sie vor der Installation der Open Virtual Appliance (OVA) das Zertifikat 
 In VMware vCenter 7.0.3 Versionen und höher ist die OVA, die vom Vertrauenzertifikat unterzeichnet wurde, nicht mehr vertrauenswürdig. Zur Behebung des Problems müssen Sie das folgende Verfahren durchführen.
 
 .Schritte
-. So laden Sie das SnapCenter Plug-in für VMware herunter:
-+
-** Loggen Sie sich auf der NetApp Support Site ein ( https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]).
-** Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* und klicken Sie dann auf die Schaltfläche *Neueste Version herunterladen*.
-** Laden Sie das SnapCenter Plug-in für VMware vSphere herunter `.tar` Datei an jedem Speicherort.
-
-
 . Melden Sie sich mit dem vSphere Client am vCenter Server an.
 . Navigieren Sie zu *Administration > Zertifikate > Zertifikatverwaltung*.
 . Klicken Sie neben *Trusted Root Store* auf *Add*

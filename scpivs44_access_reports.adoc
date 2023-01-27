@@ -19,7 +19,7 @@ Sie können über das Dashboard Berichte für einen oder mehrere Jobs anfordern.
 Die Registerkarte Berichte enthält Informationen zu den Jobs, die auf der Seite Jobs im Dashboard ausgewählt wurden. Wenn keine Jobs ausgewählt sind, ist die Registerkarte Berichte leer.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des vSphere Web-Clients auf *Dashboard*, wählen Sie einen vCenter Server aus und klicken Sie dann auf die Registerkarte *Berichte*.
+. Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*, wählen Sie einen vCenter-Server aus und klicken Sie dann auf die Registerkarte *Berichte*.
 . Für Backup-Berichte können Sie Folgendes tun:
 +
 .. Ändern Sie den Bericht
@@ -40,12 +40,12 @@ Sie können auch auf die klicken image:scpivs44_image37.png["Fehler: Fehlendes G
 
 
 
-== Berichtstypen vom VMware vSphere Web Client
+== Berichtstypen vom VMware vSphere Client
 
-Der VMware vSphere Web-Client für SnapCenter bietet anpassbare Berichtsoptionen, die Ihnen Details zu Ihren Datensicherungsaufgaben und zum Plug-in-Ressourcenstatus liefern. Sie können Berichte nur für den Primärschutz erstellen.
+Der VMware vSphere Client für SnapCenter bietet anpassbare Berichtsoptionen, die Ihnen Details zu Ihren Datensicherungsaufgaben und zum Plug-in-Ressourcenstatus liefern. Sie können Berichte nur für den Primärschutz erstellen.
 
 
-NOTE: Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter VMware Plug-in implementiert wird. VCenter meldet Daten in der Zeitzone, in der sich die vCenter befindet. Wenn sich das SnapCenter-VMware-Plug-in und vCenter in verschiedenen Zeitzonen befinden, sind die Daten im VMware vSphere Web-Client-Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
+NOTE: Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter VMware Plug-in implementiert wird. VCenter meldet Daten in der Zeitzone, in der sich die vCenter befindet. Wenn sich das SnapCenter VMware Plug-in und vCenter in verschiedenen Zeitzonen befinden, sind die Daten im VMware vSphere Client Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
 
 Das Dashboard zeigt Informationen zu migrierten Backups nur an, nachdem Backups nach der Migration durchgeführt wurden.
 

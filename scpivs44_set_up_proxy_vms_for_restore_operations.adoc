@@ -17,7 +17,7 @@ summary: Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte fü
 Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte für die Wiederherstellung von Gastdateien verwenden möchten, müssen Sie die Proxy-VM einrichten, bevor Sie mit der Wiederherstellung beginnen. Sie können zwar jederzeit eine Proxy-VM einrichten, jedoch ist es unter Umständen günstiger, sie sofort nach Abschluss der Plug-in-Bereitstellung einzurichten.
 
 .Schritte
-. Klicken Sie im VMware vSphere Web-Client auf *Wiederherstellung der Gastdatei*.
+. Klicken Sie im VMware vSphere-Client auf *Wiederherstellung der Gastdatei*.
 . Führen Sie im Abschnitt * Ausführen als Anmeldeinformationen* einen der folgenden Schritte aus:
 +
 |===

@@ -43,7 +43,7 @@ NOTE: Sie können vVol VMs nicht an einem anderen Speicherort wiederherstellen.
 NOTE: Beim Wiederherstellen einer gelöschten VM werden alle Tags oder Ordner, die ursprünglich der VM zugewiesen wurden, nicht wiederhergestellt.
 
 .Bevor Sie beginnen
-* Das Benutzerkonto für das Speichersystem muss auf der Seite Speichersysteme im VMware vSphere Web-Client über die verfügen link:scpivs44_minimum_ontap_privileges_required.html["Mindestberechtigungen für ONTAP für ONTAP erforderlich"].
+* Das Benutzerkonto für das Speichersystem muss auf der Seite Speichersysteme im VMware vSphere-Client über die verfügen link:scpivs44_minimum_ontap_privileges_required.html["Mindestberechtigungen für ONTAP für ONTAP erforderlich"].
 * Das Benutzerkonto in vCenter muss über den verfügen link:scpivs44_minimum_vcenter_privileges_required.html["Minimale vCenter-Berechtigungen, die für das SnapCenter Plug-in für VMware vSphere erforderlich sind"].
 * Ein Backup muss vorhanden sein.
 +

@@ -37,7 +37,7 @@ Da ESXi nur eine eindeutige LUN pro Datenspeicher feststellen kann, schlägt der
 Der Mount-Vorgang kann fehlschlagen, wenn die Storage-Tier der FabricPool, auf der sich der Datastore befindet, nicht verfügbar ist.
 
 .Schritte
-. Klicken Sie im VMware vSphere Web-Client in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
+. Klicken Sie im VMware vSphere-Client in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
 . Klicken Sie mit der rechten Maustaste auf einen Datenspeicher und wählen Sie in der Dropdown-Liste *NetApp SnapCenter* aus, und wählen Sie dann in der sekundären Dropdown-Liste *Sicherung* aus.
 . Wählen Sie auf der Seite * Mount Datastore* ein Backup und einen Backup-Speicherort (primär oder sekundär) aus, und klicken Sie dann auf *Finish*.
 . Optional: Gehen Sie wie folgt vor, um zu überprüfen, ob der Datenspeicher angehängt ist:

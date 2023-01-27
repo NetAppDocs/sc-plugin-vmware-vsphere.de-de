@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_rest_apis__download_jobs_and_generate_reports.html 
 keywords:  
-summary: Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Web-Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden. 
+summary: Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen SIE DIE REST-API-Aufrufe für VMware vSphere verwenden. 
 ---
 = REST-APIs zum Herunterladen von Jobs und zum Generieren von Berichten
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Zum Generieren von Berichten und Herunterladen von Protokollen für VMw
 
 
 [role="lead"]
-Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Web-Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden.
+Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen SIE DIE REST-API-Aufrufe für VMware vSphere verwenden.
 
 Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 

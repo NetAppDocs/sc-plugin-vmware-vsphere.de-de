@@ -29,7 +29,7 @@ IMPORTANT: Mit der Gastwiederherstellungsfunktion können Sie System- und verbor
 
 .Schritte
 . Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster* aus, wählen Sie dann eine VM aus, wählen Sie dann *NetApp SnapCenter* aus und klicken Sie dann auf *Wiederherstellung der Gastdatei*.
-. Klicken Sie im VMware vSphere Web-Client in der sekundären Dropdown-Liste auf *Guest File Restore*, um den Assistenten zu starten.
+. Klicken Sie im VMware vSphere-Client in der sekundären Dropdown-Liste auf *Guest File Restore*, um den Assistenten zu starten.
 . Geben Sie auf der Seite *Wiederherstellungsumfang* das Backup an, das das virtuelle Laufwerk enthält, das Sie anhängen möchten, indem Sie wie folgt vorgehen:
 +
 .. Wählen Sie in der Tabelle *Backup Name* das Backup aus, das das virtuelle Laufwerk enthält, das Sie anhängen möchten.
@@ -69,7 +69,7 @@ Diese Option ist erforderlich, wenn Sie benachrichtigt werden möchten, wenn der
 TIP: Aktivieren Sie diese Option, da es sich bei der Wiederherstellung einer Gastdatei um einen asynchronen Vorgang handelt, und es kann zu einer Verzögerung bei der Festlegung einer Gastsitzung für Sie kommen.
 
 +
-Diese Option verwendet die E-Mail-Einstellungen, die beim Einrichten des VMware vSphere Web-Clients in vCenter konfiguriert sind.
+Diese Option verwendet die E-Mail-Einstellungen, die beim Einrichten des VMware vSphere Clients in vCenter konfiguriert sind.
 
 
 

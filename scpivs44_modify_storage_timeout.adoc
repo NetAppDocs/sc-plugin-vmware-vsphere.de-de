@@ -19,7 +19,7 @@ Auch wenn Backups in der Vergangenheit erfolgreich ausgeführt wurden, werden si
 Möglicherweise tritt der Fehler auf `Unable to discover resources on SCV: Unable to get storage details for datastore <xxx>…`
 
 .Schritte
-. Klicken Sie im VMware vSphere Web-Client auf *Storage-Systeme*.
+. Klicken Sie im VMware vSphere-Client auf *Storage-Systeme*.
 . Wählen Sie auf der Seite Speichersysteme das zu bearbeitendes Speichersystem aus und klicken Sie auf *Bearbeiten*.
 . Erhöhen Sie im Feld Timeout die Anzahl der Sekunden.
 +

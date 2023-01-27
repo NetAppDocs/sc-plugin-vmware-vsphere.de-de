@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 
-. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Richtlinien*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] * Neue Richtlinien*.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Richtlinien*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] * Neue Richtlinien*.
 . Geben Sie auf der Seite *Neue Sicherungsrichtlinie* die Konfigurationsdaten der Richtlinie ein und klicken Sie dann auf *Hinzufügen*.
 +
 Wenn die Richtlinie für Mirror-Vault-Beziehungen verwendet wird, müssen Sie im Feld Replikation nur die Option *Update SnapVault after Backup* auswählen, wenn Sie Backups auf die Mirror-Vault Ziele kopieren möchten.

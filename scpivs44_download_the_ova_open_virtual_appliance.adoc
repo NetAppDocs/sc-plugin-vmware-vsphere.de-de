@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: scpivs44_download_the_ova_open_virtual_appliance.html 
 keywords:  
-summary: Die .ova Datei umfasst einen Satz von Microservices für die VM- und Datastore-Datensicherung, die vom SnapCenter Plug-in für VMware vSphere durchgeführt werden. 
+summary: Die .tar-Datei umfasst die OVA, eine Gruppe von Microservices für die VM- und Datastore-Datensicherung und die Zertifikatdatei. 
 ---
-= OVA herunterladen (virtuelle Open-Appliance)
+= Open Virtual Appliance (OVA) herunterladen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,12 +14,23 @@ summary: Die .ova Datei umfasst einen Satz von Microservices für die VM- und Da
 
 
 [role="lead"]
-Der `.ova` Die Datei umfasst einen Satz von Microservices für die VM- und Datastore-Datensicherung, die mit einem SnapCenter Plug-in für VMware vSphere durchgeführt werden
+Fügen Sie vor der Installation der Open Virtual Appliance (OVA) das Zertifikat in vCenter hinzu. Die .tar-Datei enthält die OVA und die Root- und Intermediate-Zertifikate. Die Zertifikate finden Sie im Ordner Zertifikate. Die OVA-Implementierung wird in VMware vCenter 7u1 und höher unterstützt.
+
+In VMware vCenter 7.0.3 Versionen und höher ist die OVA, die vom Vertrauenzertifikat unterzeichnet wurde, nicht mehr vertrauenswürdig. Zur Behebung des Problems müssen Sie das folgende Verfahren durchführen.
+
+.Schritte
+. So laden Sie das SnapCenter Plug-in für VMware herunter:
++
+** Loggen Sie sich auf der NetApp Support Site ein ( https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]).
+** Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* und klicken Sie dann auf die Schaltfläche *Neueste Version herunterladen*.
+** Laden Sie das SnapCenter Plug-in für VMware vSphere herunter `.tar` Datei an jedem Speicherort.
 
 
-IMPORTANT: Der Download-Prozess prüft nicht auf eine vorhandene `scv.ova` Datei: Deshalb müssen Sie vor dem Download sicherstellen, dass keine anderen `scv.ova` Die Datei ist im vCenter vorhanden.
+. Melden Sie sich mit dem vSphere Client am vCenter Server an.
+. Navigieren Sie zu *Administration > Zertifikate > Zertifikatverwaltung*.
+. Klicken Sie neben *Trusted Root Store* auf *Add*
+. Suchen Sie nach dem Speicherort der Stammzertifikate und der Zwischenzertifikate. Das Zertifikat wird in einem Panel unter *Trusted Root Certificates* hinzugefügt. Sobald die Zertifikate installiert sind, kann OVA überprüft und bereitgestellt werden.
 
-. Loggen Sie sich auf der NetApp Support Site ein ( https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]).
-. Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* und klicken Sie dann auf die Schaltfläche *Neueste Version herunterladen*.
-. Laden Sie das SnapCenter Plug-in für VMware vSphere herunter `.ova` Datei an jedem Speicherort.
 
+
+NOTE: Wenn das heruntergeladene OVA nicht manipuliert wird, wird in der Spalte *Publisher* *Trusted Certificate* *angezeigt.

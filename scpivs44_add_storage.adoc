@@ -13,6 +13,6 @@ summary:
 :imagesdir: ./media/
 
 
-. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Storage Systems* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Speichersysteme* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
 . Geben Sie im Dialogfeld Add Storage System die grundlegenden SVM- oder Clusterinformationen ein, und klicken Sie dann auf *Add*.
 

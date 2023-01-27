@@ -1,0 +1,146 @@
+---
+sidebar: sidebar 
+permalink: scv48_audit_logs.html 
+keywords:  
+summary: Audit-Protokoll bietet Rückverfolgbarkeit, wer was wann gemacht hat. Audit Log ist eine Sammlung von Ereignissen in chronologischer Reihenfolge und wird in eine Datei innerhalb der Appliance geschrieben. 
+---
+= Prüfprotokolle
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Audit Log ist eine Sammlung von Ereignissen in chronologischer Reihenfolge, die in eine Datei innerhalb der Appliance geschrieben wird. Die Audit-Log-Dateien werden in generiert `/var/log/netapp/audit` Standort und Dateiname folgen einer der folgenden Namenskonventionen:
+
+* Audit.log: Aktive Audit-Log-Datei, die verwendet wird.
+* Audit-%d{yyyy-MM-dd-HH-mm-ss}.log.gz: Gerollt über Audit-Log-Datei. Das Datum und die Uhrzeit im Dateinamen geben an, wann die Datei erstellt wurde, z. B. Audit-2022-12-15-16-28-01.log.gz.
+
+
+In der SCV-Plug-in-Benutzeroberfläche können Sie die Audit-Log-Details über *Dashboard* > *Einstellungen* > *Audit-Protokolle*-Registerkarte anzeigen und exportieren. Die Prüfprotokolle werden mit dem Support Bundle heruntergeladen.
+
+Wenn E-Mail-Einstellungen konfiguriert sind, sendet SCV eine E-Mail-Benachrichtigung im Falle eines Fehlers bei der Integritätsprüfung des Überwachungsprotokolls. Ein Fehler bei der Integritätsprüfung für das Prüfprotokoll kann auftreten, wenn eine der Dateien manipuliert oder gelöscht wird.
+
+Die Standardkonfigurationen der Audit-Dateien sind:
+
+* Die verwendete Audit-Log-Datei kann auf maximal 10 MB anwachsen
+* Es werden maximal 10 Audit-Log-Dateien aufbewahrt
+
+
+Um die Standardkonfigurationen zu ändern, fügen Sie ein Schlüsselwert-Paar in /opt/netapp/scvservice/Standalone_aegis/etc/scbr/scbr.properties hinzu und starten den scvservice neu.
+
+Die Konfigurationen für Audit-Log-Dateien sind:
+
+* AuditMaxROFiles=<xx>, wobei xx die maximale Anzahl von gerollten über Audit-Log-Dateien ist, zum Beispiel: AuditMaxROFiles=15.
+* AuditLogSize=<XX>-Funktionen, wobei xx die Größe der Datei in MB ist, z. B. auditLogSize=15MB.
+
+
+Gerollte über Audit-Protokolle werden regelmäßig auf ihre Integrität überprüft. SCV stellt REST-APIs zur Verfügung, um Protokolle anzuzeigen und deren Integrität zu überprüfen. Ein integrierter Zeitplan löst und weist einen der folgenden Integritätsstatus zu.
+
+|===
+
+
+| Status | Beschreibung 
+
+
+| MANIPULIERT | Der Inhalt der Audit-Log-Datei wird geändert 
+
+
+| NORMAL | Audit-Log-Datei wurde nicht geändert 
+
+
+| ROLLOVER LÖSCHEN | * Audit Log-Datei wird auf Basis der Aufbewahrung gelöscht * standardmäßig werden nur 10 Dateien aufbewahrt 
+
+
+| UNERWARTETES LÖSCHEN | Audit-Log-Datei wird gelöscht 
+
+
+| AKTIV | * Audit Log-Datei wird verwendet * gilt nur für audit.log 
+|===
+Die Ereignisse lassen sich in drei Hauptkategorien einteilen:
+
+* Ereignisse Auf Der Datensicherung
+* Ereignisse Der Wartungskonsole
+* Ereignisse Der Admin-Konsole
+
+
+
+
+== Ereignisse Auf Der Datensicherung
+
+Die Ressourcen in SCV sind:
+
+* Storage-System
+* Ressourcengruppe
+* Richtlinie
+* Backup
+
+
+In der folgenden Tabelle sind die Vorgänge aufgeführt, die für jede Ressource durchgeführt werden können:
+
+|===
+
+
+| Ressourcen | Betrieb 
+
+
+| Storage-System | Erstellt, Geändert, Gelöscht 
+
+
+| Ressourcengruppe | Erstellt, Geändert, Gelöscht, Unterbrochen, Fortgesetzt 
+
+
+| Richtlinie | Erstellt, Geändert, Gelöscht 
+
+
+| Backup | Erstellt, Umbenannt, Gelöscht, Angehängt, Abgehängt, VMDK wiederhergestellt, VM wiederhergestellt, VMDK anhängen, VMDK trennen, Gastdatei wiederherstellen 
+|===
+
+
+== Ereignisse Der Wartungskonsole
+
+Der administrative Betrieb in der Wartungskonsole wird geprüft. Folgende Optionen für die Wartungskonsole sind verfügbar:
+
+. Dienste starten/stoppen
+. Benutzername und Passwort ändern
+. MySQL-Kennwort ändern
+. Konfigurieren Sie MySQL Backup
+. MySQL Backup wiederherstellen
+. Ändern Sie das Benutzerpasswort „Wartung“
+. Zeitzone ändern
+. Ändern Sie den NTP-Server
+. Deaktivieren Sie den SSH-Zugriff
+. Erhöhen Sie die Größe der Jail-Festplatte
+. Upgrade
+. VMware Tools installieren (Wir arbeiten daran, dies durch Open-vm-Tools zu ersetzen)
+. Ändern Sie die IP-Adresseinstellungen
+. Ändern Sie die Einstellungen für die DNS-Suche
+. Ändern Sie statische Routen
+. Zugriff auf die Diagnoseschale
+. Remote-Diagnosezugriff aktivieren
+
+
+
+
+== Ereignisse Der Admin-Konsole
+
+Die folgenden Vorgänge in der Admin Console-UI werden geprüft:
+
+* Einstellungen
++
+** Ändern Sie die Anmeldedaten des Administrators
+** Ändern Sie die Zeitzone
+** Ändern Sie den NTP-Server
+** Ändern der IPv4-/IPv6-Einstellungen
+
+
+* Konfiguration
++
+** Ändern Sie die vCenter Credentials
+** Plug-in-Aktivierung/Deaktivierung
+
+
+

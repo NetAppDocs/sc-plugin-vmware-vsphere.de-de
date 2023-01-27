@@ -50,8 +50,11 @@ Für alle SnapCenter Plug-ins sind die folgenden Mindestberechtigungen erforderl
 | Schreibgeschützter Befehl: Mindestberechtigungen für ONTAP 8.3 und höher erforderlich 
 
 
-| vserver 
+| vserver vServer Peer 
 |===
+
+NOTE: Sie können die Warnmeldungen zu den nicht unterstützten vServer-Befehlen ignorieren.
+
 
 
 == Weitere ONTAP-Informationen

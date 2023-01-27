@@ -39,7 +39,7 @@ Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von 
 
 
 .Schritte
-. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
 . Klicken Sie im linken Navigator mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus.
 . Wählen Sie im Assistenten *Wiederherstellen* auf der Seite Sicherung auswählen die Sicherungskopie aus, aus der Sie die Sicherungskopie wiederherstellen möchten.
 +

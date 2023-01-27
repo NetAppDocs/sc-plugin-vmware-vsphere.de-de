@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_view_status_information.html 
 keywords:  
-summary: Sie können Statusinformationen im Dashboard des vSphere Web-Clients anzeigen. Die Statusinformationen werden einmal pro Stunde aktualisiert. 
+summary: Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. Die Statusinformationen werden einmal pro Stunde aktualisiert. 
 ---
 = Zeigt Statusinformationen an
 :hardbreaks:
@@ -13,13 +13,10 @@ summary: Sie können Statusinformationen im Dashboard des vSphere Web-Clients an
 :imagesdir: ./media/
 
 
-Sie können Statusinformationen im Dashboard des vSphere Web-Clients anzeigen. Die Statusinformationen werden einmal pro Stunde aktualisiert.
+Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. Die Statusinformationen werden einmal pro Stunde aktualisiert.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des vSphere Web-Clients auf *Dashboard*, wählen Sie einen vCenter Server aus und klicken Sie dann auf die Registerkarte *Status*.
-+
-image:scpivs44_image7.png["Fehler: Fehlendes Grafikbild"]
-
+. Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*, wählen Sie einen vCenter-Server aus, und klicken Sie dann im Dashboard auf die Registerkarte *Status*.
 . Zeigen Sie eine Übersicht Statusinformationen an, oder klicken Sie auf einen Link, um weitere Informationen zu erhalten, wie in der folgenden Tabelle aufgeführt.
 +
 |===

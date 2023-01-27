@@ -13,7 +13,7 @@ summary:
 :imagesdir: ./media/
 
 
-. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Resource Groups*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen*.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen*.
 . Geben Sie auf jeder Seite des Assistenten zum Erstellen von Ressourcengruppen die erforderlichen Informationen ein, wählen Sie VMs und Datenspeicher aus, die in die Ressourcengruppe aufgenommen werden sollen, und wählen Sie dann die Backup-Richtlinien aus, die auf die Ressourcengruppe angewendet werden sollen, und geben Sie den Backup-Zeitplan an.
 
 

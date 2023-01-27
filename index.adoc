@@ -2,7 +2,7 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-lead: 'SnapCenter Plug-in for VMware vSphere (SCV) is a Linux-based Virtual Appliance. As a standalone, it provides fast, space-efficient, crash-consistent, and VM-consistent backup and restore operations for VMs, Datastores, and VMDKs. It also works with SnapCenter Server to support application-based backup and restore operations in VMware environments for SnapCenter application-specific plug-ins. This documentation library describes SnapCenter Plug-in for VMware vSphere versions 4.7.' 
+lead: 'SnapCenter Plug-in for VMware vSphere (SCV) is a Linux-based Virtual Appliance. As a standalone, it provides fast, space-efficient, crash-consistent, and VM-consistent backup and restore operations for VMs, Datastores, and VMDKs. It also works with SnapCenter Server to support application-based backup and restore operations in VMware environments for SnapCenter application-specific plug-ins. This documentation library describes SnapCenter Plug-in for VMware vSphere versions 4.8.' 
 summary: 'Das SnapCenter Plug-in für VMware vSphere (SCV) ist eine Linux-basierte virtuelle Appliance. Als Standalone-Version bietet sie schnelle, platzsparende, absturzkonsistente und VM-konsistente Backup- und Restore-Prozesse für VMs, Datastores und VMDKs. Zudem funktioniert OnCommand mit SnapCenter Server, um applikationsspezifische Backup- und Restore-Vorgänge in VMware Umgebungen für applikationsspezifische SnapCenter Plug-ins zu unterstützen.' 
 ---
 = Dokumentation zum SnapCenter Plug-in für VMware vSphere

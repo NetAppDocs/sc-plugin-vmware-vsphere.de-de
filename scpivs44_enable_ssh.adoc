@@ -16,7 +16,7 @@ summary: Bei der Implementierung des SnapCenter VMware Plug-ins ist SSH standard
 Bei der Implementierung des SnapCenter VMware Plug-ins ist SSH standardmäßig deaktiviert.
 
 .Schritte
-. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
 . Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen und sich dann anzumelden.
 +
 Informationen zum Zugriff auf und zur Anmeldung bei der Wartungskonsole finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].

@@ -21,7 +21,7 @@ Das SnapCenter VMware Plug-in erweitert Ihre Umgebung um die folgenden Funktione
 
 * Unterstützung von VM-konsistenten und absturzkonsistenten Datensicherungsvorgängen
 +
-Sie können die VMware vSphere Web Client GUI in vCenter für alle Backup- und Restore-Vorgänge von VMware Virtual Machines (traditionelle VMs und vVol VMs), VMDKs und Datastores nutzen. Für vVol VMs (VMs in vVol Datastores) werden nur absturzkonsistente Backups unterstützt. Sie haben auch die Möglichkeit, VMs und VMDKs wiederherzustellen sowie Dateien und Ordner auf dem Gastbetriebssystem wiederherzustellen.
+Die VMware vSphere Client GUI in vCenter kann für alle Backup- und Restore-Vorgänge von VMware Virtual Machines (herkömmliche VMs und vVol VMs), VMDKs und Datastores genutzt werden. Für vVol VMs (VMs in vVol Datastores) werden nur absturzkonsistente Backups unterstützt. Sie haben auch die Möglichkeit, VMs und VMDKs wiederherzustellen sowie Dateien und Ordner auf dem Gastbetriebssystem wiederherzustellen.
 
 +
 Beim Backup von VMs, VMDKs und Datastores unterstützt das Plug-in keine RDMs. Backup-Jobs für VMs ignorieren RDMs. Wenn Sie RDMs sichern müssen, müssen Sie ein SnapCenter-Applikations-basiertes Plug-in.
@@ -37,11 +37,11 @@ Sie können die SnapCenter-Benutzeroberfläche und die entsprechenden SnapCenter
 SnapCenter nutzt das SnapCenter VMware Plug-in nativ für alle Datensicherungsvorgänge auf VMDKs, Raw Device Mappings (RDMs) und NFS Datastores. Nach der Implementierung der virtuellen Appliance ist das Plug-in für alle Interaktionen mit vCenter zuständig. Das VMware Plug-in von SnapCenter unterstützt alle applikationsbasierten SnapCenter Plug-ins.
 
 +
-SnapCenter unterstützt keine einzigen Snapshot-Kopien von Datenbanken und VMs zusammen. Backups für VMs und Datenbanken müssen geplant und unabhängig ausgeführt werden. Dadurch werden separate Snapshot Kopien erstellt, selbst wenn die Datenbanken und VMs im selben Volume gehostet werden. Backups von Datenbank-Applikationen müssen über die SnapCenter GUI geplant werden. Backups von VMs und Datenspeichern müssen über die VMware vSphere Web-Client-GUI geplant werden.
+SnapCenter unterstützt keine einzigen Snapshot-Kopien von Datenbanken und VMs zusammen. Backups für VMs und Datenbanken müssen geplant und unabhängig ausgeführt werden. Dadurch werden separate Snapshot Kopien erstellt, selbst wenn die Datenbanken und VMs im selben Volume gehostet werden. Backups von Datenbank-Applikationen müssen über die SnapCenter GUI geplant werden. Backups von VMs und Datastores müssen über die VMware vSphere Client GUI geplant werden.
 
 * VMware Tools sind für VM-konsistente Snapshot-Kopien erforderlich
 +
-Wenn VMware Tools nicht installiert und ausgeführt wird, wird das Filesystem nicht stillgelegt und ein absturzkonsistenter Snapshot erstellt.
+Wenn nicht VMware Tools installiert und ausgeführt werden, wird das Filesystem nicht stillgelegt und ein absturzkonsistenter Snapshot erstellt.
 
 * VMware Storage vMotion ist für die Wiederherstellung von SAN-Umgebungen (VMFS) erforderlich
 +
@@ -50,9 +50,9 @@ Der Wiederherstellungsworkflow für das VMware Filesystem (VMFS) verwendet die V
 +
 Die meisten Restore-Vorgänge in NFS-Umgebungen verwenden native ONTAP-Funktionen (z. B. Single File SnapRestore) und erfordern kein VMware Storage vMotion.
 
-* ONTAP Tools für VMware vSphere sind für den Schutz von VMware vVol VMs erforderlich.
+* ONTAP Tools für VMware vSphere sind für die Konfiguration von VMware vVol VMs erforderlich.
 +
-Mit den ONTAP Tools können Sie Storage für VVols in ONTAP und im VMware Web-Client bereitstellen und konfigurieren.
+Mit ONTAP-Tools können Sie Storage für VVols in ONTAP und im VMware Web-Client bereitstellen und konfigurieren.
 
 +
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["ONTAP Tools für VMware vSphere"^]

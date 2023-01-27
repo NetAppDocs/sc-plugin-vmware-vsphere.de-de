@@ -14,7 +14,7 @@ summary: Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die e
 
 
 [role="lead"]
-Nutzen Sie den SnapCenter vSphere Web-Client, um Datensicherungsvorgänge für VMs, VMDKs und Datastores durchzuführen. Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die eine oder mehrere VMs und Datastores beliebig kombinieren können. Sie können Backups nach Bedarf oder gemäß einem definierten Schutzzeitplan erstellen.
+Nutzen Sie den SnapCenter vSphere Client, um Datensicherungsvorgänge für VMs, VMDKs und Datastores durchzuführen. Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die eine oder mehrere VMs und Datastores beliebig kombinieren können. Sie können Backups nach Bedarf oder gemäß einem definierten Schutzzeitplan erstellen.
 
 Wenn Sie einen Datenspeicher sichern, sichern Sie alle VMs in diesem Datenspeicher.
 

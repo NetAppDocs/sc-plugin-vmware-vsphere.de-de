@@ -26,17 +26,13 @@ Wenn der Plug-in-Cache nicht gelöscht wird, werden die letzten Jobs in den folg
 
 Der Cache befindet sich an den folgenden Orten, abhängig vom Typ des Serverbetriebssystems:
 
-* VCenter Server für Windows
-+
-`C:\ProgramData\VMware\vCenterServer\cfg\vsphere-client\vc-packages\vsphere-client-serenity\`
-
 * VCenter Server Linux Appliance
 +
 `/etc/vmware/vsphere-client/vc-packages/vsphere-client-serenity/`
 
 * Windows OS
 +
-`%PROGRAMFILES%/VMware/vSphere Web Client/vc-packages/vsphere-client-serenity/`
+`%PROGRAMFILES%/VMware/vSphere client/vc-packages/vsphere-client-serenity/`
 
 
 
@@ -52,12 +48,12 @@ Die IP wird angezeigt, wenn Sie das SnapCenter VMware Plug-in bereitstellen.
 +
 Der SnapCenter VMware Plug-in-Service ist deaktiviert, und die Erweiterung ist in vCenter nicht registriert.
 
-. Suchen Sie das `vsphere-client-serenity` Ordner, und suchen Sie anschließend das `com.netapp.scvm.webclient-<release-number>` Ordner und löschen.
+. Suchen Sie das `vsphere-client-serenity` Ordner, und suchen Sie anschließend das `com.netapp.scv.client-<release-number>` Ordner und löschen.
 +
 Der Ordnername ändert sich für jedes Release.
 
 . Starten Sie vCenter Server neu.
-. Melden Sie sich beim VMware vSphere Web-Client an.
+. Melden Sie sich beim VMware vSphere-Client an.
 . Klicken Sie im linken Navigationsbereich auf *Konfiguration* und dann im Abschnitt *Plug-in-Details* auf die Option Service, um das Plug-in zu aktivieren.
 +
 Der SnapCenter VMware Plug-in Service ist aktiviert und die Erweiterung ist in vCenter registriert.

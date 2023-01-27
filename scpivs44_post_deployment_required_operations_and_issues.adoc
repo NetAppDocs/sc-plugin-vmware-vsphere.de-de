@@ -42,10 +42,7 @@ Gehen Sie wie folgt vor, um eine dieser Probleme zu beheben:
 
 . Löschen Sie den Browser-Cache, und überprüfen Sie dann, ob die GUI ordnungsgemäß funktioniert.
 +
-Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere Web-Client-Dienst neu
-
-+
-image:scpivs44_image5.png["Fehler: Fehlendes Grafikbild"]
+Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere-Client-Service neu
 
 . Melden Sie sich bei vCenter an, klicken Sie dann in der Symbolleiste auf *Menü* und wählen Sie dann *SnapCenter Plug-in für VMware vSphere*.
 

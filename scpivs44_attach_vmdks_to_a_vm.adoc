@@ -37,7 +37,7 @@ Fügen Sie in diesem Fall die SCSI-Controller manuell hinzu, und versuchen Sie e
 
 
 .Schritte
-. Klicken Sie in der VMware vSphere Web-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Hosts und Cluster* aus.
+. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Hosts und Cluster* aus.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *virtuelles Laufwerk anhängen* aus.
 +
 image:scpivs44_image22.png["Fehler: Fehlendes Grafikbild"]

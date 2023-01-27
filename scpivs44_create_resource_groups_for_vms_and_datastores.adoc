@@ -96,17 +96,12 @@ Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfung
 
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des VMware vSphere Web-Clients auf *Resource Groups* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen* um den Assistenten zu starten.
-+
-image:scpivs44_image16.png["Fehler: Fehlendes Grafikbild"]
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen* um den Assistenten zu starten.
 
-+
+
 Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können jedoch auch eine Ressourcengruppe mit einer Ressource erstellen, indem Sie eine der folgenden Schritte ausführen:
 
-+
-** Um eine Ressourcengruppen für eine VM zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie dann mit der rechten Maustaste auf eine VM, wählen Sie dann NetApp SnapCenter aus und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe Erstellen*.
-** Um eine Ressourcengruppen für einen Datastore zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf einen Datastore, wählen Sie dann *NetApp SnapCenter* und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe Erstellen*.
-
++ ** um eine Ressourcengruppen für eine VM zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie dann mit der rechten Maustaste auf eine VM, wählen Sie dann NetApp SnapCenter aus und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe Erstellen*. ** Um eine Ressourcengruppe für einen Datastore zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf einen Datenspeicher, wählen Sie dann *NetApp SnapCenter* und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe Erstellen*.
 
 . Gehen Sie auf der Seite *Allgemeine Informationen & Benachrichtigungen* im Assistenten wie folgt vor:
 +
@@ -258,6 +253,6 @@ Gehen Sie wie folgt vor, um einen Kompatibilitätsfehler zu beheben:
 
 . Stellen Sie sicher, dass die Storage-VM ausgeführt wird.
 . Stellen Sie sicher, dass das Storage-System, auf dem sich die VMs befinden, zum SnapCenter Plug-in für den VMware vSphere Inventory hinzugefügt wurde.
-. Stellen Sie sicher, dass die Storage-VM zu SnapCenter hinzugefügt wird. Verwenden Sie die Option Add Storage System in der GUI des VMware vSphere Web Client.
+. Stellen Sie sicher, dass die Storage-VM zu SnapCenter hinzugefügt wird. Verwenden Sie die Option Add Storage System in der VMware vSphere Client GUI.
 . Wenn VMs über VMDKs sowohl auf NetApp als auch auf Datastores anderer Anbieter verfügen, verschieben Sie die VMDKs zu NetApp Datastores.
 

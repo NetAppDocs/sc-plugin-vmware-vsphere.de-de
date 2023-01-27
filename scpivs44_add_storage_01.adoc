@@ -18,7 +18,7 @@ Bevor Sie VMs sichern oder wiederherstellen können, müssen Sie Storage-Cluster
 
 * Welche GUI verwendet werden soll
 +
-Verwenden Sie den VMware vSphere Web-Client, um Speicher hinzuzufügen.
+Verwenden Sie den VMware vSphere Client, um Storage hinzuzufügen.
 
 * Große LUNs
 +
@@ -40,7 +40,7 @@ Der ESXi Server, das SnapCenter VMware Plug-in und jedes vCenter müssen zur gle
 Das SnapCenter VMware Plug-in führt Backup- und Restore-Vorgänge auf direkt verbundenen Storage-VMs und auf Storage-VMs in einem Storage-Cluster aus.
 
 
-NOTE: Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung applikationsbasierter Backups auf VMDKs verwenden, müssen Sie über die grafische Benutzeroberfläche von SnapCenter Storage-Anmeldedaten eingeben und Speichersysteme registrieren.
+NOTE: Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung applikationsbasierter Backups auf VMDKs verwenden, müssen Sie über die Benutzeroberfläche von SnapCenter die Details zur Storage-Authentifizierung eingeben und die Speichersysteme registrieren.
 
 * Bei vCenters im Linked-Modus müssen Sie jedem vCenter separat Storage-Systeme hinzufügen.
 * Die Namen für Storage VMs müssen für das Management LIFs aufgelöst werden.
@@ -50,15 +50,12 @@ Wenn Sie in SnapCenter Host-Einträge für Storage-VM-Namen hinzugefügt haben, 
 +
 Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-LIF auflöst, schlagen geplante Backup-Jobs fehl, da das Plug-in keine Datenspeicher oder Volumes auf dieser Storage-VM finden kann. Falls dies der Fall ist, fügen Sie entweder die Storage VM zur SnapCenter hinzu und geben Sie die Management-LIF an, oder fügen Sie einen Cluster hinzu, der die Storage-VM enthält, und geben Sie die Cluster-Management-LIF an.
 
-* Storage-Anmeldedaten werden nicht zwischen mehreren Instanzen des SnapCenter VMware Plug-ins oder zwischen Windows SnapCenter Server und dem SnapCenter Plug-in in in vCenter gemeinsam genutzt.
+* Details zur Storage-Authentifizierung werden nicht zwischen mehreren Instanzen des SnapCenter VMware Plug-ins oder zwischen Windows SnapCenter Server und dem SnapCenter Plug-in in in vCenter gemeinsam genutzt.
 
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des vSphere Web-Clients auf *Storage Systems*.
+. Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Storage Systems*.
 . Klicken Sie auf der Seite Storage Systems auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
-+
-image:scpivs44_image12.png["Fehler: Fehlendes Grafikbild"]
-
 . Geben Sie im Assistenten * Storage System* die grundlegenden Speicher-VM oder Cluster-Informationen ein, wie in der folgenden Tabelle aufgeführt:
 +
 |===
@@ -71,10 +68,19 @@ image:scpivs44_image12.png["Fehler: Fehlendes Grafikbild"]
 | Plattform | Wählen Sie die Plattform aus. 
 
 
-| Benutzername | Geben Sie den ONTAP-Benutzernamen ein, der zur Anmeldung bei der Storage-VM verwendet wird. 
+| Authentifizierungsmethode | Wählen Sie entweder Anmeldeinformationen oder Zertifikat aus. Es werden zwei Arten von Zertifikaten unterstützt: - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["KANN signiertes Zertifikat"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["Selbstsigniertes Zertifikat"^] 
 
 
-| Passwort | Geben Sie das Anmeldekennwort für die Storage-VM ein. 
+| Benutzername | Dieses Feld wird angezeigt, wenn Sie Anmeldeinformationen als Authentifizierungsmethode auswählen. Geben Sie den ONTAP-Benutzernamen ein, der zur Anmeldung bei der Storage-VM verwendet wird. 
+
+
+| Passwort | Dieses Feld wird angezeigt, wenn Sie Anmeldeinformationen als Authentifizierungsmethode auswählen. Geben Sie das Anmeldekennwort für die Storage-VM ein. 
+
+
+| Zertifikat | Dieses Feld wird angezeigt, wenn Sie Zertifikat als Authentifizierungsmethode auswählen. Wählen Sie die Zertifikatdatei aus. 
+
+
+| Privater Schlüssel | Dieses Feld wird angezeigt, wenn Sie Zertifikat als Authentifizierungsmethode auswählen. Wählen Sie die Datei mit dem privaten Schlüssel aus. 
 
 
 | Protokoll | Wählen Sie das Storage-Protokoll aus. 
@@ -87,6 +93,9 @@ image:scpivs44_image12.png["Fehler: Fehlendes Grafikbild"]
 
 
 | Bevorzugte IP | Wenn die Storage-VM mehr als eine Management-IP-Adresse hat, aktivieren Sie dieses Kontrollkästchen und geben Sie die IP-Adresse ein, die von SnapCenter verwendet werden soll. *Hinweis:* Verwenden Sie keine eckigen Klammern ([]), wenn Sie die IP-Adresse eingeben. 
+
+
+| Einstellungen für Ereignismanagement-System (EMS) und AutoSupport | Wenn Sie EMS-Meldungen an das Syslog-Speichersystem senden möchten oder wenn Sie AutoSupport-Meldungen für den angewendeten Schutz, abgeschlossene Wiederherstellungsvorgänge oder fehlgeschlagene Vorgänge an das Speichersystem senden möchten, aktivieren Sie das entsprechende Kontrollkästchen. Aktivieren Sie das Kontrollkästchen *AutoSupport-Benachrichtigung für fehlgeschlagene Vorgänge an das Speichersystem senden* und das Kontrollkästchen * SnapCenter-Serverereignisse in syslog*, um AutoSupport-Benachrichtigungen zu aktivieren. 
 
 
 | Protokollieren von SnapCenter-Serverereignissen im Syslog | Aktivieren Sie das Kontrollkästchen, um Ereignisse für das SnapCenter VMware Plug-in zu protokollieren. 

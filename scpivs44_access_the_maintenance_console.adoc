@@ -20,10 +20,7 @@ Applikations-, System- und Netzwerkkonfigurationen können über die Wartungskon
 Bevor Sie das SnapCenter-Plug-in für VMware vSphere anhalten und neu starten, sollten Sie alle Zeitpläne unterbrechen.
 
 .Über diese Aufgabe
-* Für das SnapCenter-Plug-in für VMware vSphere 4.6 und früher sind die Standardeinstellungen „maint“ als Benutzername und „admin123“ als Passwort zur Anmeldung an der Wartungskonsole für SnapCenter-Plug-in für VMware vSphere.
-+
-Ab dem SnapCenter-Plug-in für VMware vSphere 4.6P1 müssen Sie beim ersten Installieren des SnapCenter-Plug-ins für VMware vSphere ein Passwort angeben. Wenn Sie von Version 4.6 oder früher auf Version 4.6P1 oder höher aktualisieren, wird das frühere Standardpasswort akzeptiert.
-
+* Im SnapCenter-Plug-in für VMware vSphere 4.6P1 müssen Sie beim ersten Installieren des SnapCenter-Plug-ins für VMware vSphere ein Passwort angeben. Wenn Sie von Version 4.6 oder früher auf Version 4.6P1 oder höher aktualisieren, wird das frühere Standardpasswort akzeptiert.
 * Sie müssen ein Passwort für den Benutzer „diag“ festlegen, während Sie die Ferndiagnose aktivieren.
 +
 Um die Root-Benutzerberechtigung zum Ausführen des Befehls zu erhalten, verwenden Sie sudo <command>.
@@ -31,13 +28,10 @@ Um die Root-Benutzerberechtigung zum Ausführen des Befehls zu erhalten, verwend
 
 
 .Schritte
-. Wählen Sie vom VMware vSphere Web-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
+. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
 . Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
 +
-Folgende Anmeldestandards sind für die Wartungskonsole des SnapCenter VMware Plug-ins standardmäßig aktiviert:
-
-+
-Benutzername: `maint`Kennwort: `admin123`
+Melden Sie sich mit dem standardmäßigen Benutzernamen für die Wartungskonsole an `maint` Und das Passwort, das Sie bei der Installation festgelegt haben.
 
 +
 image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]

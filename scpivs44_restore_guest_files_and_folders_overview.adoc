@@ -52,7 +52,7 @@ Stellen Sie die ausgewählten Dateien oder Ordner an einem bestimmten Speicheror
 
 Bevor Sie eine oder mehrere Dateien oder Ordner von einer VMDK auf einem Windows-Gastbetriebssystem wiederherstellen, müssen Sie alle Anforderungen kennen.
 
-* VMware Tools müssen installiert und ausgeführt werden.
+* VMware-Tools müssen installiert und ausgeführt werden.
 +
 SnapCenter verwendet Informationen aus VMware Tools, um eine Verbindung zum VMware Gastbetriebssystem herzustellen.
 

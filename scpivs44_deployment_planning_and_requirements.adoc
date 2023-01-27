@@ -22,10 +22,7 @@ Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungs
 
 Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere beginnen, sollten Sie die Host-Anforderungen kennen.
 
-* Sie müssen das SnapCenter VMware Plug-in als Linux VM bereitstellen.
-+
-Das SnapCenter VMware Plug-in wird als Linux VM implementiert, unabhängig davon, ob Sie das Plug-in verwenden, um Daten auf Windows-Systemen oder Linux-Systemen zu sichern.
-
+* Das SnapCenter VMware Plug-in wird als Linux VM implementiert, unabhängig davon, ob Sie das Plug-in verwenden, um Daten auf Windows-Systemen oder Linux-Systemen zu sichern.
 * Sie sollten das SnapCenter VMware Plug-in auf dem vCenter Server bereitstellen.
 +
 Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter VMware Plug-in implementiert wird. VCenter meldet Daten in der Zeitzone, in der sich die vCenter befindet. Wenn sich das SnapCenter VMware Plug-in und vCenter in verschiedenen Zeitzonen befinden, sind die Daten im SnapCenter VMware Plug-in Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
@@ -43,7 +40,7 @@ Wenn Sie beispielsweise Backups von sechs verschiedenen Instanzen des vCenter Se
 
 
 
-* Zur Sicherung von vVol VMs (VMs auf VMware vVol Datastores) müssen Sie zuerst ONTAP Tools für VMware vSphere einsetzen. Mit den ONTAP Tools wird Storage für VVols auf ONTAP und auf dem VMware Web-Client bereitgestellt und konfiguriert.
+* Zur Sicherung von vVol VMs (VMs auf VMware vVol Datastores) müssen Sie zuerst ONTAP Tools für VMware vSphere einsetzen. Durch die ONTAP Tools wird Storage für VVols auf ONTAP und auf dem VMware Web-Client bereitgestellt und konfiguriert.
 +
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["ONTAP Tools für VMware vSphere"^]
 
@@ -110,10 +107,10 @@ Wiederherstellung einer vollständigen VM, wenn eine oder mehrere VMDKs auf eine
 | Element | Unterstützte Versionen 
 
 
-| VCenter vSphere | HTML5-Client: 6.5U2/U3, 6,7x, 7.0, 7.0U1, 7.0U2 7.0U3 Flex-Client wird nicht unterstützt. 
+| VCenter vSphere | 7.0U1 und höher 
 
 
-| ESXi | 6.5U2 und höher 
+| ESXi | 7.0U1 und höher 
 
 
 | IP-Adressen | IPv4, IPv6 
@@ -163,7 +160,7 @@ Aktuelle Informationen zu unterstützten Versionen finden Sie im https://imt.net
 
 
 | SnapCenter Plug-in für VMware vSphere Port  a| 
-8144 (HTTPS), der bidirektionale Port wird für Kommunikation vom VMware vSphere Web-Client und vom SnapCenter-Server verwendet. 8080 bidirektional dieser Port wird zum Managen der virtuellen Appliance verwendet.
+8144 (HTTPS), der bidirektionale Port wird für die Kommunikation vom VMware vSphere Client und vom SnapCenter Server verwendet. 8080 bidirektional dieser Port wird zum Managen der virtuellen Appliance verwendet.
 
 Hinweis: Sie können die Portkonfiguration nicht ändern.
 
