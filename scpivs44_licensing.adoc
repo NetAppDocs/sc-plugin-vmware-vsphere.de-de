@@ -13,6 +13,7 @@ summary: Dieser Abschnitt enthält die Lizenzierungsinformationen für das SnapC
 :imagesdir: ./media/
 
 
+[role="lead"]
 Das SnapCenter Plug-in für VMware vSphere ist ein kostenloses Produkt, wenn Sie die folgenden Storage-Systeme verwenden:
 
 * FAS

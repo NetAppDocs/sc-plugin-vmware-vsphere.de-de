@@ -13,6 +13,7 @@ summary: 'Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSph
 :imagesdir: ./media/
 
 
+[role="lead"]
 Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Für vVol VMs verwendet das Plug-in ONTAP Single File Snapshot Restore (ONTAP SFSR) und SnapMirror Restore für Restore-Vorgänge. Die folgende Tabelle zeigt, wie Wiederherstellungsvorgänge durchgeführt werden.
 
 |===

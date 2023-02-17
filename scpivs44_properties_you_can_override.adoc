@@ -13,6 +13,9 @@ summary: 'Sie können Eigenschaften verwenden, die im aufgeführt sind `scbr.ove
 :imagesdir: ./media/
 
 
+[role="lead"]
+Sie können Eigenschaften verwenden, die im aufgeführt sind `scbr.override` Konfigurationsdatei zum Ändern der Standardwerte.
+
 * Standardmäßig verwendet die Vorlage Hash-Symbol, um die Konfigurationseigenschaften zu kommentieren. Um einen Konfigurationswert mit einer Eigenschaft zu ändern, müssen Sie den entfernen `#` Zeichen.
 * Sie müssen den Service auf dem SnapCenter Plug-in für VMware vSphere Host neu starten, damit die Änderungen wirksam werden.
 

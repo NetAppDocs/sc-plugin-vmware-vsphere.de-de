@@ -13,6 +13,7 @@ summary: Bei der Implementierung des SnapCenter VMware Plug-ins ist SSH standard
 :imagesdir: ./media/
 
 
+[role="lead"]
 Bei der Implementierung des SnapCenter VMware Plug-ins ist SSH standardmäßig deaktiviert.
 
 .Schritte

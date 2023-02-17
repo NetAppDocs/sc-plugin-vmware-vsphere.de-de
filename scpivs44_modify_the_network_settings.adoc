@@ -13,6 +13,7 @@ summary: Sie können die Netzwerkeinstellungen ändern, die im SnapCenter Plug-i
 :imagesdir: ./media/
 
 
+[role="lead"]
 Sie können die Netzwerkeinstellungen ändern, die im SnapCenter Plug-in für VMware vSphere konfiguriert sind. Diese Einstellungen werden vom Plug-in für den Zugriff auf vCenter genutzt.
 
 .Bevor Sie beginnen

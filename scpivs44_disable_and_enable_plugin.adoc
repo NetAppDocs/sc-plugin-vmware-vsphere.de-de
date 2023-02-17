@@ -13,6 +13,7 @@ summary: Wenn Sie die Datensicherungsfunktionen von SnapCenter nicht mehr benöt
 :imagesdir: ./media/
 
 
+[role="lead"]
 Wenn Sie die Datensicherungsfunktionen von SnapCenter nicht mehr benötigen, müssen Sie die Konfiguration des SnapCenter VMware Plug-ins ändern. Wenn Sie beispielsweise das Plug-in in einer Testumgebung implementiert haben, müssen Sie die SnapCenter-Funktionen in dieser Umgebung möglicherweise deaktivieren und in einer Produktionsumgebung aktivieren.
 
 .Bevor Sie beginnen

@@ -13,6 +13,9 @@ summary: 'Der `scbr.override` Das SnapCenter-Plug-in für VMware vSphere wird mi
 :imagesdir: ./media/
 
 
+[role="lead"]
+Der `scbr.override` Das SnapCenter-Plug-in für VMware vSphere wird mit der Konfigurationsdatei in Umgebungen verwendet, die applikationsbasierte Datensicherungsvorgänge von SnapCenter unterstützen.
+
 . Gehen Sie zu `/opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.override-template`.
 . Kopieren Sie die `scbr.override-template` Datei zu einer neuen Datei namens `scbr.override` Im `\opt\netapp\scvservice\standalone_aegis\etc\scbr` Verzeichnis.
 

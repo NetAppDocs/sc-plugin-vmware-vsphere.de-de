@@ -13,9 +13,8 @@ summary: Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere mü
 :imagesdir: ./media/
 
 
-
-
-== Erforderliche Vorgänge nach der Implementierung
+[role="lead"]
+Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere müssen Sie die Installation abschließen. == erforderliche Operationen nach der Implementierung
 
 Als neuer SnapCenter Benutzer müssen Sie SnapCenter Storage-VMs hinzufügen, bevor Sie Datensicherungsvorgänge durchführen können. Geben Sie beim Hinzufügen von Storage VMs die Management-LIF an. Sie können auch ein Cluster hinzufügen und die Cluster-Management-LIF angeben. Informationen zum Hinzufügen von Speicher finden Sie unter link:scpivs44_add_storage_01.html["Erweitern Sie Ihren Storage"^].
 

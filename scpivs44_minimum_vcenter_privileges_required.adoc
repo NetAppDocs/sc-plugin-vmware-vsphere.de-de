@@ -26,4 +26,41 @@ System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datasto
 
 == Erforderliche Berechtigungen für SnapCenter Plug-in für VMware vCenter
 
-NetappSCV.Guest.RestoreFile netappSCV.Recovery.MountUnMount netappSCV.Backup.DeletZeitplanBackupJob netappSCV.Configure.ConfigureStorageSystems.netappSCV.View netappSCV.Recovery.netappSCV.netappSCV.netappSCV.Configure.netappSCV.Guest.Configure.netappSCV.netappBackupCenterConfigure
+|===
+
+
+| *Privilegien* | *Etikett* 
+
+
+| NetappSCV.Guest.RestoreDatei | Wiederherstellung Von Gastdateien 
+
+
+| NetappSCV.Recovery.MountUnMount | Montieren/Entfernen 
+
+
+| NetappSCV.Backup.DeleteBackupJob | Ressourcengruppe/Sicherung Löschen 
+
+
+| NetappSCV.Configure.ConfigureStorageSystems.Delete | Storage-Systeme Entfernen 
+
+
+| NetappSCV.View | Anzeigen 
+
+
+| NetappSCV.Recovery.RecoverVM | Wiederherstellung von VM 
+
+
+| NetappSCV.Configure.ConfigureStorageSystems.AddUpdate | Storage-Systeme Hinzufügen/Ändern 
+
+
+| NetappSCV.Backup.BackupJetzt | Jetzt Sichern 
+
+
+| NetappSCV.Guest.Configure | Gastkonfiguration 
+
+
+| NetappSCV.Configure.ConfigureSnapCenterServer | Konfigurieren Sie den SnapCenter-Server 
+
+
+| NetappSCV.Backup.BackupScheduled | Ressourcengruppe Erstellen 
+|===

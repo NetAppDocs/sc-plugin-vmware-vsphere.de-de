@@ -13,6 +13,7 @@ summary: Wenn Sie den SnapCenter VMware Plug-in-Service in einem vCenter beenden
 :imagesdir: ./media/
 
 
+[role="lead"]
 Wenn Sie den SnapCenter VMware Plug-in-Service in einem vCenter beenden, das sich im verknüpften Modus befindet, sind Ressourcengruppen in allen verknüpften vCenters nicht verfügbar, selbst wenn der SnapCenter VMware Plug-in-Service in den anderen verknüpften vCenters ausgeführt wird.
 
 Sie müssen die SnapCenter-VMware-Plug-in-Erweiterungen manuell aufheben.

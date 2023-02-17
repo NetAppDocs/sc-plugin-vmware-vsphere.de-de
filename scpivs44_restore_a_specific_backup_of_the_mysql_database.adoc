@@ -24,7 +24,7 @@ link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maint
 . Geben Sie im Hauptmenü die Option *1) Anwendungskonfiguration* ein.
 . Geben Sie im Menü Anwendungskonfiguration die Option *6) MySQL-Sicherung und -Wiederherstellung* ein.
 . Geben Sie im Menü MySQL Backup and Restore Configuration die Option *2) MySQL-Backups* ein und notieren Sie sich dann das Backup, das Sie wiederherstellen möchten.
-. Geben Sie im Menü MySQL Backup and Restore Configuration die Option *3) MySQL Backup wiederherstellen* ein.
+. Geben Sie im Menü MySQL Backup and Restore Configuration die Option *4) MySQL Backup wiederherstellen* ein.
 . Geben Sie an der Eingabeaufforderung „Wiederherstellen mit dem neuesten Backup“ *n* ein.
 . Geben Sie an der Eingabeaufforderung „Backup to restore from“ den Sicherungsnamen ein, und drücken Sie dann *Enter*.
 +

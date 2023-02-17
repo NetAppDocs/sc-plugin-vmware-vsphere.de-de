@@ -50,19 +50,19 @@ image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]
 +
 ** Option 1: Anwendungskonfiguration
 +
-Starten oder stoppen SnapCenter VMware Plug-in Service Anmeldung ändern Benutzername oder Passwort MySQL Passwort ändern MySQL-Passwort konfigurieren MySQL-Backup Liste MySQL-Backups wiederherstellen
+1) SnapCenter-Plug-in für VMware vSphere anzeigen Zusammenfassung 2) SnapCenter-Plug-in für VMware vSphere-Dienste starten 3) SnapCenter-Plug-in für VMware vSphere-Dienste beenden 4) Benutzername und Passwort ändern, um sich anzumelden SnapCenter-Plug-in für VMware vSphere UI 5) MySQL-Passwort ändern 6) MySQL-Sicherung und -Wiederherstellung
 
 ** Option 2: Systemkonfiguration
 +
-Virtuelle Maschine neu starten oder herunterfahren Benutzerpasswort ändern Zeitzone ändern NTP-Server aktivieren/deaktivieren SSH-Zugriff erhöhen Jail Festplattengröße (/jail) Upgrade VMware Tools installieren
+1) virtuelle Maschine neu starten 2) virtuelle Maschine herunterfahren 3) Benutzerpasswort ändern 4) Zeitzone ändern 5) NTP-Server ändern 6) SSH-Zugriff deaktivieren 7) Jail-Festplattengröße erhöhen (/jail) 8) Upgrade 9) VMware Tools installieren
 
 ** Option 3: Netzwerkkonfiguration
 +
-Anzeigen oder Ändern von IP-Adresseinstellungen Anzeigen oder Ändern von Einstellungen für die Suche nach Domänennamen Anzeigen oder Ändern statischer Routen Übergeben von Änderungen Ping a Host
+1) IP-Adresseinstellungen anzeigen 2) IP-Adresseinstellungen ändern 3) Einstellungen für die Domänennamensuche anzeigen 4) Einstellungen für die Suche nach Domänennamen ändern 5) statische Routen anzeigen 6) statische Routen ändern 7) Änderungen festlegen 8) Ping a Host
 
 ** Option 4: Support und Diagnose
 +
-Support Bundle generieren Access Diagnostic Shell Remote-Zugriff für Diagnosezugriff erzeugen Core Dump Bundle generieren
+1) Support Bundle generieren 2) Access Diagnostic Shell 3) Remote-Zugriff aktivieren 4) Core Dump Bundle generieren
 
 
 

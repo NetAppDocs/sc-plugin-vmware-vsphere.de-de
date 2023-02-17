@@ -13,6 +13,7 @@ summary: Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. D
 :imagesdir: ./media/
 
 
+[role="lead"]
 Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. Die Statusinformationen werden einmal pro Stunde aktualisiert.
 
 .Schritte

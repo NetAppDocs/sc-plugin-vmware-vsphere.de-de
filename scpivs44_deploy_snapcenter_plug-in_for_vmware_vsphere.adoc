@@ -42,6 +42,7 @@ Implementieren Sie das SnapCenter VMware Plug-in in derselben Zeitzone wie vCent
 NOTE: Für IPv6 HTML-Webclients müssen Sie entweder Chrome oder Firefox verwenden.
 
 . Melden Sie sich auf der Seite *VMware vCenter Single Sign-On* an.
+. Befolgen Sie für VMware vCenter 7.0.3 und neuere Versionen die Schritte unter link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual Appliance (OVA) herunterladen"^] So importieren Sie die Zertifikate in vCenter.
 . Klicken Sie im Navigator-Fenster mit der rechten Maustaste auf ein Inventory-Objekt, das ein gültiges übergeordnetes Objekt einer virtuellen Maschine ist, z. B. ein Rechenzentrum, Cluster oder Host, und wählen Sie *OVF-Vorlage bereitstellen* aus, um den VMware Deploy Wizard zu starten.
 . Extrahieren Sie die .tar-Datei, die die .ova-Datei auf Ihr lokales System enthält. Geben Sie auf der Seite *Wählen Sie eine OVF-Vorlage* den Speicherort des an `.ova` Datei im extrahierten Ordner .tar.
 . Klicken Sie Auf *Weiter*.
