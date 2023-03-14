@@ -14,7 +14,7 @@ summary: Mithilfe des Assistenten zum Bearbeiten von Ressourcengruppen von SnapC
 
 
 [role="lead"]
-Mithilfe des Assistenten zum Bearbeiten von Ressourcengruppen von SnapCenter VMware vSphere können Sie einer vorhandenen Ressourcengruppe mehrere Ressourcen hinzufügen.
+Mit dem Assistenten zum Bearbeiten von Ressourcengruppen für SnapCenter vSphere-Clients können Sie einer vorhandenen Ressourcengruppe mehrere Ressourcen hinzufügen.
 
 Eine Ressourcengruppe kann eine der folgenden Elemente enthalten:
 
@@ -34,7 +34,7 @@ NOTE: VVol VMs, die mehrere vVol Datastores umfassen, werden nicht unterstützt,
 . Gehen Sie auf der Seite *Ressource* wie folgt vor:
 +
 .. Navigieren Sie im Feld Datastores zu den VMs oder Datastores, die Sie hinzufügen möchten.
-.. Wählen Sie in der Liste Verfügbare Einheiten eine oder mehrere VMs oder Datastores aus, die der Ressourcengruppe hinzugefügt werden sollen. Klicken Sie dann auf *>*, um Ihre Auswahl in die Liste der ausgewählten Einheiten zu verschieben. Sie können alle verfügbaren Entitäten verschieben, indem Sie auf *>>* klicken.
+.. Wählen Sie in der Liste Verfügbare Einheiten eine oder mehrere VMs oder Datastores aus, die der Ressourcengruppe hinzugefügt werden sollen. Klicken Sie dann auf *>*, um Ihre Auswahl in die Liste der ausgewählten Einheiten zu verschieben. Klicken Sie auf *>>*, um alle verfügbaren Entitäten zu verschieben.
 +
 Standardmäßig wird das Datacenter-Objekt in der Liste Verfügbare Entitäten angezeigt. Sie können auf einen Datenspeicher klicken, um die VMs im Datenspeicher anzuzeigen und sie der Ressourcengruppe hinzuzufügen.
 
