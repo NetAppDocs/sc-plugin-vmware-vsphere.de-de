@@ -69,4 +69,4 @@ Die Wiederherstellung von Gastdateien erfolgt sowohl mit Klon- als auch Mount-Vo
 
 IMPORTANT: Während eines Wiederherstellungsvorgangs tritt möglicherweise der Fehler auf `Host unresolved volumes is null` Oder `Exception while calling pre-restore on SCV….Error mounting cloned LUN as datastore…` Dies geschieht, wenn das SnapCenter VMware Plug-in versucht, den Klon erneut zu signieren. Aufgrund der Beschränkungen von VMware kann das SnapCenter VMware Plug-in den automatischen Neusignatur-Wert in erweiterten ESXi-Konfigurationen nicht steuern.
 
-Weitere Informationen zum Fehler finden Sie unter {Link-with-unters}[KB Artikel: SCV Clone oder Restore schlagen mit Fehler 'Host unresolved Volumes is null^].
+Siehe https://kb.netapp.com/mgmt/SnapCenter/SCV_clone_or_restores_fail_with_error_'Host_Unresolved_volumes_is_null'#["KB-Artikel: SCV-Clone oder Wiederherstellung schlagen mit Fehler 'Host ungelöste Volumes ist Null"^] Für weitere Informationen über den Fehler.

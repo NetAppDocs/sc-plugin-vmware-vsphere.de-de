@@ -20,7 +20,7 @@ Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere be
 
 == Erforderliche Berechtigungen für vCenter Admin-Rolle
 
-System.Anonymous System.View System.Read Datastore.Rename Datastore.Move Datastore.Delete Datastore.Browse VirtualDatastore.FileManagement Datastore.AllocateSpace Network.AssigHost.Config.Storage Host.Config.AdvancedConfig.Mitarbeiter Host.Config.Einstellungen Host.Local.VirtualVM VirtualMachine.Inventory.Inventory.VirtualMachine.Snapshot.Snapshot.Remoconfigure.VirtualMachine.Snapshot.RemounVM.Configuration.VirtualMachine.Snapshot.CondVM.Remounregistriert VirtualMachine.Cont.Snapshot.RemoundeCont.VM.VM.Cont.VM.VM.VM.Remounregistriert VirtualMachine VirtualMachine VirtualMachine.Cont.Snapshot.Cont.Snapshot.Cont.VM
+Datastore.AllocateSpace Datastore.Browse Datastore.Delete Datastore.FileManagement Datastore.Move Datastore.Rename Extension.Register Extension.Unregister Extension.Update Host.Config.AdvancedConfig Host.Config.Resources Host.Config.Settings Host.Config.Storage Host.Local.CreateVM Host.Local.DeleteVM Network.Local.ReconfigVM Resource.ApplyMachine.Assign.Assignate Virtual Machine.NewVM Resource HostConfig.RemigralConfig.VM
 
 
 
