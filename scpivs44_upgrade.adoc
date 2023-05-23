@@ -35,7 +35,7 @@ NOTE: Das Umschalten der Netzwerkkonfiguration von statisch auf DHCP wird nicht 
 
 . Laden Sie das Upgrade herunter `.iso` Datei:
 +
-.. Loggen Sie sich auf der NetApp Support Site ein (https://mysupport.netapp.com/products/index.html)[].
+.. Loggen Sie sich auf der NetApp Support Site ein .
 .. Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* und klicken Sie dann auf die Schaltfläche *NEUESTE VERSION HERUNTERLADEN*.
 .. Laden Sie das Upgrade zum SnapCenter Plug-in für VMware vSphere herunter `.iso` Datei an jedem Speicherort.
 
