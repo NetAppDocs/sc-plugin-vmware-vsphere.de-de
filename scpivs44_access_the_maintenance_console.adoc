@@ -34,7 +34,7 @@ Um die Root-Benutzerberechtigung zum Ausführen des Befehls zu erhalten, verwend
 Melden Sie sich mit dem standardmäßigen Benutzernamen für die Wartungskonsole an `maint` Und das Passwort, das Sie bei der Installation festgelegt haben.
 
 +
-image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image11.png["Fenster der Wartungskonsole"]
 
 . Sie können folgende Vorgänge durchführen:
 +
@@ -44,7 +44,20 @@ Anzeigen einer Zusammenfassung des SnapCenter VMware Plug-ins Starten oder beend
 
 ** Option 2: Systemkonfiguration
 +
-Virtuelle Maschine neu starten oder herunterfahren Benutzerpasswort ändern Zeitzone ändern NTP-Server aktivieren/deaktivieren SSH-Zugriff erhöhen Jail Festplattengröße (/jail) Upgrade VMware Tools installieren
+Starten Sie die virtuelle Maschine neu
+Fahren Sie die virtuelle Maschine herunter
+Ändern Sie das Benutzerpasswort „Wartung“
+Zeitzone ändern
+NTP-Server ändern
+Aktivieren Sie den SSH-Zugriff
+Erhöhen der Größe der Jail-Festplatte (/jail)
+Upgrade
+Installation der VMware Tools
+MFA-Token generieren
+
++
+
+NOTE: MFA ist immer aktiviert, Sie können MFA nicht deaktivieren.
 
 ** Option 3: Netzwerkkonfiguration
 +

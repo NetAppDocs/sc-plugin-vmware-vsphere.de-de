@@ -30,7 +30,7 @@ Eine Ressourcengruppe kann eine der folgenden Elemente enthalten:
 NOTE: VVol VMs, die mehrere vVol Datastores umfassen, werden nicht unterstützt, da SnapCenter nur VVols im primären, ausgewählten vVol Datastore sichert.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie dann auf image:scpivs44_image39.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe bearbeiten* um den Assistenten zu starten.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie dann auf image:scpivs44_image39.png["Symbol bearbeiten"] *Ressourcengruppe bearbeiten* um den Assistenten zu starten.
 . Gehen Sie auf der Seite *Ressource* wie folgt vor:
 +
 .. Navigieren Sie im Feld Datastores zu den VMs oder Datastores, die Sie hinzufügen möchten.

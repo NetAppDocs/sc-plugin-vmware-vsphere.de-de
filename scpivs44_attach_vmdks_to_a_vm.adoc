@@ -40,11 +40,11 @@ Fügen Sie in diesem Fall die SCSI-Controller manuell hinzu, und versuchen Sie e
 . Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Hosts und Cluster* aus.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *virtuelles Laufwerk anhängen* aus.
 +
-image:scpivs44_image22.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image22.png["Fenster Virtuelles Laufwerk anhängen"]
 
 . Wählen Sie im Fenster *Virtuelles Laufwerk anhängen* im Abschnitt *Sicherung* ein Backup aus.
 +
-Sie können die Sicherungsliste filtern, indem Sie auf klicken image:scpivs44_image41.png["Fehler: Fehlendes Grafikbild"] Filtern Sie das Symbol und wählen Sie ein Datum und einen Zeitbereich aus. Wählen Sie aus, ob Backups mit VMware Snapshot Kopien, ob gemountete Backups oder der Speicherort gespeichert werden sollen. Klicken Sie auf *OK*.
+Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Sie Backups mit VMware Snapshot-Kopien erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den Speicherort aus. Klicken Sie auf *OK*.
 
 . Wählen Sie im Abschnitt *Select Disks* ein oder mehrere Festplatten aus, die Sie verbinden möchten, und den Speicherort, an den Sie anschließen möchten (primäre oder sekundäre).
 +
@@ -62,7 +62,7 @@ Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 .. Klicken Sie im linken Navigator-Fenster mit der rechten Maustaste auf eine VM und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
 .. Erweitern Sie im Fenster *Einstellungen bearbeiten* die Liste für jede Festplatte, um die Liste der Festplattendateien anzuzeigen.
 +
-image:scpivs44_image23.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image23.png["Fenster „Einstellungen bearbeiten“"]
 
 +
 Auf der Seite „Einstellungen bearbeiten“ werden die Festplatten auf der VM aufgeführt. Sie können die Details für jede Festplatte erweitern, um die Liste der verbundenen virtuellen Laufwerke anzuzeigen.

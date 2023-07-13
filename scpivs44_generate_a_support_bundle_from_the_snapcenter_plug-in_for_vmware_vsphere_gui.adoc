@@ -15,10 +15,11 @@ summary: Über das SnapCenter Plug-in für VMware vSphere können Sie ein Suppor
 
 .Bevor Sie beginnen
 [role="lead"]
-Um sich beim SnapCenter Plug-in für die Management-GUI von VMware vSphere anzumelden, müssen Sie die IP-Adresse und die Anmeldedaten kennen.
+Um sich beim SnapCenter Plug-in für die Management-GUI von VMware vSphere anzumelden, müssen Sie die IP-Adresse und die Anmeldedaten kennen. Sie müssen auch das MFA-Token notieren, das von der Wartungskonsole generiert wurde.
 
 * Die IP-Adresse wurde bei der Bereitstellung des SnapCenter-VMware-Plug-ins angezeigt.
 * Verwenden Sie die Login-Anmeldedaten, die bei der Bereitstellung des SnapCenter VMware Plug-ins oder einer späteren Änderung zur Verfügung gestellt werden.
+* Generieren Sie ein 6-stelliges MFA-Token mithilfe der Systemkonfigurationsoptionen der Wartungskonsole.
 
 
 .Schritte
@@ -28,7 +29,7 @@ Verwenden Sie das Format `https://<OVA-IP-address>:8080`.
 
 . Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
 +
-image:scpivs44_image10.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image10.png["SnapCenter Plug-in für VMware vSphere Schnittstelle"]
 
 . Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Support* auf *Support* Paket generieren.
 . Nachdem das Support Bundle generiert wurde, klicken Sie auf den Link, der zur Verfügung steht, um das Bundle auf NetApp herunterzuladen.

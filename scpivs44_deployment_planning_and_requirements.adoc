@@ -45,7 +45,7 @@ Wenn Sie beispielsweise Backups von sechs verschiedenen Instanzen des vCenter Se
 Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["ONTAP Tools für VMware vSphere"^]
 
 +
-Aktuelle Informationen zu unterstützten Versionen von ONTAP-Tools finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
+Aktuelle Informationen zu unterstützten Versionen von ONTAP-Tools finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 * Das SnapCenter VMware Plug-in bietet eingeschränkte Unterstützung für gemeinsam genutzte PCI- oder PCIe-Geräte (z. B. NVIDIA Grid GPU), da die Virtual Machines bei der Unterstützung von Storage vMotion begrenzt sind. Weitere Informationen finden Sie im Dokument Deployment Guide for VMware des Bieters.
 +
@@ -125,9 +125,9 @@ Wiederherstellung einer vollständigen VM, wenn eine oder mehrere VMDKs auf eine
 | VMware Application vStorage API für Array Integration (VAAI) | Das SnapCenter Plug-in für VMware vSphere nutzt diese Technologie zur Verbesserung der Performance von Restore-Vorgängen. Außerdem verbessert es die Performance in NFS Umgebungen. 
 
 
-| ONTAP Tools für VMware | Das SnapCenter Plug-in für VMware vSphere verwendet dieses Tool zum Management von vVol Datastores (virtuelle VMware Volumes). Informationen zu unterstützten Versionen finden Sie im https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^]. 
+| ONTAP Tools für VMware | Das SnapCenter Plug-in für VMware vSphere verwendet dieses Tool zum Management von vVol Datastores (virtuelle VMware Volumes). Informationen zu unterstützten Versionen finden Sie im https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^]. 
 |===
-Aktuelle Informationen zu unterstützten Versionen finden Sie im https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
+Aktuelle Informationen zu unterstützten Versionen finden Sie im https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 
 
@@ -177,7 +177,7 @@ Hinweis: Sie können die Portkonfiguration nicht ändern.
 
 Jede Plug-in-Instanz unterstützt nur einen vCenter Server. VCenters im verknüpften Modus werden unterstützt. Mehrere Plug-in-Instanzen können den gleichen SnapCenter-Server unterstützen, wie in der folgenden Abbildung dargestellt.
 
-image:scpivs44_image4.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image4.png["Unterstützte grafische Darstellung der Konfiguration"]
 
 
 

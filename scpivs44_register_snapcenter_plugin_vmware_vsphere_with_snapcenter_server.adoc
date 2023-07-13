@@ -56,7 +56,7 @@ Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf de
 +
 Wenn der VM-Host erfolgreich hinzugefügt wurde, wird er auf der Registerkarte Managed Hosts angezeigt.
 
-. Klicken Sie im linken Navigationsbereich auf *Einstellungen*, dann auf die Registerkarte *Credential* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen* zum Hinzufügen von Anmeldeinformationen für das virtuelle Gerät.
+. Klicken Sie im linken Navigationsbereich auf *Einstellungen*, klicken Sie dann auf die Registerkarte *Credential* und wählen Sie dann *Hinzufügen*, um Anmeldeinformationen für die virtuelle Appliance hinzuzufügen.
 . Geben Sie die Anmeldeinformationen an, die während der Bereitstellung des SnapCenter Plug-ins für VMware vSphere angegeben wurden.
 +
 

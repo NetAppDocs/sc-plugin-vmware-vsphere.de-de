@@ -16,10 +16,10 @@ summary:
 [role="lead"]
 Führen Sie die folgenden Schritte aus, um Ressourcengruppen zu erstellen.
 
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen*.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen* und wählen Sie dann *Erstellen*.
 . Geben Sie auf jeder Seite des Assistenten zum Erstellen von Ressourcengruppen die erforderlichen Informationen ein, wählen Sie VMs und Datenspeicher aus, die in die Ressourcengruppe aufgenommen werden sollen, und wählen Sie dann die Backup-Richtlinien aus, die auf die Ressourcengruppe angewendet werden sollen, und geben Sie den Backup-Zeitplan an.
 
 
 Backups werden gemäß den für die Ressourcengruppe konfigurierten Backup-Richtlinien durchgeführt.
 
-Sie können auf der Seite *Ressourcengruppen* eine Sicherung nach Bedarf durchführen, indem Sie auf klicken image:scpivs44_image38.png["Fehler: Fehlendes Grafikbild"] *Jetzt Laufen*.
+Sie können auf der Seite *Ressourcengruppen* nach Bedarf ein Backup durchführen, indem Sie auswählen image:scpivs44_image38.png["Wiedergabesymbol"] *Jetzt Laufen*.

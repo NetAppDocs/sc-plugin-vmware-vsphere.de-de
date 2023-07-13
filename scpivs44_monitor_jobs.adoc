@@ -19,9 +19,9 @@ Nachdem Sie mit dem VMware vSphere-Client einen Datensicherungsvorgang durchgef�
 .Schritte
 . Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*. Wenn zwei oder mehr vCenters im verknüpften Modus konfiguriert sind, wählen Sie einen vCenter-Server aus und klicken Sie dann im Dashboard-Bereich auf die Registerkarte *Job Monitor*. Auf der Registerkarte Job Monitor werden die einzelnen Jobs sowie deren Status, die Startzeit und die Endzeit aufgelistet. Wenn die Jobnamen lang sind, müssen Sie möglicherweise nach rechts blättern, um die Start- und Endzeiten anzuzeigen. Das Display wird alle 30 Sekunden aktualisiert.
 +
-** Klicken Sie auf das image:scpivs44_image36.png["Fehler: Fehlendes Grafikbild"] Aktualisieren Sie das Symbol in der Symbolleiste, um die Anzeige bei Bedarf zu aktualisieren.
-** Klicken Sie auf das image:scpivs44_image41.png["Fehler: Fehlendes Grafikbild"] Filtern Sie das Symbol, um den Zeitbereich, den Typ, das Tag und den Status der angezeigten Jobs auszuwählen. Der Filter ist Groß-/Kleinschreibung beachten.
-** Klicken Sie auf das image:scpivs44_image36.png["Fehler: Fehlendes Grafikbild"] Symbol „Aktualisieren“ im Fenster „Jobdetails“, um die Anzeige während der Ausführung des Jobs zu aktualisieren.
+** Wählen Sie das Symbol Aktualisieren in der Symbolleiste aus, um die Anzeige bei Bedarf zu aktualisieren.
+** Wählen Sie das Filtersymbol aus, um den Zeitraum, den Typ, das Tag und den Status der Jobs auszuwählen, die angezeigt werden sollen. Der Filter ist Groß-/Kleinschreibung beachten.
+** Wählen Sie das Symbol Aktualisieren im Fenster Job-Details aus, um die Anzeige während der Ausführung des Jobs zu aktualisieren.
 
 
 

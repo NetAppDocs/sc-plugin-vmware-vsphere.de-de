@@ -21,6 +21,8 @@ Unten sind die Swagger Rest APIs angegeben:
 . ERHALTEN Sie 4.1/Audit/Logs: Erhalten Sie Audit-Daten für alle Protokolle
 . GET 4.1/Audit/logs/{filename}: Get Audit-Daten für eine bestimmte Protokolldatei
 . NACH 4.1/Audit/Verify: Prüfung des Prüfprotokolls auslösen
+. GET 4.1/Audit/config: Get the Audit and syslog Server config
+. PUT 4.1/Audit/config: Aktualisieren Sie die Audit- und syslog-Server-Konfiguration
 
 
 Um Prüfprotokolle für VMware vSphere Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu generieren, müssen REST-API-Aufrufe für VMware vSphere verwendet werden.
@@ -40,4 +42,7 @@ Verwenden Sie die folgenden REST-APIs im Abschnitt Jobs, um detaillierte Informa
 
 
 | `4.1/audit/verify` | Löst die Überprüfung des Audits aus 
+
+
+| `4.1/audit/syslogcert` | Aktualisiert das Syslog-Serverzertifikat 
 |===

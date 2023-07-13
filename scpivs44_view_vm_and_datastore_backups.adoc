@@ -22,7 +22,7 @@ Das Durchsuchen von großen Dateiordnern, z. B. 10k-Dateiordnern, kann beim erst
 .Schritte
 . Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster*, wählen Sie dann eine VM aus, wählen Sie dann die Registerkarte *Konfigurieren* aus und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*.
 +
-image:scpivs44_image14.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image14.png["VSphere Client-UI"]
 
 . Klicken Sie auf das Backup, das Sie anzeigen möchten.
 

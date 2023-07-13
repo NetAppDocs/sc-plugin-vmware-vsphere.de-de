@@ -19,7 +19,7 @@ Sie können die Wartungskonsole verwenden, um das aktuellste Backup der MySQL-Da
 .Schritte
 . Öffnen Sie ein Fenster der Wartungskonsole.
 +
-link:scpivs44_manage_snapcenter_plug-in_for_vmware_vsphere.html#access-the-maintenance-console["Öffnen Sie die Wartungskonsole"].
+link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
 
 . Geben Sie im Hauptmenü die Option *1) Anwendungskonfiguration* ein.
 . Geben Sie im Menü Anwendungskonfiguration die Option *6) MySQL-Sicherung und -Wiederherstellung* ein.

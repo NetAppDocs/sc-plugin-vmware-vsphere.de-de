@@ -16,4 +16,4 @@ summary: Sie können diesen Workflow verwenden, wenn Sie SnapCenter Benutzer sin
 [role="lead"]
 Wenn Sie SnapCenter Benutzer sind und über SnapCenter-Backups verfügen, können Sie mit dem folgenden Workflow beginnen.
 
-image:scpivs44_image3.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image3.png["Implementierungs-Workflow"]

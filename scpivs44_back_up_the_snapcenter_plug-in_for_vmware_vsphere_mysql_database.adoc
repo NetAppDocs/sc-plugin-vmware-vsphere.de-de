@@ -25,7 +25,7 @@ Starten Sie keinen Job zum Backup der MySQL Datenbank, wenn bereits ein On-Deman
 . Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
 . Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten* *oder Webkonsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
 +
-image:scpivs44_image21.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image21.png["Fenster der Wartungskonsole"]
 
 . Geben Sie im Hauptmenü die Option *1) Anwendungskonfiguration ein.*
 . Geben Sie im Menü Anwendungskonfiguration die Option *6) MySQL-Sicherung und -Wiederherstellung ein.*

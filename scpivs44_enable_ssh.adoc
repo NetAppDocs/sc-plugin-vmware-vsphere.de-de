@@ -23,7 +23,7 @@ Bei der Implementierung des SnapCenter VMware Plug-ins ist SSH standardmäßig d
 Informationen zum Zugriff auf und zur Anmeldung bei der Wartungskonsole finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
 
 +
-image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image11.png["Fenster „Maintenance Console“"]
 
 . Wählen Sie im Hauptmenü die Menüoption *2) Systemkonfiguration*.
 . Wählen Sie im Menü Systemkonfiguration die Menüoption *6) SSH-Zugriff aktivieren* und geben Sie dann an der Bestätigungsaufforderung „*y*“ ein.

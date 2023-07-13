@@ -21,7 +21,7 @@ summary: Sie können ein Support-Bundle von der Wartungskonsole generieren.
 Informationen zum Zugriff auf und zur Anmeldung bei der Wartungskonsole finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
 
 +
-image:scpivs44_image11.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image11.png["Fenster der Wartungskonsole"]
 
 . Geben Sie im Hauptmenü die Option *4) Support und Diagnose* ein.
 . Geben Sie im Menü Support und Diagnose die Option *1) Supportpaket generieren* ein.

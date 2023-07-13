@@ -27,7 +27,7 @@ NOTE: Das Plug-in unterstützt nur REST APIs zur Integration mit Applikationen a
 .Schritte
 . Geben Sie in einem Browser die URL ein, um auf die Plug-in Swagger Webseite zuzugreifen:
 +
-`https://<appliance_IP_address_or_host_name>:8144/api/swagger-ui.html`
+`https://<SCV_IP>:8144/api/swagger-ui/index.html`
 
 +
 
@@ -38,8 +38,8 @@ IMPORTANT: Verwenden Sie nicht die folgenden Zeichen in DER REST-API-URL: +, . ,
 Zugriff auf die SnapCenter VMware Plug-in REST-APIs:
 
 +
-`https://192.0.2.82:8144/api/swagger-ui.html`
-`https://OVAhost:8144/api/swagger-ui.html`
+`https://<SCV_IP>:8144/api/swagger-ui/index.html`
+`https://OVAhost:8144/api/swagger-ui/index.html`
 
 +
 Melden Sie sich mit dem vCenter-Authentifizierungsmechanismus an, um das Token zu generieren.

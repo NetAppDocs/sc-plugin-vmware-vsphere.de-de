@@ -77,7 +77,7 @@ Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-VMware-P
 Verwenden Sie das Format `https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
 
 +
-Der Benutzername der Wartungskonsole ist auf festgelegt `maint` Standardmäßig können Sie bei der Installation ein Passwort festlegen.
+Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.
 
 . Melden Sie sich beim vCenter HTML5-Client an, klicken Sie dann in der Symbolleiste auf *Menü* und wählen Sie dann *SnapCenter-Plug-in für VMware vSphere*
 

@@ -96,14 +96,15 @@ Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfung
 
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen* um den Assistenten zu starten.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen* und wählen Sie dann *Erstellen*, um den Assistenten zu starten.
 
 
 Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können jedoch auch eine Ressourcengruppe mit einer Ressource erstellen, indem Sie eine der folgenden Schritte ausführen:
 
-+ ** um eine Ressourcengruppen für eine VM zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie dann mit der rechten Maustaste auf eine VM, wählen Sie dann NetApp SnapCenter aus und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe Erstellen*. ** Um eine Ressourcengruppe für einen Datastore zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf einen Datenspeicher, wählen Sie dann *NetApp SnapCenter* und klicken Sie dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Ressourcengruppe Erstellen*.
-
-. Gehen Sie auf der Seite *Allgemeine Informationen & Benachrichtigungen* im Assistenten wie folgt vor:
+* Um eine Ressourcengruppe für eine VM zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf eine VM, wählen Sie NetApp SnapCenter und wählen Sie dann *Ressourcengruppe erstellen* aus.
+* Um eine Ressourcengruppe für einen Datastore zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf einen Datastore, wählen Sie dann *NetApp SnapCenter* und wählen Sie dann *Ressourcengruppe erstellen* aus.
++
+.. Gehen Sie auf der Seite *Allgemeine Informationen & Benachrichtigungen* im Assistenten wie folgt vor:
 +
 |===
 | Für dieses Feld… | Do this… 
@@ -141,13 +142,13 @@ NOTE: A `_recent` Für jede Richtlinie, die einer Ressourcengruppe zugeordnet is
 | Benutzerdefiniertes Snapshot-Format  a| 
 Wenn Sie für die Namen der Snapshot Kopie ein benutzerdefiniertes Format verwenden möchten, aktivieren Sie dieses Kontrollkästchen und geben Sie das Namensformat ein.
 
-** Diese Funktion ist standardmäßig deaktiviert.
-** Die Namen der Snapshot Kopien verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`Sie können jedoch ein benutzerdefiniertes Format mit den Variablen „Ressourcengruppe für €“, „US-Dollar-Richtlinie“, „Hostname in US-Dollar“, „Zeitplantyp“ und „CustomText in US-Dollar“ festlegen. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden. Wenn Sie CustomText € auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird. HINWEIS: Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sein werden, daher sollten Sie die Variablen für die €Ressourcengruppe und USD Policy zu dem Namen hinzufügen.
-** Sonderzeichen für Sonderzeichen in Namen, befolgen Sie die gleichen Richtlinien für das Namensfeld.
+*** Diese Funktion ist standardmäßig deaktiviert.
+*** Die Namen der Snapshot Kopien verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`Sie können jedoch ein benutzerdefiniertes Format mit den Variablen „Ressourcengruppe für €“, „US-Dollar-Richtlinie“, „Hostname in US-Dollar“, „Zeitplantyp“ und „CustomText in US-Dollar“ festlegen. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden. Wenn Sie CustomText € auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird. HINWEIS: Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sein werden, daher sollten Sie die Variablen für die €Ressourcengruppe und USD Policy zu dem Namen hinzufügen.
+*** Sonderzeichen für Sonderzeichen in Namen, befolgen Sie die gleichen Richtlinien für das Namensfeld.
 
 
 |===
-. Gehen Sie auf der Seite *Ressourcen* wie folgt vor:
+.. Gehen Sie auf der Seite *Ressourcen* wie folgt vor:
 +
 |===
 | Für dieses Feld… | Do this… 
@@ -170,17 +171,17 @@ Wenn die Meldung angezeigt wird `Selected <resource-name> is not SnapCenter comp
 +
 Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie im den Namen des Datenspeichers angeben `global.ds.exclusion.pattern` Das Hotel befindet sich im `scbr.override` Konfigurationsdatei Siehe <<scpivs44_properties_you_can_override.adoc#Properties you can override,Eigenschaften, die Sie überschreiben können>>.
 
-. Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
+.. Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
 +
-** Schließen Sie immer alle Spanning-Datastores aus [dies ist der Standard für Datastores.]
-** Einbeziehen Sie immer alle überspannenden Datastores [Dies ist der Standard für VMs.]
-** Wählen Sie manuell die Spanning-Datenspeicher aus, die einbezogen werden sollen
+*** Schließen Sie immer alle Spanning-Datastores aus [dies ist der Standard für Datastores.]
+*** Einbeziehen Sie immer alle überspannenden Datastores [Dies ist der Standard für VMs.]
+*** Wählen Sie manuell die Spanning-Datenspeicher aus, die einbezogen werden sollen
 +
 Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.
 
 
 
-. Wählen oder erstellen Sie auf der Seite *Richtlinien* eine oder mehrere Backup-Richtlinien, wie in der folgenden Tabelle dargestellt:
+.. Wählen oder erstellen Sie auf der Seite *Richtlinien* eine oder mehrere Backup-Richtlinien, wie in der folgenden Tabelle dargestellt:
 +
 |===
 | Um… zu verwenden | Do this… 
@@ -190,17 +191,17 @@ Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.
 
 
 | Eine neue Richtlinie  a| 
-.. Klicken Sie Auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Erstellen*.
-.. Schließen Sie den Assistenten für neue Backup-Richtlinien ab, um zum Assistenten „Ressourcengruppe erstellen“ zurückzukehren.
+... Wählen Sie *Erstellen*.
+... Schließen Sie den Assistenten für neue Backup-Richtlinien ab, um zum Assistenten „Ressourcengruppe erstellen“ zurückzukehren.
 
 
 |===
 +
 Im verknüpften Modus enthält die Liste Richtlinien in allen verknüpften vCenters. Sie müssen eine Richtlinie auswählen, die sich im selben vCenter befindet wie die Ressourcengruppe.
 
-. Konfigurieren Sie auf der Seite *Schedules* den Backup-Zeitplan für jede ausgewählte Richtlinie.
+.. Konfigurieren Sie auf der Seite *Schedules* den Backup-Zeitplan für jede ausgewählte Richtlinie.
 +
-image:scpivs44_image18.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image18.png["Fenster Ressourcengruppe erstellen"]
 
 +
 Geben Sie im Feld Startzeit ein Datum und eine andere Zeit als null ein. Das Datum muss das Format haben `day/month/year`.
@@ -214,7 +215,7 @@ Sie müssen jedes Feld ausfüllen. Das SnapCenter VMware Plug-in erstellt Zeitpl
 +
 link:scpivs44_modify_the_time_zones.html["Ändern der Zeitzonen für Backups"].
 
-. Überprüfen Sie die Zusammenfassung und klicken Sie dann auf *Fertig stellen*.
+.. Überprüfen Sie die Zusammenfassung und klicken Sie dann auf *Fertig stellen*.
 +
 Bevor Sie auf *Fertig stellen* klicken, können Sie zu einer beliebigen Seite im Assistenten zurückkehren und die Informationen ändern.
 
@@ -224,6 +225,8 @@ Nachdem Sie auf *Fertig stellen* geklickt haben, wird die neue Ressourcengruppe 
 +
 
 NOTE: Wenn der Quiesce-Vorgang für eine der VMs im Backup fehlschlägt, dann ist der Backup als nicht VM-konsistent gekennzeichnet, auch wenn die ausgewählte Richtlinie die VM-Konsistenz ausgewählt hat. In diesem Fall ist es möglich, dass einige der VMs erfolgreich stillgelegt wurden.
+
+
 
 
 
@@ -241,7 +244,7 @@ Gründe für eine Inkompatibilität können sein:
 SnapCenter Version 4.x unterstützt ONTAP 8.3.1 und höher.
 
 +
-Das SnapCenter Plug-in für VMware vSphere führt keine Kompatibilitätsprüfungen für alle ONTAP Versionen durch – nur für ONTAP Versionen 8.2.1 und frühere Versionen. Sehen Sie deshalb immer das https://imt.netapp.com/matrix/imt.jsp?components=108380;&solution=1257&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool (IMT)"^] Aktuelle Informationen zum SnapCenter Support.
+Das SnapCenter Plug-in für VMware vSphere führt keine Kompatibilitätsprüfungen für alle ONTAP Versionen durch – nur für ONTAP Versionen 8.2.1 und frühere Versionen. Sehen Sie deshalb immer das https://imt.netapp.com/matrix/imt.jsp?components=112310;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool (IMT)"^] Aktuelle Informationen zum SnapCenter Support.
 
 * Ein gemeinsam genutztes PCI-Gerät ist mit einer VM verbunden.
 * Eine bevorzugte IP-Adresse ist in SnapCenter nicht konfiguriert.

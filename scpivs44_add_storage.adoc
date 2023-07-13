@@ -16,6 +16,6 @@ summary:
 [role="lead"]
 Führen Sie die Schritte in diesem Abschnitt aus, um Speicher hinzuzufügen.
 
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Speichersysteme* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
-. Geben Sie im Dialogfeld Add Storage System die grundlegenden SVM- oder Clusterinformationen ein, und klicken Sie dann auf *Add*.
+. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Storage Systems* und wählen Sie dann *Add*.
+. Geben Sie im Dialogfeld Speichersystem hinzufügen die grundlegenden SVM- oder Cluster-Informationen ein, und wählen Sie *Hinzufügen* aus.
 

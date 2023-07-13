@@ -32,6 +32,6 @@ Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM od
 . Optional: Klicken Sie mit der rechten Maustaste auf eine VM oder einen Datenspeicher, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus.
 . Geben Sie im Assistenten * Wiederherstellen* einen Suchnamen ein und klicken Sie auf *Suchen*.
 +
-Sie können die Sicherungsliste filtern, indem Sie auf klicken image:scpivs44_image41.png["Fehler: Fehlendes Grafikbild"] Filtern Sie das Symbol, und wählen Sie einen Datums- und Zeitbereich aus. Wählen Sie aus, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Sie gemountete Backups und den Speicherort verwenden möchten. Klicken Sie auf *OK*.
+Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und ob der Speicherort vorhanden ist. Klicken Sie auf *OK*.
 
 

@@ -43,7 +43,7 @@ Das SnapCenter VMware Plug-in führt Backup- und Restore-Vorgänge auf direkt ve
 NOTE: Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung applikationsbasierter Backups auf VMDKs verwenden, müssen Sie über die Benutzeroberfläche von SnapCenter die Details zur Storage-Authentifizierung eingeben und die Speichersysteme registrieren.
 
 * Bei vCenters im Linked-Modus müssen Sie jedem vCenter separat Storage-Systeme hinzufügen.
-* Die Namen für Storage VMs müssen für das Management LIFs aufgelöst werden.
+* Wenn Sie SVMs hinzufügen, müssen die Namen von Storage-VMs den Management-LIFs zugewiesen werden.
 +
 Wenn Sie in SnapCenter Host-Einträge für Storage-VM-Namen hinzugefügt haben, müssen Sie überprüfen, dass sie auch von der virtuellen Appliance aus lösbar sind.
 
@@ -55,7 +55,7 @@ Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-L
 
 .Schritte
 . Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Storage Systems*.
-. Klicken Sie auf der Seite Storage Systems auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen*.
+. Wählen Sie auf der Seite Speichersysteme die Option *Hinzufügen* aus.
 . Geben Sie im Assistenten * Storage System* die grundlegenden Speicher-VM oder Cluster-Informationen ein, wie in der folgenden Tabelle aufgeführt:
 +
 |===
@@ -71,10 +71,10 @@ Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-L
 | Authentifizierungsmethode | Wählen Sie entweder Anmeldeinformationen oder Zertifikat aus. Es werden zwei Arten von Zertifikaten unterstützt: - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["KANN signiertes Zertifikat"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["Selbstsigniertes Zertifikat"^] 
 
 
-| Benutzername | Dieses Feld wird angezeigt, wenn Sie Anmeldeinformationen als Authentifizierungsmethode auswählen. Geben Sie den ONTAP-Benutzernamen ein, der zur Anmeldung bei der Storage-VM verwendet wird. 
+| Benutzername | Dieses Feld wird angezeigt, wenn Sie Anmeldeinformationen als Authentifizierungsmethode auswählen. Geben Sie den ONTAP-Benutzernamen ein, mit dem Sie sich bei der Storage-VM oder beim Cluster anmelden. 
 
 
-| Passwort | Dieses Feld wird angezeigt, wenn Sie Anmeldeinformationen als Authentifizierungsmethode auswählen. Geben Sie das Anmeldekennwort für die Storage-VM ein. 
+| Passwort | Dieses Feld wird angezeigt, wenn Sie Anmeldeinformationen als Authentifizierungsmethode auswählen. Geben Sie das Passwort für die Storage-VM oder das Cluster-Login ein. 
 
 
 | Zertifikat | Dieses Feld wird angezeigt, wenn Sie Zertifikat als Authentifizierungsmethode auswählen. Wählen Sie die Zertifikatdatei aus. 

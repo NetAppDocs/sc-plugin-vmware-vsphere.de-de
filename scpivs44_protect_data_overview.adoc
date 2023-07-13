@@ -30,4 +30,4 @@ In MetroCluster Konfigurationen:
 
 Die folgende Workflow-Abbildung zeigt die Reihenfolge, in der Sie Sicherungsvorgänge ausführen müssen:
 
-image:scpivs44_image13.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image13.png["Workflow für Backup-Vorgänge"]

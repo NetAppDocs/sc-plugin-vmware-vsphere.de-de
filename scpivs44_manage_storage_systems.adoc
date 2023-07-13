@@ -29,10 +29,10 @@ IMPORTANT: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgän
 
 .Schritte
 . Klicken Sie im linken Navigator-Fenster des SCV-Plug-ins auf *Speichersysteme*.
-. Wählen Sie auf der Seite *Storage Systems* die zu bearbeitenden Speicher-VM aus und klicken Sie dann auf image:scpivs44_image25.png["Fehler: Fehlendes Grafikbild"] *Bearbeiten*.
+. Wählen Sie auf der Seite *Speichersysteme* die zu ändernde Speicher-VM aus und wählen Sie dann *Bearbeiten*.
 . Geben Sie im Fenster *Speichersystem bearbeiten* die neuen Werte ein und klicken Sie dann auf *Aktualisieren*, um die Änderungen anzuwenden.
 +
-image:scpivs44_image43.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image43.png["Fenster „Storage Systems“ bearbeiten"]
 
 
 

@@ -59,4 +59,4 @@ Nutzen Sie den folgenden Workflow, um die RBAC für ONTAP und SnapCenter einzuri
 
 Die folgende Abbildung bietet einen Überblick über den Validierungs-Workflow für RBAC-Berechtigungen (vCenter und ONTAP):
 
-image:scpivs44_image1.png["Fehler: Fehlendes Grafikbild"]
+image:scpivs44_image1.png["Validierungs-Workflow für RBAC-Berechtigungen"]

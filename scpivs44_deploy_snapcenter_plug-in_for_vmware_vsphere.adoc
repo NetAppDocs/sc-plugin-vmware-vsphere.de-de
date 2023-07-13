@@ -16,10 +16,12 @@ summary: Um SnapCenter VMs, Datastores und applikationskonsistente Datenbanken a
 [role="lead"]
 Um SnapCenter VMs, Datastores und applikationskonsistente Datenbanken auf virtualisierten Maschinen zu sichern, müssen Sie das SnapCenter Plug-in für VMware vSphere implementieren.
 
-....
-[Note]
-The OVA deployment is supported in VMware vCenter 7u1 and above.
-....
+.Bevor Sie beginnen
+In diesem Abschnitt werden alle erforderlichen Aktionen aufgeführt, die Sie vor Beginn der Bereitstellung durchführen sollten.
+
+
+NOTE:  Die OVA-Implementierung wird in VMware vCenter 7u1 und höher unterstützt.
+
 * Sie müssen die Implementierungsanforderungen gelesen haben.
 * Sie müssen eine unterstützte Version von vCenter Server ausführen.
 * Sie müssen Ihre vCenter Server-Umgebung konfiguriert und eingerichtet haben.
@@ -141,7 +143,7 @@ Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-VMware-P
 Verwenden Sie das Format `https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
 
 +
-Melden Sie sich mit dem standardmäßigen Benutzernamen für die Wartungskonsole an `maint` Und das Passwort, das Sie bei der Installation festgelegt haben.
+Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.
 
 +
 Wenn das SnapCenter VMware Plug-in nicht aktiviert ist, lesen Sie link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere-Client-Service neu"].

@@ -24,7 +24,7 @@ Die Registerkarte Berichte enthält Informationen zu den Jobs, die auf der Seite
 +
 .. Ändern Sie den Bericht
 +
-Klicken Sie auf das image:scpivs44_image41.png["Fehler: Fehlendes Grafikbild"] Filtern Sie das Symbol, um den Zeitbereich, den Jobstatus-Typ, die Ressourcengruppen und die Richtlinien zu ändern, die in den Bericht aufgenommen werden sollen.
+Wählen Sie das Filtersymbol aus, um den Zeitbereich, den Jobstatustyp, die Ressourcengruppen und die Richtlinien zu ändern, die in den Bericht aufgenommen werden sollen.
 
 .. Erstellen eines detaillierten Berichts
 +
@@ -34,7 +34,7 @@ Doppelklicken Sie auf einen Job, um einen detaillierten Bericht für diesen Job 
 
 . Optional: Klicken Sie auf der Registerkarte Berichte auf *Download* und wählen Sie das Format (HTML oder CSV) aus.
 +
-Sie können auch auf die klicken image:scpivs44_image37.png["Fehler: Fehlendes Grafikbild"] Download-Symbol, um Plug-in-Protokolle herunterzuladen.
+Sie können auch auf das Download-Symbol klicken, um Plug-in-Protokolle herunterzuladen.
 
 
 

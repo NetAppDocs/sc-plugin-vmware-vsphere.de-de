@@ -23,7 +23,7 @@ NOTE: Der Standardwert für die Aufbewahrung von Jobprotokollen beträgt 30 Tage
 
 .Schritte
 . Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*, wählen Sie einen vCenter-Server aus und klicken Sie dann im Dashboard-Bereich auf die Registerkarte *Job Monitor*.
-. Klicken Sie auf das image:scpivs44_image37.png["Fehler: Fehlendes Grafikbild"] Download-Symbol in der Titelleiste des Job-Monitors.
+. Wählen Sie in der Titelleiste des Job Monitors das Download-Symbol aus.
 +
 Möglicherweise müssen Sie nach rechts blättern, um das Symbol zu sehen.
 

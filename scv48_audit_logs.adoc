@@ -52,13 +52,15 @@ Gerollte über Audit-Protokolle werden regelmäßig auf ihre Integrität überpr
 | NORMAL | Audit-Log-Datei wurde nicht geändert 
 
 
-| ROLLOVER LÖSCHEN | * Audit Log-Datei wird auf Basis der Aufbewahrung gelöscht * standardmäßig werden nur 10 Dateien aufbewahrt 
+| ROLLOVER LÖSCHEN | - Audit-Log-Datei wird auf Basis der Aufbewahrung gelöscht
+- Standardmäßig bleiben nur 10 Dateien erhalten 
 
 
 | UNERWARTETES LÖSCHEN | Audit-Log-Datei wird gelöscht 
 
 
-| AKTIV | * Audit Log-Datei wird verwendet * gilt nur für audit.log 
+| AKTIV | - Audit Log Datei wird verwendet
+- Gilt nur für audit.log 
 |===
 Die Ereignisse lassen sich in drei Hauptkategorien einteilen:
 
@@ -143,4 +145,49 @@ Die folgenden Vorgänge in der Admin Console-UI werden geprüft:
 ** Plug-in-Aktivierung/Deaktivierung
 
 
+
+
+
+
+== Konfigurieren Sie Syslog-Server
+
+Prüfprotokolle werden in der Appliance gespeichert und regelmäßig auf ihre Integrität überprüft. Mit der Ereignisweiterleitung können Sie Ereignisse vom Quell- oder Weiterleitungscomputer abrufen und auf einem zentralen Computer, dem Syslog-Server, speichern. Die Daten werden während der Übertragung zwischen Quelle und Ziel verschlüsselt.
+
+.Bevor Sie beginnen
+Sie müssen über Administratorrechte verfügen.
+
+.Über diese Aufgabe
+Diese Aufgabe unterstützt Sie bei der Konfiguration des Syslog-Servers.
+
+.Schritte
+. Melden Sie sich beim SnapCenter-Plug-in für VMware vSphere an.
+. Wählen Sie im linken Navigationsbereich *Einstellungen* > *Audit-Protokolle* > *Einstellungen*.
+. Wählen Sie im Bereich *Audit Log Settings* die Option *Send Audit Logs to Syslog Server* aus
+. Geben Sie die folgenden Details ein:
++
+** Syslog-Server-IP
+** Syslog-Server-Port
+** RFC-Format
+** Syslog-Serverzertifikat
+
+
+. Klicken Sie auf *SAVE*, um die Syslog-Server-Einstellungen zu speichern.
+
+
+
+
+== Ändern Sie die Einstellungen des Überwachungsprotokolls
+
+Sie können die Standardkonfigurationen der Protokolleinstellungen ändern.
+
+.Bevor Sie beginnen
+Sie müssen über Administratorrechte verfügen.
+
+.Über diese Aufgabe
+Mit dieser Aufgabe können Sie die standardmäßigen Einstellungen des Überwachungsprotokolls ändern.
+
+.Schritte
+. Melden Sie sich beim SnapCenter-Plug-in für VMware vSphere an.
+. Wählen Sie im linken Navigationsbereich *Einstellungen* > *Audit-Protokolle* > *Einstellungen*.
+. Geben Sie im Bereich *Audit Log Settings* die Werte *Anzahl der Audit-Einträge* und *Audit Log Size Limit* entsprechend Ihren Anforderungen ein.
 

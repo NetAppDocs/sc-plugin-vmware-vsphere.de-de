@@ -14,7 +14,11 @@ summary: Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere mü
 
 
 [role="lead"]
-Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere müssen Sie die Installation abschließen. == erforderliche Operationen nach der Implementierung
+Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere müssen Sie die Installation abschließen.
+
+
+
+== Erforderliche Vorgänge nach der Implementierung
 
 Als neuer SnapCenter Benutzer müssen Sie SnapCenter Storage-VMs hinzufügen, bevor Sie Datensicherungsvorgänge durchführen können. Geben Sie beim Hinzufügen von Storage VMs die Management-LIF an. Sie können auch ein Cluster hinzufügen und die Cluster-Management-LIF angeben. Informationen zum Hinzufügen von Speicher finden Sie unter link:scpivs44_add_storage_01.html["Erweitern Sie Ihren Storage"^].
 
@@ -53,7 +57,7 @@ Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere-Client-Servic
 Wenn Sie die Administratoranmeldedaten nicht verwenden, erhalten Sie möglicherweise einen Authentifizierungsfehler nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere oder nach der Migration. Wenn ein Authentifizierungsfehler auftritt, müssen Sie den Dienst neu starten.
 
 .Schritte
-. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `https://<appliance-IP-address>:8080`.
+. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `https://<appliance-IP-address>:8080`. Verwenden Sie den Admin-Benutzernamen, das Passwort und die MFA-Token-Details für die Anmeldung. MFA-Token kann über die Wartungskonsole generiert werden.
 . Starten Sie den Dienst neu.
 
 
@@ -101,7 +105,7 @@ Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf de
 +
 Wenn der VM-Host erfolgreich hinzugefügt wurde, wird er auf der Registerkarte Managed Hosts angezeigt.
 
-. Klicken Sie im linken Navigationsbereich auf *Einstellungen*, dann auf die Registerkarte *Credential* und dann auf image:scpivs44_image6.png["Fehler: Fehlendes Grafikbild"] *Hinzufügen* zum Hinzufügen von Anmeldeinformationen für das virtuelle Gerät.
+. Klicken Sie im linken Navigationsbereich auf *Einstellungen*, klicken Sie dann auf die Registerkarte *Credential* und wählen Sie dann *Hinzufügen*, um Anmeldeinformationen für die virtuelle Appliance hinzuzufügen.
 . Geben Sie die Anmeldeinformationen an, die während der Bereitstellung des SnapCenter Plug-ins für VMware vSphere angegeben wurden.
 +
 
