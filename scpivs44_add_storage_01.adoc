@@ -26,7 +26,7 @@ Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastore
 
 * VMware Virtual Volumes (VVols)
 +
-Sie müssen zunächst das VVols Storage-System zu ONTAP Tools für VMware vSphere hinzufügen und dann das VVols Storage-System zum SnapCenter Plug-in für VMware vSphere hinzufügen.
+Sie müssen das VVols Storage-System zunächst den ONTAP Tools für VMware vSphere hinzufügen und dann dem SnapCenter Plug-in für VMware vSphere hinzufügen.
 
 +
 Weitere Informationen finden Sie unter https://docs.netapp.com/vapp-98/index.jsp["ONTAP Tools für VMware vSphere"^]
@@ -45,7 +45,7 @@ NOTE: Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung applikationsbasi
 * Bei vCenters im Linked-Modus müssen Sie jedem vCenter separat Storage-Systeme hinzufügen.
 * Wenn Sie SVMs hinzufügen, müssen die Namen von Storage-VMs den Management-LIFs zugewiesen werden.
 +
-Wenn Sie in SnapCenter Host-Einträge für Storage-VM-Namen hinzugefügt haben, müssen Sie überprüfen, dass sie auch von der virtuellen Appliance aus lösbar sind.
+Wenn Sie in SnapCenter Einträge zur Datei „_etc\Hosts_“ für Storage-VM-Namen hinzugefügt haben, müssen Sie sicherstellen, dass diese auch von der virtuellen Appliance aufgelöst werden können. Wenn dies nicht der Fall ist, sollten Sie ähnliche Einträge zur _etc/Hosts_-Datei innerhalb der Appliance hinzufügen.
 
 +
 Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-LIF auflöst, schlagen geplante Backup-Jobs fehl, da das Plug-in keine Datenspeicher oder Volumes auf dieser Storage-VM finden kann. Falls dies der Fall ist, fügen Sie entweder die Storage VM zur SnapCenter hinzu und geben Sie die Management-LIF an, oder fügen Sie einen Cluster hinzu, der die Storage-VM enthält, und geben Sie die Cluster-Management-LIF an.
@@ -62,10 +62,8 @@ Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-L
 | Für dieses Feld… | Do this… 
 
 
-| Storage-System | Geben Sie den FQDN oder die IP-Adresse eines Speicherclusters oder einer Speicher-VM ein. Das SnapCenter VMware Plug-in unterstützt nicht mehrere Storage-Systeme mit demselben Namen auf verschiedenen Clustern. Jedes von SnapCenter unterstützte Storage-System muss über eine eindeutige LIF-IP-Adresse für Daten verfügen. 
-
-
-| Plattform | Wählen Sie die Plattform aus. 
+| Storage-System | Geben Sie die IP-Adresse eines Storage-Clusters oder einer Storage-VM des FQDN oder Management LIF ein.
+Das SnapCenter VMware Plug-in unterstützt nicht mehrere Storage-VMs mit demselben Namen in verschiedenen Clustern. 
 
 
 | Authentifizierungsmethode | Wählen Sie entweder Anmeldeinformationen oder Zertifikat aus. Es werden zwei Arten von Zertifikaten unterstützt: - https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_CA_signed_certificate_for_storage_system_authentication_with_SCV["KANN signiertes Zertifikat"^]- https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_configure_a_self-signed_certificate_for_storage_system_authentication_with_SCV["Selbstsigniertes Zertifikat"^] 
@@ -86,13 +84,16 @@ Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-L
 | Protokoll | Wählen Sie das Storage-Protokoll aus. 
 
 
-| Port | Wählen Sie Port 443 (Standard) oder Port 80, um mit vCenter zu kommunizieren. Port 443 wird für die Kommunikation zwischen dem Storage-VM-Host für das SnapCenter Plug-in für VMware vSphere und vCenter verwendet, wenn Backup- und Restore-Vorgänge für VMs und Datenspeicher durchgeführt werden. Sie müssen den Standardport 443 auswählen, wenn Sie vVol VMs schützen möchten. 
+| Port | Port, den das Speichersystem akzeptiert.
+- 443 für HTTPS-Verbindung
+- 80 für HTTP-Verbindung 
 
 
-| Zeitüberschreitung | Geben Sie die Anzahl der Sekunden ein, die vCenter warten soll, bevor der Vorgang abgeschlossen wird. Der Standardwert beträgt 60 Sekunden. 
+| Zeitüberschreitung | Geben Sie die Anzahl der Sekunden ein, die das SnapCenter-VMware-Plug-in warten soll, bevor Sie den Vorgang absetzen. Die Standardeinstellung ist 60 Sekunden. 
 
 
-| Bevorzugte IP | Wenn die Storage-VM mehr als eine Management-IP-Adresse hat, aktivieren Sie dieses Kontrollkästchen und geben Sie die IP-Adresse ein, die von SnapCenter verwendet werden soll. *Hinweis:* Verwenden Sie keine eckigen Klammern ([]), wenn Sie die IP-Adresse eingeben. 
+| Bevorzugte IP | Wenn die Storage VM über mehrere Management-IP-Adressen verfügt, aktivieren Sie dieses Kontrollkästchen und geben Sie die IP-Adresse ein, die das SnapCenter-VMware-Plug-in verwenden soll.
+*Hinweis:* Verwenden Sie keine eckigen Klammern ([]), wenn Sie die IP-Adresse eingeben. 
 
 
 | Einstellungen für Ereignismanagement-System (EMS) und AutoSupport | Wenn Sie EMS-Meldungen an das Syslog-Speichersystem senden möchten oder wenn Sie AutoSupport-Meldungen für den angewendeten Schutz, abgeschlossene Wiederherstellungsvorgänge oder fehlgeschlagene Vorgänge an das Speichersystem senden möchten, aktivieren Sie das entsprechende Kontrollkästchen. Aktivieren Sie das Kontrollkästchen *AutoSupport-Benachrichtigung für fehlgeschlagene Vorgänge an das Speichersystem senden* und das Kontrollkästchen * SnapCenter-Serverereignisse in syslog*, um AutoSupport-Benachrichtigungen zu aktivieren. 

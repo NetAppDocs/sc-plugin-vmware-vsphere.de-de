@@ -44,3 +44,6 @@ Die Anmeldeinformationen „Ausführen als“ müssen der standardmäßige Domä
 . Klicken Sie im Abschnitt *Proxy Credentials* auf *Add*, um eine VM hinzuzufügen, die als Proxy verwendet werden soll.
 . Füllen Sie im Dialogfeld *Proxy VM* die Informationen aus und klicken Sie dann auf *Speichern*.
 
+
+
+NOTE: Sie müssen die Proxy-VM aus dem SnapCenter-Plug-in für VMware vSphere-UI löschen, bevor Sie sie aus ESXi löschen können.
