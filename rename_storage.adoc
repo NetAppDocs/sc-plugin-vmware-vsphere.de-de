@@ -1,0 +1,59 @@
+---
+sidebar: sidebar 
+permalink: rename_storage.html 
+keywords:  
+summary: Sie können den Speicher mit REST API umbenennen. 
+---
+= Backup des umbenannten Speichers wiederherstellen
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Wenn der Speicher umbenannt wird, fehlschlagen Workflows, die vor der Umbenennung mithilfe von Backups durchgeführt wurden. Mit der Einführung der Funktion zum Umbenennen von Backups, auf die ausschließlich über die REST-API zugegriffen werden kann, ist es nun möglich, die Backups zu verwenden, die vor der Umbenennung des Speichers erstellt wurden. Im Folgenden werden der Workflow und die Verwendung der REST-API beschrieben.
+
+.Schritte
+. Fügen Sie die neue Speicherverbindung hinzu oder aktualisieren Sie sie, um sicherzustellen, dass der neue Cluster- oder SVM-Name in SCV angezeigt wird.
+. Starten Sie den Service neu, um die Caches zu aktualisieren, wie im KB-Artikel beschrieben: https://kb.netapp.com/mgmt/SnapCenter/SCV_backups_fail_after_SVM_rename["SCV-Backups schlagen nach dem Umbenennen der SVM fehl"]
+. Erstellen Sie ein neues Backup.
+. Verwenden Sie die Sicherungsdetails, um die alten und neuen Speichernamen zu finden.
+. Wählen Sie im Fenster *Backups* des vSphere-Clients das Backup aus, um die Details anzuzeigen.
+. Greifen Sie über die URL auf Swagger zu: https://<SCV-IP>:8144/api/swagger-ui/index.html[]
++
+Verwenden Sie die folgende API, um den Speicher umzubenennen:
+
++
+PATCH
+/4.1/Storage-System
+
++
+Beispiel:
+{
+  „ExistingSVM“: {
+    „Name“: „String“
+  },
+  „NewSVM“: {
+    „Name“: „String“
+  }
+}
+
++
+Antwort:
+
++
+{
+  „Statusmeldung“: „OK“,
+  „Statuscode“: 200,
+  "ResponseMessage": [
+    „Speichersystem erfolgreich umbenannt.“
+  ]
+}
+
++
+Nachdem Sie diese API ausgeführt haben, können Sie alle Workflows ausführen, einschließlich des Wiederherstellungsvorgangs aus dem alten Backup.
+
+

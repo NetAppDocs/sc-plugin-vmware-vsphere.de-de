@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 4.9
+  name: SnapCenter Plug-in for VMware vSphere 5.0
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '4.9'
+  - version-number: '5.0'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '4.9'
+    url: "/sc-plugin-vmware-vsphere-49"
   - version-number: '4.8'
     url: "/sc-plugin-vmware-vsphere-48"
   - version-number: '4.7'
@@ -20,7 +22,7 @@ settings:
   langs: de-de,us-en,ja-jp,ko-kr,zh-cn,zh-tw,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: Dokumentation zum SnapCenter Plug-in für VMware vSphere 4.9
+  - title: Dokumentation zum SnapCenter Plug-in für VMware vSphere 5.0
     url: "/index.html"
   - title: Versionshinweise
     url: "/scpivs44_release_notes.html"
@@ -122,6 +124,8 @@ sidebar:
       url: "/scpivs44_add_a_single_vm_or_datastore_to_a_resource_group.html"
     - title: Fügen Sie mehrere VMs und Datenspeicher einer Ressourcengruppe hinzu
       url: "/scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html"
+    - title: Benennen Sie den Speicher um
+      url: "/rename_storage.html"
     - title: Bei Bedarf das Sichern von Ressourcengruppen sichern
       url: "/scpivs44_back_up_resource_groups_on_demand.html"
     - title: Sichern Sie die MySQL Datenbank
@@ -254,37 +258,3 @@ sidebar:
       url: "/scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_the_same_release.html"
   - title: Rechtliche Hinweise
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: Los geht's
-    links:
-    - title: Versionshinweise
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP2886207
-    - title: Erfahren Sie mehr über SCV
-      url: "/scpivs44_concepts_overview.html"
-    - title: Implementierungsanforderungen zu erfüllen
-      url: "/scpivs44_deployment_planning_and_requirements.html"
-    - title: Schnellstart
-      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
-  - title: Sicherung von VMs, VMDKs und Datastores
-    links:
-    - title: Sichern Sie Ihre Daten
-      url: "/scpivs44_protect_data_overview.html"
-    - title: Restore aus Backups
-      url: "/scpivs44_restore_from_backups_overview.html"
-    - title: Verwendung VON REST-APIs
-      url: "/scpivs44_rest_apis_overview.html"
-  - title: Blogs Community
-    links:
-    - title: NetApp Blog – SCV
-      url: https://blog.netapp.com/tag/snapcenter/
-    - title: NetApp Community – SCV
-      url: https://community.netapp.com/t5/forums/filteredbylabelpage/board-id/backup-and-restore-discussions/label-name/snapcenter
-  - title: Mehr Ressourcen
-    links:
-    - title: SnapCenter-Softwaredokumentation
-      url: https://docs.netapp.com/us-en/snapcenter/index.html
-    - title: Dokumentation für frühere SCV-Versionen
-      url: https://mysupport.netapp.com/documentation/productlibrary/index.html?productID=63240
-    - title: NetApp Knowledge Base – SCV
-      url: https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter

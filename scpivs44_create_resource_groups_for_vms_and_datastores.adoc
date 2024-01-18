@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html 
 keywords:  
-summary: Eine Ressourcengruppe ist der Container für VMs, Datastores oder VVols VMs, den Sie sichern möchten. 
+summary: Eine Ressourcengruppe ist der Container für VMs, Datastores, vSphere Tags und vSphere VM-Ordner, den Sie schützen möchten. 
 ---
 = Erstellen von Ressourcengruppen
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Eine Ressourcengruppe ist der Container für VMs, Datastores oder VVols
 
 
 [role="lead"]
-Eine Ressourcengruppe ist der Container für VMs, Datastores und vVol VMs, den Sie schützen möchten.
+Eine Ressourcengruppe ist der Container für VMs, Datastores, vSphere Tags und vSphere VM-Ordner, den Sie schützen möchten.
 
 Eine Ressourcengruppe kann Folgendes enthalten:
 
@@ -34,9 +34,9 @@ Ein oder mehrere FlexVol Datastores. Spanning-Datenspeicher werden unterstützt.
 +
 Ein oder mehrere vVol VMs. VVol VMs können nicht mit herkömmlichen VMs oder Datastores kombiniert werden.
 
-* VVol VMs mit einem Tag
+* VSphere-Tag
 +
-Alle vVol VMs mit einem angegebenen vCenter Tag. Andere Einheiten mit Tags, wie Datastores oder herkömmliche VMs mit demselben Tag im selben vCenter oder in einem anderen vCenter, werden nicht unterstützt. Wenn die Liste der VMs mit dem angegebenen Tag eine Mischung aus vVol VMs und herkömmlichen VMs enthält, sichert das SnapCenter Plug-in für VMware vSphere die vVol VMs und überspringt die herkömmlichen VMs.
+Alle VMs und Datastores, ausgenommen vVol Datastores, die das angegebene vSphere-Tag haben.
 
 * VVol VMs in einem Ordner
 +
@@ -84,7 +84,13 @@ Zum Optimieren von Snapshot Kopien sollten die VMs und Datastores, die mit demse
 
 * Backup-Richtlinien
 +
-Es ist zwar möglich, eine Ressourcengruppe ohne Sicherungsrichtlinie zu erstellen, Sie können aber nur geplante Datensicherungsvorgänge ausführen, wenn mindestens eine Richtlinie an die Ressourcengruppe angeschlossen ist. Sie können eine vorhandene Richtlinie verwenden oder eine neue Richtlinie erstellen, während Sie eine Ressourcengruppe erstellen.
+Sie können zwar eine Ressourcengruppe ohne Sicherungsrichtlinie erstellen, aber Datensicherheitsvorgänge sind nur möglich, wenn mindestens eine Richtlinie an die Ressourcengruppe angehängt ist. Sie haben die Möglichkeit, eine vorhandene Richtlinie zu verwenden oder während des Erstellungsprozesses einer Ressourcengruppe eine neue zu erstellen.
+
++
+
+NOTE: Wenn Sie eine Backup-Richtlinie mit Sperrfrist für Snapshots auswählen, müssen Sie die Version von ONTAP 9.12.1 oder höher auswählen.
+
+
 
 * Kompatibilitätsprüfungen
 +
@@ -154,7 +160,13 @@ Wenn Sie für die Namen der Snapshot Kopie ein benutzerdefiniertes Format verwen
 | Für dieses Feld… | Do this… 
 
 
-| Umfang | Wählen Sie den Ressourcentyp aus, den Sie sichern möchten: * Datastores (alle herkömmlichen VMs in einem oder mehreren angegebenen Datastores). Sie können keinen vVol Datastore auswählen. * Virtual Machines (einzelne traditionelle oder vVol VMs; im Feld müssen Sie zu dem Datenspeicher navigieren, der die VMs oder vVol VMs enthält). Sie können keine einzelnen VMs in einem FlexGroup Datastore auswählen. * Tags (alle vVol VMs mit einem einzelnen, angegebenen VMware-Tag; im Listenfeld müssen Sie das Tag eingeben) * VM Folder (alle vVol VMs in einem bestimmten Ordner; im Popup-Feld müssen Sie zu dem Rechenzentrum navigieren, in dem sich der Ordner befindet) 
+| Umfang | Wählen Sie den zu schützenden Ressourcentyp aus:
+* Datenspeicher (alle traditionellen VMs in einem oder mehreren angegebenen Datastores). Sie können keinen vVol Datastore auswählen.
+* Virtual Machines (einzelne traditionelle oder vVol VMs; im Feld müssen Sie zu dem Datenspeicher navigieren, der die VMs oder vVol VMs enthält).
+Sie können keine einzelnen VMs in einem FlexGroup Datastore auswählen.
+* Tags
+Der Tag-basierte Datastore-Schutz wird nur für NFS- und VMFS-Datastores sowie für Virtual Machines und vVol Virtual Machines unterstützt.
+* VM-Ordner (alle vVol-VMs in einem angegebenen Ordner; im Popup-Feld müssen Sie zu dem Rechenzentrum navigieren, in dem sich der Ordner befindet) 
 
 
 | Rechenzentrum | Navigieren Sie zu den VMs, Datastores oder Ordnern, die Sie hinzufügen möchten. 
@@ -173,8 +185,8 @@ Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie
 
 .. Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
 +
-*** Schließen Sie immer alle Spanning-Datastores aus [dies ist der Standard für Datastores.]
-*** Einbeziehen Sie immer alle überspannenden Datastores [Dies ist der Standard für VMs.]
+*** Schließen Sie immer alle Spanning Datastores aus (dies ist der Standard für Datastores.)
+*** Berücksichtigen Sie immer alle spannenden Datenspeicher (dies ist der Standard für VMs).
 *** Wählen Sie manuell die Spanning-Datenspeicher aus, die einbezogen werden sollen
 +
 Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.

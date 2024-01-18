@@ -68,4 +68,14 @@ Sie müssen sich als anmelden `vsadmin` Auf der Storage-VM die entsprechenden Be
 Sie müssen sich als anmelden `vsadmin` Oder mit einer Rolle, die die in den obigen Tabellen aufgeführten Mindestberechtigungen hat.
 
 * Sie müssen der Cluster-Administrator sein, um Benutzerrollen zu erstellen und zu managen. Sie können die Benutzer entweder der Cluster Storage VM oder der Storage VM zuordnen.
+* Zur Verwendung der SnapMirror Business Continuity-Funktion (SM-BC) benötigen Sie ONTAP 9.12.1 oder höher.
+* So verwenden Sie die tamperproof Snapshot (TPS)-Funktion:
++
+** Für SAN benötigen Sie ONTAP 9.13.1 und höher
+** Für NFS benötigen Sie ONTAP 9.12.1 und höher
 
+
+
+
+
+NOTE: Für ONTAP Version 9.11.1 und höher erfolgt die Kommunikation mit dem ONTAP Cluster über REST APIs. Für den ONTAP-Benutzer sollte die HTTP-Anwendung aktiviert sein. Falls jedoch Probleme mit ONTAP REST APIs auftreten, unterstützt der Konfigurationsschlüssel 'FORCE_ZAPI' die Umschaltung auf den herkömmlichen ZAPI Workflow. Sie müssen möglicherweise diesen Schlüssel mit den Konfigurations-APIS hinzufügen oder aktualisieren und auf „wahr“ setzen. Siehe KB-Artikel, https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["So bearbeiten Sie Konfigurationsparameter in SCV mithilfe der RestAPI"].

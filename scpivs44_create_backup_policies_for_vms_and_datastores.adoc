@@ -32,6 +32,19 @@ Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finde
 
 
 * Wenn Sie VM-konsistente Backups wünschen, müssen VMware Tools installiert und ausgeführt werden. Um VMs stillzulegen, sind VMware Tools erforderlich. VM-konsistente Backups werden für vVol VMs nicht unterstützt.
+* SnapMirror Business Continuity (SM-BC) sorgt dafür, dass die Business Services auch bei einem vollständigen Standortausfall weiterlaufen und Applikationen mithilfe einer sekundären Kopie einen transparenten Failover unterstützen.
++
+
+NOTE: SM-BC wird nur für VMFS Datastores unterstützt.
+
++
+Zum Schutz eines VMFS-Datenspeichers in einer SM-BC-Bereitstellung müssen Sie als SnapCenter-Administrator Folgendes tun:
+
++
+** Cluster und Mediator wie im technischen Bericht beschrieben konfigurieren: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878: SnapMirror Business Continuity"].
+** Fügen Sie das dem VMFS-Datastore zugeordnete Volume zur Konsistenzgruppe hinzu und erstellen Sie mithilfe der _AutomatedFailOver_ -Schutzrichtlinie zwischen zwei ONTAP-Storage-Systemen eine Datensicherungsbeziehung.
+
+
 
 
 .Über diese Aufgabe
@@ -55,6 +68,11 @@ Ein Unterstrich (_) ist zulässig.
 
 
 
+. Geben Sie die Frequenzeinstellungen an.
++
+Die Richtlinie gibt nur die Backup-Häufigkeit an. Der spezifische Schutzzeitplan für das Sichern ist in der Ressourcengruppe festgelegt. Daher können zwei oder mehr Ressourcengruppen dieselbe Richtlinien- und Backup-Häufigkeit teilen, jedoch unterschiedliche Backup-Pläne haben.
+
+. Aktivieren Sie das Kontrollkästchen *Sperrzeitraum*, um die Snapshot-Sperrung zu aktivieren. Sie können die Sperrfrist für Snapshots als Tage/Monate/Jahre auswählen.
 . Legen Sie die Aufbewahrungseinstellungen fest.
 +
 
@@ -63,10 +81,6 @@ IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstelle
 +
 
 NOTE: Der maximale Aufbewahrungswert sind 1018 Backups für Ressourcen auf ONTAP 9.4 oder höher und 254 Backups für Ressourcen auf ONTAP 9.3 oder früher. Backups schlagen fehl, wenn die Aufbewahrung auf einen Wert festgelegt ist, der höher ist, als die zugrunde liegende ONTAP Version unterstützt. Das gilt auch für das Spanning von Datenspeichern. Wenn ein Spanning Datastore Ressourcen sowohl auf ONTAP 9.3 als auch früher sowie auf ONTAP 9.4 und höher enthält, müssen Sie den Aufbewahrungswert unter 254 festlegen.
-
-. Geben Sie die Frequenzeinstellungen an.
-+
-Die Richtlinie gibt nur die Backup-Häufigkeit an. Der spezifische Schutzzeitplan für das Sichern ist in der Ressourcengruppe festgelegt. Daher können zwei oder mehr Ressourcengruppen dieselbe Richtlinien- und Backup-Häufigkeit teilen, jedoch unterschiedliche Backup-Pläne haben.
 
 . Geben Sie in den Feldern *Replikation* den Replikationstyp auf sekundären Speicher an, wie in der folgenden Tabelle dargestellt:
 +
@@ -79,6 +93,9 @@ Wählen Sie diese Option aus, um Spiegelkopien von Backup-Sets auf einem anderen
 
 
 NOTE: Diese Option wird für Datastores in FlexGroup Volumes im SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt.
+
+
+NOTE: Zum Schutz des VMFS-Datastore auf der SM-BC-Bereitstellung müssen Sie die im Abschnitt _before you begin_ genannten Voraussetzungen erfüllen und *Update SnapMirror after Backup* aktivieren.
 
 
 

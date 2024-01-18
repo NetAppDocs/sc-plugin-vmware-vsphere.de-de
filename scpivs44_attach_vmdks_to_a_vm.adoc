@@ -39,9 +39,6 @@ Fügen Sie in diesem Fall die SCSI-Controller manuell hinzu, und versuchen Sie e
 .Schritte
 . Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Hosts und Cluster* aus.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *virtuelles Laufwerk anhängen* aus.
-+
-image:scpivs44_image22.png["Fenster Virtuelles Laufwerk anhängen"]
-
 . Wählen Sie im Fenster *Virtuelles Laufwerk anhängen* im Abschnitt *Sicherung* ein Backup aus.
 +
 Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Sie Backups mit VMware Snapshot-Kopien erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den Speicherort aus. Klicken Sie auf *OK*.

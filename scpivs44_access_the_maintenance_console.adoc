@@ -59,14 +59,25 @@ MFA-Token generieren
 
 NOTE: MFA ist immer aktiviert, Sie können MFA nicht deaktivieren.
 
-** Option 3: Netzwerkkonfiguration
+
+
+
+
 +
-Anzeigen oder Ändern von IP-Adresseinstellungen Anzeigen oder Ändern von Einstellungen für die Suche nach Domänennamen Anzeigen oder Ändern statischer Routen Übergeben von Änderungen Ping a Host
+* Option 3: Netzwerk-Konfiguration
 
-** Option 4: Support und Diagnose
 +
-Support Bundle generieren Access Diagnostic Shell Remote-Zugriff für Diagnosezugriff erzeugen Core Dump Bundle generieren
+IP-Adresseinstellungen anzeigen oder ändern
+Sucheinstellungen für Domänennamen anzeigen oder ändern
+Statische Routen anzeigen oder ändern
+Änderungen speichern
+Ping an einen Host
 
++
+* Option 4: Support und Diagnose
 
-
-
++
+Erzeugen Sie das Support Bundle
+Zugriff auf die Diagnoseschale
+Remote-Diagnosezugriff aktivieren
+Core Dump Bundle generieren

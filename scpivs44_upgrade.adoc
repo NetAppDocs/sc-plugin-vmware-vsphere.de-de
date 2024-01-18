@@ -14,7 +14,7 @@ summary: Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance
 
 
 
-NOTE: Das Upgrade auf SCV 4.9 wird nur auf VMware vCenter Server 7 Update 1 und höheren Versionen unterstützt. Für VMware vCenter Server vor Version 7 Update 1 sollten Sie weiterhin SCV 4.7 verwenden. Bei nicht unterstützten Versionen des VMware vCenter Servers wird das Upgrade nicht beeinträchtigt.
+NOTE: Das Upgrade auf SCV 5.0 wird nur auf VMware vCenter Server 7 Update 1 und höheren Versionen unterstützt. Für VMware vCenter Server vor Version 7 Update 1 sollten Sie weiterhin SCV 4.7 verwenden. Bei nicht unterstützten Versionen des VMware vCenter Servers wird das Upgrade nicht beeinträchtigt.
 
 Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwenden, können Sie ein Upgrade auf eine neuere Version durchführen. Beim Upgrade-Prozess wird das bestehende Plug-in wieder registriert und ein Plug-in wird implementiert, das nur mit vSphere 7.0U1 und höheren Versionen kompatibel ist.
 

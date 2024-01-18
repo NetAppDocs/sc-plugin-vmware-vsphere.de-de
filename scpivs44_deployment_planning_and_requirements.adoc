@@ -14,7 +14,7 @@ summary: Vor der Bereitstellung der virtuellen Appliance sollten Sie die Impleme
 
 
 [role="lead"]
-Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungsanforderungen kennen. Die Implementierungsanforderungen werden in den folgenden fünf Tabellen aufgeführt.
+Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungsanforderungen kennen. Die Bereitstellungsanforderungen sind in den folgenden Tabellen aufgeführt.
 
 
 
@@ -162,7 +162,7 @@ Aktuelle Informationen zu unterstützten Versionen finden Sie im https://imt.net
 | SnapCenter Plug-in für VMware vSphere Port  a| 
 8144 (HTTPS), der bidirektionale Port wird für die Kommunikation vom VMware vSphere Client und vom SnapCenter Server verwendet. 8080 bidirektional dieser Port wird zum Managen der virtuellen Appliance verwendet.
 
-Hinweis: Sie können die Portkonfiguration nicht ändern.
+Hinweis: Es wird ein benutzerdefinierter Port zum Hinzufügen des SCV-Hosts zu SnapCenter unterstützt.
 
 
 

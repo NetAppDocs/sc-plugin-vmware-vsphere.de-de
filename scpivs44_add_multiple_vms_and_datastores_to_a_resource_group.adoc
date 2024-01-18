@@ -22,7 +22,7 @@ Eine Ressourcengruppe kann eine der folgenden Elemente enthalten:
 * Ein FlexGroup Datastore (Spanning VMs werden nicht unterstützt).
 * Ein oder mehrere FlexVol Datastores (Spanning VMs werden unterstützt).
 * Ein oder mehrere vVol VMs.
-* Alle vVol VMs mit einem angegebenen vCenter Tag.
+* Alle vVol VMs mit einem angegebenen vSphere Tag.
 * Alle vVol VMs in einem angegebenen Ordner.
 
 
