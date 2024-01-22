@@ -50,7 +50,7 @@ Für alle Ressourcengruppen:
 IMPORTANT: Wenn Sie VMware vSphere Cluster Service (VCLS) verwenden, schließen Sie keine VMs ein, die von VCLS in SnapCenter VMware Plug-in-Ressourcengruppen verwaltet werden.
 
 
-TIP: Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastores mit großen LUN-Größen bis zu 128 TB auf ASA Aggregaten. Wenn Sie große LUNs schützen, verwenden Sie nur per Thick Provisioning bereitgestellte LUNs, um Latenz zu vermeiden.
+TIP: Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastores auf großen LUNs und Dateien mit bis zu 128 TB Volumen und bis zu 300 TB. Wenn Sie große LUNs schützen, verwenden Sie nur per Thick Provisioning bereitgestellte LUNs, um Latenz zu vermeiden.
 
 
 IMPORTANT: Fügen Sie keine VMs hinzu, die sich in einem nicht zugänglichen Zustand befinden. Obwohl es möglich ist, eine Ressourcengruppe zu erstellen, die nicht zugängliche VMs enthält, schlägt die Erstellung von Backups für diese Ressourcengruppe fehl.
@@ -149,7 +149,11 @@ NOTE: A `_recent` Für jede Richtlinie, die einer Ressourcengruppe zugeordnet is
 Wenn Sie für die Namen der Snapshot Kopie ein benutzerdefiniertes Format verwenden möchten, aktivieren Sie dieses Kontrollkästchen und geben Sie das Namensformat ein.
 
 *** Diese Funktion ist standardmäßig deaktiviert.
-*** Die Namen der Snapshot Kopien verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`Sie können jedoch ein benutzerdefiniertes Format mit den Variablen „Ressourcengruppe für €“, „US-Dollar-Richtlinie“, „Hostname in US-Dollar“, „Zeitplantyp“ und „CustomText in US-Dollar“ festlegen. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden. Wenn Sie CustomText € auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird. HINWEIS: Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sein werden, daher sollten Sie die Variablen für die €Ressourcengruppe und USD Policy zu dem Namen hinzufügen.
+*** Die Namen der Snapshot Kopien verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`
+Sie können jedoch ein benutzerdefiniertes Format mit den Variablen „Ressourcengruppe für €“, „US-Dollar-Richtlinie“, „Hostname in US-Dollar“, „Zeitplantyp“ und „CustomText in US-Dollar“ festlegen. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden.
+Wenn Sie CustomText € auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird.
+[HINWEIS]:
+Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sind. Daher sollten Sie dem Namen die Variablen „Ressourcengruppe USD“ und „Richtlinie USD“ hinzufügen.
 *** Sonderzeichen für Sonderzeichen in Namen, befolgen Sie die gleichen Richtlinien für das Namensfeld.
 
 
@@ -169,7 +173,8 @@ Der Tag-basierte Datastore-Schutz wird nur für NFS- und VMFS-Datastores sowie f
 * VM-Ordner (alle vVol-VMs in einem angegebenen Ordner; im Popup-Feld müssen Sie zu dem Rechenzentrum navigieren, in dem sich der Ordner befindet) 
 
 
-| Rechenzentrum | Navigieren Sie zu den VMs, Datastores oder Ordnern, die Sie hinzufügen möchten. 
+| Rechenzentrum | Navigieren Sie zu den VMs, Datastores oder Ordnern, die Sie hinzufügen möchten.
+Namen von VMs und Datenspeichern in einer Ressourcengruppe müssen eindeutig sein. 
 
 
 | Verfügbare Einheiten | Wählen Sie die Ressourcen aus, die Sie schützen möchten, und klicken Sie dann auf *>*, um Ihre Auswahl in die Liste der ausgewählten Einheiten zu verschieben. 
