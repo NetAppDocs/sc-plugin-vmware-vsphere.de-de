@@ -26,7 +26,7 @@ Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastore
 
 * VMware Virtual Volumes (VVols)
 +
-Sie müssen das VVols Storage-System zunächst den ONTAP Tools für VMware vSphere hinzufügen und dann dem SnapCenter Plug-in für VMware vSphere hinzufügen.
+Sie müssen Storage-Cluster zum SnapCenter-Plug-in für VMware vSphere und ONTAP-Tools für VMware vSphere für vVol Data Protection hinzufügen, um arbeiten zu können.
 
 +
 Weitere Informationen finden Sie unter https://docs.netapp.com/vapp-98/index.jsp["ONTAP Tools für VMware vSphere"^]
