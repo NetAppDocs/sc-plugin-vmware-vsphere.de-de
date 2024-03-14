@@ -1,0 +1,1 @@
+Sitemap: https://docs.netapp.com/de-de/sc-plugin-vmware-vsphere/sitemap.xml
