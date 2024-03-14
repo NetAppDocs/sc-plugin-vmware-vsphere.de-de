@@ -16,7 +16,7 @@ summary: Zum Hinzufügen und Ändern von Storage-VM-Vorgängen mit dem SnapCente
 [role="lead"]
 Zum Hinzufügen und Ändern von Storage-VM-Vorgängen mit dem SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 So fügen Sie Storage-VM-Vorgänge hinzu:
 

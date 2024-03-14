@@ -16,13 +16,13 @@ summary: Um Restore-Vorgänge für VMDKs mit dem SnapCenter Plug-in für VMware 
 [role="lead"]
 Um Restore-Vorgänge für VMDKs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 |===
 | Schritt | REST API | Kommentare 
 
 
-| 1 | Gehen Sie zu `http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, in der sich die VMDK befindet. 
+| 1 | Gehen Sie zu `\http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, in der sich die VMDK befindet. 
 
 
 | 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Ruft eine Liste von Backups für die angegebene VM ab. Übergeben Sie den *moref* von Schritt 1. Beachten Sie die *Backupid* des Backups, das Sie wiederherstellen möchten. 

@@ -72,8 +72,6 @@ sidebar:
     entries:
     - title: Überblick
       url: "/scpivs44_quick_start_overview.html"
-    - title: Open Virtual Appliance (OVA) herunterladen
-      url: "/scpivs44_download_the_ova_open_virtual_appliance.html"
     - title: Implementieren Sie das SnapCenter Plug-in für VMware vSphere
       url: "/scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere_01.html"
     - title: Erweitern Sie Ihren Storage

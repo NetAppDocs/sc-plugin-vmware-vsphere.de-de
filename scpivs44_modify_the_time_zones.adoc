@@ -30,7 +30,7 @@ Sie müssen die IP-Adresse und die Anmeldedaten für das SnapCenter Plug-in für
 .Schritte
 . Melden Sie sich bei der Management-GUI von SnapCenter VMware Plug-in an.
 +
-Verwenden Sie das Format `https://<appliance-IP-address>:8080`
+Verwenden Sie das Format `\https://<appliance-IP-address>:8080`
 
 . Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
 +

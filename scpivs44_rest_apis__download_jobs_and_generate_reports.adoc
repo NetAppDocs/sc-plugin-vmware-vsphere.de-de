@@ -16,7 +16,7 @@ summary: Zum Generieren von Berichten und Herunterladen von Protokollen für VMw
 [role="lead"]
 Zum Generieren von Berichten und Herunterladen von Protokollen für VMware vSphere Client-Jobs mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs müssen SIE DIE REST-API-Aufrufe für VMware vSphere verwenden.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 
 

@@ -140,7 +140,7 @@ Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-VMware-P
 
 . Melden Sie sich mithilfe der im Implementierungsbildschirm angezeigten IP-Adresse bei der Management-GUI des SnapCenter VMware-Plug-ins an und überprüfen Sie im Dashboard, ob das SnapCenter VMware-Plug-in erfolgreich mit vCenter verbunden und aktiviert ist.
 +
-Verwenden Sie das Format `https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
+Verwenden Sie das Format `\https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
 
 +
 Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.

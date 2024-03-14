@@ -16,7 +16,7 @@ summary: Um Job-IDs für VMware vSphere-Client-Jobs mit dem SnapCenter Plug-in f
 [role="lead"]
 Um Job-IDs für VMware vSphere-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu finden, müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden. Diese REST-APIs wurden im SnapCenter Plug-in für VMware vSphere 4.4 hinzugefügt.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API \https://<server>:<port>` an der Vorderseite der REST-API hinzu, um einen vollständigen Endpunkt zu bilden.
 
 Verwenden Sie die folgende REST-API im Abschnitt Jobs, um Jobs zu ändern, die sich in einem laufenden Zustand befinden, in einen fehlgeschlagenen Status:
 

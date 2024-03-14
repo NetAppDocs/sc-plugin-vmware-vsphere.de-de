@@ -17,19 +17,29 @@ summary: Die erforderlichen Mindestberechtigungen für ONTAP variieren je nach S
 Die erforderlichen Mindestberechtigungen für ONTAP variieren je nach SnapCenter Plug-ins, die Sie zur Datensicherung verwenden.
 
 
+NOTE: Ab dem SnapCenter Plug-in für VMware (SCV) 5.0 müssen Sie Applikationen des Typs HTTP und ONTAPI als Benutzeranmeldemethoden für alle ONTAP-Benutzer mit benutzerdefiniertem rollenbasiertem Zugriff auf das SCV hinzufügen. Ohne Zugriff auf diese Applikationen können Backups fehlschlagen. Sie müssen den SCV-Dienst neu starten, um Änderungen an den ONTAP-Benutzeranmeldemethoden zu erkennen.
+
+
 
 == Mindestberechtigungen für ONTAP erforderlich
 
 Für alle SnapCenter Plug-ins sind die folgenden Mindestberechtigungen erforderlich.
 
 |===
+
+
 | Befehle für All-Access: Mindestberechtigungen erforderlich für ONTAP 8.3 und höher 
+
+
+| Cluster-ID wird angezeigt 
 
 
 | Event Generate-AutoSupport-log 
 
 
-| Jobverlauf zeigt Jobstop an 
+| Job-Verlauf wird angezeigt
+Jobanzeigen
+Job beenden 
 
 
 | lun lun create lun delete lun igroup hinzufügen lun igroup erstellen lun igroup löschen lun igroup umbenennen lun igroup anzeigen lun Mapping add-Reporting-Nodes lun Mapping erstellen lun Mapping delete lun Mapping remove-Reporting-Nodes lun Mapping show lun modify lun move-in-Volume lun offline lun online lun persistent-reservat clear lun resize lun serial lun anzeigen 
@@ -41,7 +51,32 @@ Für alle SnapCenter Plug-ins sind die folgenden Mindestberechtigungen erforderl
 | Version 
 
 
-| Volume Clone erstellen Volume Clone Volume anzeigen Split Start Volume Clone Split Start Volume Klon Volume stoppen Volume erstellen Volume zerstören Datei-Klon erstellen Volume file anzeigen Speicherplatz belegen Speicherplatz offline Volume online Volume ändern qtree Volume erstellen Volume erstellen qtree löschen Volume qtree Volume ändern qtree Volume anzeigen Volume einblenden Volume beschränken Snapshot erstellen Volume Snapshot löschen Volume Snapshot ändern Volume Snapshot umbenennen Volume Snapshot wiederherstellen Volume Snapshot restore-file Volume Snapshot show Volume unmount 
+| Erstellung von Volume-Klonen
+Klon von Volume anzeigen
+Split-Start des Volume-Klons
+Split-Stopp für Volume-Klon
+Volume erstellen
+Volume löschen
+Volume destroy
+Erstellen eines Volume-Dateiklonen
+Show-Disk-Nutzung für Volume-Dateien
+Volume ist offline
+Das Volume ist online
+Volume-Änderung
+Erstellen von Volume-qtree
+Volume qtree löschen
+Änderung des Volume-qtree
+Volume-qtree anzeigen
+Volume-Einschränkung
+Volumen anzeigen
+Erstellen von Volume-Snapshots
+Volume Snapshot löschen
+Ändern des Volume-Snapshots
+Umbenennung von Volume-Snapshots
+Wiederherstellung von Volume Snapshots
+Restore-Datei für Volume Snapshots
+Volume-Snapshot werden angezeigt
+Volume-Aufhängung nicht verfügbar 
 
 
 | vserver cifs vserver cifs share vserver erstellen cifs share vserver löschen cifs shadowcopy show vserver cifs share show vserver cifs show vserver Export-Policy vserver Export-Policy vserver Export-Policy create vserver Export-Policy delete vserver Export-Policy rule create vserver Export-Policy rule show vserver Export-Policy show vserver iscsi vserver iscsi vserver iscsi Verbindung show vserver show Netzwerk Interface Netzwerkschnittstellen für Failover-Gruppen wird die Netzwerkschnittstelle angezeigt 

@@ -16,7 +16,7 @@ summary: Zum Erstellen und Ändern von Gruppenoperationen über das SnapCenter P
 [role="lead"]
 Zum Erstellen und Ändern von Gruppenoperationen über das SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 Gehen Sie zum Erstellen von Ressourcengruppen wie folgt vor:
 

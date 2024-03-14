@@ -25,7 +25,7 @@ Um sich beim SnapCenter Plug-in für die Management-GUI von VMware vSphere anzum
 .Schritte
 . Melden Sie sich im SnapCenter Plug-in für VMware vSphere an.
 +
-Verwenden Sie das Format `https://<OVA-IP-address>:8080`.
+Verwenden Sie das Format `\https://<OVA-IP-address>:8080`.
 
 . Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
 +

@@ -22,7 +22,7 @@ Wenn der Speicher umbenannt wird, fehlschlagen Workflows, die vor der Umbenennun
 . Erstellen Sie ein neues Backup.
 . Verwenden Sie die Sicherungsdetails, um die alten und neuen Speichernamen zu finden.
 . Wählen Sie im Fenster *Backups* des vSphere-Clients das Backup aus, um die Details anzuzeigen.
-. Greifen Sie über die URL auf Swagger zu: https://<SCV-IP>:8144/api/swagger-ui/index.html[]
+. Greifen Sie über die URL auf Swagger zu: `\https://<SCV-IP>:8144/api/swagger-ui/index.html`
 +
 Verwenden Sie die folgende API, um den Speicher umzubenennen:
 

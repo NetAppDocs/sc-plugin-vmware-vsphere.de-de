@@ -22,7 +22,7 @@ Wenn Sie die Datensicherungsfunktionen von SnapCenter nicht mehr verwenden müss
 
 
 .Schritte
-. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `https://<OVA-IP-address>:8080`.
+. Melden Sie sich über das Format bei der Management-GUI von SnapCenter VMware Plug-in an `\https://<OVA-IP-address>:8080`.
 +
 Die IP des SnapCenter-VMware-Plug-ins wird bei der Bereitstellung des Plug-ins angezeigt.
 

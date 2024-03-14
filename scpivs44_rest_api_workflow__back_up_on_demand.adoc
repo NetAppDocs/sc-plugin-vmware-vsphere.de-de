@@ -16,7 +16,7 @@ summary: Um Backup-Vorgänge On-Demand mit dem SnapCenter Plug-in für VMware vS
 [role="lead"]
 Um Backup-Vorgänge On-Demand mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 |===
 | Schritt | REST API | Kommentare 

@@ -16,14 +16,14 @@ summary: Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in fü
 [role="lead"]
 Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 |===
 | Schritt | REST API | Kommentare 
 
 
 | 1 | Gehen Sie zu
-`http://<vCenter-IP>/mob` | Suchen Sie die VM-UUID aus der URL der von VMware gemanagten Objekte. Beachten Sie die *UUID* für die VM, die Sie wiederherstellen möchten. 
+`\http://<vCenter-IP>/mob` | Suchen Sie die VM-UUID aus der URL der von VMware gemanagten Objekte. Beachten Sie die *UUID* für die VM, die Sie wiederherstellen möchten. 
 
 
 | 2 | `/4.1/vm/{uuid}/backups` | `Get VM Backups` Ruft eine Liste von Backups für die angegebene VM ab. Geben Sie die *UUID* von Schritt 1. Beachten Sie die *Backupid* des Backups, das Sie wiederherstellen möchten. 

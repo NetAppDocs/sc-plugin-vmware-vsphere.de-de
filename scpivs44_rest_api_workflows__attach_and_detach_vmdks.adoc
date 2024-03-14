@@ -16,7 +16,7 @@ summary: Um mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs Verbi
 [role="lead"]
 Um mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs Verbindungen zu und Abtrennen von VMDKs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
 
-Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
+Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 
 
 
@@ -26,7 +26,7 @@ Fügen Sie für jede REST-API hinzu `https://<server>:<port>` An der Vorderseite
 | Schritt | REST API | Kommentare 
 
 
-| 1 | Gehen Sie zu `http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, an die Sie eine VMDK anhängen möchten. 
+| 1 | Gehen Sie zu `\http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, an die Sie eine VMDK anhängen möchten. 
 
 
 | 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Ruft eine Liste von Backups für die angegebene VM ab. Übergeben Sie den *moref* von Schritt 1. Beachten Sie die *Backupid* des Backups, das Sie wiederherstellen möchten. 
@@ -51,7 +51,7 @@ NOTE: Um eine VMDK an eine andere VM anzuhängen, übergeben Sie den moref der Z
 | Schritt | REST API | Kommentare 
 
 
-| 1 | Gehen Sie zu `http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, auf der Sie eine VMDK abtrennen möchten. 
+| 1 | Gehen Sie zu `\http://<vCenter-IP>/mob` | Suchen Sie den VM-moref aus der URL der von VMware gemanagten Objekte. Beachten Sie den *moref* für die VM, auf der Sie eine VMDK abtrennen möchten. 
 
 
 | 2 | `/4.1/vm/{moref}/backups` | `Get VM Backups` Ruft eine Liste von Backups für die angegebene VM ab. Übergeben Sie den *moref* von Schritt 1. Beachten Sie die *Backupid* des Backups, das Sie wiederherstellen möchten. 

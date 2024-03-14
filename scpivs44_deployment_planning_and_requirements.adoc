@@ -20,7 +20,7 @@ Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungs
 
 == Host-Anforderungen erfüllt
 
-Bevor Sie mit der Implementierung des SnapCenter Plug-ins für VMware vSphere beginnen, sollten Sie die Host-Anforderungen kennen.
+Bevor Sie mit der Bereitstellung des SnapCenter Plug-ins für VMware vSphere (SCV) beginnen, sollten Sie mit den Host-Anforderungen vertraut sein.
 
 * Das SnapCenter VMware Plug-in wird als Linux VM implementiert, unabhängig davon, ob Sie das Plug-in verwenden, um Daten auf Windows-Systemen oder Linux-Systemen zu sichern.
 * Sie sollten das SnapCenter VMware Plug-in auf dem vCenter Server bereitstellen.
