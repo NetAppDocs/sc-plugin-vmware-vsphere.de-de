@@ -66,7 +66,8 @@ Gesamtzahl der jeden Objekttyp, die vom SnapCenter Plug-in für VMware vSphere g
  a| 
 Storage
  a| 
-Die Gesamtzahl der erstellten Snapshot Kopien, SnapVault und SnapMirror Snapshot Kopien und die Menge des für primäre und sekundäre Snapshot Kopien verwendeten Storage. Das Liniendiagramm stellt den primären und sekundären Speicherverbrauch über einen laufenden Zeitraum von 90 Tagen täglich separat dar. Die Speicherinformationen werden alle 24 Stunden um 1:08 UHR aktualisiert Storage-Einsparungen sind das Verhältnis der logischen Kapazität (Snapshot-Einsparungen plus verbrauchter Storage) zur physischen Kapazität des primären Storage. Das Balkendiagramm zeigt die Storage-Einsparungen.
+Die Gesamtzahl der erstellten Snapshots, SnapVault und SnapMirror Snapshots sowie die Menge des Storage, der für primäre und sekundäre Snapshots verwendet wurde. Das Liniendiagramm stellt den primären und sekundären Speicherverbrauch über einen laufenden Zeitraum von 90 Tagen täglich separat dar. Die Speicherinformationen werden alle 24 Stunden um 1:08 UHR aktualisiert
+Storage-Einsparungen ist das Verhältnis der logischen Kapazität (Einsparungen durch Snapshot plus verbrauchten Storage) zur physischen Kapazität des primären Storage. Das Balkendiagramm zeigt die Storage-Einsparungen.
 
 Bewegen Sie den Cursor über eine Linie auf der Karte, um detaillierte Ergebnisse für Tag anzuzeigen.
 

@@ -41,9 +41,9 @@ Sie können die SnapCenter-Benutzeroberfläche und die entsprechenden SnapCenter
 SnapCenter nutzt das SnapCenter VMware Plug-in nativ für alle Datensicherungsvorgänge auf VMDKs, Raw Device Mappings (RDMs) und NFS Datastores. Nach der Implementierung der virtuellen Appliance ist das Plug-in für alle Interaktionen mit vCenter zuständig. Das VMware Plug-in von SnapCenter unterstützt alle applikationsbasierten SnapCenter Plug-ins.
 
 +
-SnapCenter unterstützt keine einzigen Snapshot-Kopien von Datenbanken und VMs zusammen. Backups für VMs und Datenbanken müssen geplant und unabhängig ausgeführt werden. Dadurch werden separate Snapshot Kopien erstellt, selbst wenn die Datenbanken und VMs im selben Volume gehostet werden. Planen Sie die Datenbank-Anwendungs-Backups mit der SnapCenter GUI. Planen Sie die VM- und Datenspeicher-Backups mit der VMware vSphere Client GUI.
+SnapCenter unterstützt keine einzelnen Snapshots von Datenbanken und VMs zusammen. Backups für VMs und Datenbanken müssen unabhängig geplant und ausgeführt werden. Dadurch werden separate Snapshots erstellt, selbst wenn die Datenbanken und VMs im gleichen Volume gehostet werden. Planen Sie die Datenbank-Anwendungs-Backups mit der SnapCenter GUI. Planen Sie die VM- und Datenspeicher-Backups mit der VMware vSphere Client GUI.
 
-* VMware Tools sind für VM-konsistente Snapshot-Kopien erforderlich
+* VMware Tools sind für VM-konsistente Snapshots erforderlich
 +
 Wenn nicht VMware Tools installiert und ausgeführt werden, wird das Filesystem nicht stillgelegt und ein absturzkonsistenter Snapshot erstellt.
 

@@ -56,7 +56,7 @@ Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Name
 
 | Einen alternativen Datenspeicher an einem alternativen Speicherort | Klicken Sie auf den Ziel-Datastore und wählen Sie einen anderen Datastore aus der Liste aus. 
 |===
-. Wählen Sie auf der Seite *Standort auswählen* die Snapshot Kopie aus, die Sie wiederherstellen möchten (primär oder sekundär).
+. Wählen Sie auf der Seite *Speicherort auswählen* den Snapshot aus, den Sie wiederherstellen möchten (primär oder sekundär).
 . Überprüfen Sie die Übersichtsseite und klicken Sie dann auf *Fertig stellen*.
 . Optional: Überwachen Sie den Arbeitsfortschritt, indem Sie unten auf dem Bildschirm auf *Letzte Aufgaben* klicken.
 . Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.

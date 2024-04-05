@@ -49,7 +49,7 @@ Sie müssen ein Backup der VM mithilfe des SnapCenter VMware Plug-ins erstellt h
 
 +
 
-NOTE: Wiederherstellungsvorgänge können nicht erfolgreich abgeschlossen werden, wenn Snapshot Kopien der VM vorhanden sind, die von anderen Software-Versionen als dem SnapCenter Plug-in für VMware vSphere durchgeführt wurden.
+NOTE: Die Wiederherstellungsvorgänge können nicht erfolgreich abgeschlossen werden, wenn Snapshots der VM vorhanden sind, die von einer anderen Software als dem SnapCenter-Plug-in für VMware vSphere ausgeführt wurden.
 
 * Der Ziel-Datastore muss bereit sein.
 +
@@ -76,7 +76,7 @@ Stellen Sie sicher, dass auf dem Bildschirm vCenter ESXi Host Summary keine HA-K
 .Über diese Aufgabe
 * VM ist nicht registriert und erneut registriert
 +
-Der Wiederherstellungsvorgang für VMs entmacht die ursprüngliche VM, stellt die VM aus einer Backup Snapshot Kopie wieder her und registriert die wiederhergestellte VM mit demselben Namen und derselben Konfiguration auf demselben ESXi Server. Nach der Wiederherstellung müssen Sie die VMs manuell den Ressourcengruppen hinzufügen.
+Bei der Wiederherstellung für VMs wird die ursprüngliche VM aufgehoben, die VM wird aus einem Backup-Snapshot wiederhergestellt und die wiederhergestellte VM mit demselben Namen und derselben Konfiguration auf demselben ESXi-Server registriert. Nach der Wiederherstellung müssen Sie die VMs manuell den Ressourcengruppen hinzufügen.
 
 * Wiederherstellen von Datenspeichern
 +
@@ -103,7 +103,7 @@ Auch wenn ein VMware Konsistenz-Snapshot für eine VM ausfällt, wird die VM tro
 NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die zum SnapCenter VMware Plug-in hinzugefügten Speicher-VM-Anmeldeinformationen lauten `vsadmin` Oder ein Benutzerkonto, das alle gleichen Berechtigungen hat wie `vsadmin`. Der Host muss sich auf einem Storage-System mit ONTAP 8.2.2 oder höher befindet.
 
 . Klicken Sie im linken Navigator mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus, um den Assistenten zu starten.
-. Wählen Sie im Assistenten *Restore* auf der Seite *Select Backup* die Backup Snapshot Kopie aus, die Sie wiederherstellen möchten.
+. Wählen Sie im *Restore*-Assistenten auf der Seite *Backup auswählen* den Backup-Snapshot aus, den Sie wiederherstellen möchten.
 +
 Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups oder den Speicherort möchten. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
 

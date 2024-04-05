@@ -78,9 +78,9 @@ Wenn Sie ONTAP 9.8 oder ONTAP 9.9 ausführen, müssen Sie nach einem Switchover 
 +
 In ONTAP 9.8 hängen die Backups nach dem Wechsel zurück. Dieses Problem wurde in ONTAP 9.9 behoben.
 
-* Optimierung von Snapshot Kopien
+* Optimieren Von Snapshots
 +
-Zum Optimieren von Snapshot Kopien sollten die VMs und Datastores, die mit demselben Volume verknüpft sind, in einer Ressourcengruppe gruppieren.
+Um Snapshots zu optimieren, sollten Sie VMs und Datenspeicher, die mit demselben Volume verbunden sind, in einer Ressourcengruppe gruppieren.
 
 * Backup-Richtlinien
 +
@@ -138,7 +138,7 @@ Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können je
 
 
 | Der Name des Snapshot  a| 
-Wenn Sie das Suffix „_recentest“ zur neuesten Snapshot Kopie hinzufügen möchten, dann aktivieren Sie dieses Kontrollkästchen. Das Suffix „_recent“ ersetzt Datum und Zeitstempel.
+Wenn das Suffix „_recent“ zum letzten Snapshot hinzugefügt werden soll, aktivieren Sie dieses Kontrollkästchen. Das Suffix „_recent“ ersetzt Datum und Zeitstempel.
 
 
 NOTE: A `_recent` Für jede Richtlinie, die einer Ressourcengruppe zugeordnet ist, wird ein Backup erstellt. Daher wird eine Ressourcengruppe mit mehreren Richtlinien über mehrere Ressourcen verfügen `_recent` Backups: Nicht manuell umbenennen `_recent` Backups:
@@ -146,10 +146,10 @@ NOTE: A `_recent` Für jede Richtlinie, die einer Ressourcengruppe zugeordnet is
 
 
 | Benutzerdefiniertes Snapshot-Format  a| 
-Wenn Sie für die Namen der Snapshot Kopie ein benutzerdefiniertes Format verwenden möchten, aktivieren Sie dieses Kontrollkästchen und geben Sie das Namensformat ein.
+Wenn Sie ein benutzerdefiniertes Format für die Snapshot-Namen verwenden möchten, aktivieren Sie dieses Kontrollkästchen, und geben Sie das Namensformat ein.
 
 *** Diese Funktion ist standardmäßig deaktiviert.
-*** Die Namen der Snapshot Kopien verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`
+*** Die standardmäßigen Snapshot-Namen verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`
 Sie können jedoch ein benutzerdefiniertes Format mit den Variablen „Ressourcengruppe für €“, „US-Dollar-Richtlinie“, „Hostname in US-Dollar“, „Zeitplantyp“ und „CustomText in US-Dollar“ festlegen. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden.
 Wenn Sie CustomText € auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird.
 [HINWEIS]:

@@ -45,10 +45,10 @@ Der Mount-Vorgang kann fehlschlagen, wenn die Storage-Tier der FabricPool, auf d
 .. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
 .. Im linken Navigator-Fenster wird der Datenspeicher angezeigt, der Sie oben in der Liste montiert haben.
 +
-Wenn Sie einen Anschluss- oder Mount-Vorgang für ein SnapVault Ziel-Volume ausführen, das durch SnapVault-Zeitpläne geschützt ist und ONTAP 8.3 ausführt, wird möglicherweise eine zusätzliche Snapshot-Kopie angezeigt, die im Dialogfeld „Anhängen“ oder „Bereitstellen“ aufgeführt ist. Dies liegt daran, dass beim Anhängen oder Mount-Vorgang das SnapVault Ziel-Volume kopiert wird und ONTAP das Volume durch Erstellen einer neuen Snapshot Kopie aktualisiert.
+Wenn Sie einen Attach- oder Mount-Vorgang auf einem SnapVault-Ziel-Volume durchführen, das durch SnapVault-Zeitpläne geschützt ist und ONTAP 8.3 ausführt, wird möglicherweise ein zusätzlicher Snapshot im Dialogfeld „Anhängen“ oder „Bereitstellen“ aufgeführt. Das liegt daran, dass durch den Attach- oder Mount-Vorgang das SnapVault Ziel-Volume klont und ONTAP das Volume durch Erstellung eines neuen Snapshots aktualisiert.
 
 +
-Um zu verhindern, dass neue Snapshot Kopien beim Klonen des Volume erstellt werden, deaktivieren Sie den ONTAP-Zeitplan für das SnapVault Volume. Bereits vorhandene Snapshot Kopien werden nicht gelöscht.
+Um zu verhindern, dass beim Klonen des Volumes neue Snapshots erstellt werden, deaktivieren Sie den ONTAP-Zeitplan für das SnapVault Volume. Zuvor vorhandene Snapshots werden nicht gelöscht.
 
 
 

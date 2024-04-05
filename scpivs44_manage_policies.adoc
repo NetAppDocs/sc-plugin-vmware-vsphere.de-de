@@ -38,7 +38,7 @@ Sie können der Ressourcengruppe auch eine Richtlinie hinzufügen, indem Sie die
 
 == Richtlinien ändern
 
-Sie können Richtlinien für ein SnapCenter Plug-in für eine VMware vSphere Ressourcengruppe ändern. Sie können die Häufigkeit, die Replizierungsoptionen, die Aufbewahrungseinstellungen für Snapshot Kopien oder die Informationen zu Skripten ändern, während eine Richtlinie einer Ressourcengruppe zugeordnet ist.
+Sie können Richtlinien für ein SnapCenter Plug-in für eine VMware vSphere Ressourcengruppe ändern.  Sie können die Häufigkeit, die Replikationsoptionen, die Snapshot-Aufbewahrungseinstellungen oder die Skriptinformationen ändern, während eine Richtlinie an eine Ressourcengruppe angehängt ist.
 
 .Über diese Aufgabe
 Das Ändern der Backup-Richtlinien für das SnapCenter VMware Plug-in unterscheidet sich von der Änderung der Backup-Richtlinien für applikationsbasierte SnapCenter Plug-ins. Wenn Sie die Plug-in-Richtlinien ändern, müssen Sie keine Richtlinien von Ressourcengruppen trennen.

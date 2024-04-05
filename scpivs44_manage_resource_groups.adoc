@@ -64,10 +64,10 @@ Sie können Änderungen in mehreren Kategorien vornehmen.
 Sie können eine Ressourcengruppe in vCenter löschen, wenn Sie die Ressourcen in der Ressourcengruppe nicht mehr schützen müssen. Sie müssen sicherstellen, dass alle Ressourcengruppen gelöscht werden, bevor Sie das SnapCenter Plug-in für VMware vSphere aus vCenter entfernen.
 
 .Über diese Aufgabe
-Alle Löschvorgänge der Ressourcengruppe werden als erzwang Löschvorgänge ausgeführt. Mit dem Löschvorgang werden alle Richtlinien aus der vCenter-Ressourcengruppe entfernt, die Ressourcengruppe aus dem SnapCenter-Plug-in für VMware vSphere entfernt und alle Backups und Snapshot-Kopien der Ressourcengruppe gelöscht.
+Alle Löschvorgänge der Ressourcengruppe werden als erzwang Löschvorgänge ausgeführt. Der Löschvorgang trennt alle Richtlinien aus der vCenter-Ressourcengruppe, entfernt die Ressourcengruppe aus dem SnapCenter-Plug-in für VMware vSphere und löscht alle Backups und Snapshots der Ressourcengruppe.
 
 
-NOTE: In einer SnapVault-Beziehung kann die letzte Snapshot Kopie nicht gelöscht werden. Daher kann die Ressourcengruppe nicht gelöscht werden. Bevor Sie eine Ressourcengruppe löschen, die Teil einer SnapVault-Beziehung ist, müssen Sie entweder OnCommand System Manager verwenden oder die ONTAP CLI verwenden, um die SnapVault-Beziehung zu entfernen, und dann müssen Sie die letzte Snapshot Kopie löschen.
+NOTE: In einer SnapVault Beziehung kann der letzte Snapshot nicht gelöscht werden. Daher kann die Ressourcengruppe nicht gelöscht werden. Bevor Sie eine Ressourcengruppe löschen, die Teil einer SnapVault Beziehung ist, müssen Sie entweder OnCommand System Manager oder die ONTAP CLI verwenden, um die SnapVault-Beziehung zu entfernen. Anschließend müssen Sie den letzten Snapshot löschen.
 
 .Schritte
 . Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie auf *Löschen*.

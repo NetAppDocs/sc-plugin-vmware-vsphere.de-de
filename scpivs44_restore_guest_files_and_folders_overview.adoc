@@ -65,9 +65,9 @@ Aktuelle Informationen zu unterstützten Versionen finden Sie im https://imt.net
 
 IMPORTANT: Wenn Sie ein Konto verwenden müssen, das nicht das integrierte Administratorkonto ist, aber über Administratorrechte innerhalb der VM verfügt, müssen Sie UAC auf der Gast-VM deaktivieren.
 
-* Sie müssen die Backup Snapshot-Kopie und die VMDK kennen, aus der wiederhergestellt werden soll.
+* Sie müssen den Backup-Snapshot und die VMDK kennen, von dem aus Sie wiederherstellen möchten.
 +
-Das SnapCenter Plug-in für VMware vSphere unterstützt nicht das Suchen der wiederherzustellenden Dateien oder Ordner. Bevor Sie beginnen, müssen Sie den Speicherort der Dateien oder Ordner in Bezug auf die Snapshot Kopie und die entsprechende VMDK kennen.
+Das SnapCenter Plug-in für VMware vSphere unterstützt nicht das Suchen der wiederherzustellenden Dateien oder Ordner. Daher müssen Sie vor dem Start den Speicherort der Dateien oder Ordner in Bezug auf den Snapshot und die entsprechende VMDK kennen.
 
 * Das zu verbundene virtuelle Laufwerk muss in einem SnapCenter-Backup enthalten sein.
 +

@@ -69,7 +69,7 @@ Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Name
 
 . Wählen Sie auf der Seite *Bereich auswählen* im Feld *Umfang wiederherstellen* *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus, und geben Sie dann die ESXi-Zielinformationen ein, auf denen das Backup gemountet werden soll.
 +
-Das Wiederherstellungsziel kann jeder beliebige ESXi Host sein, der SnapCenter hinzugefügt wurde. Diese Option stellt den Inhalt des ausgewählten Backups wieder her, in dem die VM mit dem angegebenen Zeitpunkt und dem angegebenen Datum aus einer Snapshot Kopie residierte. Das Kontrollkästchen *VM neu starten* ist aktiviert, wenn Sie diese Option auswählen und die VM eingeschaltet wird.
+Das Wiederherstellungsziel kann jeder beliebige ESXi Host sein, der SnapCenter hinzugefügt wurde. Diese Option stellt den Inhalt des ausgewählten Backups wieder her, bei dem die VM zu dem angegebenen Zeitpunkt aus einem Snapshot residierte. Das Kontrollkästchen *VM neu starten* ist aktiviert, wenn Sie diese Option auswählen und die VM eingeschaltet wird.
 
 +
 Wenn Sie eine VM in einem NFS-Datenspeicher auf einem anderen ESXi Host wiederherstellen, der sich in einem ESXi Cluster befindet, wird sie nach der Wiederherstellung der VM auf dem alternativen Host registriert.

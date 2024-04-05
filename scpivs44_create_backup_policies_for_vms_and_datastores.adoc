@@ -20,11 +20,11 @@ Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für 
 * Sie müssen die Voraussetzungen gelesen haben.
 * Sie müssen sekundäre Storage-Beziehungen konfiguriert haben.
 +
-** Wenn Sie Snapshot Kopien auf einen gespiegelten oder sekundären Vault-Storage replizieren, müssen die Beziehungen konfiguriert sein. Der SnapCenter Administrator muss Ihnen die Storage-VMs sowohl für die Quell- als auch die Ziel-Volumes zugewiesen haben.
-** Um Snapshot Kopien für versionsflexible Beziehungen auf einem NFS- oder VMFS-Datenspeicher erfolgreich in sekundären Storage zu übertragen, stellen Sie sicher, dass der Richtlinientyp von SnapMirror asynchronen Spiegel ist und dass die Option „all_Source_Snapshots“ aktiviert ist.
-** Wenn die Anzahl der Snapshot-Kopien auf dem sekundären Storage (Mirror-Vault) die Obergrenze erreicht, schlägt die Aktivität zur Registrierung von Backup und zur Anwendung der Aufbewahrung im Backup-Vorgang mit dem folgenden Fehler fehl: `This Snapshot copy is currently used as a reference Snapshot copy by one or more SnapMirror relationships. Deleting the Snapshot copy can cause future SnapMirror operations to fail.`
+** Wenn Sie Snapshots auf einen sekundären Spiegel- oder Vault-Speicher replizieren, müssen die Beziehungen konfiguriert werden. Der SnapCenter-Administrator muss Ihnen die Storage-VMs sowohl für die Quell- als auch für die Ziel-Volumes zugewiesen haben.
+** Um Snapshots für Versionen-FlexibleMirror Beziehungen auf einem NFS- oder VMFS-Datenspeicher erfolgreich in den sekundären Storage zu übertragen, stellen Sie sicher, dass der Richtlinientyp SnapMirror „Asynchronous Mirror“ ist und dass die Option „all_source_Snapshots“ aktiviert ist.
+** Wenn die Anzahl der Snapshots auf dem sekundären Storage (Mirror-Vault) das Maximum erreicht, schlägt die Aktivität zur Registrierung von Backups und Anwendung der Aufbewahrung im Backup-Vorgang mit der folgenden Fehlermeldung fehl: `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror Aufbewahrungsrichtlinie für den sekundären Storage, um das maximale Limit von Snapshot Kopien zu vermeiden.
+Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror Aufbewahrungsrichtlinie für den sekundären Storage, um zu vermeiden, dass die maximale Snapshot-Grenze erreicht wird.
 
 +
 Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie im https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^].
@@ -76,7 +76,7 @@ Die Richtlinie gibt nur die Backup-Häufigkeit an. Der spezifische Schutzzeitpla
 . Legen Sie die Aufbewahrungseinstellungen fest.
 +
 
-IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstellen, wenn Sie die SnapVault-Replikation aktivieren möchten. Wenn Sie die Aufbewahrungsanzahl auf 1 Backup gesetzt haben, kann der Aufbewahrungsvorgang fehlschlagen. Dies liegt daran, dass die erste Snapshot Kopie die Referenzkopie für die SnapVault-Beziehung ist, bis die neuere Snapshot Kopie auf das Ziel repliziert wird.
+IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstellen, wenn Sie die SnapVault-Replikation aktivieren möchten. Wenn Sie die Aufbewahrungsanzahl auf 1 Backup gesetzt haben, kann der Aufbewahrungsvorgang fehlschlagen. Das liegt daran, dass der erste Snapshot der ReferenzSnapshot für die SnapVault-Beziehung ist, bis der neuere Snapshot auf das Ziel repliziert wird.
 
 +
 
@@ -111,10 +111,11 @@ NOTE: Diese Option wird für Datastores in FlexGroup Volumes im SnapCenter Plug-
 
 
 | Snapshot-Etikett  a| 
-Geben Sie ein optionales, benutzerdefiniertes Label ein, das zu SnapVault und SnapMirror Snapshot Kopien hinzugefügt werden soll, die mit dieser Richtlinie erstellt werden. Das Snapshot-Label hilft, mit dieser Richtlinie erstellte Snapshots von anderen Snapshots auf dem sekundären Storage-System zu unterscheiden.
+Geben Sie eine optionale, benutzerdefinierte Beschriftung ein, die zu den mit dieser Richtlinie erstellten SnapVault und SnapMirror Snapshots hinzugefügt werden soll.
+Das Snapshot-Label hilft, mit dieser Richtlinie erstellte Snapshots von anderen Snapshots auf dem sekundären Storage-System zu unterscheiden.
 
 
-NOTE: Für Etiketten der Snapshot Kopien sind maximal 31 Zeichen zulässig.
+NOTE: Für Snapshot-Etiketten sind maximal 31 Zeichen zulässig.
 
 |===
 . Optional: Wählen Sie in den Feldern *Erweitert* die gewünschten Felder aus. In der folgenden Tabelle sind die Details zum Advanced Field Portal aufgeführt.
