@@ -35,12 +35,12 @@ Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von 
 .Über diese Aufgabe
 * Wenn die VMDK gelöscht oder von der VM getrennt wird, wird die VMDK durch den Wiederherstellungsvorgang an die VM angeschlossen.
 * Ein Wiederherstellungsvorgang kann fehlschlagen, wenn der Storage Tier der FabricPool, auf dem sich die VM befindet, nicht verfügbar ist.
-* Verbinden Sie VMDKs über den Standard-SCSI-Controller und stellen Sie Wiederherstellungsvorgänge her. VMDKs, die mit einem NVME-Controller an eine VM angeschlossen sind, werden gesichert, doch für Anschluss- und Restore-Vorgänge werden sie über einen SCSI-Controller zurückverbunden.
+* Verbinden Sie VMDKs über den Standard-SCSI-Controller und stellen Sie Wiederherstellungsvorgänge her. Wenn jedoch VMDKs gesichert werden, die an eine VM mit NVMe-Festplatte angeschlossen sind, verwenden die Anschluss- und Wiederherstellungsvorgänge, sofern verfügbar, den NVMe-Controller.
 
 
 .Schritte
 . Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
-. Klicken Sie im linken Navigator mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus.
+. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
 . Wählen Sie im Assistenten *Wiederherstellen* auf der Seite Sicherung auswählen die Sicherungskopie aus, aus der Sie die Sicherungskopie wiederherstellen möchten.
 +
 Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups möchten. Und primären oder sekundären Standort. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.

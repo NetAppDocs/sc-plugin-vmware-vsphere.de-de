@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_modify_the_time_zones.html 
 keywords:  
-summary: Wenn Sie einen Backup-Zeitplan für ein SnapCenter-Plug-in für VMware vSphere Ressourcengruppe konfigurieren, wird automatisch der Zeitplan für die Zeitzone festgelegt, in der das SnapCenter VMware Plug-in bereitgestellt wird. Diese Zeitzone können Sie mit dem SnapCenter Plug-in für VMware vSphere Management-GUI oder der Wartungskonsole ändern. 
+summary: Wenn Sie einen Backup-Zeitplan für eine SnapCenter-Plug-in für VMware vSphere-Ressourcengruppe konfigurieren, wird der Zeitplan automatisch für die Zeitzone festgelegt, in der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird. Diese Zeitzone können Sie mit dem SnapCenter Plug-in für VMware vSphere Management-GUI oder der Wartungskonsole ändern. 
 ---
 = Ändern der Zeitzonen für Backups
 :hardbreaks:
@@ -16,19 +16,19 @@ summary: Wenn Sie einen Backup-Zeitplan für ein SnapCenter-Plug-in für VMware 
 :authorinitials: [
 :authors: [.lead]
 :revnumber: 
-:revdate: the schedule is automatically set for the time zone in which SnapCenter VMware plug-in is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
+:revdate: the schedule is automatically set for the time zone in which SnapCenter Plug-in for VMware vSphere is deployed. You can modify that time zone by using the SnapCenter Plug-in for VMware vSphere management GUI or maintenance console.
 
 
 .Bevor Sie beginnen
 Sie müssen die IP-Adresse und die Anmeldedaten für das SnapCenter Plug-in für die Management-GUI von VMware vSphere kennen. Sie müssen auch das MFA-Token notieren, das von der Wartungskonsole generiert wurde.
 
-* Die IP-Adresse wurde bei der Bereitstellung des SnapCenter-VMware-Plug-ins angezeigt.
-* Verwenden Sie die Login-Anmeldedaten, die bei der Bereitstellung des SnapCenter VMware Plug-ins oder einer späteren Änderung zur Verfügung gestellt werden.
+* Die IP-Adresse wurde bei der Bereitstellung des SnapCenter-Plug-ins für VMware vSphere angezeigt.
+* Verwenden Sie die Anmeldeinformationen, die während der Bereitstellung des SnapCenter-Plug-ins für VMware vSphere oder später geändert wurden.
 * Generieren Sie ein 6-stelliges MFA-Token mithilfe der Systemkonfigurationsoptionen der Wartungskonsole.
 
 
 .Schritte
-. Melden Sie sich bei der Management-GUI von SnapCenter VMware Plug-in an.
+. Melden Sie sich im SnapCenter Plug-in für die Management-GUI von VMware vSphere an.
 +
 Verwenden Sie das Format `\https://<appliance-IP-address>:8080`
 
@@ -39,6 +39,6 @@ image:scpivs44_image28.jpg["SnapCenter Plug-in für VMware vSphere"]
 . Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Datum und Uhrzeit* auf *Bearbeiten*.
 . Wählen Sie die neue Zeitzone aus und klicken Sie auf *Speichern*.
 +
-Die neue Zeitzone wird für alle Backups verwendet, die vom SnapCenter VMware Plug-in durchgeführt werden.
+Die neue Zeitzone wird für alle Backups verwendet, die vom SnapCenter-Plug-in für VMware vSphere durchgeführt werden.
 
 

@@ -30,7 +30,7 @@ Eine Ressourcengruppe kann eine der folgenden Elemente enthalten:
 NOTE: VVol VMs, die mehrere vVol Datastores umfassen, werden nicht unterstützt, da SnapCenter nur VVols im primären, ausgewählten vVol Datastore sichert.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie dann auf image:scpivs44_image39.png["Symbol bearbeiten"] *Ressourcengruppe bearbeiten* um den Assistenten zu starten.
+. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie dann auf image:scpivs44_image39.png["Symbol bearbeiten"] *Ressourcengruppe bearbeiten*, um den Assistenten zu starten.
 . Gehen Sie auf der Seite *Ressource* wie folgt vor:
 +
 .. Navigieren Sie im Feld Datastores zu den VMs oder Datastores, die Sie hinzufügen möchten.
@@ -39,7 +39,7 @@ NOTE: VVol VMs, die mehrere vVol Datastores umfassen, werden nicht unterstützt,
 Standardmäßig wird das Datacenter-Objekt in der Liste Verfügbare Entitäten angezeigt. Sie können auf einen Datenspeicher klicken, um die VMs im Datenspeicher anzuzeigen und sie der Ressourcengruppe hinzuzufügen.
 
 +
-Wenn Sie auf *Weiter* klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten VMs oder Datastores befinden. Wenn die Meldung angezeigt wird `Some entities are not SnapCenter compatible` Wird angezeigt, dann ist eine ausgewählte VM oder ein ausgewählter Datastore nicht mit SnapCenter kompatibel. Siehe link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Managen Sie Fehler bei der Kompatibilitätsprüfung"] Finden Sie weitere Informationen.
+Wenn Sie auf *Weiter* klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten VMs oder Datastores befinden. Wenn die Meldung `Some entities are not SnapCenter compatible` angezeigt wird, ist eine ausgewählte VM oder ein ausgewählter Datastore nicht mit SnapCenter kompatibel. Weitere Informationen finden Sie unter link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Managen Sie Fehler bei der Kompatibilitätsprüfung"] .
 
 
 

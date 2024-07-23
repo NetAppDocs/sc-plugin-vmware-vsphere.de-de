@@ -17,7 +17,8 @@ summary: Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte fü
 Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte für die Wiederherstellung von Gastdateien verwenden möchten, müssen Sie die Proxy-VM einrichten, bevor Sie mit der Wiederherstellung beginnen. Sie können zwar jederzeit eine Proxy-VM einrichten, jedoch ist es unter Umständen günstiger, sie sofort nach Abschluss der Plug-in-Bereitstellung einzurichten.
 
 .Schritte
-. Klicken Sie im VMware vSphere-Client auf *Wiederherstellung der Gastdatei*.
+. Wählen Sie im Fenster vSphere Client Shortcuts unter Plug-ins *SnapCenter Plug-in für VMware vSphere* aus.
+. Wählen Sie in der linken Navigation *Guest File Restore*.
 . Führen Sie im Abschnitt * Ausführen als Anmeldeinformationen* einen der folgenden Schritte aus:
 +
 |===
@@ -36,7 +37,7 @@ Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte für die Wie
 
 |===
 +
-Das SnapCenter VMware Plug-in verwendet die ausgewählten Anmeldeinformationen, um sich bei der ausgewählten Proxy-VM anzumelden.
+Das SnapCenter Plug-in für VMware vSphere verwendet die ausgewählten Anmeldeinformationen, um sich bei der ausgewählten Proxy-VM anzumelden.
 
 +
 Die Anmeldeinformationen „Ausführen als“ müssen der standardmäßige Domänenadministrator sein, der von Windows oder dem integrierten lokalen Administrator bereitgestellt wird. Workgroup-Benutzer können das integrierte lokale Administratorkonto verwenden.
@@ -46,4 +47,4 @@ Die Anmeldeinformationen „Ausführen als“ müssen der standardmäßige Domä
 
 
 
-NOTE: Sie müssen die Proxy-VM aus dem SnapCenter-Plug-in für VMware vSphere-UI löschen, bevor Sie sie aus ESXi löschen können.
+NOTE: Sie müssen die Proxy-VM aus dem SnapCenter-Plug-in für VMware vSphere-UI löschen, bevor Sie sie vom ESXi-Host löschen können.

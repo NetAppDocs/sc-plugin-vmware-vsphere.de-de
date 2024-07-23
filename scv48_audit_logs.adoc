@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scv48_audit_logs.html 
 keywords:  
-summary: Audit-Protokoll bietet Rückverfolgbarkeit, wer was wann gemacht hat. Audit Log ist eine Sammlung von Ereignissen in chronologischer Reihenfolge und wird in eine Datei innerhalb der Appliance geschrieben. 
+summary: Audit-Protokoll bietet Rückverfolgbarkeit, wer was wann gemacht hat. Ein Audit-Protokoll ist eine Sammlung von Ereignissen in chronologischer Reihenfolge, und es wird in eine Datei innerhalb der Appliance geschrieben. 
 ---
 = Prüfprotokolle
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: Audit-Protokoll bietet Rückverfolgbarkeit, wer was wann gemacht hat. A
 
 
 [role="lead"]
-Audit Log ist eine Sammlung von Ereignissen in chronologischer Reihenfolge, die in eine Datei innerhalb der Appliance geschrieben wird. Die Audit-Log-Dateien werden in generiert `/var/log/netapp/audit` Standort und Dateiname folgen einer der folgenden Namenskonventionen:
+Ein Audit-Protokoll ist eine Sammlung von Ereignissen in chronologischer Reihenfolge, die in eine Datei innerhalb der Appliance geschrieben wird. Die Audit-Log-Dateien werden am Speicherort generiert `/var/log/netapp/audit` , und die Dateinamen folgen einer der folgenden Namenskonventionen:
 
 * Audit.log: Aktive Audit-Log-Datei, die verwendet wird.
 * Audit-%d{yyyy-MM-dd-HH-mm-ss}.log.gz: Gerollt über Audit-Log-Datei. Das Datum und die Uhrzeit im Dateinamen geben an, wann die Datei erstellt wurde, z. B. Audit-2022-12-15-16-28-01.log.gz.
@@ -22,7 +22,7 @@ Audit Log ist eine Sammlung von Ereignissen in chronologischer Reihenfolge, die 
 
 In der SCV-Plug-in-Benutzeroberfläche können Sie die Audit-Log-Details über *Dashboard* > *Einstellungen* > *Audit-Protokolle*-Registerkarte anzeigen und exportieren. Die Prüfprotokolle werden mit dem Support Bundle heruntergeladen.
 
-Wenn E-Mail-Einstellungen konfiguriert sind, sendet SCV eine E-Mail-Benachrichtigung im Falle eines Fehlers bei der Integritätsprüfung des Überwachungsprotokolls. Ein Fehler bei der Integritätsprüfung für das Prüfprotokoll kann auftreten, wenn eine der Dateien manipuliert oder gelöscht wird.
+Wenn E-Mail-Einstellungen konfiguriert sind, sendet SCV eine E-Mail-Benachrichtigung im Falle eines Fehlers bei der Integritätsprüfung des Überwachungsprotokolls. Ein Fehler bei der Überprüfung der Integrität des Überwachungsprotokolls kann auftreten, wenn eine der Dateien manipuliert oder gelöscht wird.
 
 Die Standardkonfigurationen der Audit-Dateien sind:
 
@@ -190,4 +190,6 @@ Mit dieser Aufgabe können Sie die standardmäßigen Einstellungen des Überwach
 . Melden Sie sich beim SnapCenter-Plug-in für VMware vSphere an.
 . Wählen Sie im linken Navigationsbereich *Einstellungen* > *Audit-Protokolle* > *Einstellungen*.
 . Geben Sie im Bereich *Audit Log Settings* die maximale Anzahl an Audit Log Files und die maximale Größe der Audit Log Files ein.
+. Wählen Sie die Option *Überwachungsprotokolle an Syslog-Server senden* aus, wenn Sie die Protokolle an Syslog-Server senden möchten. Geben Sie die Details des Servers ein.
+. Speichern Sie die Einstellungen.
 

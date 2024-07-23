@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_ontap_rbac_features_in_snapcenter.html 
 keywords:  
-summary: 'Das SnapCenter VMware Plug-in nutzt die rollenbasierte Zugriffssteuerung von vCenter Server, die SnapCenter RBAC (bei Bedarf zur Unterstützung applikationsbasierter Vorgänge) und die ONTAP RBAC. So können Sie festlegen, welche SnapCenter Aufgaben ein bestimmter Benutzer auf Objekten in einem bestimmten Storage-System ausführen kann.' 
+summary: 'Das SnapCenter Plug-in für VMware vSphere funktioniert mit RBAC für vCenter Server, RBAC für SnapCenter (bei Bedarf zur Unterstützung applikationsbasierter Vorgänge) und RBAC für ONTAP, um festzulegen, welche SnapCenter Aufgaben ein bestimmter Benutzer an Objekten eines spezifischen Storage-Systems ausführen kann.' 
 ---
 = ONTAP RBAC-Funktionen im SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
@@ -17,9 +17,9 @@ summary: 'Das SnapCenter VMware Plug-in nutzt die rollenbasierte Zugriffssteueru
 NOTE: ONTAP RBAC ist nur für applikationskonsistente (Applikations-Over VMDK) Jobs des SnapCenter Servers gültig.
 
 [role="lead"]
-Mit der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC) von ONTAP können Sie den Zugriff auf bestimmte Storage-Systeme steuern und die Aktionen ausführen, die ein Benutzer auf diesen Storage-Systemen durchführen kann. Das SnapCenter VMware Plug-in nutzt die rollenbasierte Zugriffssteuerung von vCenter Server, die SnapCenter RBAC (bei Bedarf zur Unterstützung applikationsbasierter Vorgänge) und die ONTAP RBAC. So können Sie festlegen, welche SnapCenter Aufgaben ein bestimmter Benutzer auf Objekten in einem bestimmten Storage-System ausführen kann.
+Mit der rollenbasierten Zugriffssteuerung (Role Based Access Control, RBAC) von ONTAP können Sie den Zugriff auf bestimmte Storage-Systeme steuern und die Aktionen ausführen, die ein Benutzer auf diesen Storage-Systemen durchführen kann. Das SnapCenter Plug-in für VMware vSphere funktioniert mit RBAC für vCenter Server, RBAC für SnapCenter (bei Bedarf zur Unterstützung applikationsbasierter Vorgänge) und RBAC für ONTAP, um festzulegen, welche SnapCenter Aufgaben ein bestimmter Benutzer an Objekten eines spezifischen Storage-Systems ausführen kann.
 
-SnapCenter verwendet die von Ihnen festgelegten Anmeldedaten (Benutzername und Passwort) zur Authentifizierung jedes Storage-Systems und zur Bestimmung, welche Vorgänge auf diesem Storage-System ausgeführt werden können. Das SnapCenter VMware Plug-in verwendet einen Satz an Anmeldedaten für jedes Storage-System. Diese Anmeldedaten bestimmen alle Aufgaben, die auf dem Storage-System ausgeführt werden können. Das heißt, die Anmeldedaten gelten für SnapCenter, nicht für einen einzelnen SnapCenter-Benutzer.
+SnapCenter verwendet die von Ihnen festgelegten Anmeldedaten (Benutzername und Passwort) zur Authentifizierung jedes Storage-Systems und zur Bestimmung, welche Vorgänge auf diesem Storage-System ausgeführt werden können. Das SnapCenter Plug-in für VMware vSphere verwendet für jedes Storage-System einen Satz von Anmeldeinformationen. Diese Anmeldedaten bestimmen alle Aufgaben, die auf dem Storage-System ausgeführt werden können. Das heißt, die Anmeldedaten gelten für SnapCenter, nicht für einen einzelnen SnapCenter-Benutzer.
 
 ONTAP RBAC gilt nur für den Zugriff auf Storage-Systeme und zur Durchführung von SnapCenter Aufgaben, beispielsweise für das Backup von VMs. Wenn Sie nicht über die entsprechenden ONTAP RBAC-Berechtigungen für ein bestimmtes Storage-System verfügen, können Sie keine Aufgaben auf einem vSphere Objekt ausführen, das auf diesem Storage-System gehostet wird.
 

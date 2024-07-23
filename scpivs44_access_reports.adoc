@@ -19,7 +19,8 @@ Sie können über das Dashboard Berichte für einen oder mehrere Jobs anfordern.
 Die Registerkarte Berichte enthält Informationen zu den Jobs, die auf der Seite Jobs im Dashboard ausgewählt wurden. Wenn keine Jobs ausgewählt sind, ist die Registerkarte Berichte leer.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*, wählen Sie einen vCenter-Server aus und klicken Sie dann auf die Registerkarte *Berichte*.
+. Wählen Sie auf der Verknüpfungsseite des vCenter-Clients die Option SnapCenter-Plug-in für VMware vSphere (SCV) aus.
+. Wählen Sie im linken Navigationsbereich des SCV *Dashboard* > *Reports*.
 . Für Backup-Berichte können Sie Folgendes tun:
 +
 .. Ändern Sie den Bericht
@@ -45,7 +46,7 @@ Sie können auch auf das Download-Symbol klicken, um Plug-in-Protokolle herunter
 Der VMware vSphere Client für SnapCenter bietet anpassbare Berichtsoptionen, die Ihnen Details zu Ihren Datensicherungsaufgaben und zum Plug-in-Ressourcenstatus liefern. Sie können Berichte nur für den Primärschutz erstellen.
 
 
-NOTE: Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter VMware Plug-in implementiert wird. VCenter meldet Daten in der Zeitzone, in der sich die vCenter befindet. Wenn sich das SnapCenter VMware Plug-in und vCenter in verschiedenen Zeitzonen befinden, sind die Daten im VMware vSphere Client Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
+NOTE: Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter Plug-in für VMware vSphere bereitgestellt wird. VCenter meldet Daten in der Zeitzone, in der sich vCenter befindet. Wenn sich das SnapCenter-Plug-in für VMware vSphere und vCenter daher in unterschiedlichen Zeitzonen befinden, sind die Daten im VMware vSphere Client-Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
 
 Das Dashboard zeigt Informationen zu migrierten Backups nur an, nachdem Backups nach der Migration durchgeführt wurden.
 
@@ -78,13 +79,5 @@ Für jeden Job werden die Job-ID, der Job-Status, der Job-Name sowie die Start- 
 Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie können auch die Job Monitor-Job-Protokolle für alle Jobs herunterladen (nicht nur die Jobs im Bericht). 
 
 
-| Letzter Sicherungsstatus von VMs oder Datastores | Zeigt Überblicksinformationen zum Sicherungsstatus während der konfigurierten Anzahl von Tagen für VMs und Datenspeicher an, die vom VMware-Plug-in von SnapCenter gemanagt werden. Der Standardwert ist 7 Tage. Informationen zum Ändern des Werts in der Eigenschaftendatei finden Sie unter link:scpivs44_modify_configuration_default_values.html["Ändern Sie die Standardwerte der Konfiguration"].
-
-Klicken Sie auf einen Abschnitt/Status auf dem primären Schutzdiagramm, um eine Liste von VMs oder Datastores mit diesem Status auf der Registerkarte *Berichte* anzuzeigen.
-
-Im Bericht „VM“ oder „Data Stores Protection Status Report“ für geschützte VMs und Datenspeicher werden die Namen der VMs oder Datenspeicher angezeigt, die während der konfigurierten Anzahl von Tagen gesichert wurden, der aktuelle Snapshot-Name sowie die Start- und Endzeiten der letzten Backup-Ausführung.
-
-In der VM- oder Datastores-Sicherungsstatusbericht für ungesicherte VMs oder Datastores werden die Namen von VMs oder Datastores angezeigt, die während der konfigurierten Anzahl von Tagen keine erfolgreichen Backups aufweisen.
-
-Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie können auch die Job Monitor-Job-Protokolle für alle Jobs herunterladen (nicht nur die Jobs im Bericht). Dieser Bericht wird jede Stunde aktualisiert, wenn der Plug-in-Cache aktualisiert wird. Daher zeigt der Bericht möglicherweise keine VMs oder Datenspeicher an, die kürzlich gesichert wurden. 
+| Letzter Sicherungsstatus von VMs oder Datastores | Zeigt eine Übersicht über den Schutzstatus während der konfigurierten Anzahl von Tagen für VMs und Datastores an, die vom SnapCenter-Plug-in für VMware vSphere verwaltet werden. Der Standardwert ist 7 Tage. Informationen zum Ändern des Werts in der Eigenschaftendatei finden Sie unter link:scpivs44_modify_configuration_default_values.html["Ändern Sie die Standardwerte der Konfiguration"]. Klicken Sie auf einen Abschnitt/Status auf dem primären Schutzdiagramm, um eine Liste von VMs oder Datastores mit diesem Status auf der Registerkarte *Berichte* anzuzeigen. Im Bericht „VM“ oder „Data Stores Protection Status Report“ für geschützte VMs und Datenspeicher werden die Namen der VMs oder Datenspeicher angezeigt, die während der konfigurierten Anzahl von Tagen gesichert wurden, der aktuelle Snapshot-Name sowie die Start- und Endzeiten der letzten Backup-Ausführung. In der VM- oder Datastores-Sicherungsstatusbericht für ungesicherte VMs oder Datastores werden die Namen von VMs oder Datastores angezeigt, die während der konfigurierten Anzahl von Tagen keine erfolgreichen Backups aufweisen. Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie können auch die Job Monitor-Job-Protokolle für alle Jobs herunterladen (nicht nur die Jobs im Bericht). Dieser Bericht wird jede Stunde aktualisiert, wenn der Plug-in-Cache aktualisiert wird. Daher zeigt der Bericht möglicherweise keine VMs oder Datenspeicher an, die kürzlich gesichert wurden. 
 |===

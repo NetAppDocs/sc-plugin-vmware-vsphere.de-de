@@ -55,7 +55,7 @@ Geben Sie unter *Registrieren Sie sich bei vorhandenem vCenter* die vCenter-Anme
 
 NOTE: Notieren Sie sich den Benutzernamen und das Kennwort, den Sie angeben. Sie müssen diese Anmeldedaten verwenden, wenn Sie die Konfiguration des SnapCenter Plug-ins für VMware vSphere zu einem späteren Zeitpunkt ändern möchten.
 
-Geben Sie unter * Netzwerkeigenschaften einrichten* die Netzwerkinformationen ein. Wählen Sie unter *Setup Datum und Uhrzeit* die Zeitzone aus, in der sich das vCenter befindet.
+Geben Sie im Abschnitt *Netzwerkeigenschaften einrichten* die Netzwerkinformationen ein. Wählen Sie im Abschnitt *Setup-Datum und -Uhrzeit* die Zeitzone aus, in der sich das vCenter befindet.
 
 
 
@@ -65,15 +65,15 @@ Geben Sie unter * Netzwerkeigenschaften einrichten* die Netzwerkinformationen ei
 
 NOTE: Alle Hosts müssen mit IP-Adressen konfiguriert sein (FQDN-Hostnamen werden nicht unterstützt). Der Bereitstellungsvorgang überprüft Ihre Eingaben vor der Bereitstellung nicht.
 
-. Navigieren Sie zu der VM, für die SnapCenter Plug-in für VMware vSphere bereitgestellt wurde, und klicken Sie dann auf die Registerkarte *Zusammenfassung* und dann auf die Box *Power on*, um das SnapCenter VMware Plug-in zu starten.
-. Während das SnapCenter VMware Plug-in eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das implementierte SnapCenter VMware Plug-in, wählen Sie *Gastbetriebssystem* aus und klicken Sie dann auf *VMware Tools installieren*.
+. Navigieren Sie zu der VM, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wurde, klicken Sie dann auf die Registerkarte *Zusammenfassung*, und klicken Sie dann auf das Feld *Einschalten*, um das SnapCenter-Plug-in für VMware vSphere zu starten.
+. Während das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das bereitgestellte SnapCenter-Plug-in für VMware vSphere, wählen Sie *Gastbetriebssystem* aus und klicken Sie dann auf *VMware-Tools installieren*.
 +
-Die Implementierung kann einige Minuten dauern. Eine erfolgreiche Implementierung wird angezeigt, wenn das SnapCenter VMware Plug-in eingeschaltet ist, die VMware-Tools installiert sind und Sie auf dem Bildschirm zur Anmeldung beim SnapCenter VMware Plug-in aufgefordert werden.
+Die Implementierung kann einige Minuten dauern. Die erfolgreiche Bereitstellung wird angezeigt, wenn das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, die VMware-Tools installiert sind und Sie auf dem Bildschirm aufgefordert werden, sich beim SnapCenter-Plug-in für VMware vSphere anzumelden.
 
 +
-Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-VMware-Plug-in bereitgestellt wird. Notieren Sie sich die IP-Adresse. Sie müssen sich bei der Management-GUI des SnapCenter VMware Plug-ins anmelden, um Änderungen an der SnapCenter VMware Plug-in-Konfiguration vorzunehmen.
+Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird. Notieren Sie sich die IP-Adresse. Sie müssen sich bei der SnapCenter-Plug-in für VMware vSphere-Management-GUI anmelden, wenn Sie Änderungen an der Konfiguration des SnapCenter-Plug-ins für VMware vSphere vornehmen möchten.
 
-. Melden Sie sich über die im Implementierungsassistenten angegebene IP-Adresse bei der Management-GUI von SnapCenter VMware-Plug-in an. Überprüfen Sie anschließend im Dashboard, ob das SnapCenter VMware-Plug-in erfolgreich mit vCenter verbunden und aktiviert ist.
+. Melden Sie sich mit der im Bereitstellungsbildschirm angezeigten IP-Adresse mit den im Bereitstellungsassistenten angegebenen Anmeldeinformationen an der SnapCenter-Plug-in für VMware vSphere-Managementschnittstelle an, und überprüfen Sie dann im Dashboard, ob das SnapCenter-Plug-in für VMware vSphere erfolgreich mit vCenter verbunden und aktiviert ist.
 +
 Verwenden Sie das Format `\https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
 

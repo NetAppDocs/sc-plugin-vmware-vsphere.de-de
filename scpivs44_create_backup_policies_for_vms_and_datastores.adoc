@@ -24,25 +24,25 @@ Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für 
 ** Um Snapshots für Versionen-FlexibleMirror Beziehungen auf einem NFS- oder VMFS-Datenspeicher erfolgreich in den sekundären Storage zu übertragen, stellen Sie sicher, dass der Richtlinientyp SnapMirror „Asynchronous Mirror“ ist und dass die Option „all_source_Snapshots“ aktiviert ist.
 ** Wenn die Anzahl der Snapshots auf dem sekundären Storage (Mirror-Vault) das Maximum erreicht, schlägt die Aktivität zur Registrierung von Backups und Anwendung der Aufbewahrung im Backup-Vorgang mit der folgenden Fehlermeldung fehl: `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
 +
-Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror Aufbewahrungsrichtlinie für den sekundären Storage, um zu vermeiden, dass die maximale Snapshot-Grenze erreicht wird.
+Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror Aufbewahrungsrichtlinie für den sekundären Storage, damit die maximale Snapshot-Grenze nicht erreicht wird.
 
 +
-Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie im https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^].
+Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie unter https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^].
 
 
 
 * Wenn Sie VM-konsistente Backups wünschen, müssen VMware Tools installiert und ausgeführt werden. Um VMs stillzulegen, sind VMware Tools erforderlich. VM-konsistente Backups werden für vVol VMs nicht unterstützt.
-* SnapMirror Business Continuity (SM-BC) sorgt dafür, dass die Business Services auch bei einem vollständigen Standortausfall weiterlaufen und Applikationen mithilfe einer sekundären Kopie einen transparenten Failover unterstützen.
+* SnapMirror Active Sync ermöglicht Business Services auch bei einem vollständigen Standortausfall den Betrieb weiter und unterstützt Applikationen bei einem transparenten Failover mithilfe einer sekundären Kopie.
 +
 
-NOTE: SM-BC wird nur für VMFS Datastores unterstützt.
+NOTE: SnapMirror Active Sync wird nur für VMFS Datastores unterstützt.
 
 +
-Zum Schutz eines VMFS-Datenspeichers in einer SM-BC-Bereitstellung müssen Sie als SnapCenter-Administrator Folgendes tun:
+Zum Schutz eines VMFS-Datenspeichers in einer Implementierung mit aktiver SnapMirror Synchronisierung müssen Sie als SnapCenter-Administrator Folgendes tun:
 
 +
-** Cluster und Mediator wie im technischen Bericht beschrieben konfigurieren: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878: SnapMirror Business Continuity"].
-** Fügen Sie das dem VMFS-Datastore zugeordnete Volume zur Konsistenzgruppe hinzu und erstellen Sie mithilfe der _AutomatedFailOver_ -Schutzrichtlinie zwischen zwei ONTAP-Storage-Systemen eine Datensicherungsbeziehung.
+** Konfigurieren Sie Cluster und Mediator wie im technischen Bericht beschrieben: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878: SnapMirror Active Sync (ehemals SMBC)"].
+** Fügen Sie das dem VMFS-Datastore zugeordnete Volume zur Konsistenzgruppe hinzu und erstellen Sie mithilfe der _AutomatedFailOver_- oder _AutomatedFailOverDuplex_-Schutzrichtlinie zwischen zwei ONTAP-Speichersystemen eine Datensicherungsbeziehung. _AutomaticatedFailOverDuplex_-Richtlinie wird ab ONTAP 9.15.1 unterstützt.
 
 
 
@@ -51,7 +51,7 @@ Zum Schutz eines VMFS-Datenspeichers in einer SM-BC-Bereitstellung müssen Sie a
 Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den folgenden Informationen werden einige der Felder beschrieben, für die Sie möglicherweise eine Anleitung benötigen.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Richtlinien*.
+. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Richtlinien*.
 . Wählen Sie auf der Seite *Policies* *Create* aus, um den Assistenten zu starten.
 . Wählen Sie auf der Seite *New Backup Policy* den vCenter Server aus, der die Richtlinie verwendet, und geben Sie dann den Namen der Richtlinie und eine Beschreibung ein.
 +
@@ -95,7 +95,7 @@ Wählen Sie diese Option aus, um Spiegelkopien von Backup-Sets auf einem anderen
 NOTE: Diese Option wird für Datastores in FlexGroup Volumes im SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt.
 
 
-NOTE: Zum Schutz des VMFS-Datastore auf der SM-BC-Bereitstellung müssen Sie die im Abschnitt _before you begin_ genannten Voraussetzungen erfüllen und *Update SnapMirror after Backup* aktivieren.
+NOTE: Zum Schutz des VMFS-Datastore auf der Bereitstellung von SnapMirror Active Sync müssen Sie die im Abschnitt _before you begin_ genannten Voraussetzungen erfüllen und *Update SnapMirror after Backup* aktivieren.
 
 
 
@@ -130,7 +130,7 @@ Aktivieren Sie dieses Kontrollkästchen, um die VMs stillzulegen und jedes Mal, 
 Diese Option wird für VVols nicht unterstützt. Bei vVol VMs werden nur absturzkonsistente Backups durchgeführt.
 
 
-IMPORTANT: Sie müssen VMware Tools auf der VM ausführen, um VM-konsistente Backups durchzuführen. Wenn VMware Tools nicht ausgeführt wird, wird stattdessen ein absturzkonsistentes Backup durchgeführt.
+IMPORTANT: Sie müssen VMware Tools auf der VM ausführen, um VM-konsistente Backups durchzuführen. Wenn VMware-Tools nicht ausgeführt werden, wird stattdessen ein Crash-konsistentes Backup durchgeführt.
 
 
 NOTE: Wenn Sie das Kontrollkästchen für die Konsistenz der VM aktivieren, können Backup-Vorgänge länger dauern und mehr Speicherplatz benötigen. In diesem Szenario werden die VMs zuerst stillgelegt, dann führt VMware einen VM-konsistenten Snapshot durch, dann führt SnapCenter seinen Backup-Vorgang durch und anschließend werden die VM-Vorgänge wieder aufgenommen. Der VM-Gastspeicher ist nicht in den Konsistenz-Snapshots der VMs enthalten.
@@ -141,7 +141,7 @@ NOTE: Wenn Sie das Kontrollkästchen für die Konsistenz der VM aktivieren, kön
 
 
 | Skripte  a| 
-Geben Sie den vollständig qualifizierten Pfad des Prescript oder Postscript ein, das das SnapCenter VMware Plug-in vor oder nach dem Backup ausführen soll. Sie können beispielsweise ein Skript ausführen, um SNMP-Traps zu aktualisieren, Warnmeldungen zu automatisieren und Protokolle zu senden. Der Skriptpfad wird zum Zeitpunkt der Ausführung des Skripts validiert.
+Geben Sie den vollständig qualifizierten Pfad des Prescript oder Postscripts ein, das das SnapCenter-Plug-in für VMware vSphere vor oder nach Sicherungsvorgängen ausführen soll. Sie können beispielsweise ein Skript ausführen, um SNMP-Traps zu aktualisieren, Warnmeldungen zu automatisieren und Protokolle zu senden. Der Skriptpfad wird zum Zeitpunkt der Ausführung des Skripts validiert.
 
 
 NOTE: Prescripts und Postscripts müssen auf der VM der virtuellen Appliance liegen. Um mehrere Skripte einzugeben, drücken Sie nach jedem Skriptpfad *Enter*, um jedes Skript in einer eigenen Zeile aufzulisten. Das Zeichen „;“ ist nicht zulässig.

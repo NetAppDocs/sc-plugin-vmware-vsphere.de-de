@@ -47,7 +47,7 @@ Alle VVols in einem einzelnen, angegebenen vVol Ordner. Wenn der Ordner eine Kom
 Für alle Ressourcengruppen:
 
 
-IMPORTANT: Wenn Sie VMware vSphere Cluster Service (VCLS) verwenden, schließen Sie keine VMs ein, die von VCLS in SnapCenter VMware Plug-in-Ressourcengruppen verwaltet werden.
+IMPORTANT: Wenn Sie den VMware vSphere-Clusterdienst (VCLS) verwenden, nehmen Sie keine von VCLS verwalteten VMs in das SnapCenter-Plug-in für VMware vSphere-Ressourcengruppen auf.
 
 
 TIP: Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastores auf großen LUNs und Dateien bis zu 128 TB mit Volumen von bis zu 300 TB. Wenn Sie große LUNs schützen, verwenden Sie nur per Thick Provisioning bereitgestellte LUNs, um Latenz zu vermeiden.
@@ -73,7 +73,7 @@ Um mehrere Ressourcen zu sichern, müssen Sie eine Ressourcengruppe erstellen, d
 
 * Ressourcengruppen, die FlexGroup Volumes in MetroCluster-Umgebungen enthalten
 +
-Wenn Sie ONTAP 9.8 oder ONTAP 9.9 ausführen, müssen Sie nach einem Switchover oder einem Switchover den SnapCenter VMware Plug-in-Service neu starten und die SnapMirror Beziehungen neu synchronisieren, bevor Sie Ressourcen in MetroCluster Umgebungen sichern.
+Wenn Sie ONTAP 9.8 oder ONTAP 9.9 ausführen, müssen Sie nach einem Switchover oder Switchback den Service SnapCenter Plug-in für VMware vSphere neu starten und die SnapMirror Beziehungen neu synchronisieren, bevor Sie Ressourcengruppen in MetroCluster Umgebungen sichern.
 
 +
 In ONTAP 9.8 hängen die Backups nach dem Wechsel zurück. Dieses Problem wurde in ONTAP 9.9 behoben.
@@ -102,13 +102,13 @@ Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfung
 
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen* und wählen Sie dann *Erstellen*, um den Assistenten zu starten.
+. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen* und wählen Sie dann *Erstellen*, um den Assistenten zu starten.
 
 
 Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können jedoch auch eine Ressourcengruppe mit einer Ressource erstellen, indem Sie eine der folgenden Schritte ausführen:
 
-* Um eine Ressourcengruppe für eine VM zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf eine VM, wählen Sie NetApp SnapCenter und wählen Sie dann *Ressourcengruppe erstellen* aus.
-* Um eine Ressourcengruppe für einen Datastore zu erstellen, klicken Sie auf *Menü* > *Hosts und Cluster*, klicken Sie mit der rechten Maustaste auf einen Datastore, wählen Sie dann *NetApp SnapCenter* und wählen Sie dann *Ressourcengruppe erstellen* aus.
+* Um eine Ressourcengruppe für eine VM zu erstellen, wählen Sie auf der Seite Verknüpfungen *Hosts und Cluster* aus, klicken Sie mit der rechten Maustaste auf eine VM und wählen Sie *SnapCenter-Plug-in für VMware vSphere* > *Ressourcengruppe erstellen* aus.
+* Um eine Ressourcengruppe für einen Datastore zu erstellen, wählen Sie auf der Shortcuts-Seite *Hosts und Cluster* aus, klicken Sie mit der rechten Maustaste auf einen Datastore, wählen Sie *SnapCenter-Plug-in für VMware vSphere* > *Ressourcengruppe erstellen* aus.
 +
 .. Gehen Sie auf der Seite *Allgemeine Informationen & Benachrichtigungen* im Assistenten wie folgt vor:
 +
@@ -119,7 +119,7 @@ Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können je
 | VCenter Server | Wählen Sie einen vCenter-Server aus. 
 
 
-| Name | Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - [vertikaler Balken] ; ' , . Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Modus verfügt jedes vCenter über ein separates VMware Plug-in-Repository von SnapCenter. Daher können Sie doppelte Namen in allen vCenters verwenden. 
+| Name | Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - [vertikaler Balken] ; ' , . Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Mode verfügt jedes vCenter über ein separates SnapCenter Plug-in für VMware vSphere Repository. Daher können Sie doppelte Namen in allen vCenters verwenden. 
 
 
 | Beschreibung | Geben Sie eine Beschreibung der Ressourcengruppe ein. 
@@ -183,10 +183,10 @@ Namen von VMs und Datenspeichern in einer Ressourcengruppe müssen eindeutig sei
 Wenn Sie auf *Weiter* klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten Ressourcen befinden.
 
 +
-Wenn die Meldung angezeigt wird `Selected <resource-name> is not SnapCenter compatible` Wird angezeigt, und eine ausgewählte Ressource ist nicht mit SnapCenter kompatibel. Siehe <<Managen Sie Fehler bei der Kompatibilitätsprüfung>> Finden Sie weitere Informationen.
+Wenn die Meldung `Selected <resource-name> is not SnapCenter compatible` angezeigt wird, ist eine ausgewählte Ressource nicht mit SnapCenter kompatibel.
 
 +
-Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie im den Namen des Datenspeichers angeben `global.ds.exclusion.pattern` Das Hotel befindet sich im `scbr.override` Konfigurationsdatei Siehe <<scpivs44_properties_you_can_override.adoc#Properties you can override,Eigenschaften, die Sie überschreiben können>>.
+Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie den/die Datastore-Namen in der Eigenschaft in der Konfigurationsdatei angeben `global.ds.exclusion.pattern` `scbr.override` . Siehe link:scpivs44_properties_you_can_override.html["Eigenschaften, die Sie überschreiben können"].
 
 .. Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
 +
@@ -224,10 +224,10 @@ image:scpivs44_image18.png["Fenster Ressourcengruppe erstellen"]
 Geben Sie im Feld Startzeit ein Datum und eine andere Zeit als null ein. Das Datum muss das Format haben `day/month/year`.
 
 +
-Wenn Sie im Feld * each* eine Anzahl von Tagen auswählen, werden die Backups an Tag 1 des Monats und danach in jedem angegebenen Intervall durchgeführt. Wenn Sie zum Beispiel die Option *alle 2 Tage* wählen, dann werden Backups am Tag 1, 3, 5, 7 usw. im Laufe des Monats durchgeführt, unabhängig davon, ob das Startdatum gerade oder ungerade ist.
+Wenn Sie in jedem Feld eine Anzahl von Tagen auswählen, werden die Backups an Tag 1 des Monats und danach in jedem angegebenen Intervall durchgeführt. Wenn Sie zum Beispiel die Option *alle 2 Tage* wählen, dann werden Backups am Tag 1, 3, 5, 7 usw. im Laufe des Monats durchgeführt, unabhängig davon, ob das Startdatum gerade oder ungerade ist.
 
 +
-Sie müssen jedes Feld ausfüllen. Das SnapCenter VMware Plug-in erstellt Zeitpläne in der Zeitzone, in der das SnapCenter VMware Plug-in bereitgestellt wird. Sie können die Zeitzone mithilfe des SnapCenter Plug-in für VMware vSphere ändern.
+Sie müssen jedes Feld ausfüllen. Das SnapCenter Plug-in für VMware vSphere erstellt Zeitpläne in der Zeitzone, in der das SnapCenter Plug-in für VMware vSphere implementiert ist. Sie können die Zeitzone mithilfe des SnapCenter Plug-in für VMware vSphere ändern.
 
 +
 link:scpivs44_modify_the_time_zones.html["Ändern der Zeitzonen für Backups"].
@@ -261,18 +261,18 @@ Gründe für eine Inkompatibilität können sein:
 SnapCenter Version 4.x unterstützt ONTAP 8.3.1 und höher.
 
 +
-Das SnapCenter Plug-in für VMware vSphere führt keine Kompatibilitätsprüfungen für alle ONTAP Versionen durch – nur für ONTAP Versionen 8.2.1 und frühere Versionen. Sehen Sie deshalb immer das https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool (IMT)"^] Aktuelle Informationen zum SnapCenter Support.
+Das SnapCenter Plug-in für VMware vSphere führt keine Kompatibilitätsprüfungen für alle ONTAP Versionen durch, sondern nur für ONTAP Versionen 8.2.1 und früher. Aktuelle Informationen zum SnapCenter-Support finden Sie daher immer unter https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool (IMT)"^] .
 
 * Ein gemeinsam genutztes PCI-Gerät ist mit einer VM verbunden.
-* Eine bevorzugte IP-Adresse ist in SnapCenter nicht konfiguriert.
-* Sie haben die Storage-VM (SVM)-Management-IP SnapCenter nicht hinzugefügt.
+* Die bevorzugte IP-Adresse ist in SnapCenter nicht konfiguriert.
+* Sie haben SnapCenter keine Management-IP-Adresse für die Storage VM (SVM) hinzugefügt.
 * Die Storage-VM ist ausgefallen.
 
 
 Gehen Sie wie folgt vor, um einen Kompatibilitätsfehler zu beheben:
 
 . Stellen Sie sicher, dass die Storage-VM ausgeführt wird.
-. Stellen Sie sicher, dass das Storage-System, auf dem sich die VMs befinden, zum SnapCenter Plug-in für den VMware vSphere Inventory hinzugefügt wurde.
+. Stellen Sie sicher, dass das Speichersystem, auf dem sich die VMs befinden, zum SnapCenter-Plug-in für den VMware vSphere-Bestand hinzugefügt wurde.
 . Stellen Sie sicher, dass die Storage-VM zu SnapCenter hinzugefügt wird. Verwenden Sie die Option Add Storage System in der VMware vSphere Client GUI.
 . Wenn VMs über VMDKs sowohl auf NetApp als auch auf Datastores anderer Anbieter verfügen, verschieben Sie die VMDKs zu NetApp Datastores.
 

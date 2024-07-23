@@ -17,7 +17,7 @@ summary: Applikations-, System- und Netzwerkkonfigurationen können über die Wa
 Die Wartungskonsole für das SnapCenter Plug-in für VMware vSphere ermöglicht das Management Ihrer Applikations-, System- und Netzwerkkonfigurationen. Sie können Ihr Administratorpasswort, das Wartungspasswort, das Generieren von Support Bundles und das Starten der Remote Diagnostics ändern.
 
 .Bevor Sie beginnen
-Bevor Sie das SnapCenter-Plug-in für VMware vSphere anhalten und neu starten, sollten Sie alle Zeitpläne unterbrechen.
+Bevor Sie das SnapCenter-Plug-in für den VMware vSphere-Dienst beenden und neu starten, sollten Sie alle Zeitpläne unterbrechen.
 
 .Über diese Aufgabe
 * Im SnapCenter-Plug-in für VMware vSphere 4.6P1 müssen Sie beim ersten Installieren des SnapCenter-Plug-ins für VMware vSphere ein Passwort angeben. Wenn Sie von Version 4.6 oder früher auf Version 4.6P1 oder höher aktualisieren, wird das frühere Standardpasswort akzeptiert.
@@ -28,8 +28,8 @@ Um die Root-Benutzerberechtigung zum Ausführen des Befehls zu erhalten, verwend
 
 
 .Schritte
-. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
-. Klicken Sie mit der rechten Maustaste auf die VM und dann auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
+. Wählen Sie im VMware vSphere-Client die VM aus, auf der sich das SnapCenter-Plug-in für VMware vSphere befindet.
+. Klicken Sie auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
 +
 Melden Sie sich mit dem standardmäßigen Benutzernamen für die Wartungskonsole an `maint` Und das Passwort, das Sie bei der Installation festgelegt haben.
 
@@ -40,7 +40,7 @@ image:scpivs44_image11.png["Fenster der Wartungskonsole"]
 +
 ** Option 1: Anwendungskonfiguration
 +
-Anzeigen einer Zusammenfassung des SnapCenter VMware Plug-ins Starten oder beenden des SnapCenter VMware Plug-in-Dienstes Ändern Sie den Benutzernamen oder das Passwort für das SnapCenter VMware Plug-in Ändern Sie das MySQL-Passwort Sichern und Wiederherstellen MySQL, konfigurieren und auflisten Sie MySQL-Backups
+Zusammenfassung des SnapCenter-Plug-ins für VMware vSphere anzeigen Starten oder Stoppen des SnapCenter-Plug-ins für VMware vSphere-Service Anmeldenamen oder Kennwort für SnapCenter-Plug-in für VMware vSphere ändern MySQL-Kennwort sichern und wiederherstellen, MySQL-Backups konfigurieren und auflisten
 
 ** Option 2: Systemkonfiguration
 +

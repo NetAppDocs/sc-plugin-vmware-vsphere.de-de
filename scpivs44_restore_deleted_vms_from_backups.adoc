@@ -67,7 +67,7 @@ Ein Wiederherstellungsvorgang kann fehlschlagen, wenn der Storage Tier der Fabri
 +
 Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups oder den Speicherort möchten. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
 
-. Wählen Sie auf der Seite *Bereich auswählen* im Feld *Umfang wiederherstellen* *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus, und geben Sie dann die ESXi-Zielinformationen ein, auf denen das Backup gemountet werden soll.
+. Wählen Sie auf der Seite *Bereich auswählen* im Feld *Bereich wiederherstellen* die Option *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus und geben Sie dann die Ziel-ESXi-Hostinformationen ein, in die das Backup eingebunden werden soll.
 +
 Das Wiederherstellungsziel kann jeder beliebige ESXi Host sein, der SnapCenter hinzugefügt wurde. Diese Option stellt den Inhalt des ausgewählten Backups wieder her, bei dem die VM zu dem angegebenen Zeitpunkt aus einem Snapshot residierte. Das Kontrollkästchen *VM neu starten* ist aktiviert, wenn Sie diese Option auswählen und die VM eingeschaltet wird.
 

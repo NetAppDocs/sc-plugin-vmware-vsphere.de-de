@@ -20,13 +20,13 @@ Backup-Richtlinien für das SnapCenter Plug-in für VMware vSphere lassen sich e
 
 == Richtlinien trennen
 
-Sie können Richtlinien aus einer SnapCenter VMware Plug-in-Ressourcengruppe trennen, wenn diese Richtlinien nicht mehr für die Datensicherung der Ressourcen sorgen sollen. Sie müssen eine Richtlinie trennen, bevor Sie sie entfernen können oder bevor Sie die Zeitplanfrequenz ändern.
+Sie können Richtlinien aus einer SnapCenter Plug-in für VMware vSphere Ressourcengruppe entfernen, wenn diese Richtlinien die Datensicherung für die Ressourcen nicht mehr regeln sollen. Sie müssen eine Richtlinie trennen, bevor Sie sie entfernen können oder bevor Sie die Zeitplanfrequenz ändern.
 
 .Über diese Aufgabe
-Die Richtlinien zum Trennen von Richtlinien von SnapCenter VMware Plug-in-Ressourcengruppen unterscheiden sich von den Richtlinien für SnapCenter-Ressourcengruppen. Bei einer VMware vSphere-Client-Ressourcengruppe können alle Richtlinien getrennt werden, sodass die Ressourcengruppe keine Richtlinie bleibt. Um jedoch Datensicherungsvorgänge an dieser Ressourcengruppe durchzuführen, müssen Sie mindestens eine Richtlinie anhängen.
+Die Richtlinien zum Trennen von Richtlinien aus den Ressourcengruppen des SnapCenter Plug-in für VMware vSphere unterscheiden sich von den Richtlinien für SnapCenter-Ressourcengruppen. Bei einer VMware vSphere-Client-Ressourcengruppe können alle Richtlinien getrennt werden, sodass die Ressourcengruppe keine Richtlinie bleibt. Um jedoch Datensicherungsvorgänge an dieser Ressourcengruppe durchzuführen, müssen Sie mindestens eine Richtlinie anhängen.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie auf *Bearbeiten*.
+. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie auf *Bearbeiten*.
 . Deaktivieren Sie auf der Seite *Richtlinien* des Assistenten * Ressourcengruppe bearbeiten* das Häkchen neben den Richtlinien, die Sie entfernen möchten.
 +
 Sie können der Ressourcengruppe auch eine Richtlinie hinzufügen, indem Sie die Richtlinie prüfen.
@@ -41,7 +41,7 @@ Sie können der Ressourcengruppe auch eine Richtlinie hinzufügen, indem Sie die
 Sie können Richtlinien für ein SnapCenter Plug-in für eine VMware vSphere Ressourcengruppe ändern.  Sie können die Häufigkeit, die Replikationsoptionen, die Snapshot-Aufbewahrungseinstellungen oder die Skriptinformationen ändern, während eine Richtlinie an eine Ressourcengruppe angehängt ist.
 
 .Über diese Aufgabe
-Das Ändern der Backup-Richtlinien für das SnapCenter VMware Plug-in unterscheidet sich von der Änderung der Backup-Richtlinien für applikationsbasierte SnapCenter Plug-ins. Wenn Sie die Plug-in-Richtlinien ändern, müssen Sie keine Richtlinien von Ressourcengruppen trennen.
+Durch das Ändern von SnapCenter Plug-in für VMware vSphere-Backup-Richtlinien unterscheiden sich die Backup-Richtlinien für applikationsbasierte SnapCenter Plug-ins nicht. Wenn Sie die Plug-in-Richtlinien ändern, müssen Sie keine Richtlinien von Ressourcengruppen trennen.
 
 Bevor Sie die Replizierungs- oder Aufbewahrungseinstellungen ändern, sollten Sie die möglichen Folgen berücksichtigen.
 
@@ -56,10 +56,10 @@ Backups, die über die neue Einstellung hinausgehen, werden bei der Durchführun
 
 
 
-NOTE: Zum Ändern eines Zeitplans für eine SnapCenter VMware Plug-in-Richtlinie müssen Sie den Zeitplan in der Plug-in-Ressourcengruppe ändern.
+NOTE: Zum Ändern eines SnapCenter-Plug-ins für VMware vSphere-Richtlinienplans müssen Sie den Zeitplan in der Plug-in-Ressourcengruppe ändern.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Richtlinien*, wählen Sie dann eine Richtlinie aus und klicken Sie auf *Bearbeiten*.
+. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Richtlinien*, wählen Sie eine Richtlinie aus und klicken Sie auf *Bearbeiten*.
 . Ändern Sie die Richtlinienfelder.
 . Wenn Sie fertig sind, klicken Sie auf *Aktualisieren*.
 
@@ -76,6 +76,6 @@ Wenn Sie keine konfigurierte Backup-Richtlinie mehr für das SnapCenter Plug-in 
 Sie müssen die Richtlinie von allen Ressourcengruppen in der virtuellen Appliance für SnapCenter getrennt haben, bevor Sie sie löschen können.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des SCV-Plug-ins auf *Richtlinien*, wählen Sie dann eine Richtlinie aus und klicken Sie auf *Entfernen*.
+. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Richtlinien*, wählen Sie eine Richtlinie aus und klicken Sie auf *Entfernen*.
 . Klicken Sie im Bestätigungsdialogfeld auf *OK*.
 

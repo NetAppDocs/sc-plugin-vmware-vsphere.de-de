@@ -16,8 +16,8 @@ summary: Das SnapCenter Plug-in für VMware vSphere bietet zusätzliche RBAC-Fun
 [role="lead"]
 Das SnapCenter Plug-in für VMware vSphere bietet zusätzliche RBAC-Funktionen für das Management virtualisierter Ressourcen. Das Plug-in unterstützt sowohl vCenter Server RBAC als auch Data ONTAP RBAC.
 
-Die rollenbasierte Zugriffssteuerung von SnapCenter und ONTAP gilt nur für applikationskonsistente Aufgaben des SnapCenter Servers (Applikation über VMDK). Wenn Sie das SnapCenter VMware Plug-in zur Unterstützung applikationskonsistenter SnapCenter-Jobs verwenden, müssen Sie die SnapCenterAdmin-Rolle zuweisen. Die Berechtigungen der SnapCenterAdmin-Rolle können nicht geändert werden.
+Die rollenbasierte Zugriffssteuerung von SnapCenter und ONTAP gilt nur für applikationskonsistente Aufgaben des SnapCenter Servers (Applikation über VMDK). Wenn Sie das SnapCenter-Plug-in für VMware vSphere zur Unterstützung von anwendungskonsistenten SnapCenter-Jobs verwenden, müssen Sie die SnapCenterAdmin-Rolle zuweisen. Sie können die Berechtigungen der SnapCenterAdmin-Rolle nicht ändern.
 
-Das SnapCenter VMware Plug-in wird mit vordefinierten vCenter Rollen ausgeliefert. Sie müssen diese Rollen über die vCenter GUI zu vCenter Active Directory Benutzern hinzufügen, um SnapCenter-Vorgänge auszuführen.
+Das SnapCenter Plug-in für VMware vSphere wird mit vordefinierten vCenter Rollen ausgeliefert. Sie müssen diese Rollen über die vCenter GUI zu vCenter Active Directory Benutzern hinzufügen, um SnapCenter-Vorgänge auszuführen.
 
-Sie können jederzeit Rollen erstellen und ändern und Benutzern Zugriff auf Ressourcen hinzufügen. Wenn Sie jedoch das SnapCenter-VMware-Plug-in zum ersten Mal einrichten, sollten Sie den Rollen mindestens Active Directory-Benutzer oder -Gruppen hinzufügen und anschließend diesen Benutzern oder Gruppen Ressourcen-Zugriff hinzufügen.
+Sie können jederzeit Rollen erstellen und ändern und Benutzern Zugriff auf Ressourcen hinzufügen. Wenn Sie jedoch das SnapCenter-Plug-in für VMware vSphere zum ersten Mal einrichten, sollten Sie mindestens Active Directory-Benutzer oder -Gruppen zu Rollen hinzufügen und diesen Benutzern oder Gruppen dann Ressourcenzugriff hinzufügen.

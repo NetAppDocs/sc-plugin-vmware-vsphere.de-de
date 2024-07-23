@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere 5.0
+  name: SnapCenter Plug-in for VMware vSphere 6.0
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '5.0'
+  - version-number: '6.0'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '5.0'
+    url: "/sc-plugin-vmware-vsphere-50"
   - version-number: '4.9'
     url: "/sc-plugin-vmware-vsphere-49"
   - version-number: '4.8'
@@ -22,7 +24,7 @@ settings:
   langs: de-de,us-en,ja-jp,ko-kr,zh-cn,zh-tw,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: Dokumentation zum SnapCenter Plug-in für VMware vSphere 5.0
+  - title: SnapCenter Plug-in für VMware vSphere 6.0
     url: "/index.html"
   - title: Versionshinweise
     url: "/scpivs44_release_notes.html"
@@ -90,8 +92,8 @@ sidebar:
       url: "/scpivs44_download_job_logs.html"
     - title: Aufrufen von Berichten
       url: "/scpivs44_access_reports.html"
-    - title: Generieren Sie ein Support Bundle aus dem SnapCenter Plug-in für VMware
-        vSphere
+    - title: Generieren Sie ein Support-Bundle über das SnapCenter Plug-in für die
+        VMware vSphere GUI
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: Generieren Sie ein Support-Bundle über die Wartungskonsole
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"
@@ -140,7 +142,7 @@ sidebar:
       url: "/scpivs44_mount_a_backup.html"
     - title: Heben Sie die Bereitstellung eines Backups auf
       url: "/scpivs44_unmount_a_backup.html"
-  - title: Restore aus Backups
+  - title: Restore von Backups
     entries:
     - title: Überblick
       url: "/scpivs44_restore_from_backups_overview.html"
@@ -185,8 +187,8 @@ sidebar:
       url: "/scpivs44_restart_the_vmware_vsphere_web_client_service.html"
     - title: Öffnen Sie die Wartungskonsole
       url: "/scpivs44_access_the_maintenance_console.html"
-    - title: Ändern Sie das Passwort für das SnapCenter VMware Plug-in von der Wartungskonsole
-        aus
+    - title: Ändern Sie das Kennwort des SnapCenter-Plug-ins für VMware vSphere über
+        die Wartungskonsole
       url: "/scpivs44_modify_plugin_password.html"
     - title: Erstellen und Importieren von Zertifikaten
       url: "/scpivs44_create_and_import_certificates.html"

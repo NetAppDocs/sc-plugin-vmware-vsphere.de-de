@@ -45,7 +45,7 @@ TIP: Um die Performance von Restore-Vorgängen in NFS-Umgebungen zu verbessern, 
 .Bevor Sie beginnen
 * Ein Backup muss vorhanden sein.
 +
-Sie müssen ein Backup der VM mithilfe des SnapCenter VMware Plug-ins erstellt haben, bevor Sie die VM wiederherstellen können.
+Sie müssen ein Backup der VM mithilfe des SnapCenter-Plug-ins für VMware vSphere erstellt haben, bevor Sie die VM wiederherstellen können.
 
 +
 
@@ -100,9 +100,9 @@ Auch wenn ein VMware Konsistenz-Snapshot für eine VM ausfällt, wird die VM tro
 . Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
 +
 
-NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die zum SnapCenter VMware Plug-in hinzugefügten Speicher-VM-Anmeldeinformationen lauten `vsadmin` Oder ein Benutzerkonto, das alle gleichen Berechtigungen hat wie `vsadmin`. Der Host muss sich auf einem Storage-System mit ONTAP 8.2.2 oder höher befindet.
+NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformationen der Speicher-VM, die zum SnapCenter-Plug-in für VMware vSphere hinzugefügt wurden, ein Benutzerkonto oder sein `vsadmin` , das über alle gleichen Berechtigungen wie verfügt `vsadmin`. Der Host muss sich auf einem Storage-System mit ONTAP 8.2.2 oder höher befindet.
 
-. Klicken Sie im linken Navigator mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Wiederherstellen* aus, um den Assistenten zu starten.
+. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus, um den Assistenten zu starten.
 . Wählen Sie im *Restore*-Assistenten auf der Seite *Backup auswählen* den Backup-Snapshot aus, den Sie wiederherstellen möchten.
 +
 Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups oder den Speicherort möchten. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.

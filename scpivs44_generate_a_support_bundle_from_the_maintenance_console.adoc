@@ -15,10 +15,10 @@ summary: Sie können ein Support-Bundle von der Wartungskonsole generieren.
 
 .Schritte
 [role="lead"]
-. Wählen Sie auf dem VMware vSphere-Client die VM aus, auf der sich das SnapCenter VMware Plug-in befindet.
-. Klicken Sie mit der rechten Maustaste auf die VM und anschließend auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten oder Webkonsole starten*, um ein Fenster der Wartungskonsole zu öffnen und sich dann anzumelden.
+. Wählen Sie im VMware vSphere-Client die VM aus, auf der sich das SnapCenter-Plug-in für VMware vSphere befindet.
+. Klicken Sie auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten oder Webkonsole starten*, um ein Fenster der Wartungskonsole zu öffnen, und melden Sie sich dann an.
 +
-Informationen zum Zugriff auf und zur Anmeldung bei der Wartungskonsole finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
+Informationen zum Zugriff auf die Wartungskonsole und zur Anmeldung finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
 
 +
 image:scpivs44_image11.png["Fenster der Wartungskonsole"]

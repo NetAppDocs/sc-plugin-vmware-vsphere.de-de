@@ -25,17 +25,17 @@ NOTE:  Die OVA-Implementierung wird in VMware vCenter 7u1 und höher unterstütz
 * Sie müssen die Implementierungsanforderungen gelesen haben.
 * Sie müssen eine unterstützte Version von vCenter Server ausführen.
 * Sie müssen Ihre vCenter Server-Umgebung konfiguriert und eingerichtet haben.
-* Sie müssen einen ESXi-Host für die SnapCenter-VMware-Plug-in-VM einrichten.
+* Sie müssen einen ESXi-Host für das SnapCenter-Plug-in für VMware vSphere VM eingerichtet haben.
 * Sie müssen das SnapCenter-Plug-in für die VMware vSphere .tar-Datei heruntergeladen haben.
 * Sie benötigen die Anmeldedaten für Ihre vCenter Server-Instanz.
 * Sie müssen über ein Zertifikat mit gültigen öffentlichen und privaten Schlüssel-Dateien verfügen. Weitere Informationen finden Sie in den Artikeln unter https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_Certificate_Resolution_Guide["Storage-Zertifikatmanagement"] Abschnitt.
-* Sie müssen alle Browser-Sitzungen des vSphere-Clients abgemeldet und geschlossen haben und den Browser-Cache gelöscht haben, um Probleme mit dem Browser-Cache während der Bereitstellung des SnapCenter-VMware-Plug-ins zu vermeiden.
+* Sie müssen alle Browser-Sitzungen des vSphere-Clients abgemeldet und geschlossen haben und den Browser-Cache gelöscht haben, um Probleme mit dem Browser-Cache während der Bereitstellung des SnapCenter-Plug-ins für VMware vSphere zu vermeiden.
 * In vCenter müssen Sie Transport Layer Security (TLS) aktivieren. Lesen Sie die VMware-Dokumentation.
-* Wenn Sie in anderen vCenter als in einem SnapCenter VMware Plug-in Backups durchführen möchten, müssen der ESXi Server, das SnapCenter VMware Plug-in und jedes vCenter mit derselben Zeit synchronisiert werden.
+* Wenn Sie in anderen vCenter-Zentren als dem SnapCenter-Plug-in für VMware vSphere Backups durchführen möchten, müssen der ESXi-Server, das SnapCenter-Plug-in für VMware vSphere und jedes vCenter zur gleichen Zeit synchronisiert werden.
 * Um VMs auf vVol Datastores zu schützen, müssen Sie zuerst ONTAP Tools für VMware vSphere implementieren. ONTAP Tools für VMware vSphere Version 9.10 und höher werden unterstützt. Durch die ONTAP Tools wird Storage auf ONTAP und im VMware Web-Client bereitgestellt und konfiguriert.
 
 
-Implementieren Sie das SnapCenter VMware Plug-in in derselben Zeitzone wie vCenter. Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter VMware Plug-in implementiert wird. VCenter meldet Daten in der Zeitzone, in der sich die vCenter befindet. Wenn sich das SnapCenter VMware Plug-in und vCenter in verschiedenen Zeitzonen befinden, sind die Daten im SnapCenter VMware Plug-in Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
+Stellen Sie das SnapCenter-Plug-in für VMware vSphere in derselben Zeitzone wie vCenter bereit. Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter Plug-in für VMware vSphere bereitgestellt wird. VCenter meldet Daten in der Zeitzone, in der sich vCenter befindet. Wenn sich das SnapCenter-Plug-in für VMware vSphere und vCenter daher in unterschiedlichen Zeitzonen befinden, sind die Daten im SnapCenter-Plug-in für VMware vSphere Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
 
 .Schritte
 . Befolgen Sie für VMware vCenter 7.0.3 und neuere Versionen die Schritte unter link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual Appliance (OVA) herunterladen"^] So importieren Sie die Zertifikate in vCenter.
@@ -45,7 +45,7 @@ Implementieren Sie das SnapCenter VMware Plug-in in derselben Zeitzone wie vCent
 NOTE: Für IPv6 HTML-Webclients müssen Sie entweder Chrome oder Firefox verwenden.
 
 . Melden Sie sich auf der Seite *VMware vCenter Single Sign-On* an.
-. Klicken Sie im Navigator-Fenster mit der rechten Maustaste auf ein Inventory-Objekt, das ein gültiges übergeordnetes Objekt einer virtuellen Maschine ist, z. B. ein Rechenzentrum, Cluster oder Host, und wählen Sie *OVF-Vorlage bereitstellen* aus, um den VMware Deploy Wizard zu starten.
+. Klicken Sie im Navigationsfenster mit der rechten Maustaste auf ein Inventarobjekt, das ein gültiges übergeordnetes Objekt einer virtuellen Maschine ist, z. B. ein Rechenzentrum, Cluster oder Host, und wählen Sie *Deploy OVF Template* aus, um den VMware Deploy Wizard zu starten.
 . Extrahieren Sie die .tar-Datei, die die .ova-Datei auf Ihr lokales System enthält. Geben Sie auf der Seite *Wählen Sie eine OVF-Vorlage* den Speicherort des an `.ova` Datei im extrahierten Ordner .tar.
 . Klicken Sie Auf *Weiter*.
 . Geben Sie auf der Seite *Name und Ordner* einen eindeutigen Namen für die VM oder vApp ein, und wählen Sie einen Speicherort für die Bereitstellung aus, und klicken Sie dann auf *Weiter*.
@@ -80,7 +80,7 @@ Wählen Sie einen Datenspeicher aus, der ausreichend groß ist, um die virtuelle
 +
 In der Spalte Source Network werden alle Netzwerke aufgelistet, die in der OVA-Vorlage definiert sind.
 
-.. Wählen Sie im Abschnitt *IP-Zuweisungs-Einstellungen* das erforderliche IP-Protokoll aus und klicken Sie dann auf *Weiter*.
+.. Wählen Sie im Abschnitt *IP Allocation Settings* das gewünschte IP-Adressenprotokoll aus und klicken Sie dann auf *Weiter*.
 +
 Das SnapCenter Plug-in für VMware vSphere unterstützt eine Netzwerkschnittstelle. Wenn Sie mehrere Netzwerkadapter benötigen, müssen Sie diese manuell einrichten. Siehe https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["KB-Artikel: So erstellen Sie zusätzliche Netzwerkadapter"^].
 
@@ -98,13 +98,13 @@ Geben Sie im Feld *Benutzername* den lokalen Benutzernamen ein; fügen Sie keine
 
 +
 
-IMPORTANT: Notieren Sie sich den Benutzernamen und das Kennwort, den Sie angeben. Sie müssen diese Anmeldedaten verwenden, wenn Sie die SnapCenter VMware Plug-in-Konfiguration später ändern möchten.
+IMPORTANT: Notieren Sie sich den Benutzernamen und das Kennwort, den Sie angeben. Sie müssen diese Anmeldeinformationen verwenden, wenn Sie die Konfiguration des SnapCenter-Plug-ins für VMware vSphere später ändern möchten.
 
 .. Geben Sie die Anmeldeinformationen für den Benutzer von maint ein.
-.. Geben Sie unter *Setup-Netzwerkeigenschaften* den Hostnamen ein.
+.. Geben Sie im Abschnitt *Netzwerkeigenschaften einrichten* den Hostnamen ein.
 +
-... Geben Sie im Abschnitt * Setup IPv4 Network Properties* die Netzwerkinformationen ein, z. B. IPv4-Adresse, IPv4-Netzmaske, IPv4-Gateway, IPv4 Primary DNS, IPv4 Secondary DNS, Und IPv4-Suchdomänen.
-... Geben Sie im Abschnitt * IPv6-Netzwerkeigenschaften* die Netzwerkinformationen ein, z. B. die IPv6-Adresse, IPv6-Netzmaske, IPv6 Gateway, IPv6 Primary DNS, IPv6 Secondary DNS, Und IPv6-Suchdomänen.
+... Geben Sie im Abschnitt *Setup IPv4 Network Properties* die Netzwerkinformationen wie IPv4-Adresse, IPv4-Netzmaske, IPv4-Gateway, primärer IPv4-DNS, sekundärer IPv4-DNS, und IPv4-Suchdomänen.
+... Geben Sie im Abschnitt *IPv6-Netzwerkeigenschaften einrichten* die Netzwerkinformationen ein, z. B. IPv6-Adresse, IPv6-Netzmaske, IPv6-Gateway, IPv6-Primärer DNS, IPv6-SekundärDNS, und IPv6-Suchdomänen.
 +
 Wählen Sie gegebenenfalls die IPv4- und/oder IPv6-Felder aus. Wenn Sie sowohl IPv4 als auch IPv6 verwenden, müssen Sie den primären DNS nur für eine von ihnen angeben.
 
@@ -125,20 +125,20 @@ Alle Hosts müssen mit IP-Adressen konfiguriert sein (FQDN-Hostnamen werden nich
 Sie können den Fortschritt der Bereitstellung im Fenster „Letzte Aufgaben“ anzeigen, während Sie warten, bis die OVF-Import- und Bereitstellungsaufgaben abgeschlossen sind.
 
 +
-Wenn das SnapCenter VMware Plug-in erfolgreich bereitgestellt wird, wird es als Linux VM, mit vCenter registriert und ein VMware vSphere Client installiert.
+Wenn das SnapCenter-Plug-in für VMware vSphere erfolgreich bereitgestellt wurde, wird es als Linux-VM bereitgestellt, bei vCenter registriert und ein VMware vSphere-Client installiert.
 
-. Navigieren Sie zu der VM, auf der das SnapCenter-VMware-Plug-in bereitgestellt wurde, und klicken Sie dann auf die Registerkarte *Zusammenfassung* und dann auf das Feld *Einschalten*, um die virtuelle Appliance zu starten.
-. Während das SnapCenter VMware Plug-in eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das implementierte SnapCenter VMware Plug-in, wählen Sie *Gastbetriebssystem* aus und klicken Sie dann auf *VMware Tools installieren*.
+. Navigieren Sie zu der VM, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wurde, klicken Sie dann auf die Registerkarte *Zusammenfassung*, und klicken Sie dann auf das Feld *Einschalten*, um die virtuelle Appliance zu starten.
+. Während das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das bereitgestellte SnapCenter-Plug-in für VMware vSphere, wählen Sie *Gastbetriebssystem* aus und klicken Sie dann auf *VMware-Tools installieren*.
 +
-Die VMware Tools werden auf der VM installiert, auf der das VMware Plug-in von SnapCenter implementiert wird. Weitere Informationen zum Installieren von VMware-Tools finden Sie in der VMware-Dokumentation.
-
-+
-Die Implementierung kann einige Minuten dauern. Eine erfolgreiche Implementierung wird angezeigt, wenn das SnapCenter VMware Plug-in eingeschaltet ist, die VMware-Tools installiert sind und Sie auf dem Bildschirm zur Anmeldung beim SnapCenter VMware Plug-in aufgefordert werden. Sie können die Netzwerkkonfiguration während des ersten Neustarts von DHCP auf statisch umschalten. Der Wechsel von statischem zu DHCP wird jedoch nicht unterstützt.
+Die VMware-Tools werden auf der VM installiert, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird. Weitere Informationen zum Installieren von VMware-Tools finden Sie in der VMware-Dokumentation.
 
 +
-Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-VMware-Plug-in bereitgestellt wird. Notieren Sie sich die IP-Adresse. Sie müssen sich bei der Management-GUI des SnapCenter VMware Plug-ins anmelden, um Änderungen an der SnapCenter VMware Plug-in-Konfiguration vorzunehmen.
+Die Implementierung kann einige Minuten dauern. Die erfolgreiche Bereitstellung wird angezeigt, wenn das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, die VMware-Tools installiert sind und Sie auf dem Bildschirm aufgefordert werden, sich beim SnapCenter-Plug-in für VMware vSphere anzumelden. Sie können die Netzwerkkonfiguration während des ersten Neustarts von DHCP auf statisch umschalten. Der Wechsel von statischem zu DHCP wird jedoch nicht unterstützt.
 
-. Melden Sie sich mithilfe der im Implementierungsbildschirm angezeigten IP-Adresse bei der Management-GUI des SnapCenter VMware-Plug-ins an und überprüfen Sie im Dashboard, ob das SnapCenter VMware-Plug-in erfolgreich mit vCenter verbunden und aktiviert ist.
++
+Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird. Notieren Sie sich die IP-Adresse. Sie müssen sich bei der SnapCenter-Plug-in für VMware vSphere-Management-GUI anmelden, wenn Sie Änderungen an der Konfiguration des SnapCenter-Plug-ins für VMware vSphere vornehmen möchten.
+
+. Melden Sie sich mit der auf dem Bereitstellungsbildschirm angezeigten IP-Adresse und den im Bereitstellungsassistenten angegebenen Anmeldeinformationen bei der SnapCenter-Plug-in für VMware vSphere-VerwaltungsGUI an. überprüfen Sie dann im Dashboard, ob das SnapCenter-Plug-in für VMware vSphere erfolgreich mit vCenter verbunden und aktiviert ist.
 +
 Verwenden Sie das Format `\https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
 
@@ -146,7 +146,7 @@ Verwenden Sie das Format `\https://<appliance-IP-address>:8080` Um auf die Manag
 Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.
 
 +
-Wenn das SnapCenter VMware Plug-in nicht aktiviert ist, lesen Sie link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere-Client-Service neu"].
+Wenn das SnapCenter-Plug-in für VMware vSphere nicht aktiviert ist, finden Sie weitere Informationen unter link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere-Client-Service neu"].
 
 +
 Wenn der Hostname 'UnifiedVSC/SCV' lautet, starten Sie das Gerät neu. Wenn beim Neustart des Geräts der Hostname nicht in den angegebenen Hostnamen geändert wird, müssen Sie das Gerät neu installieren.

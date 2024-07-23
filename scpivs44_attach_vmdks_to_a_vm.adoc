@@ -33,12 +33,21 @@ Die folgenden Einschränkungen gelten für das Anbinden virtueller Laufwerke:
 Fügen Sie in diesem Fall die SCSI-Controller manuell hinzu, und versuchen Sie es erneut.
 
 * Sie können keine virtuelle Festplatte manuell anschließen, die als Teil eines Wiederherstellungsvorgangs für die Gastdatei angehängt oder angehängt wurde.
-* Verbinden Sie VMDKs über den Standard-SCSI-Controller und stellen Sie Wiederherstellungsvorgänge her. VMDKs, die mit einem NVME-Controller an eine VM angeschlossen sind, werden gesichert, doch für Anschluss- und Restore-Vorgänge werden sie über einen SCSI-Controller zurückverbunden.
+* Verbinden Sie VMDKs über den Standard-SCSI-Controller und stellen Sie Wiederherstellungsvorgänge her. Wenn jedoch VMDKs gesichert werden, die an eine VM mit NVMe-Festplatte angeschlossen sind, verwenden die Anschluss- und Wiederherstellungsvorgänge, sofern verfügbar, den NVMe-Controller.
+
+
+.Bevor Sie beginnen
+Gehen Sie wie folgt vor, um NVMe Controller zur Festplatte hinzuzufügen.
+
+. Melden Sie sich beim vCenter Client an
+. Wählen Sie die VM aus dem VMFS-Datastore aus
+. Klicken Sie mit der rechten Maustaste auf die VM und gehen Sie zu *Einstellungen bearbeiten*
+. Wählen Sie im Fenster Einstellungen bearbeiten die Option *Neues Gerät hinzufügen* > *NVMe Controller*
 
 
 .Schritte
 . Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Hosts und Cluster* aus.
-. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *virtuelles Laufwerk anhängen* aus.
+. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, und wählen Sie dann *SnapCenter Plug-in für VMware vSphere* > *Virtuelle Festplatte(n) anhängen* aus.
 . Wählen Sie im Fenster *Virtuelles Laufwerk anhängen* im Abschnitt *Sicherung* ein Backup aus.
 +
 Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den Speicherort aus. Klicken Sie auf *OK*.
@@ -47,7 +56,7 @@ Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen u
 +
 Sie können den Filter so ändern, dass primäre und sekundäre Standorte angezeigt werden.
 
-. Standardmäßig sind die ausgewählten virtuellen Laufwerke an die übergeordnete VM angeschlossen. Klicken Sie hier, um die ausgewählten virtuellen Laufwerke an eine alternative VM im selben ESXi-Host anzuhängen und geben Sie die alternative VM an.
+. Standardmäßig sind die ausgewählten virtuellen Laufwerke an die übergeordnete VM angeschlossen. Um die ausgewählten virtuellen Laufwerke an eine alternative VM im selben ESXi-Host anzubinden, wählen Sie *Klicken Sie hier, um sie an eine alternative VM anzuhängen* und geben Sie die alternative VM an.
 . Klicken Sie Auf *Anhängen*.
 . Optional: Überwachen Sie den Arbeitsfortschritt im Abschnitt * Letzte Aufgaben*.
 +
@@ -56,7 +65,7 @@ Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 . Stellen Sie sicher, dass das virtuelle Laufwerk angeschlossen ist, indem Sie Folgendes durchführen:
 +
 .. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
-.. Klicken Sie im linken Navigator-Fenster mit der rechten Maustaste auf eine VM und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
+.. Klicken Sie im linken Navigationsfenster mit der rechten Maustaste auf eine VM, und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
 .. Erweitern Sie im Fenster *Einstellungen bearbeiten* die Liste für jede Festplatte, um die Liste der Festplattendateien anzuzeigen.
 +
 image:scpivs44_image23.png["Fenster „Einstellungen bearbeiten“"]

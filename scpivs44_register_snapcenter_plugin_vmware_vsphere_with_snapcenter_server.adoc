@@ -26,7 +26,7 @@ Wenn Sie als SnapCenter-Benutzer ein Upgrade auf SnapCenter 4.2 ausführen und I
 .Über diese Aufgabe
 * Sie registrieren SnapCenter-Plug-in für VMware vSphere mit SnapCenter-Server, indem Sie die SnapCenter-GUI verwenden, um einen Host vom Typ „vsphere“ hinzuzufügen.
 +
-Port 8144 ist für die Kommunikation innerhalb des SnapCenter VMware Plug-ins vordefiniert.
+Port 8144 ist vordefiniert für die Kommunikation innerhalb des SnapCenter Plug-ins für VMware vSphere.
 
 +
 Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf demselben SnapCenter Server 4.2 registrieren, um applikationsbasierte Datensicherungsvorgänge auf VMs zu unterstützen. Sie können nicht dasselbe SnapCenter Plug-in für VMware vSphere auf mehreren SnapCenter Servern registrieren.
@@ -50,7 +50,7 @@ Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf de
 | Host-Name | Überprüfen Sie die IP-Adresse der virtuellen Appliance. 
 
 
-| Anmeldedaten | Geben Sie den Benutzernamen und das Kennwort für das SnapCenter-VMware-Plug-in ein, das während der Bereitstellung bereitgestellt wurde. 
+| Anmeldedaten | Geben Sie den Benutzernamen und das Kennwort für das SnapCenter-Plug-in für VMware vSphere ein, das während der Bereitstellung bereitgestellt wurde. 
 |===
 . Klicken Sie Auf *Absenden*.
 +

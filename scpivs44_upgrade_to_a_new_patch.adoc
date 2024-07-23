@@ -19,7 +19,7 @@ Wenn Sie ein Upgrade auf einen neuen Patch derselben Version durchführen, müss
 Wenn der Plug-in-Cache nicht gelöscht wird, werden die letzten Jobs in den folgenden Szenarien nicht im Dashboard und auf der Jobüberwachung angezeigt:
 
 * Das SnapCenter Plug-in für VMware vSphere wurde mithilfe von vCenter bereitgestellt und später auf ein Patch in derselben Version aktualisiert.
-* Die virtuelle SnapCenter VMware Appliance wurde in vCenter 1 implementiert. Später wurde dieses SnapCenter VMware Plug-in bei einem neuen vCenter2 registriert. Eine neue Instanz des SnapCenter VMware Plug-ins wird mit einem Patch erstellt und bei vCenter1 registriert. Da vCenter1 jedoch immer noch das gecachte Plug-in aus dem ersten SnapCenter VMware Plug-in ohne Patch besitzt, muss der Cache gelöscht werden.
+* Die virtuelle SnapCenter VMware Appliance wurde in vCenter 1 implementiert. Später wurde dieses SnapCenter Plug-in für VMware vSphere in einem neuen vCenter2 registriert. Eine neue Instanz des SnapCenter Plug-ins für VMware vSphere wird mit einem Patch erstellt und in vCenter1 registriert. Da vCenter1 jedoch noch das Cache-Plug-in des ersten SnapCenter Plug-ins für VMware vSphere ohne Patch hat, muss der Cache gelöscht werden.
 
 
 
@@ -31,10 +31,10 @@ Wenn der Plug-in-Cache nicht gelöscht wird, werden die letzten Jobs in den folg
 Der Ordnername ändert sich für jedes Release.
 
 +
-In der VMware-Dokumentation finden Sie Informationen zum Speicherort des `vsphere-client-serenity` Ordner für Ihr Betriebssystem.
+Informationen zum Speicherort des Ordners für Ihr Betriebssystem finden Sie in der VMware-Dokumentation `vsphere-client-serenity` .
 
 . Starten Sie vCenter Server neu.
 +
-Anschließend können Sie ein Upgrade des SnapCenter VMware Plug-ins durchführen.
+Anschließend können Sie das SnapCenter-Plug-in für VMware vSphere aktualisieren.
 
 

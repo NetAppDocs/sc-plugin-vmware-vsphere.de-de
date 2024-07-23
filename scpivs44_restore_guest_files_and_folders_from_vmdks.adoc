@@ -28,8 +28,8 @@ IMPORTANT: Auf einer VM kann nur ein Attach- oder Restore-Vorgang gleichzeitig a
 IMPORTANT: Mit der Gastwiederherstellungsfunktion können Sie System- und verborgene Dateien anzeigen und wiederherstellen sowie verschlüsselte Dateien anzeigen. Versuchen Sie nicht, eine vorhandene Systemdatei zu überschreiben oder verschlüsselte Dateien in einem verschlüsselten Ordner wiederherzustellen. Während der Wiederherstellung bleiben die verborgenen, System- und verschlüsselten Attribute von Gastdateien nicht in der wiederhergestellten Datei erhalten. Das Anzeigen oder Durchsuchen von reservierten Partitionen kann zu einem Fehler führen.
 
 .Schritte
-. Klicken Sie auf *Menü* und wählen Sie die Menüoption *Hosts und Cluster* aus, wählen Sie dann eine VM aus, wählen Sie dann *NetApp SnapCenter* aus und klicken Sie dann auf *Wiederherstellung der Gastdatei*.
-. Klicken Sie im VMware vSphere-Client in der sekundären Dropdown-Liste auf *Guest File Restore*, um den Assistenten zu starten.
+. Wählen Sie im Fenster vSphere Client Shortcuts die Option *Hosts and Clusters* aus, und wählen Sie eine VM aus.
+. Klicken Sie mit der rechten Maustaste auf die VM und wählen Sie *SnapCenter Plug-in für VMware vSphere* > *Gastdateiwiederherstellung*.
 . Geben Sie auf der Seite *Wiederherstellungsumfang* das Backup an, das das virtuelle Laufwerk enthält, das Sie anhängen möchten, indem Sie wie folgt vorgehen:
 +
 .. Wählen Sie in der Tabelle *Backup Name* das Backup aus, das das virtuelle Laufwerk enthält, das Sie anhängen möchten.
@@ -81,7 +81,8 @@ Bevor Sie auf *Fertig stellen* klicken, können Sie zu einer beliebigen Seite im
 +
 Sie können den Fortschritt des Vorgangs in der Job-Überwachung des Dashboards anzeigen oder auf die E-Mail-Benachrichtigung warten.
 
-. Um die Dateien zu finden, die Sie von der angeschlossenen virtuellen Festplatte wiederherstellen möchten, klicken Sie auf *Menü > SnapCenter-Plug-in für VMware vSphere*, dann im linken Navigator-Bereich klicken Sie *Gastdateiwiederherstellung* und wählen Sie die Registerkarte *Gastkonfiguration*.
+. Um die Dateien zu finden, die Sie von der angeschlossenen virtuellen Festplatte wiederherstellen möchten, wählen Sie *SnapCenter Plug-in für VMware vSphere* aus dem Fenster vSphere Client Shortcuts.
+. Wählen Sie im linken Navigationsbereich *Gastdateiwiederherstellung* > *Gastkonfiguration*.
 +
 In der Tabelle Gastsession Monitor können Sie zusätzliche Informationen zu einer Sitzung anzeigen, indem Sie auf *... klicken. *In der rechten Spalte.
 

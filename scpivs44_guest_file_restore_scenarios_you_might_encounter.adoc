@@ -28,7 +28,7 @@ Um das Problem zu beheben, legen Sie die VMDKs manuell wieder im Gastbetriebssys
 
 == Der Vorgang zum Wiederherstellen der Gastdatei schlägt fehl
 
-Dieses Problem tritt auf, wenn Sie eine Wiederherstellung einer Gastdatei starten, aber der Vorgang der angebundenen Festplatte schlägt fehl, obwohl VMware-Tools ausgeführt werden und die Anmeldedaten des Gastbetriebssystems korrekt sind. In diesem Fall wird der folgende Fehler zurückgegeben:
+Dieses Problem tritt auf, wenn Sie eine Wiederherstellung von Gastdateien starten, aber der Vorgang zum Anbinden der Festplatte schlägt fehl, obwohl VMware-Tools ausgeführt werden und die Zugangsdaten für das Gastbetriebssystem korrekt sind. In diesem Fall wird der folgende Fehler zurückgegeben:
 
 `Error while validating guest credentials, failed to access guest system using specified credentials: Verify VMWare tools is running properly on system and account used is Administrator account, Error is SystemError vix error codes = (3016, 0).`
 

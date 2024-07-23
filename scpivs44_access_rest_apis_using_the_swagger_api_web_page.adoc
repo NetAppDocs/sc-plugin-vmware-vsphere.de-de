@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html 
 keywords:  
-summary: REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen, sowie einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs, um Sicherungsvorgänge für VMs und Datastores durchzuführen. 
+summary: REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen, sowie einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs, um Sicherungsvorgänge bei VMs und Datastores durchzuführen. 
 ---
 = Greifen Sie über die Swagger API-Webseite auf REST-APIs zu
 :hardbreaks:
@@ -14,12 +14,12 @@ summary: REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf 
 
 
 [role="lead"]
-REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um entweder den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen und einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs zur Durchführung von Vorgängen bei VMs und Datastores.
+REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um entweder den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen und einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs, um VMs und Datastores zu steuern.
 
 Das Plug-in hat verschiedene Swagger-Webseiten von den SnapCenter-Serverdolch-Webseiten.
 
 .Bevor Sie beginnen
-Beim SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie entweder die IP-Adresse oder den Host-Namen des SnapCenter VMware Plug-ins kennen.
+Für SnapCenter Plug-in für VMware vSphere REST-APIs müssen Sie entweder die IP-Adresse oder den Hostnamen des SnapCenter Plug-ins für VMware vSphere kennen.
 
 
 NOTE: Das Plug-in unterstützt nur REST APIs zur Integration mit Applikationen anderer Anbieter. PowerShell Commandlets oder CLI werden nicht unterstützt.
@@ -35,10 +35,12 @@ IMPORTANT: Verwenden Sie nicht die folgenden Zeichen in DER REST-API-URL: +, . ,
 
 +
 .Beispiel
-Zugriff auf die SnapCenter VMware Plug-in REST-APIs:
+Access SnapCenter Plug-in für VMware vSphere REST-APIs:
 
 +
 `\https://<SCV_IP>:8144/api/swagger-ui/index.html`
+
++
 `\https://OVAhost:8144/api/swagger-ui/index.html`
 
 +

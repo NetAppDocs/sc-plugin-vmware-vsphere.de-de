@@ -18,8 +18,8 @@ Nachdem Sie ein virtuelles Laufwerk zur Wiederherstellung einzelner Dateien ange
 
 .Schritte
 . Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
-. Wählen Sie im linken Navigator eine VM aus.
-. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf die VM, wählen Sie dann in der Dropdown-Liste *NetApp SnapCenter* aus und wählen Sie dann in der sekundären Dropdown-Liste *Virtual Disk trennen* aus.
+. Wählen Sie im linken Navigationsbereich eine VM aus.
+. Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf die VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *virtuelles Laufwerk trennen* in der sekundären Dropdown-Liste aus.
 . Wählen Sie auf dem Bildschirm *Virtuelles Laufwerk trennen* eine oder mehrere Festplatten aus, die Sie entfernen möchten, und aktivieren Sie dann das Kontrollkästchen *Ausgewählte Datenträger trennen* und klicken Sie auf *ENTFERNEN*.
 +
 
@@ -32,7 +32,7 @@ Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 . Stellen Sie sicher, dass das virtuelle Laufwerk getrennt ist, indem Sie Folgendes durchführen:
 +
 .. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
-.. Klicken Sie im linken Navigator-Fenster mit der rechten Maustaste auf eine VM und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
+.. Klicken Sie im linken Navigationsfenster mit der rechten Maustaste auf eine VM, und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
 .. Erweitern Sie im Fenster *Einstellungen bearbeiten* die Liste für jede Festplatte, um die Liste der Festplattendateien anzuzeigen.
 +
 Auf der Seite *Edit Settings* werden die Festplatten auf der VM aufgelistet. Sie können die Details für jede Festplatte erweitern, um die Liste der verbundenen virtuellen Laufwerke anzuzeigen.

@@ -28,10 +28,7 @@ Für alle SnapCenter Plug-ins sind die folgenden Mindestberechtigungen erforderl
 |===
 
 
-| Befehle für All-Access: Mindestberechtigungen erforderlich für ONTAP 8.3 und höher 
-
-
-| Cluster-ID wird angezeigt 
+| All-Access-Befehle: Mindestberechtigungen für ONTAP 8.3 und höher erforderlich. 
 
 
 | Event Generate-AutoSupport-log 
@@ -79,13 +76,13 @@ Volume-Snapshot werden angezeigt
 Volume-Aufhängung nicht verfügbar 
 
 
-| vserver cifs vserver cifs share vserver erstellen cifs share vserver löschen cifs shadowcopy show vserver cifs share show vserver cifs show vserver Export-Policy vserver Export-Policy vserver Export-Policy create vserver Export-Policy delete vserver Export-Policy rule create vserver Export-Policy rule show vserver Export-Policy show vserver iscsi vserver iscsi vserver iscsi Verbindung show vserver show Netzwerk Interface Netzwerkschnittstellen für Failover-Gruppen wird die Netzwerkschnittstelle angezeigt 
+| vserver cifs vserver cifs share erstellen vServer cifs share löschen vServer cifs shadowcopy show vserver cifs share show vserver cifs show vserver Export-Policy vServer Export-Policy erstellen vServer Export-Policy löschen vServer Export-Policy Regel erstellen vServer Export-Policy Regel erstellen vserver Export-Policy zeigen vserver Export-Policy show vserver iscsi vserver iscsi connection show vserver nvme Subsystem Controller vserver nvme-Subsystem-Controller zeigen vServer nvme-Subsystemzuordnung vServer nvme-Subsystemzuordnung anzeigen vServer nvme-Subsystemzuordnung hinzufügen vServer nvme-Subsystemzuordnung entfernen vServer nvme-Subsystem-Host zeigen vServer nvme-Subsystem-Host zeigen vServer nvme-Subsystem-Host entfernen vServer nvme-Subsystem zeigen vServer nvme-Subsystem löschen vServer nvme-Namespace zeigt Failover-Gruppen für die Netzwerkschnittstelle an 
 |===
 |===
 | Schreibgeschützter Befehl: Mindestberechtigungen für ONTAP 8.3 und höher erforderlich 
 
 
-| vserver vServer Peer 
+| Cluster Identity show Network Interface show vserver vserver Peer vserver show 
 |===
 
 NOTE: Sie können die Warnmeldungen zu den nicht unterstützten vServer-Befehlen ignorieren.
@@ -103,14 +100,15 @@ Sie müssen sich als anmelden `vsadmin` Auf der Storage-VM die entsprechenden Be
 Sie müssen sich als anmelden `vsadmin` Oder mit einer Rolle, die die in den obigen Tabellen aufgeführten Mindestberechtigungen hat.
 
 * Sie müssen der Cluster-Administrator sein, um Benutzerrollen zu erstellen und zu managen. Sie können die Benutzer entweder der Cluster Storage VM oder der Storage VM zuordnen.
-* Zur Verwendung der SnapMirror Business Continuity-Funktion (SM-BC) benötigen Sie ONTAP 9.12.1 oder höher.
+* Zur Verwendung der SnapMirror Active Sync Funktion benötigen Sie ONTAP 9.12.1 oder höher.
 * So verwenden Sie die tamperproof Snapshot (TPS)-Funktion:
 +
 ** Für SAN benötigen Sie ONTAP 9.13.1 und höher
 ** Für NFS benötigen Sie ONTAP 9.12.1 und höher
 
 
+* Für das NVMe over TCP-Protokoll benötigen Sie ONTAP 9.10.1 und höher.
 
 
 
-NOTE: Für ONTAP Version 9.11.1 und höher erfolgt die Kommunikation mit dem ONTAP Cluster über REST APIs. Für den ONTAP-Benutzer sollte die HTTP-Anwendung aktiviert sein. Falls jedoch Probleme mit ONTAP REST APIs auftreten, unterstützt der Konfigurationsschlüssel 'FORCE_ZAPI' die Umschaltung auf den herkömmlichen ZAPI Workflow. Sie müssen möglicherweise diesen Schlüssel mit den Konfigurations-APIS hinzufügen oder aktualisieren und auf „wahr“ setzen. Siehe KB-Artikel, https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["So bearbeiten Sie Konfigurationsparameter in SCV mithilfe der RestAPI"].
+NOTE: Ab ONTAP Version 9.11.1 erfolgt die Kommunikation zum ONTAP Cluster über REST APIs. Für den ONTAP-Benutzer sollte die HTTP-Anwendung aktiviert sein. Falls jedoch Probleme mit ONTAP REST APIs auftreten, unterstützt der Konfigurationsschlüssel 'FORCE_ZAPI' die Umschaltung auf den herkömmlichen ZAPI Workflow. Sie müssen möglicherweise diesen Schlüssel mit den Konfigurations-APIS hinzufügen oder aktualisieren und auf „wahr“ setzen. Weitere Informationen finden Sie im KB-Artikel https://kb.netapp.com/mgmt/SnapCenter/How_to_use_RestAPI_to_edit_configuration_parameters_in_SCV["So bearbeiten Sie Konfigurationsparameter in SCV mithilfe der RestAPI"] .

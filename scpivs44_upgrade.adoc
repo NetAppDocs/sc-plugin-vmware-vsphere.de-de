@@ -14,7 +14,7 @@ summary: Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance
 
 
 
-NOTE: Das Upgrade auf SCV 5.0 wird nur auf VMware vCenter Server 7 Update 1 und höheren Versionen unterstützt. Für VMware vCenter Server vor Version 7 Update 1 sollten Sie weiterhin SCV 4.7 verwenden. Bei nicht unterstützten Versionen des VMware vCenter Servers wird das Upgrade nicht beeinträchtigt.
+NOTE: Das Upgrade auf SCV 6.0 wird nur auf VMware vCenter Server 7 Update 1 und höheren Versionen unterstützt. Für VMware vCenter Server vor Version 7 Update 1 sollten Sie weiterhin SCV 4.7 verwenden. Bei nicht unterstützten Versionen des VMware vCenter Servers wird das Upgrade nicht beeinträchtigt.
 
 Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwenden, können Sie ein Upgrade auf eine neuere Version durchführen. Beim Upgrade-Prozess wird das bestehende Plug-in wieder registriert und ein Plug-in wird implementiert, das nur mit vSphere 7.0U1 und höheren Versionen kompatibel ist.
 
@@ -25,10 +25,13 @@ Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwende
 |===
 
 
-| Wenn Sie SnapCenter Plugin für VMware vSphere (SCV) Version sind... | Sie können direkt ein Upgrade des SnapCenter Plugin für VMware vSphere durchführen auf... 
+| Wenn Sie ein SnapCenter-Plug-in für VMware vSphere (SCV)-Version verwenden... | Sie können das SnapCenter Plug-in für VMware vSphere direkt auf folgende Weise aktualisieren: 
 
 
-| SCV 4.9 | Upgrade auf SCV 5.0 
+| SCV 5,0 | Upgrade auf SCV 6.0 
+
+
+| SCV 4.9 | Upgrade auf SCV 5.0 und SCV 6.0 
 
 
 | SCV 4.8 | Upgrade auf SCV 4.9 und SCV 5.0 
@@ -48,7 +51,7 @@ NOTE: Das Umschalten der Netzwerkkonfiguration von statisch auf DHCP wird nicht 
 .Schritte
 . Bereiten Sie sich auf das Upgrade vor, indem Sie das SnapCenter Plug-in für VMware vSphere deaktivieren.
 +
-.. Melden Sie sich im SnapCenter Plug-in für die Management-GUI von VMware vSphere an. Die IP wird angezeigt, wenn Sie das SnapCenter VMware Plug-in bereitstellen.
+.. Melden Sie sich im SnapCenter Plug-in für die Management-GUI von VMware vSphere an. Die IP-Adresse wird angezeigt, wenn Sie das SnapCenter-Plug-in für VMware vSphere bereitstellen.
 .. Klicken Sie im linken Navigationsbereich auf *Konfiguration* und dann im Abschnitt Plug-in-Details auf die Option *Service*, um das Plug-in zu deaktivieren.
 
 
@@ -64,7 +67,7 @@ NOTE: Das Umschalten der Netzwerkkonfiguration von statisch auf DHCP wird nicht 
 .. Navigieren Sie im Browser zu VMware vSphere vCenter.
 .. Klicken Sie auf der vCenter GUI auf *vSphere Client (HTML)*.
 .. Melden Sie sich auf der Seite *VMware vCenter Single Sign-On* an.
-.. Klicken Sie im Navigator-Fenster auf die VM, die Sie aktualisieren möchten, und klicken Sie dann auf die Registerkarte *Zusammenfassung*.
+.. Klicken Sie im Navigationsbereich auf die VM, die Sie aktualisieren möchten, und klicken Sie dann auf die Registerkarte *Zusammenfassung*.
 .. Klicken Sie im Fensterbereich *Related Objects* auf einen beliebigen Datenspeicher in der Liste und dann auf die Registerkarte *Summary*.
 .. Klicken Sie auf der Registerkarte *Dateien* für den ausgewählten Datenspeicher auf einen beliebigen Ordner in der Liste und dann auf *Dateien hochladen*.
 .. Navigieren Sie auf dem Pop-up-Bildschirm zum Speicherort, an dem Sie das heruntergeladen haben `.iso` Datei und dann auf das klicken `.iso` Datei Bild, und klicken Sie dann auf *Öffnen*. Die Datei wird in den Datastore hochgeladen.

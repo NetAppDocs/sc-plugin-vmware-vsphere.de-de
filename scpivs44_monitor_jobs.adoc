@@ -17,7 +17,9 @@ summary: Nachdem Sie mit dem VMware vSphere-Client einen Datensicherungsvorgang 
 Nachdem Sie mit dem VMware vSphere-Client einen Datensicherungsvorgang durchgeführt haben, können Sie den Job-Status über die Registerkarte Job Monitor im Dashboard überwachen und Jobdetails anzeigen.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*. Wenn zwei oder mehr vCenters im verknüpften Modus konfiguriert sind, wählen Sie einen vCenter-Server aus und klicken Sie dann im Dashboard-Bereich auf die Registerkarte *Job Monitor*. Auf der Registerkarte Job Monitor werden die einzelnen Jobs sowie deren Status, die Startzeit und die Endzeit aufgelistet. Wenn die Jobnamen lang sind, müssen Sie möglicherweise nach rechts blättern, um die Start- und Endzeiten anzuzeigen. Das Display wird alle 30 Sekunden aktualisiert.
+. Wählen Sie auf der Verknüpfungsseite des vCenter-Clients die Option SnapCenter-Plug-in für VMware vSphere (SCV) aus.
+. Wählen Sie im linken Navigationsbereich des SCV *Dashboard*.
+. Wenn zwei oder mehr vCenter im verknüpften Modus konfiguriert sind, wählen Sie die SCV-Plug-in-Instanz aus und wählen Sie die Registerkarte *Job Monitor* aus. Auf der Registerkarte Job Monitor werden die einzelnen Jobs sowie deren Status, die Startzeit und die Endzeit aufgelistet. Wenn die Jobnamen lang sind, müssen Sie möglicherweise nach rechts blättern, um die Start- und Endzeiten anzuzeigen. Das Display wird alle 30 Sekunden aktualisiert.
 +
 ** Wählen Sie das Symbol Aktualisieren in der Symbolleiste aus, um die Anzeige bei Bedarf zu aktualisieren.
 ** Wählen Sie das Filtersymbol aus, um den Zeitraum, den Typ, das Tag und den Status der Jobs auszuwählen, die angezeigt werden sollen. Der Filter ist Groß-/Kleinschreibung beachten.
@@ -26,4 +28,4 @@ Nachdem Sie mit dem VMware vSphere-Client einen Datensicherungsvorgang durchgef�
 
 
 
-Wenn auf dem Dashboard keine Jobinformationen angezeigt werden, finden Sie im https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["KB-Artikel: SnapCenter vSphere-Client-Dashboard zeigt keine Jobs an"^].
+Wenn im Dashboard keine Jobinformationen angezeigt werden, lesen Sie https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/SnapCenter_vSphere_web_client_dashboard_does_not_display_jobs["KB-Artikel: SnapCenter vSphere-Client-Dashboard zeigt keine Jobs an"^].

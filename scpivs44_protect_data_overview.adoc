@@ -20,11 +20,11 @@ Wenn Sie einen Datenspeicher sichern, sichern Sie alle VMs in diesem Datenspeich
 
 Backup- und Wiederherstellungsvorgänge können nicht gleichzeitig auf derselben Ressourcengruppe durchgeführt werden.
 
-Sie sollten alle Informationen dazu lesen, was das SnapCenter VMware Plug-in leistet und nicht unterstützt.link:scpivs44_deployment_planning_and_requirements.html["Implementierungsplanung und -Anforderungen"]
+Sehen Sie sich die Informationen zu Funktionen an, die das SnapCenter Plug-in für VMware vSphere unterstützt und nicht. link:scpivs44_deployment_planning_and_requirements.html["Implementierungsplanung und -Anforderungen"]
 
 In MetroCluster Konfigurationen:
 
-* Das SnapCenter VMware Plug-in kann nach einem Failover möglicherweise keine Sicherungsbeziehung erkennen. Siehe https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["KB-Artikel: Kann die SnapMirror oder SnapVault-Beziehung nach dem MetroCluster Failover nicht erkennen"^].
+* Das SnapCenter Plug-in für VMware vSphere kann nach einem Failover möglicherweise keine Sicherungsbeziehung erkennen. Weitere Informationen finden Sie unter https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/Unable_to_detect_SnapMirror_or_SnapVault_relationship_after_MetroCluster_failover["KB-Artikel: Kann die SnapMirror oder SnapVault-Beziehung nach dem MetroCluster Failover nicht erkennen"^] .
 * Wenn Backups mit dem Fehler fehlschlagen `Unable to discover resources on SCV: <xxx>…` Starten Sie bei NFS und VMFS VMs nach Umschaltung/Switch wieder die SnapCenter VMware Services von der Wartungskonsole aus neu.
 
 

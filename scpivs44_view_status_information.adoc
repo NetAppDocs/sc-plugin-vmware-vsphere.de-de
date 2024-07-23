@@ -17,7 +17,8 @@ summary: Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. D
 Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. Die Statusinformationen werden einmal pro Stunde aktualisiert.
 
 .Schritte
-. Klicken Sie im linken Navigator-Bereich des vSphere-Clients auf *Dashboard*, wählen Sie einen vCenter-Server aus, und klicken Sie dann im Dashboard auf die Registerkarte *Status*.
+. Wählen Sie auf der Verknüpfungsseite des vCenter-Clients die Option SnapCenter-Plug-in für VMware vSphere (SCV) aus.
+. Wählen Sie im linken Navigationsbereich des SCV *Dashboard* > *Status*.
 . Zeigen Sie eine Übersicht Statusinformationen an, oder klicken Sie auf einen Link, um weitere Informationen zu erhalten, wie in der folgenden Tabelle aufgeführt.
 +
 |===

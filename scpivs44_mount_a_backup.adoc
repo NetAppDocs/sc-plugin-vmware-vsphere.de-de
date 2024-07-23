@@ -21,15 +21,17 @@ Sie können einen vVol Datastore nicht mounten.
 .Bevor Sie beginnen
 * Stellen Sie sicher, dass sich der alternative ESXi Host mit dem Speicher verbinden kann
 +
-Wenn Sie an einem alternativen ESXi Host mounten möchten, müssen Sie sicherstellen, dass der alternative ESXi Host eine Verbindung zum Speicher herstellen kann und Folgendes hat: ** Gleiche UID und GID wie beim ursprünglichen Host ** gleiche virtuelle Appliance für SnapCenter-Plug-in für VMware vSphere-Version wie beim ursprünglichen Host
+Wenn Sie einen alternativen ESXi-Host mounten möchten, müssen Sie sicherstellen, dass der alternative ESXi-Host eine Verbindung zum Speicher herstellen kann und Folgendes hat:
 
-* Zuordnen von Storage-Initiatoren zu ESXi
 +
-Stellen Sie sicher, dass die Initiatoren für das Speichersystem dem ESXi zugeordnet sind.
+** Dieselbe UID und dieselbe GID wie beim ursprünglichen Host
+** Dieselbe virtuelle Appliance für das SnapCenter Plug-in für VMware vSphere-Version wie die des ursprünglichen Hosts
 
-* Bereinigen Sie veraltete LUNs
+
+* Stellen Sie bei Verwendung des iSCSI-Protokolls sicher, dass die Initiatoren für das Speichersystem dem ESXi-Host zugeordnet sind. Wenn Sie das NVMe-Protokoll verwenden, fügen Sie Controller hinzu, um das erforderliche Subsystem dem ESXi-Host zuzuordnen.
+* Bereinigen Sie veraltete LUN/Namespace
 +
-Da ESXi nur eine eindeutige LUN pro Datenspeicher feststellen kann, schlägt der Vorgang fehl, wenn mehr als eine LUN gefunden wird. Dies kann auftreten, wenn Sie einen Mount-Vorgang vor Abschluss eines vorherigen Mount-Vorgangs starten oder wenn Sie LUNs manuell klonen oder wenn Klone während eines Abmounten nicht aus dem Speicher gelöscht werden. Um das Auffinden von mehreren Klonen zu vermeiden, sollten Sie alle veralteten LUNs auf dem Storage aufräumen.
+Da der ESXi-Host nur eine eindeutige LUN/einen eindeutigen Namespace pro Datastore erkennen kann, schlägt der Vorgang fehl, wenn mehr als einer gefunden wird. Dies kann auftreten, wenn Sie einen Mount-Vorgang starten, bevor ein vorheriger Mount-Vorgang abgeschlossen ist, oder wenn Sie LUN/Namespace manuell klonen oder wenn Klone während eines Unmounting-Vorgangs nicht aus dem Speicher gelöscht werden. Um das Erkennen mehrerer Klone zu vermeiden, sollten Sie alle veralteten LUNs/Namespaces auf dem Storage bereinigen.
 
 
 
@@ -37,13 +39,13 @@ Da ESXi nur eine eindeutige LUN pro Datenspeicher feststellen kann, schlägt der
 Der Mount-Vorgang kann fehlschlagen, wenn die Storage-Tier der FabricPool, auf der sich der Datastore befindet, nicht verfügbar ist.
 
 .Schritte
-. Klicken Sie im VMware vSphere-Client in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
-. Klicken Sie mit der rechten Maustaste auf einen Datenspeicher und wählen Sie in der Dropdown-Liste *NetApp SnapCenter* aus, und wählen Sie dann in der sekundären Dropdown-Liste *Sicherung* aus.
+. Wählen Sie auf der Seite VMware vSphere Client Shortcuts *Storage* aus.
+. Klicken Sie mit der rechten Maustaste auf einen Datastore, und wählen Sie *SnapCenter Plug-in für VMware vSphere* > *Mount Backup*.
 . Wählen Sie auf der Seite * Mount Datastore* ein Backup und einen Backup-Speicherort (primär oder sekundär) aus, und klicken Sie dann auf *Finish*.
 . Optional: Gehen Sie wie folgt vor, um zu überprüfen, ob der Datenspeicher angehängt ist:
 +
 .. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
-.. Im linken Navigator-Fenster wird der Datenspeicher angezeigt, der Sie oben in der Liste montiert haben.
+.. Im linken Navigationsbereich wird der Datastore angezeigt, den Sie oben in der Liste gemountet haben.
 +
 Wenn Sie einen Attach- oder Mount-Vorgang auf einem SnapVault-Ziel-Volume durchführen, das durch SnapVault-Zeitpläne geschützt ist und ONTAP 8.3 ausführt, wird möglicherweise ein zusätzlicher Snapshot im Dialogfeld „Anhängen“ oder „Bereitstellen“ aufgeführt. Das liegt daran, dass durch den Attach- oder Mount-Vorgang das SnapVault Ziel-Volume klont und ONTAP das Volume durch Erstellung eines neuen Snapshots aktualisiert.
 
