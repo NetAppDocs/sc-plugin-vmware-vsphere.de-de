@@ -53,6 +53,6 @@ Wenn eine Ressourcengruppe Backups enthält, die sich auf einer Speicher-VM befi
 . Wählen Sie auf der Seite *Storage Systems* die zu entfernenden Speicher-VM aus und klicken Sie dann auf *Löschen*.
 . Aktivieren Sie im Bestätigungsfeld *Speichersystem entfernen* das Kontrollkästchen für *Speichersysteme löschen* und klicken Sie dann zur Bestätigung auf *Ja*. *Hinweis:* nur ESXi-Host 7.0U1 und neuere Versionen werden unterstützt.
 +
-link:scpivs44_manage_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere-Client-Service neu"].
+link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere-Client-Service neu"].
 
 

@@ -286,7 +286,6 @@
   <block id="22300bc3851a7c319eb111f4b7b830da" category="list-text">*vmware.Rescan.hba.retry.count=3*</block>
   <block id="75f7a956cf5789f7e80ce25224ce1fd9" category="list-text">*vmware.rescan.hba.retry.delay=30000*</block>
   <block id="9a8f295c1bf5efedac030d5ab40cffa1" category="paragraph">Der Standardwert ist "30000".</block>
-  <block id="df005eed1212d84ddce99431a04fc779" category="paragraph">Sie müssen vCenter 6.5 oder höher ausführen.</block>
   <block id="d9ac8e6076d4e4d7529e26c9238771a4" category="list-text">Verwenden Sie SSH, um sich bei der vCenter Server Appliance als Root anzumelden.</block>
   <block id="263de88bd463a408f8eabe4c8a4ace37" category="list-text">Greifen Sie mit dem folgenden Befehl auf die Appliance-Shell oder DIE BASH-Shell zu:</block>
   <block id="ad288d5d0843f98ebb574a6ae9d65a4e" category="paragraph"><block ref="2591c98b70119fe624898b1e424b5e91" prefix="" category="inline-code"></block></block>
@@ -709,8 +708,6 @@
   <block id="721796b1cb3468f0daf819180184d460" category="doc">Rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC)</block>
   <block id="6d2bf94f38d1fdf840fe9b231866899c" category="doc">Implementierungsübersicht</block>
   <block id="8c5a46f2b9b85dd307d50498933fef6a" category="paragraph">Vorhandene SnapCenter Benutzer müssen einen anderen Implementierungs-Workflow als neue SnapCenter Benutzer verwenden.</block>
-  <block id="fc5672573975422a722953bf5496e5ad" category="section-title">Starten Sie den Web-Client-Service in einem Linux vCenter neu</block>
-  <block id="4c09019cb803ffc62d7d0666df0def34" category="list-text">Löschen Sie alle veralteten scvm-Pakete auf vCenter mithilfe des folgenden HTML5-Befehls:</block>
   <block id="a5c4e65c65009e29e4fdbe37bfadbce9" category="summary">Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM oder eines Datenspeichers suchen. Nachdem Sie ein Backup gefunden haben, können Sie es dann wiederherstellen.</block>
   <block id="3322e5ef87d3b2b5bc7424af9b434cdb" category="doc">Suche nach Backups</block>
   <block id="bcabdeee08dde31f4ff80e26f3556805" category="cell">So zeigen Sie Backups für… an</block>
@@ -1416,7 +1413,6 @@
   <block id="ca1e84c5fdfae2e245ce6dbdbd1c628f" category="paragraph">Wenn Sie eine Storage-VM ändern, die automatisch als Teil eines Clusters hinzugefügt wurde (manchmal auch als implizite Storage-VM bezeichnet), dann ändert sich diese Storage-VM in eine explizite Storage-VM und kann separat gelöscht werden, ohne die restlichen Storage-VMs in diesem Cluster zu ändern. Auf der Seite Storage Systems wird der Benutzername als N/A angezeigt, wenn die Authentifizierungsmethode über das Zertifikat erfolgt. Benutzernamen werden nur für explizite Speicher-VMs in der Cluster-Liste angezeigt und lassen das ExplicitSVM-Flag auf true gesetzt. Alle Storage-VMs werden immer unter dem zugehörigen Cluster aufgeführt.</block>
   <block id="bebc6d6c31f801875b9e77f07bdb01e7" category="paragraph">Sie können den VMware vSphere-Client verwenden, um Storage-VMs aus dem Inventar in vCenter zu entfernen.</block>
   <block id="47407cf5b03fece3c5c171eab2b9b01a" category="inline-link-macro">Starten Sie den VMware vSphere-Client-Service neu</block>
-  <block id="d1bcb651c16c1e49822b4f7c61910214" category="paragraph"><block ref="882f890d3418627cf43cd6225ef7eb22" category="inline-link-macro-rx"></block>.</block>
   <block id="2d70acf0a1999b3558f2c043c08ac3b6" category="paragraph">Mindestens müssen alle Benutzer in der Lage sein, vCenter Objekte anzuzeigen. Ohne diese Berechtigung können Benutzer nicht auf die VMware vSphere Client GUI zugreifen.</block>
   <block id="57ece9f7f3b3d9621593aeee1cb35996" category="summary">Fügen Sie die Root- und Intermediate-Zertifikate der Zertifizierungsstelle zum VMware vCenter hinzu, um dem Zertifikat und den Artefakten zu vertrauen, die damit signiert sind.</block>
   <block id="ee28a4160e701596abbbfdd58c421736" category="doc">Fügen Sie Zertifikate zum VMware Certificate Store hinzu</block>
@@ -1550,9 +1546,6 @@
   <block id="36139d788258b0f7f760e90a7e475cfb" category="list-text">VMware-Tools müssen installiert und ausgeführt werden.</block>
   <block id="7a6f0192e4916d4a7238add9c2d4e982" category="paragraph">SnapCenter verwendet Informationen aus VMware Tools, um eine Verbindung zum VMware Gastbetriebssystem herzustellen.</block>
   <block id="48e30f31b43c0ce0d7b2ae5cff7665bc" category="list-text">Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und führen Sie dann einen der folgenden Schritte aus:</block>
-  <block id="15522b8dcb225880b816b8456110deaf" category="summary">Wenn sich der SnapCenter VMware vSphere Client falsch verhält, müssen Sie möglicherweise den Browser-Cache löschen. Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere-Client-Service neu.</block>
-  <block id="bbbb4a3d88d4a0dafc319898d6206ae7" category="paragraph">Wenn sich Ihr vCenter auf einer Linux Appliance befindet, müssen Sie den SnapCenter VMware vSphere Client-Service mit Linux-Befehlen neu starten.</block>
-  <block id="7f52ae2d13fc881eab436a11ad6556a4" category="paragraph"><block ref="ca3710e05c94c666b5609593ee562322" prefix="" category="inline-code"></block></block>
   <block id="36e391315954a298b55333c0f1afcc71" category="paragraph">Führen Sie die folgenden Schritte aus, um Ressourcengruppen zu erstellen.</block>
   <block id="6a03edb8ab46dff4278e3f5e0e5ebe46" category="list-text">Befolgen Sie für VMware vCenter 7.0.3 und neuere Versionen die Schritte unter <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx"></block> So importieren Sie die Zertifikate in vCenter.</block>
   <block id="8775bf884912200ed43fd5a867b909a3" category="cell">*Privilegien*</block>
@@ -2223,4 +2216,5 @@ Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie kön
   <block id="c0407ba9e12515280efc0fea9f89e131" category="sidebar">Restore von Backups</block>
   <block id="1fe3b3d815ea6fb48fb7d036907904e3" category="sidebar">SnapCenter Plug-in für VMware vSphere 6.0</block>
   <block id="fd03aeb9f7de3aae10e07664eb1cd6c6" category="sidebar">Generieren Sie ein Support-Bundle über das SnapCenter Plug-in für die VMware vSphere GUI</block>
+  <block id="b02541bab3f320c7517f41f638f6ef31" category="paragraph"><block ref="6f48ea8f284b5f5f2ad46612a3e37eec" category="inline-link-macro-rx"></block>.</block>
 </blocks>
