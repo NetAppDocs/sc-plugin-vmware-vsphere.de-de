@@ -69,7 +69,7 @@ Obwohl die virtuelle Appliance als Linux VM installiert werden muss, unterstütz
 
 Neben diesen Hauptfunktionen unterstützt das SnapCenter Plug-in für VMware vSphere auch iSCSI, Fibre Channel, FCoE, NFS 3.0/4.1, VMFS 5.0/6.0. und NVMe over TCP in die Cloud.
 
-Die neuesten Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=117018;&solution=1259&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
+Die neuesten Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
 
 Informationen zu NFS-Protokollen und ESXi-Host finden Sie in der vSphere Storage-Dokumentation, die von VMware bereitgestellt wird.
 
