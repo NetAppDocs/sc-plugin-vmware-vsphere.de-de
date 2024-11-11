@@ -59,7 +59,7 @@ Die meisten Restore-Vorgänge in NFS-Umgebungen verwenden native ONTAP-Funktione
 Mit ONTAP-Tools können Sie Storage für VVols in ONTAP und im VMware Web-Client bereitstellen und konfigurieren.
 
 +
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["ONTAP Tools für VMware vSphere"^]
+Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 * Das SnapCenter Plug-in für VMware vSphere wird als virtuelle Appliance in einer Linux VM bereitgestellt
 +

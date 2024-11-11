@@ -49,6 +49,8 @@ Für alle Ressourcengruppen:
 
 IMPORTANT: Wenn Sie den VMware vSphere-Clusterdienst (VCLS) verwenden, nehmen Sie keine von VCLS verwalteten VMs in das SnapCenter-Plug-in für VMware vSphere-Ressourcengruppen auf.
 
+Weitere Informationen finden Sie unter https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x["SCV kann VCLS-VMs nicht sichern, nachdem vCenter auf 7.0.x aktualisiert wurde"]
+
 
 TIP: Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastores auf großen LUNs und Dateien bis zu 128 TB mit Volumen von bis zu 300 TB. Wenn Sie große LUNs schützen, verwenden Sie nur per Thick Provisioning bereitgestellte LUNs, um Latenz zu vermeiden.
 
@@ -58,7 +60,7 @@ IMPORTANT: Fügen Sie keine VMs hinzu, die sich in einem nicht zugänglichen Zus
 .Bevor Sie beginnen
 ONTAP Tools für VMware müssen bereitgestellt werden, bevor Sie eine Ressourcengruppe erstellen, die vVol VMs enthält.
 
-Weitere Informationen finden Sie unter https://docs.netapp.com/us-en/ontap-tools-vmware-vsphere/index.html["ONTAP Tools für VMware vSphere"^].
+Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 .Über diese Aufgabe
 Sie können jederzeit Ressourcen einer Ressourcengruppe hinzufügen oder aus dieser entfernen.

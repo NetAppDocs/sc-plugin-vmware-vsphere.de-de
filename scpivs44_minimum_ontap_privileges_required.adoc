@@ -84,6 +84,8 @@ Volume-Aufhängung nicht verfügbar
 
 | Cluster Identity show Network Interface show vserver vserver Peer vserver show 
 |===
+Sie können den Befehl _Cluster Identity show_ Cluster Level ignorieren, wenn Sie eine Rolle erstellen, die dem Daten-Vserver zugeordnet werden soll.
+
 
 NOTE: Sie können die Warnmeldungen zu den nicht unterstützten vServer-Befehlen ignorieren.
 
