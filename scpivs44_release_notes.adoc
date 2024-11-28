@@ -14,4 +14,4 @@ summary: In den Versionshinweisen finden Sie wichtige Informationen zu dieser Ve
 
 
 [role="lead"]
-In den Versionshinweisen finden Sie wichtige Informationen zu dieser Version des SnapCenter Plug-ins für VMware vSphere, einschließlich Lizenzierungsanforderungen, bekannten Problemen, Vorsichtsmaßnahmen, Einschränkungen, Und jegliche Aktualisierungen oder Korrekturen der Dokumentation. Weitere Informationen finden Sie unter https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["Versionshinweise zum SnapCenter Plug-in für VMware vSphere 6.0"^]
+In den Versionshinweisen finden Sie wichtige Informationen zu dieser Version des SnapCenter Plug-ins für VMware vSphere, einschließlich Lizenzierungsanforderungen, bekannten Problemen, Vorsichtsmaßnahmen, Einschränkungen, Und jegliche Aktualisierungen oder Korrekturen der Dokumentation. Weitere Informationen finden Sie unter https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["Versionshinweise zu SnapCenter Plug-in für VMware vSphere 6.0 und 6.0.1"^]
