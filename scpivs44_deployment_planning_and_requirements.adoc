@@ -128,9 +128,9 @@ Aktuelle Informationen zu unterstützten Versionen finden Sie unter https://imt.
 
 
 
-==== Anforderungen für das NVMe-over-TCP-Protokoll
+==== Anforderungen für NVMe-over-TCP und NVMe-over-FC-Protokolle
 
-Die Mindestanforderungen an die Software für die Unterstützung des NVMe over TCP-Protokolls sind:
+Die Mindestanforderungen an die Software für die Unterstützung von NVMe over TCP und NVMe over FC-Protokollen sind:
 
 * VCenter vSphere 7.0U3
 * ESXi 7.0U3
