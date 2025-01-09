@@ -23,6 +23,6 @@ Das SnapCenter Plug-in für VMware vSphere 6.0.1 unterstützt jetzt das NVMe-ove
  a| 
 https://docs.netapp.com/us-en/sc-plugin-vmware-vsphere/scpivs44_concepts_overview.html["Integration von ONTAP-Tools für VMware vSphere 10.x mit SCV 6.0.1"]
  a| 
-ONTAP-Tools für VMware vSphere 10.x helfen bei der Konfiguration von virtuellen VMware vSphere-Volumes. Durch diese Zusammenarbeit können Sie Virtual Machines in NFS-basierten VVols-Datastores konfigurieren, sichern und wiederherstellen.
+ONTAP-Tools für VMware vSphere 10.x helfen bei der Konfiguration von virtuellen VMware vSphere-Volumes. Durch diese Integration können Sie Virtual Machines in NFS-basierten VVols-Datastores konfigurieren, sichern und wiederherstellen.
 
 |===

@@ -2219,7 +2219,6 @@ Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie kön
   <block id="5ba878c4a46b0a8571800aaa6e8445a7" category="paragraph">Das SnapCenter Plug-in für VMware vSphere 6.0.1 unterstützt jetzt das NVMe-over-FC-Protokoll für VMFS-Datastores, um die Performance zu optimieren, Kosten zu senken und eine durchgängige Performance sicherzustellen.</block>
   <block id="1c7703c1d060b65ce6fd3a75ba50400e" category="inline-link">Integration von ONTAP-Tools für VMware vSphere 10.x mit SCV 6.0.1</block>
   <block id="0d1fedc1c92b2bac1ad8d29266340940" category="paragraph"><block ref="0d1fedc1c92b2bac1ad8d29266340940" category="inline-link-rx"></block></block>
-  <block id="41d114a9720ad1ac299b2dffec2f7186" category="paragraph">ONTAP-Tools für VMware vSphere 10.x helfen bei der Konfiguration von virtuellen VMware vSphere-Volumes. Durch diese Zusammenarbeit können Sie Virtual Machines in NFS-basierten VVols-Datastores konfigurieren, sichern und wiederherstellen.</block>
   <block id="704fc5c8ea6982e3179f495b7b832121" category="doc">Neuerungen im SnapCenter Plug-in für VMware vSphere 6.0</block>
   <block id="05355694c1b9a07fdbe4cd953d66f950" category="inline-link">Unterstützung für das NVMe- over TCP-Protokoll</block>
   <block id="537b09dbac250171d06580c68b67b2f2" category="paragraph"><block ref="537b09dbac250171d06580c68b67b2f2" category="inline-link-rx"></block></block>
@@ -2228,7 +2227,6 @@ Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie kön
   <block id="b154808e6bcc13034e613c359731ad79" category="paragraph">Wie bei iSCSI können VMFS-Datastores mit NVMe-over-TCP-Protokoll beliebige ethernet-NICs und -Switches verwenden und alle Standardvorgänge wie Backup, Wiederherstellung, Mounten, Verbinden und Trennen unterstützen.</block>
   <block id="4f53b479c6b47d73b1fdb28f399b1301" category="inline-link">Unterstützung für SnapMirror Active Sync</block>
   <block id="a3dde13a3e6b0437cbcc67d81b0b023f" category="paragraph"><block ref="a3dde13a3e6b0437cbcc67d81b0b023f" category="inline-link-rx"></block></block>
-  <block id="88ae2479bcea5ca16281e31626f2f8d8" category="paragraph">Jetzt können Sie das SnapCenter Plug-in für VMware vSphere verwenden, um Funktionen der aktiven SnapMirror Synchronisierung zu konfigurieren, z. B. ein Recovery Point Objective (RPO) von null, ein Recovery Time Objective (RTO) und ein transparentes Applikations-Failover.</block>
   <block id="6884e6f09d7d01f963a72f6d4b4dee73" category="paragraph">SnapMirror Active Sync wird nur für VMFS Datastores unterstützt.</block>
   <block id="ee8f5755a6e1671a63e8da1209dc860f" category="paragraph">Die Version des SnapCenter-Plug-ins für VMware vSphere (SCV), auf die Sie aktualisieren können, hängt von der aktuellen Version ab.</block>
   <block id="4181b34482469dce169449ef3b643b27" category="paragraph">Das Upgrade auf das SnapCenter-Plug-in für VMware vSphere (SCV) 4.8 und höher wird nur auf VMware vCenter Server 7 Update 1 und höheren Versionen unterstützt. Für VMware vCenter-Server vor Version 7 Update 1 sollten Sie SCV 4.7 weiterhin verwenden.</block>
@@ -2248,4 +2246,6 @@ Sie können die Berichtstabelle im HTML- oder CSV-Format herunterladen. Sie kön
   <block id="7e35de6c484fe702e7c4fe21538ac2a4" category="paragraph">SnapCenter 4.8</block>
   <block id="9fb9e3e27a3792a16059036c9b877598" category="sidebar">Was ist neu in SnapCenter Plug-in für VMware vSphere 6.0.1</block>
   <block id="43e9871fb2ac1e50ad02c9c15dce6a93" category="sidebar">Was ist neu in SnapCenter Plug-in für VMware vSphere 6.0</block>
+  <block id="2c1653c7d21f34b83ac4f6c2e6d95617" category="paragraph">ONTAP-Tools für VMware vSphere 10.x helfen bei der Konfiguration von virtuellen VMware vSphere-Volumes. Durch diese Integration können Sie Virtual Machines in NFS-basierten VVols-Datastores konfigurieren, sichern und wiederherstellen.</block>
+  <block id="260461e32230b11c5e5f1e46e498eb6d" category="paragraph">Jetzt können Sie das SnapCenter Plug-in für VMware vSphere verwenden, um Funktionen der aktiven SnapMirror Synchronisierung zu konfigurieren, z. B. ein Recovery Point Objective (RPO) von null, ein Recovery Time Objective (RTO) und ein transparentes Applikations-Failover.</block>
 </blocks>
