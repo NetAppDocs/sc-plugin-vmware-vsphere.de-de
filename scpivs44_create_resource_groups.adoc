@@ -17,7 +17,7 @@ summary:
 Führen Sie die folgenden Schritte aus, um Ressourcengruppen zu erstellen.
 
 . Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen* und wählen Sie dann *Erstellen*.
-. Geben Sie auf jeder Seite des Assistenten zum Erstellen von Ressourcengruppen die erforderlichen Informationen ein, wählen Sie VMs und Datenspeicher aus, die in die Ressourcengruppe aufgenommen werden sollen, und wählen Sie dann die Backup-Richtlinien aus, die auf die Ressourcengruppe angewendet werden sollen, und geben Sie den Backup-Zeitplan an.
+. Geben Sie auf jeder Seite des Assistenten „Ressourcengruppe erstellen“ die erforderlichen Informationen ein, wählen Sie die VMs und Datastores aus, die in die Ressourcengruppe aufgenommen werden sollen, und wählen Sie dann die Backup-Richtlinien aus, die auf die Ressourcengruppe angewendet werden sollen. Fügen Sie die Details zum sekundären Remote-Schutz hinzu, und geben Sie den Backup-Zeitplan an.
 
 
 Backups werden gemäß den für die Ressourcengruppe konfigurierten Backup-Richtlinien durchgeführt.

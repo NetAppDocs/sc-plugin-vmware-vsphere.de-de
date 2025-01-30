@@ -43,13 +43,12 @@ Zum Schutz eines VMFS-Datenspeichers in einer Implementierung mit aktiver SnapMi
 +
 ** Konfigurieren Sie Cluster und Mediator wie im technischen Bericht beschrieben: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878: SnapMirror Active Sync (ehemals SMBC)"].
 ** Fügen Sie das dem VMFS-Datastore zugeordnete Volume zur Konsistenzgruppe hinzu und erstellen Sie mithilfe der _AutomatedFailOver_- oder _AutomatedFailOverDuplex_-Schutzrichtlinie zwischen zwei ONTAP-Speichersystemen eine Datensicherungsbeziehung. _AutomaticatedFailOverDuplex_-Richtlinie wird ab ONTAP 9.15.1 unterstützt.
-+
+
+
+
+
 
 NOTE: In der Fan-out-Konfiguration wird die Konsistenzgruppe für einen tertiären Standort nicht unterstützt.
-
-
-
-
 
 .Über diese Aufgabe
 Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den folgenden Informationen werden einige der Felder beschrieben, für die Sie möglicherweise eine Anleitung benötigen.

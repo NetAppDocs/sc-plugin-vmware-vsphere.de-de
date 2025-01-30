@@ -48,41 +48,22 @@ Job beenden
 | Version 
 
 
-| Erstellung von Volume-Klonen
-Klon von Volume anzeigen
-Split-Start des Volume-Klons
-Split-Stopp für Volume-Klon
-Volume erstellen
-Volume löschen
-Volume destroy
-Erstellen eines Volume-Dateiklonen
-Show-Disk-Nutzung für Volume-Dateien
-Volume ist offline
-Das Volume ist online
-Volume-Änderung
-Erstellen von Volume-qtree
-Volume qtree löschen
-Änderung des Volume-qtree
-Volume-qtree anzeigen
-Volume-Einschränkung
-Volumen anzeigen
-Erstellen von Volume-Snapshots
-Volume Snapshot löschen
-Ändern des Volume-Snapshots
-Umbenennung von Volume-Snapshots
-Wiederherstellung von Volume Snapshots
-Restore-Datei für Volume Snapshots
-Volume-Snapshot werden angezeigt
-Volume-Aufhängung nicht verfügbar 
+| Volume-Klon erstellen Volume-Klon zeigen Volume-Klon teilen starten Volume-Klon-Split-Status Volume-Clone-Split-Volume stoppen Volume erstellen Volume löschen Volume löschen Datei-Klon erstellen Volume-Datei zeigen-Disk-Nutzung Volume offline Volume online Volume-Volume verwalten Volume-Volume ändern Volume-qtree Volume erstellen qtree Volume löschen Volume-Volume ändern Volume-Snapshot Volume erstellen Volume löschen Snapshot Volume ändern Volume-SnapLock-Ablauf-Zeit Volume-Snapshot umbenennen Volume-Snapshot wiederherstellen-Datei-Volume-Snapshot wiederherstellen-Laufwerk zeigen Delta zeigen 
 
 
-| vserver cifs vserver cifs share erstellen vServer cifs share löschen vServer cifs shadowcopy show vserver cifs share show vserver cifs show vserver Export-Policy vServer Export-Policy erstellen vServer Export-Policy löschen vServer Export-Policy Regel erstellen vServer Export-Policy Regel erstellen vserver Export-Policy zeigen vserver Export-Policy show vserver iscsi vserver iscsi connection show vserver nvme Subsystem Controller vserver nvme-Subsystem-Controller zeigen vServer nvme-Subsystemzuordnung vServer nvme-Subsystemzuordnung anzeigen vServer nvme-Subsystemzuordnung hinzufügen vServer nvme-Subsystemzuordnung entfernen vServer nvme-Subsystem-Host zeigen vServer nvme-Subsystem-Host zeigen vServer nvme-Subsystem-Host entfernen vServer nvme-Subsystem zeigen vServer nvme-Subsystem löschen vServer nvme-Namespace zeigt Failover-Gruppen für die Netzwerkschnittstelle an 
+| vserver cifs vServer cifs Freigabe vserver erstellen cifs Freigabe vserver löschen vserver cifs shadowcopy vServer zeigen cifs share vserver zeigen vserver Export-Policy vServer Export-Policy vServer Export-Policy erstellen vServer Export-Policy löschen vServer NVMe-Subsystem vserver NVMe-Subsystem wserver vserver nvme-Subsystem abbilden vserver Export-Policy-Regel zeigen vserver Export-Policy zeigen vserver zeigen vserver iscsi vserver iscsi-Verbindung zeigen vserver zeigen vserver 
 |===
 |===
 | Schreibgeschützter Befehl: Mindestberechtigungen für ONTAP 8.3 und höher erforderlich 
 
 
 | Cluster Identity show Network Interface show vserver vserver Peer vserver show 
+|===
+|===
+| All-Access-Befehle: Mindestberechtigungen für ONTAP 9 und höher erforderlich. 
+
+
+| Zeigt die Storage-Einheit der Konsistenzgruppe an 
 |===
 Sie können den Befehl _Cluster Identity show_ Cluster Level ignorieren, wenn Sie eine Rolle erstellen, die dem Daten-Vserver zugeordnet werden soll.
 

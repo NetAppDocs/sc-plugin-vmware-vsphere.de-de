@@ -136,7 +136,7 @@ Die folgenden Vorgänge in der Admin Console-UI werden geprüft:
 ** Ändern Sie die Anmeldedaten des Administrators
 ** Ändern Sie die Zeitzone
 ** Ändern Sie den NTP-Server
-** Ändern der IPv4-/IPv6-Einstellungen
+** Ändern Sie die IPv4/IPv6-Adresseinstellungen
 
 
 * Konfiguration

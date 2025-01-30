@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 In den Benachrichtigungsdateien finden Sie Informationen zu Urheberrechten und Lizenzen von Drittanbietern, die in der NetApp Software verwendet werden.
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP3322665["Hinweis zum SnapCenter Plug-in für VMware vSphere 6.0"^]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP3337670["Hinweis zum SnapCenter Plug-in für VMware vSphere 6.1"^]

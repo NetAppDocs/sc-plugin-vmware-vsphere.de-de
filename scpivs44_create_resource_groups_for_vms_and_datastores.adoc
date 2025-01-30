@@ -42,6 +42,10 @@ Alle VMs und Datastores, ausgenommen vVol Datastores, die das angegebene vSphere
 +
 Alle VVols in einem einzelnen, angegebenen vVol Ordner. Wenn der Ordner eine Kombination aus vVol VMs und herkömmlichen VMs enthält, sichert das SnapCenter Plug-in für VMware vSphere die vVol VMs und überspringt die herkömmlichen VMs.
 
+* VMs und Datenspeicher auf ASA r2
++
+Sie können ASA r2 VMs und Datenspeicher nicht mit anderen VMs und Datastores kombinieren.
+
 
 
 Für alle Ressourcengruppen:
@@ -92,8 +96,6 @@ Sie können zwar eine Ressourcengruppe ohne Sicherungsrichtlinie erstellen, aber
 
 NOTE: Wenn Sie eine Backup-Richtlinie mit Sperrfrist für Snapshots auswählen, müssen Sie die Version von ONTAP 9.12.1 oder höher auswählen.
 
-
-
 * Kompatibilitätsprüfungen
 +
 Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfungen durch.
@@ -101,7 +103,13 @@ Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfung
 +
 <<Managen Sie Fehler bei der Kompatibilitätsprüfung>>
 
+* Erstellen Sie einen sekundären Schutz für eine Ressourcengruppe
++
+Der sekundäre Schutz sorgt dafür, dass Replikationsbeziehungen für die Ressourcen erstellt werden, die in der Ressourcengruppe hinzugefügt werden. Sie müssen unter Verwendung einer angegebenen Richtlinie vom primären Cluster eine auf Konsistenzgruppen basierende SnapMirror-Beziehung im bevorzugten Cluster und der bevorzugten SVM erstellen. Die sekundäre Sicherung wird nur für auf einem ASA r2 System basierende Datastores und Virtual Machines unterstützt. Cluster-Peering und SVM-Peering sollten vorkonfiguriert sein. Der sekundäre Schutz ermöglicht nur asynchrone SnapMirror-Richtlinien. Sie müssen beim Erstellen des sekundären Schutzes das Suffix von Konsistenzgruppen angeben.
 
+
+
+Der sekundäre Schutz sorgt dafür, dass Replikationsbeziehungen für die Ressourcen erstellt werden, die in der Ressourcengruppe hinzugefügt werden.
 
 .Schritte
 . Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen* und wählen Sie dann *Erstellen*, um den Assistenten zu starten.
@@ -144,6 +152,9 @@ Wenn das Suffix „_recent“ zum letzten Snapshot hinzugefügt werden soll, akt
 
 
 NOTE: A `_recent` Für jede Richtlinie, die einer Ressourcengruppe zugeordnet ist, wird ein Backup erstellt. Daher wird eine Ressourcengruppe mit mehreren Richtlinien über mehrere Ressourcen verfügen `_recent` Backups: Nicht manuell umbenennen `_recent` Backups:
+
+
+NOTE: Das ASA r2-Speichersystem unterstützt das Umbenennen von Snapshots nicht und daher werden die Umbenennungsfunktionen von SCV und die letzten Snapshot-Benennungsfunktionen nicht unterstützt.
 
 
 
@@ -206,7 +217,7 @@ Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.
 | Um… zu verwenden | Do this… 
 
 
-| Eine vorhandene Richtlinie | Wählen Sie eine oder mehrere Richtlinien aus der Liste aus. 
+| Eine vorhandene Richtlinie | Wählen Sie eine oder mehrere Richtlinien aus der Liste aus. Der sekundäre Schutz gilt für vorhandene und neue Richtlinien, bei denen Sie sowohl SnapMirror als auch SnapVault Updates ausgewählt haben. 
 
 
 | Eine neue Richtlinie  a| 
@@ -218,10 +229,32 @@ Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.
 +
 Im verknüpften Modus enthält die Liste Richtlinien in allen verknüpften vCenters. Sie müssen eine Richtlinie auswählen, die sich im selben vCenter befindet wie die Ressourcengruppe.
 
-.. Konfigurieren Sie auf der Seite *Schedules* den Backup-Zeitplan für jede ausgewählte Richtlinie.
-+
-image:scpivs44_image18.png["Fenster Ressourcengruppe erstellen"]
+.. Auf der Seite *Secondary Protection* wird die Liste der ausgewählten Ressourcen mit ihrem Schutzstatus angezeigt. Um die ungeschützten Ressourcen zu schützen, wählen Sie aus der Dropdown-Liste den Typ der Replikationsrichtlinie, das Suffix der Konsistenzgruppe, das Ziel-Cluster und die Ziel-SVM aus. Beim Erstellen einer Ressourcengruppe wird ein separater Job für sekundären Schutz erstellt, und Sie können ihn im Fenster Job Monitor sehen.
 
+
+
+
+|===
+| Felder | Beschreibung 
+
+
+| Name der Replikationsrichtlinie | Name der SnapMirror-Richtlinie Es werden nur die sekundären Richtlinien *Asynchronous* und *Mirror und Vault* unterstützt. 
+
+
+| Suffix für Konsistenzgruppen | Eine Zieleinstellung, die zum Anhängen an die primäre Konsistenzgruppe verwendet wird, um den Namen der Ziel-Konsistenzgruppe zu bilden. Beispiel: Wenn der Name der primären Konsistenzgruppe „sccg_2024-11-28_120918“ lautet und Sie „dest“ als Suffix eingeben, wird die sekundäre Konsistenzgruppe als „sccg_2024-11-28_120918_dest“ erstellt. Das Suffix gilt nur für ungeschützte Konsistenzgruppen. 
+
+
+| Ziel-Cluster | Für alle ungeschützten Speichereinheiten zeigt SCV die Namen der Peered Cluster in der Dropdown-Liste an. Wenn sich der zu SCV hinzugefügte Storage im SVM-Umfang befindet, wird aufgrund der ONTAP-Beschränkung anstelle des Namens die Cluster-ID angezeigt. 
+
+
+| Ziel-SVM | Für alle ungeschützten Speichereinheiten zeigt SCV die Namen der bespeisten SVM(s) an. Cluster und SVM werden automatisch ausgewählt, wenn eine der Storage-Einheiten, die Teil der Konsistenzgruppe sind, ausgewählt wird. Das gleiche gilt für alle anderen Speichereinheiten in derselben Konsistenzgruppe. 
+
+
+| Sekundäre geschützte Ressourcen | Für alle geschützten Storage-Einheiten der Ressourcen, die auf der Seite Ressourcen hinzugefügt werden, werden die Details der sekundären Beziehung angezeigt, einschließlich Cluster, SVM und Replizierungstyp. 
+|===
+image:secondary_protection.png["Fenster Ressourcengruppe erstellen"]
+
+. Konfigurieren Sie auf der Seite *Schedules* den Backup-Zeitplan für jede ausgewählte Richtlinie.
 +
 Geben Sie im Feld Startzeit ein Datum und eine andere Zeit als null ein. Das Datum muss das Format haben `day/month/year`.
 
@@ -234,7 +267,7 @@ Sie müssen jedes Feld ausfüllen. Das SnapCenter Plug-in für VMware vSphere er
 +
 link:scpivs44_modify_the_time_zones.html["Ändern der Zeitzonen für Backups"].
 
-.. Überprüfen Sie die Zusammenfassung und klicken Sie dann auf *Fertig stellen*.
+. Überprüfen Sie die Zusammenfassung und klicken Sie dann auf *Fertig stellen*. Ab SCV 6.1 sind sekundäre Schutzfunktionen für ASA r2-Systeme auf der Übersichtsseite sichtbar.
 +
 Bevor Sie auf *Fertig stellen* klicken, können Sie zu einer beliebigen Seite im Assistenten zurückkehren und die Informationen ändern.
 
@@ -244,8 +277,6 @@ Nachdem Sie auf *Fertig stellen* geklickt haben, wird die neue Ressourcengruppe 
 +
 
 NOTE: Wenn der Quiesce-Vorgang für eine der VMs im Backup fehlschlägt, dann ist der Backup als nicht VM-konsistent gekennzeichnet, auch wenn die ausgewählte Richtlinie die VM-Konsistenz ausgewählt hat. In diesem Fall ist es möglich, dass einige der VMs erfolgreich stillgelegt wurden.
-
-
 
 
 

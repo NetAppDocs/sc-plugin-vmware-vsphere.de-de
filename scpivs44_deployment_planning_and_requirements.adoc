@@ -139,7 +139,7 @@ Die Mindestanforderungen an die Software für die Unterstützung von NVMe over T
 
 
 
-== Platz- und Größenanforderungen
+== Platz-, Dimensionierungs- und Skalierungsanforderungen
 
 |===
 | Element | Anforderungen 
@@ -148,13 +148,16 @@ Die Mindestanforderungen an die Software für die Unterstützung von NVMe over T
 | Betriebssystem | Linux 
 
 
-| Minimale CPU-Anzahl | 4 Kerne 
+| Empfohlene CPU-Anzahl | 8 Kerne 
 
 
-| Mind. RAM | Minimum: 12 GB empfohlen: 16 GB 
+| Empfohlener RAM | 24GB 
 
 
 | Minimaler Festplattenspeicher für das SnapCenter Plug-in für VMware vSphere, Logs und MySQL Datenbank | 100 GB 
+
+
+| Maximale Heapgröße des vmcontrol-Dienstes im Gerät | 8GB 
 |===
 
 

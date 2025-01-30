@@ -27,7 +27,7 @@ Gehen Sie zum Erstellen von Ressourcengruppen wie folgt vor:
 | 1 | `/4.1/policies` | `Get Policies` Ruft die Liste der VMware vSphere Client-Richtlinien ab. Beachten Sie die *RichtlinieID*, die Sie beim Erstellen der Ressourcengruppe und der Richtlinie *Frequency* verwenden möchten. Wenn keine Richtlinien aufgeführt sind, verwenden Sie das `Create Policy` REST API zur Erstellung einer neuen Richtlinie 
 
 
-| 2 | `/4.1/resource-groups` | `Create a Resource Group` Erstellt eine Ressourcengruppe mit der angegebenen Richtlinie. Geben Sie die *RichtlinieID* aus Schritt 1 ein und geben Sie zusätzlich zu allen anderen erforderlichen Attributen die Richtlinie *Frequenz*-Details ein. 
+| 2 | `/4.1/resource-groups` | `Create a Resource Group` Erstellt eine Ressourcengruppe mit der angegebenen Richtlinie. Geben Sie die *RichtlinieID* aus Schritt 1 ein und geben Sie zusätzlich zu allen anderen erforderlichen Attributen die Richtlinie *Frequenz*-Details ein. Sie können den sekundären Schutz mit dieser REST-API aktivieren. 
 |===
 Gehen Sie wie folgt vor, um Ressourcengruppen zu ändern:
 

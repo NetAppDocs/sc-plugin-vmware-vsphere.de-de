@@ -44,5 +44,5 @@ Wenn Sie auf *Weiter* klicken, prüft das System zunächst, ob SnapCenter verwal
 
 
 . Wiederholen Sie Schritt 2 für jede VM oder jeden Datenspeicher, den Sie hinzufügen möchten.
-. Klicken Sie auf *Weiter*, bis Sie die Seite *Zusammenfassung* öffnen und dann die Zusammenfassung prüfen und auf *Fertig stellen* klicken.
+. Klicken Sie auf *Weiter*, bis Sie die Seite *Zusammenfassung* erreichen, und überprüfen Sie dann die Zusammenfassung und klicken Sie auf *Fertig stellen*.
 

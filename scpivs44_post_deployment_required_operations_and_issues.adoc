@@ -28,7 +28,7 @@ Als neuer SnapCenter Benutzer müssen Sie SnapCenter Storage-VMs hinzufügen, be
 
 * Nach der Bereitstellung der virtuellen Appliance wird die Registerkarte * Sicherungsjobs* auf dem Dashboard möglicherweise in den folgenden Szenarien nicht geladen:
 +
-** Sie führen IPv4 aus und verfügen über zwei IP-Adressen für den SnapCenter VMware vSphere Host. Daher wird die Jobanforderung an eine IP-Adresse gesendet, die vom SnapCenter-Server nicht erkannt wird. Um dieses Problem zu vermeiden, fügen Sie die IP-Adresse, die Sie verwenden möchten, wie folgt hinzu:
+** Sie führen eine IPv4-Adresse aus und haben zwei IP-Adressen für den SnapCenter VMware vSphere-Host. Daher wird die Jobanforderung an eine IP-Adresse gesendet, die vom SnapCenter-Server nicht erkannt wird. Um dieses Problem zu vermeiden, fügen Sie die IP-Adresse, die Sie verwenden möchten, wie folgt hinzu:
 +
 ... Navigieren Sie zu dem Speicherort, an dem das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird: `/opt/netapp/scvservice/standalone_aegis/etc`
 ... Öffnen Sie das Dateinetzwerk- interface.properties.

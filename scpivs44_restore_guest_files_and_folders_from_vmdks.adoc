@@ -150,7 +150,7 @@ Die wiederherzustellenden Dateien und Ordner sind in der Tabelle Ausgewählte Da
 | Option | Beschreibung 
 
 
-| Wiederherstellen des Pfads | Geben Sie den UNC-Freigabepfad zum Gast ein, auf dem die ausgewählten Dateien wiederhergestellt werden. IPv4-Beispiel: `\\10.60.136.65\c$`IPv6-Beispiel: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore` 
+| Wiederherstellen des Pfads | Geben Sie den UNC-Freigabepfad zum Gast ein, auf dem die ausgewählten Dateien wiederhergestellt werden. Beispiel für IPv4-Adresse `\\10.60.136.65\c$`: IPv6-Adresse Beispiel: `\\fd20-8b1e-b255-832e--61.ipv6-literal.net\C\restore` 
 
 
 | Wenn Originaldatei(en) vorhanden ist  a| 

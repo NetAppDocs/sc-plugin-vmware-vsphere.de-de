@@ -27,6 +27,7 @@ Sie können das SnapCenter Plug-in für VMware vSphere REST-APIs verwenden, um a
 ** Mounten und Unmounten von Datastores
 ** Laden Sie Jobs herunter und erstellen Sie Berichte
 ** Integrierte Zeitpläne ändern
+** Konfigurieren Sie den sekundären Schutz für ASA r2
 
 
 * Operationen, die von DEN REST-APIs für VMware vSphere nicht unterstützt werden

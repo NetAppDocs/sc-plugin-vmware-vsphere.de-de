@@ -28,10 +28,10 @@ Sie können die vordefinierten Rollen in der vCenter-GUI sehen, indem Sie wie in
 | Rolle | Beschreibung 
 
 
-| SCV-Administrator | Bietet alle nativen vCenter Server und SnapCenter-spezifischen Berechtigungen, die zur Ausführung aller SnapCenter Plug-ins für VMware vSphere Aufgaben erforderlich sind 
+| SCV-Administrator | Bietet alle nativen vCenter Server und SnapCenter-spezifischen Berechtigungen, die zur Ausführung aller SnapCenter Plug-ins für VMware vSphere Aufgaben erforderlich sind Ab Version SCV 6.1 wird dieser Rolle eine neue Berechtigung zum Erstellen eines sekundären Schutzes hinzugefügt. 
 
 
-| SCV-Backup | Bereitstellung aller nativen vCenter Server und SnapCenter-spezifischen Berechtigungen, die für das Backup von vSphere Objekten (Virtual Machines und Datastores) erforderlich sind Der Benutzer hat auch Zugriff auf die Konfigurationsberechtigung. Der Benutzer kann Backups nicht wiederherstellen. 
+| SCV-Backup | Bereitstellung aller nativen vCenter Server und SnapCenter-spezifischen Berechtigungen, die für das Backup von vSphere Objekten (Virtual Machines und Datastores) erforderlich sind Der Benutzer hat auch Zugriff auf die Konfigurationsberechtigung. Der Benutzer kann Backups nicht wiederherstellen. Ab Version SCV 6.1 wird dieser Rolle eine neue Berechtigung zum Erstellen eines sekundären Schutzes hinzugefügt. 
 
 
 | Wiederherstellung der SCV-Gastdatei | Bietet alle nativen vCenter Server und SnapCenter-spezifischen Berechtigungen, die für die Wiederherstellung von Gastdateien und Ordnern erforderlich sind Der Benutzer kann keine VMs oder VMDKs wiederherstellen. 

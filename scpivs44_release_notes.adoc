@@ -14,9 +14,9 @@ summary: In den Versionshinweisen finden Sie wichtige Informationen zu dieser Ve
 
 
 [role="lead"]
-Erfahren Sie mehr über die neuen und verbesserten Funktionen des SnapCenter Plug-ins für VMware vSphere 6.0.1 und 6.0.
+Erfahren Sie mehr über die neuen und erweiterten Funktionen des SnapCenter Plug-in für VMware vSphere 6.1.
 
-Details zu bekannten Problemen, Einschränkungen und behobene Probleme finden Sie unter https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664["Versionshinweise zu SnapCenter Plug-in für VMware vSphere 6.0 und 6.0.1"^]. Sie müssen sich mit Ihrem NetApp Konto anmelden oder ein Konto erstellen, um auf die Versionshinweise zuzugreifen.
+Details zu bekannten Problemen, Einschränkungen und behobene Probleme finden Sie unter https://library.netapp.com/ecm/ecm_download_file/ECMLP3337464["Versionshinweise zum SnapCenter Plug-in für VMware vSphere 6.1"^]. Sie müssen sich mit Ihrem NetApp Konto anmelden oder ein Konto erstellen, um auf die Versionshinweise zuzugreifen.
 
 [NOTE]
 ====

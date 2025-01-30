@@ -52,7 +52,7 @@ Ein Unterstrich (_) ist zulässig.
 . Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie auf *Bearbeiten*.
 . Klicken Sie in der linken Liste im Assistenten * Ressourcengruppe bearbeiten* auf die Kategorie, die Sie ändern möchten, und geben Sie Ihre Änderungen ein.
 +
-Sie können Änderungen in mehreren Kategorien vornehmen.
+Sie können Änderungen in mehreren Kategorien vornehmen. Mit dieser Option können Sie auch sekundäre geschützte Ressourcen bearbeiten.
 
 . Klicken Sie auf *Weiter*, bis die Übersichtsseite angezeigt wird, und klicken Sie dann auf *Fertig stellen*.
 

@@ -16,6 +16,9 @@ summary: Backup-Vorgänge werden für alle in einer Ressourcengruppe definierten
 [role="lead"]
 Backup-Vorgänge werden für alle in einer Ressourcengruppe definierten Ressourcen durchgeführt. Wenn eine Ressourcengruppe über eine Richtlinie und einen konfigurierten Zeitplan verfügt, werden die Backups automatisch gemäß dem Zeitplan durchgeführt.
 
+
+NOTE: ASA r2 Backup erstellt Snapshots von Konsistenzgruppen und stellt eine primäre Konsistenzgruppe bereit, wenn die angegebene Ressource sie nicht bereits hat.
+
 .Bevor Sie beginnen
 Sie müssen eine Ressourcengruppe mit einer angehängten Richtlinie erstellt haben.
 

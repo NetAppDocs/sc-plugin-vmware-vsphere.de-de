@@ -21,7 +21,7 @@ Der link:scpivs44_download_the_ova_open_virtual_appliance.html["Open Virtual App
 . Navigieren Sie in Ihrem Browser zu VMware vSphere vCenter.
 +
 
-NOTE: Für IPv6 HTML-Webclients müssen Sie entweder Chrome oder Firefox verwenden.
+NOTE: Für IPv6-Adressen-HTML-Web-Clients müssen Sie entweder Chrome oder Firefox verwenden.
 
 . Melden Sie sich auf der Seite *VMware vCenter Single Sign-On an*.
 . Klicken Sie im Navigationsbereich mit der rechten Maustaste auf ein beliebiges Inventurobjekt, das ein gültiges übergeordnetes Objekt einer virtuellen Maschine ist, z. B. ein Rechenzentrum, einen Ordner, einen Cluster oder einen Host, und wählen Sie *OVF-Vorlage bereitstellen* aus, um den VMware-Bereitstellungsassistenten zu starten.

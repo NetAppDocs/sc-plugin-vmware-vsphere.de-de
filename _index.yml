@@ -14,12 +14,12 @@ indexpage:
     Zudem funktioniert OnCommand mit SnapCenter Server, um applikationsspezifische
     Backup- und Restore-Vorgänge in VMware Umgebungen für applikationsspezifische
     SnapCenter Plug-ins zu unterstützen. Diese Dokumentationsbibliothek beschreibt
-    das SnapCenter-Plug-in für VMware vSphere Version 6.0.
+    das SnapCenter-Plug-in für VMware vSphere Version 6.1.
   tiles:
   - title: Los geht's
     links:
     - title: Versionshinweise
-      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3322664
+      url: https://library.netapp.com/ecm/ecm_download_file/ECMLP3337464
     - title: Erfahren Sie mehr über SCV
       url: "/scpivs44_concepts_overview.html"
     - title: Implementierungsanforderungen zu erfüllen
