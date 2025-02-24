@@ -14,7 +14,7 @@ summary: Vor der Bereitstellung der virtuellen Appliance sollten Sie die Impleme
 
 
 [role="lead"]
-Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungsanforderungen kennen. Die Bereitstellungsanforderungen sind in den folgenden Tabellen aufgeführt.
+Sie sollten mit den folgenden Anforderungen vertraut sein, bevor Sie mit der Bereitstellung des SnapCenter Plug-ins für VMware vSphere (SCV) beginnen.
 
 
 
@@ -22,21 +22,21 @@ Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungs
 
 Bevor Sie mit der Bereitstellung des SnapCenter Plug-ins für VMware vSphere (SCV) beginnen, sollten Sie mit den Host-Anforderungen vertraut sein.
 
-* Das SnapCenter Plug-in für VMware vSphere wird als Linux VM implementiert, unabhängig davon, ob Sie das Plug-in zum Schutz von Daten auf Windows oder Linux Systemen verwenden.
+* Das SnapCenter Plug-in für VMware vSphere wird als Linux VM implementiert, unabhängig davon, ob es zum Schutz von Daten auf Windows- oder Linux-Systemen verwendet wird.
 * Sie sollten das SnapCenter-Plug-in für VMware vSphere auf dem vCenter-Server bereitstellen.
 +
-Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter Plug-in für VMware vSphere bereitgestellt wird. VCenter meldet Daten in der Zeitzone, in der sich vCenter befindet. Wenn sich das SnapCenter-Plug-in für VMware vSphere und vCenter daher in unterschiedlichen Zeitzonen befinden, sind die Daten im SnapCenter-Plug-in für VMware vSphere Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
+Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird, und vCenter meldet Daten in der Zeitzone, in der sich das Plug-in befindet. Wenn sich das SnapCenter-Plug-in für VMware vSphere und vCenter daher in unterschiedlichen Zeitzonen befinden, sind die Daten im SnapCenter-Plug-in für VMware vSphere Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
 
-* Sie dürfen das SnapCenter-Plug-in für VMware vSphere nicht in einem Ordner bereitstellen, der einen Namen mit Sonderzeichen enthält.
+* Sie dürfen das SnapCenter-Plug-in für VMware vSphere nicht in einem Ordner mit einem Namen bereitstellen, der Sonderzeichen enthält.
 +
 Der Ordnername darf die folgenden Sonderzeichen nicht enthalten: €!@#%^&()_+{}';.,*?"<>
 
 * Sie müssen für jeden vCenter Server eine separate, eindeutige Instanz des SnapCenter Plug-ins für VMware vSphere bereitstellen und registrieren.
 +
-** Jeder vCenter-Server muss, unabhängig davon, ob er sich im verknüpften Modus befindet, mit einer separaten Instanz des SnapCenter-Plug-ins für VMware vSphere gekoppelt werden.
+** Jeder vCenter-Server, ob im verknüpften Modus oder nicht, muss mit einer separaten Instanz des SnapCenter-Plug-ins für VMware vSphere gekoppelt werden.
 ** Jede Instanz des SnapCenter Plug-ins für VMware vSphere muss als separate Linux VM implementiert werden.
 +
-Wenn Sie beispielsweise Backups von sechs verschiedenen Instanzen des vCenter Servers durchführen möchten, müssen Sie das SnapCenter-Plug-in für VMware vSphere auf sechs Hosts bereitstellen, und jeder vCenter-Server muss mit einer eindeutigen Instanz des SnapCenter-Plug-ins für VMware vSphere gekoppelt werden.
+Nehmen wir beispielsweise an, Sie möchten Backups von sechs verschiedenen Instanzen des vCenter Servers durchführen. In diesem Fall müssen Sie das SnapCenter-Plug-in für VMware vSphere auf sechs Hosts bereitstellen, und jeder vCenter-Server muss mit einer eindeutigen Instanz des SnapCenter-Plug-ins für VMware vSphere gekoppelt werden.
 
 
 
@@ -88,7 +88,7 @@ Wiederherstellung einer vollständigen VM, wenn eine oder mehrere VMDKs auf eine
 | ONTAP | Eine dieser Optionen: SnapMirror oder SnapVault (für sekundäre Datensicherung unabhängig von der Art der Beziehung) 
 
 
-| Zusätzliche Produkte | VSphere Standard, Enterprise oder Enterprise Plus eine vSphere Lizenz ist erforderlich, um Wiederherstellungsvorgänge mit Storage vMotion auszuführen. Lizenzen zu vSphere Essentials oder Essentials Plus enthalten kein Storage vMotion. 
+| Zusätzliche Produkte | VSphere Standard, Enterprise oder Enterprise Plus Eine vSphere-Lizenz ist erforderlich, um Wiederherstellungsvorgänge mit Storage vMotion auszuführen. VSphere Essentials- oder Essentials Plus-Lizenzen enthalten kein Storage vMotion. 
 
 
 | Primäre Ziele | SnapCenter Standard: Erforderlich zur Durchführung applikationsbasierter Sicherung über VMware SnapRestore: Erforderlich zur Durchführung von Restore-Vorgängen für VMware VMs und Datenspeicher nur FlexClone: Wird nur für die Mounten und Anbindung von VMware VMs und Datastores verwendet 
@@ -145,9 +145,6 @@ Die Mindestanforderungen an die Software für die Unterstützung von NVMe over T
 | Element | Anforderungen 
 
 
-| Betriebssystem | Linux 
-
-
 | Empfohlene CPU-Anzahl | 8 Kerne 
 
 
@@ -171,7 +168,7 @@ Die Mindestanforderungen an die Software für die Unterstützung von NVMe over T
 
 
 | SnapCenter Plug-in für VMware vSphere Port  a| 
-8144 (HTTPS), der bidirektionale Port wird für die Kommunikation vom VMware vSphere Client und vom SnapCenter Server verwendet. 8080 bidirektional dieser Port wird zur Verwaltung virtueller Appliances verwendet.
+8144 (HTTPS), bidirektional der Port wird für die Kommunikation vom VMware vSphere-Client und dem SnapCenter-Server verwendet. 8080 bidirektional dieser Port wird zur Verwaltung virtueller Appliances verwendet.
 
 Hinweis: Es wird ein benutzerdefinierter Port zum Hinzufügen des SCV-Hosts zu SnapCenter unterstützt.
 
@@ -180,13 +177,13 @@ Hinweis: Es wird ein benutzerdefinierter Port zum Hinzufügen des SCV-Hosts zu S
 | VMware vSphere vCenter Server Port | Sie müssen Port 443 verwenden, wenn Sie vVol VMs schützen. 
 
 
-| Storage-Cluster oder Storage-VM-Port | 443 (HTTPS), bidirektional 80 (HTTP), bidirektional der Port wird für die Kommunikation zwischen der virtuellen Appliance und der Storage-VM oder dem Cluster, das die Storage-VM enthält, verwendet. 
+| Storage-Cluster oder Storage-VM-Port | 443 (HTTPS), bidirektional 80 (HTTP), bidirektional der Port wird zur Kommunikation zwischen der virtuellen Appliance und der Storage-VM oder dem Cluster mit der Storage-VM verwendet. 
 |===
 
 
 == Unterstützte Konfigurationen
 
-Jede Plug-in-Instanz unterstützt nur einen vCenter Server. VCenters im verknüpften Modus werden unterstützt. Mehrere Plug-in-Instanzen können den gleichen SnapCenter-Server unterstützen, wie in der folgenden Abbildung dargestellt.
+Jede Plug-in-Instanz unterstützt nur einen vCenter Server, der sich im verknüpften Modus befindet. Mehrere Plug-in-Instanzen können jedoch denselben SnapCenter Server unterstützen, wie in der folgenden Abbildung dargestellt.
 
 image:scpivs44_image4.png["Unterstützte grafische Darstellung der Konfiguration"]
 
@@ -194,7 +191,7 @@ image:scpivs44_image4.png["Unterstützte grafische Darstellung der Konfiguration
 
 == RBAC-Berechtigungen erforderlich
 
-Das vCenter-Administratorkonto muss über die erforderlichen vCenter-Berechtigungen verfügen, wie in der folgenden Tabelle aufgeführt.
+Für das vCenter-Administratorkonto muss die erforderliche vCenter-Privileges in der folgenden Tabelle angegeben sein.
 
 |===
 | So führen Sie diese Operation aus… | Sie müssen über diese vCenter-Berechtigungen verfügen… 
