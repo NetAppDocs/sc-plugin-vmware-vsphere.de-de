@@ -76,7 +76,7 @@ Stellen Sie sicher, dass auf dem Bildschirm vCenter ESXi Host Summary keine HA-K
 .Über diese Aufgabe
 * VM ist nicht registriert und erneut registriert
 +
-Bei der Wiederherstellung für VMs wird die ursprüngliche VM aufgehoben, die VM wird aus einem Backup-Snapshot wiederhergestellt und die wiederhergestellte VM mit demselben Namen und derselben Konfiguration auf demselben ESXi-Server registriert. Nach der Wiederherstellung müssen Sie die VMs manuell den Ressourcengruppen hinzufügen.
+Durch den Wiederherstellungsvorgang für VMs wird die ursprüngliche VM aufgehoben, die VM wird aus einem Backup-Snapshot wiederhergestellt und die wiederhergestellte VM mit demselben Namen und derselben Konfiguration auf demselben ESXi-Server registriert. Nach der Wiederherstellung müssen Sie die VMs manuell den Ressourcengruppen hinzufügen.
 
 * Wiederherstellen von Datenspeichern
 +
@@ -105,7 +105,7 @@ NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformati
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus, um den Assistenten zu starten.
 . Wählen Sie im *Restore*-Assistenten auf der Seite *Backup auswählen* den Backup-Snapshot aus, den Sie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups oder den Speicherort möchten. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Dabei können Sie auswählen, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und wo sich der Speicherort befindet. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* im Feld *Umfang wiederherstellen* *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus, und geben Sie dann die Zielinformationen ein, auf denen das Backup gemountet werden soll.
 +

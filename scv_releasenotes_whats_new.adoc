@@ -23,3 +23,7 @@ Das SnapCenter Plug-in für VMware vSphere 6.1 Release unterstützt jetzt die Be
 NOTE: Der sekundäre Schutz wird nur auf ONTAP 9.16.1 und höheren Versionen unterstützt
 
 
+
+*Unterstützung für sekundäre manipulationssichere Snapshots (TPS)*
+
+Das SnapCenter Plug-in für VMware vSphere unterstützt auch sekundäre TPS. Auf diese Weise können sekundäre Snapshot-Kopien vor Löschung oder Änderung durch Ransomware-Angreifer oder böswillige Administratoren geschützt und sogar nach einem Angriff verfügbar gemacht werden.

@@ -32,6 +32,6 @@ Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM od
 . Optional: Klicken Sie mit der rechten Maustaste auf eine VM oder einen Datastore, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
 . Geben Sie im Assistenten * Wiederherstellen* einen Suchnamen ein und klicken Sie auf *Suchen*.
 +
-Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und ob der Speicherort vorhanden ist. Klicken Sie auf *OK*.
+Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Backups mit VMware-Snapshots, gemountete Backups und den Speicherort enthalten sollen. Klicken Sie auf *OK*.
 
 

@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: scpivs44_how_restore_operations_are_performed.html 
 keywords:  
-summary: 'Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Das Plug-in für vVol VMs verwendet ONTAP Single File Snapshot Restore und SnapMirror Restore für Restore-Vorgänge.' 
+summary: 'Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Für vVol VMs verwendet das Plug-in die Wiederherstellung von Snapshots mit einfacher ONTAP-Datei und die Wiederherstellung von SnapMirror-Daten.' 
 ---
 = Durchführen von Restore-Vorgängen
 :hardbreaks:
@@ -14,7 +14,7 @@ summary: 'Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSph
 
 
 [role="lead"]
-Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Für vVol VMs verwendet das Plug-in ONTAP Single File Snapshot Restore (ONTAP SFSR) und SnapMirror Restore für Restore-Vorgänge. Die folgende Tabelle zeigt, wie Wiederherstellungsvorgänge durchgeführt werden.
+Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Für vVol VMs verwendet das Plug-in zur Wiederherstellung ONTAP Single File Snapshot Restore (ONTAP SFSR) und SnapMirror Restore. Die folgende Tabelle zeigt, wie Wiederherstellungsvorgänge durchgeführt werden.
 
 |===
 | Restore-Vorgänge | Von | Durchgeführt mit 

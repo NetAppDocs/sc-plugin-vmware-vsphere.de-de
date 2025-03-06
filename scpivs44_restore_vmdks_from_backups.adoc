@@ -43,7 +43,7 @@ Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von 
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
 . Wählen Sie im Assistenten *Wiederherstellen* auf der Seite Sicherung auswählen die Sicherungskopie aus, aus der Sie die Sicherungskopie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups möchten. Und primären oder sekundären Standort. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den primären oder sekundären Speicherort aus. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* das Wiederherstellungsziel aus.
 +

@@ -17,7 +17,7 @@ summary: Sie können den Speicher mit REST API umbenennen.
 Wenn der Speicher umbenannt wird, fehlschlagen Workflows, die vor der Umbenennung mithilfe von Backups durchgeführt wurden. Mit der Einführung der Funktion zum Umbenennen von Backups, auf die ausschließlich über die REST-API zugegriffen werden kann, ist es nun möglich, die Backups zu verwenden, die vor der Umbenennung des Speichers erstellt wurden. Im Folgenden werden der Workflow und die Verwendung der REST-API beschrieben.
 
 
-NOTE: Das ASA r2-Speichersystem unterstützt nicht die Funktion „Letzte Snapshot-Benennung“.
+NOTE: Das ASA r2-Speichersystem unterstützt die Funktion „Letzte Snapshot-Benennung“ nicht.
 
 .Schritte
 . Fügen Sie die neue Speicherverbindung hinzu oder aktualisieren Sie sie, um sicherzustellen, dass der neue Cluster- oder SVM-Name in SCV angezeigt wird.

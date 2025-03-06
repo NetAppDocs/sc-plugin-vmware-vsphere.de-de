@@ -65,11 +65,11 @@ Ein Wiederherstellungsvorgang kann fehlschlagen, wenn der Storage Tier der Fabri
 . Wählen Sie die gelöschte VM aus der Sicherungsliste aus und klicken Sie auf *Wiederherstellen*.
 . Wählen Sie im Assistenten * Wiederherstellen* auf der Seite *Sicherung auswählen* die Sicherungskopie aus, die Sie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie gemountete Backups oder den Speicherort möchten. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Dabei können Sie auswählen, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und wo sich der Speicherort befindet. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* im Feld *Bereich wiederherstellen* die Option *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus und geben Sie dann die Ziel-ESXi-Hostinformationen ein, in die das Backup eingebunden werden soll.
 +
-Das Wiederherstellungsziel kann jeder beliebige ESXi Host sein, der SnapCenter hinzugefügt wurde. Diese Option stellt den Inhalt des ausgewählten Backups wieder her, bei dem die VM zu dem angegebenen Zeitpunkt aus einem Snapshot residierte. Das Kontrollkästchen *VM neu starten* ist aktiviert, wenn Sie diese Option auswählen und die VM eingeschaltet wird.
+Das Wiederherstellungsziel kann jeder beliebige ESXi Host sein, der SnapCenter hinzugefügt wurde. Diese Option stellt den Inhalt des ausgewählten Backups wieder her, in dem die VM zu dem angegebenen Zeitpunkt und Datum aus einem Snapshot residierte. Das Kontrollkästchen *VM neu starten* ist aktiviert, wenn Sie diese Option auswählen und die VM eingeschaltet wird.
 
 +
 Wenn Sie eine VM in einem NFS-Datenspeicher auf einem anderen ESXi Host wiederherstellen, der sich in einem ESXi Cluster befindet, wird sie nach der Wiederherstellung der VM auf dem alternativen Host registriert.

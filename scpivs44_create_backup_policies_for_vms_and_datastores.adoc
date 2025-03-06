@@ -21,10 +21,10 @@ Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für 
 * Sie müssen sekundäre Storage-Beziehungen konfiguriert haben.
 +
 ** Wenn Sie Snapshots auf einen sekundären Spiegel- oder Vault-Speicher replizieren, müssen die Beziehungen konfiguriert werden. Der SnapCenter-Administrator muss Ihnen die Storage-VMs sowohl für die Quell- als auch für die Ziel-Volumes zugewiesen haben.
-** Um Snapshots für Versionen-FlexibleMirror Beziehungen auf einem NFS- oder VMFS-Datenspeicher erfolgreich in den sekundären Storage zu übertragen, stellen Sie sicher, dass der Richtlinientyp SnapMirror „Asynchronous Mirror“ ist und dass die Option „all_source_Snapshots“ aktiviert ist.
-** Wenn die Anzahl der Snapshots auf dem sekundären Storage (Mirror-Vault) das Maximum erreicht, schlägt die Aktivität zur Registrierung von Backups und Anwendung der Aufbewahrung im Backup-Vorgang mit der folgenden Fehlermeldung fehl: `This Snapshot is currently used as a reference Snapshot by one or more SnapMirror relationships. Deleting the Snapshot can cause future SnapMirror operations to fail.`
+** Um Snapshots für Versionen-FlexibleMirror-Beziehungen auf einem NFS- oder VMFS-Datastore erfolgreich in den sekundären Speicher zu übertragen, stellen Sie sicher, dass der Richtlinientyp SnapMirror „asynchrone Spiegelung“ ist und dass die Option „all_source_Snapshots“ aktiviert ist.
+** Wenn die Anzahl der Snapshots auf dem sekundären Speicher (Mirror-Vault) das maximale Limit erreicht, schlägt die Aktivität zur Registrierung von Backups und Anwendung der Aufbewahrung im Backup-Vorgang mit folgender Fehlermeldung fehl: `This snapshot is currently used as a reference snapshot by one or more SnapMirror relationships. Deleting the snapshot can cause future SnapMirror operations to fail.`
 +
-Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror Aufbewahrungsrichtlinie für den sekundären Storage, damit die maximale Snapshot-Grenze nicht erreicht wird.
+Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror-Aufbewahrungsrichtlinie für sekundären Speicher, um zu vermeiden, dass die maximale Snapshot-Grenze erreicht wird.
 
 +
 Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie unter https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^].
@@ -56,7 +56,7 @@ Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den fo
 .Schritte
 . Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Richtlinien*.
 . Wählen Sie auf der Seite *Policies* *Create* aus, um den Assistenten zu starten.
-. Wählen Sie auf der Seite *New Backup Policy* den vCenter Server aus, der die Richtlinie verwendet, und geben Sie dann den Namen der Richtlinie und eine Beschreibung ein.
+. Geben Sie auf der Seite *New Backup Policy* den Richtliniennamen und eine Beschreibung ein.
 +
 ** Verknüpfter Modus
 +
@@ -75,11 +75,15 @@ Ein Unterstrich (_) ist zulässig.
 +
 Die Richtlinie gibt nur die Backup-Häufigkeit an. Der spezifische Schutzzeitplan für das Sichern ist in der Ressourcengruppe festgelegt. Daher können zwei oder mehr Ressourcengruppen dieselbe Richtlinien- und Backup-Häufigkeit teilen, jedoch unterschiedliche Backup-Pläne haben.
 
-. Aktivieren Sie das Kontrollkästchen *Sperrzeitraum*, um die Snapshot-Sperrung zu aktivieren. Sie können die Sperrfrist für Snapshots als Tage/Monate/Jahre auswählen.
+. Aktivieren Sie das Kontrollkästchen *Sperrfrist*, um die Snapshot-Sperrung zu aktivieren. Sie können die Sperrzeiten für primäre und sekundäre Snapshots als Tage/Monate/Jahre auswählen.
++
+
+NOTE: Unabhängig vom in der ONTAP SnapMirror-Richtlinie festgelegten Aufbewahrungswert wird die sekundäre Snapshot-Kopie vor der angegebenen sekundären Snapshot-Sperrfrist nicht gelöscht.
+
 . Legen Sie die Aufbewahrungseinstellungen fest.
 +
 
-IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstellen, wenn Sie die SnapVault-Replikation aktivieren möchten. Wenn Sie die Aufbewahrungsanzahl auf 1 Backup gesetzt haben, kann der Aufbewahrungsvorgang fehlschlagen. Das liegt daran, dass der erste Snapshot der ReferenzSnapshot für die SnapVault-Beziehung ist, bis der neuere Snapshot auf das Ziel repliziert wird.
+IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstellen, wenn Sie die SnapVault-Replikation aktivieren möchten. Wenn Sie die Aufbewahrungsanzahl auf 1 Backup gesetzt haben, kann der Aufbewahrungsvorgang fehlschlagen. Das liegt daran, dass der erste Snapshot der Referenz-Snapshot für die SnapVault-Beziehung ist, bis der neuere Snapshot auf das Ziel repliziert wird.
 
 +
 
@@ -114,11 +118,10 @@ NOTE: Diese Option wird für Datastores in FlexGroup Volumes im SnapCenter Plug-
 
 
 | Snapshot-Etikett  a| 
-Geben Sie eine optionale, benutzerdefinierte Beschriftung ein, die zu den mit dieser Richtlinie erstellten SnapVault und SnapMirror Snapshots hinzugefügt werden soll.
-Das Snapshot-Label hilft, mit dieser Richtlinie erstellte Snapshots von anderen Snapshots auf dem sekundären Storage-System zu unterscheiden.
+Geben Sie ein optionales, benutzerdefiniertes Etikett ein, das zu SnapVault- und SnapMirror-Snapshots, die mit dieser Richtlinie erstellt wurden, hinzugefügt werden soll. Das Snapshot-Label hilft, mit dieser Richtlinie erstellte Snapshots von anderen Snapshots auf dem sekundären Storage-System zu unterscheiden.
 
 
-NOTE: Für Snapshot-Etiketten sind maximal 31 Zeichen zulässig.
+NOTE: Für Snapshot-Beschriftungen sind maximal 31 Zeichen zulässig.
 
 |===
 . Optional: Wählen Sie in den Feldern *Erweitert* die gewünschten Felder aus. In der folgenden Tabelle sind die Details zum Advanced Field Portal aufgeführt.
@@ -136,7 +139,7 @@ Diese Option wird für VVols nicht unterstützt. Bei vVol VMs werden nur absturz
 IMPORTANT: Sie müssen VMware Tools auf der VM ausführen, um VM-konsistente Backups durchzuführen. Wenn VMware-Tools nicht ausgeführt werden, wird stattdessen ein Crash-konsistentes Backup durchgeführt.
 
 
-NOTE: Wenn Sie das Kontrollkästchen für die Konsistenz der VM aktivieren, können Backup-Vorgänge länger dauern und mehr Speicherplatz benötigen. In diesem Szenario werden die VMs zuerst stillgelegt, dann führt VMware einen VM-konsistenten Snapshot durch, dann führt SnapCenter seinen Backup-Vorgang durch und anschließend werden die VM-Vorgänge wieder aufgenommen. Der VM-Gastspeicher ist nicht in den Konsistenz-Snapshots der VMs enthalten.
+NOTE: Wenn Sie das Kontrollkästchen für die Konsistenz der VM aktivieren, können Backup-Vorgänge länger dauern und mehr Speicherplatz benötigen. In diesem Szenario werden die VMs zuerst stillgelegt, dann führt VMware einen VM-konsistenten Snapshot durch, dann führt SnapCenter seinen Backup-Vorgang durch und anschließend werden die VM-Vorgänge wieder aufgenommen. Der VM-Gastspeicher ist nicht in VM Consistency Snapshots enthalten.
 
 
 

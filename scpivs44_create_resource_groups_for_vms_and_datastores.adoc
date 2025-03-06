@@ -84,9 +84,9 @@ Wenn Sie ONTAP 9.8 oder ONTAP 9.9 ausführen, müssen Sie nach einem Switchover 
 +
 In ONTAP 9.8 hängen die Backups nach dem Wechsel zurück. Dieses Problem wurde in ONTAP 9.9 behoben.
 
-* Optimieren Von Snapshots
+* Snapshots werden optimiert
 +
-Um Snapshots zu optimieren, sollten Sie VMs und Datenspeicher, die mit demselben Volume verbunden sind, in einer Ressourcengruppe gruppieren.
+Um Snapshots zu optimieren, sollten Sie die VMs und Datenspeicher, die mit demselben Volume verbunden sind, zu einer Ressourcengruppe gruppieren.
 
 * Backup-Richtlinien
 +
@@ -94,7 +94,7 @@ Sie können zwar eine Ressourcengruppe ohne Sicherungsrichtlinie erstellen, aber
 
 +
 
-NOTE: Wenn Sie eine Backup-Richtlinie mit Sperrfrist für Snapshots auswählen, müssen Sie die Version von ONTAP 9.12.1 oder höher auswählen.
+NOTE: Wenn Sie eine Backup-Richtlinie mit Snapshot-Sperrfrist auswählen, müssen Sie ONTAP 9.12.1 oder höher auswählen.
 
 * Kompatibilitätsprüfungen
 +
@@ -147,8 +147,8 @@ Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können je
 | E-Mail-Betreff | Geben Sie den gewünschten Betreff für die Benachrichtigungs-E-Mails ein. 
 
 
-| Der Name des Snapshot  a| 
-Wenn das Suffix „_recent“ zum letzten Snapshot hinzugefügt werden soll, aktivieren Sie dieses Kontrollkästchen. Das Suffix „_recent“ ersetzt Datum und Zeitstempel.
+| Letzter Snapshot-Name  a| 
+Wenn Sie das Suffix „_recent“ zum letzten Snapshot hinzufügen möchten, aktivieren Sie dieses Kontrollkästchen. Das Suffix „_recent“ ersetzt Datum und Zeitstempel.
 
 
 NOTE: A `_recent` Für jede Richtlinie, die einer Ressourcengruppe zugeordnet ist, wird ein Backup erstellt. Daher wird eine Ressourcengruppe mit mehreren Richtlinien über mehrere Ressourcen verfügen `_recent` Backups: Nicht manuell umbenennen `_recent` Backups:
@@ -162,11 +162,7 @@ NOTE: Das ASA r2-Speichersystem unterstützt das Umbenennen von Snapshots nicht 
 Wenn Sie ein benutzerdefiniertes Format für die Snapshot-Namen verwenden möchten, aktivieren Sie dieses Kontrollkästchen, und geben Sie das Namensformat ein.
 
 *** Diese Funktion ist standardmäßig deaktiviert.
-*** Die standardmäßigen Snapshot-Namen verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`
-Sie können jedoch ein benutzerdefiniertes Format mit den Variablen „Ressourcengruppe für €“, „US-Dollar-Richtlinie“, „Hostname in US-Dollar“, „Zeitplantyp“ und „CustomText in US-Dollar“ festlegen. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden.
-Wenn Sie CustomText € auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird.
-[HINWEIS]:
-Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sind. Daher sollten Sie dem Namen die Variablen „Ressourcengruppe USD“ und „Richtlinie USD“ hinzufügen.
+*** Die standardmäßigen Snapshot-Namen verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`. Sie können jedoch ein benutzerdefiniertes Format angeben, indem Sie die Variablen Ressourcengruppe, Richtlinie für US-Dollar, Hostname für US-Dollar, Planungstyp für US-Dollar und CustomText für US-Dollar verwenden. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden. Wenn Sie CustomText in US-Dollar auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird. [HINWEIS]: Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sind. Daher sollten Sie dem Namen die Variablen „Ressourcengruppe €“ und „Richtlinie € €“ hinzufügen.
 *** Sonderzeichen für Sonderzeichen in Namen, befolgen Sie die gleichen Richtlinien für das Namensfeld.
 
 
