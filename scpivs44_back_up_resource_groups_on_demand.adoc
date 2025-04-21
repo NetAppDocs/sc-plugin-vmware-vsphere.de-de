@@ -32,7 +32,7 @@ In früheren Versionen der Virtual Storage Console (VSC) können Sie ein On-Dema
 . Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen* aus, wählen Sie dann eine Ressourcengruppe aus und wählen Sie dann *Jetzt ausführen* ausimage:scpivs44_image38.png["Wiedergabesymbol"], um das Backup zu starten.
 . Wenn die Ressourcengruppe mehrere Richtlinien konfiguriert hat, wählen Sie im Dialogfeld *Jetzt sichern* die Richtlinie aus, die Sie für diesen Sicherungsvorgang verwenden möchten.
 . Wählen Sie *OK*, um die Sicherung zu starten.
-. Optional: Überwachen Sie den Betriebsfortschritt, indem Sie unten im Fenster auf *Letzte Aufgaben* oder auf dem Dashboard *Job Monitor* klicken, um weitere Informationen zu erhalten. .Result
+. Optional: Überwachen Sie den Vorgangsfortschritt, indem Sie im unteren Bereich des Fensters *Letzte Aufgaben* oder im Dashboard *Job Monitor* für weitere Details auswählen. .Result
 
 
 Wenn der Quiesce-Vorgang für eine der VMs im Backup fehlschlägt, dann wird der Backup mit einer Warnung abgeschlossen und als nicht VM konsistent markiert, auch wenn für die ausgewählte Richtlinie die VM-Konsistenz ausgewählt ist. In diesem Fall ist es möglich, dass einige der VMs erfolgreich stillgelegt wurden. In der Job-Überwachung zeigt die Detailbeschreibung für fehlgeschlagene VM das Quiesce als fehlgeschlagen an.

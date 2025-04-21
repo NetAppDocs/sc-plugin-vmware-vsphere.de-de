@@ -105,7 +105,7 @@ NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformati
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus, um den Assistenten zu starten.
 . Wählen Sie im *Restore*-Assistenten auf der Seite *Backup auswählen* den Backup-Snapshot aus, den Sie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Dabei können Sie auswählen, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und wo sich der Speicherort befindet. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dabei aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den Speicherort aus. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* im Feld *Umfang wiederherstellen* *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus, und geben Sie dann die Zielinformationen ein, auf denen das Backup gemountet werden soll.
 +
@@ -119,7 +119,7 @@ Bei der Wiederherstellung von Teilersicherungen wird die Seite *Bereich auswähl
 Im SnapCenter Plug-in für VMware vSphere 4.5 und höher können Sie sekundären Storage für FlexGroup Volumes auswählen.
 
 . Überprüfen Sie die Übersichtsseite und wählen Sie dann *Fertig stellen*.
-. Optional: Überwachen Sie den Arbeitsfortschritt, indem Sie unten auf dem Bildschirm auf *Letzte Aufgaben* klicken.
+. Optional: Überwachen Sie den Vorgangsfortschritt, indem Sie am unteren Bildschirmrand die Option *Letzte Aufgaben* auswählen.
 +
 Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 

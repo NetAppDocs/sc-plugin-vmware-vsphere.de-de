@@ -43,7 +43,7 @@ Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von 
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
 . Wählen Sie im Assistenten *Wiederherstellen* auf der Seite Sicherung auswählen die Sicherungskopie aus, aus der Sie die Sicherungskopie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den primären oder sekundären Speicherort aus. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen, und wählen Sie den primären oder sekundären Speicherort aus. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* das Wiederherstellungsziel aus.
 +
@@ -58,6 +58,6 @@ Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Name
 |===
 . Wählen Sie auf der Seite *Speicherort auswählen* den Snapshot aus, den Sie wiederherstellen möchten (primär oder sekundär).
 . Überprüfen Sie die Übersichtsseite und wählen Sie dann *Fertig stellen*.
-. Optional: Überwachen Sie den Arbeitsfortschritt, indem Sie unten auf dem Bildschirm auf *Letzte Aufgaben* klicken.
+. Optional: Überwachen Sie den Vorgangsfortschritt, indem Sie am unteren Bildschirmrand die Option *Letzte Aufgaben* auswählen.
 . Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 

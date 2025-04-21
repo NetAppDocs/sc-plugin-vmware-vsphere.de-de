@@ -58,5 +58,5 @@ image:scv50_image1.png["VSphere Client-Fenster"]
 Sie können maximal 40 Backups zum Löschen auswählen.
 
 . Wählen Sie *OK*, um den Löschvorgang zu bestätigen.
-. Aktualisieren Sie die Backup-Liste, indem Sie auf das Aktualisierungssymbol in der linken Menüleiste von vSphere klicken.
+. Aktualisieren Sie die Backup-Liste, indem Sie in der linken vSphere-Menüleiste das Aktualisierungssymbol auswählen.
 

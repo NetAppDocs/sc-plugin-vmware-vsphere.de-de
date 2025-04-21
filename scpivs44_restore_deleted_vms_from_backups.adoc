@@ -60,12 +60,13 @@ Sie können zwar keine Datenspeicher wiederherstellen, aber Sie können jede VM 
 Ein Wiederherstellungsvorgang kann fehlschlagen, wenn der Storage Tier der FabricPool, auf dem sich die VM befindet, nicht verfügbar ist.
 
 .Schritte
-. Wählen Sie *Menü* und wählen Sie die Menüoption *Speicher* aus, wählen Sie dann einen Datenspeicher aus, wählen Sie dann die Registerkarte *Konfigurieren* aus und wählen Sie dann *Backups* im Abschnitt *SnapCenter Plug-in für VMware vSphere* aus.
+. Navigieren Sie im vCenter Server zu *Inventar* > *Datastores* und wählen Sie einen Datenspeicher aus.
+. Wählen Sie im Abschnitt SnapCenter Plug-in für VMware vSphere die Option *Configure* > *Backups* aus.
 . Durch Doppelklicken auf ein Backup wird eine Liste aller VMs angezeigt, die im Backup enthalten sind.
 . Wählen Sie die gelöschte VM aus der Backup-Liste aus und wählen Sie *Restore*.
 . Wählen Sie im Assistenten * Wiederherstellen* auf der Seite *Sicherung auswählen* die Sicherungskopie aus, die Sie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Dabei können Sie auswählen, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und wo sich der Speicherort befindet. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dabei aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den Speicherort aus. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* im Feld *Bereich wiederherstellen* die Option *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus und geben Sie dann die Ziel-ESXi-Hostinformationen ein, in die das Backup eingebunden werden soll.
 +
