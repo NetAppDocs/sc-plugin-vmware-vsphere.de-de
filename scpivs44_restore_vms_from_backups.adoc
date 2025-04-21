@@ -97,7 +97,7 @@ Auch wenn ein VMware Konsistenz-Snapshot für eine VM ausfällt, wird die VM tro
 
 
 .Schritte
-. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+. Wählen Sie in der VMware vSphere-Client-GUI *Menü* in der Symbolleiste aus, und wählen Sie dann *VMs und Vorlagen* aus der Dropdown-Liste aus.
 +
 
 NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformationen der Speicher-VM, die zum SnapCenter-Plug-in für VMware vSphere hinzugefügt wurden, ein Benutzerkonto oder sein `vsadmin` , das über alle gleichen Berechtigungen wie verfügt `vsadmin`. Der Host muss sich auf einem Storage-System mit ONTAP 8.2.2 oder höher befindet.
@@ -105,7 +105,7 @@ NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformati
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus, um den Assistenten zu starten.
 . Wählen Sie im *Restore*-Assistenten auf der Seite *Backup auswählen* den Backup-Snapshot aus, den Sie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Dabei können Sie auswählen, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und wo sich der Speicherort befindet. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Dabei können Sie auswählen, ob Backups mit VMware-Snapshots erstellt werden sollen, ob Backups gemountet werden sollen und wo sich der Speicherort befindet. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* im Feld *Umfang wiederherstellen* *gesamte virtuelle Maschine* aus, wählen Sie dann den Speicherort für die Wiederherstellung aus, und geben Sie dann die Zielinformationen ein, auf denen das Backup gemountet werden soll.
 +
@@ -118,7 +118,7 @@ Bei der Wiederherstellung von Teilersicherungen wird die Seite *Bereich auswähl
 +
 Im SnapCenter Plug-in für VMware vSphere 4.5 und höher können Sie sekundären Storage für FlexGroup Volumes auswählen.
 
-. Überprüfen Sie die Übersichtsseite und klicken Sie dann auf *Fertig stellen*.
+. Überprüfen Sie die Übersichtsseite und wählen Sie dann *Fertig stellen*.
 . Optional: Überwachen Sie den Arbeitsfortschritt, indem Sie unten auf dem Bildschirm auf *Letzte Aufgaben* klicken.
 +
 Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.

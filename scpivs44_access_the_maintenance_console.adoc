@@ -29,7 +29,7 @@ Um die Root-Benutzerberechtigung zum Ausführen des Befehls zu erhalten, verwend
 
 .Schritte
 . Wählen Sie im VMware vSphere-Client die VM aus, auf der sich das SnapCenter-Plug-in für VMware vSphere befindet.
-. Klicken Sie auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen.
+. Wählen Sie auf der Registerkarte *Zusammenfassung* der virtuellen Appliance *Remote Console starten* aus, um ein Fenster der Wartungskonsole zu öffnen.
 +
 Melden Sie sich mit dem standardmäßigen Benutzernamen für die Wartungskonsole an `maint` Und das Passwort, das Sie bei der Installation festgelegt haben.
 

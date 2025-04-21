@@ -29,18 +29,18 @@ Sie müssen die IP-Adresse und die Anmeldedaten für das SnapCenter Plug-in für
 +
 Verwenden Sie das Format `\https://<appliance-IP-address>:8080`
 
-. Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
+. Wählen Sie das Symbol Einstellungen in der oberen Symbolleiste.
 +
 image:scpivs44_image31.png["SnapCenter Plug-in für Management-GUI von VMware vSphere"]
 
-. Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Netzwerkeinstellungen* auf *IPv4* oder *IPv6* Adresse und dann auf *Bearbeiten*.
+. Wählen Sie auf der Seite *Einstellungen* im Abschnitt *Netzwerkeinstellungen* die Option *IPv4* oder *IPv6*-Adresse aus und wählen Sie dann *Bearbeiten*.
 +
-Geben Sie die neuen Informationen ein und klicken Sie auf *Speichern*.
+Geben Sie die neuen Informationen ein und wählen Sie *Speichern*.
 
 . Wenn Sie eine Netzwerkeinstellung entfernen, gehen Sie wie folgt vor:
 +
-** IPv4: Geben Sie im Feld * IP-Adresse* ein `0.0.0.0` Und klicken Sie dann auf *Speichern*.
-** IPv6: Geben Sie im Feld *IP-Adresse* ein `: :0` Und klicken Sie dann auf *Speichern*.
+** IPv4: Geben Sie im Feld *IP-Adresse* ein `0.0.0.0` und wählen Sie dann *Speichern*.
+** IPv6: Geben Sie im Feld *IP-Adresse* ein `: :0`, und wählen Sie dann *Speichern*.
 
 
 

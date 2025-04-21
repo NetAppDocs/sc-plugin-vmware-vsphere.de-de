@@ -29,7 +29,7 @@ Das SnapCenter Plug-in für VMware vSphere 4.5 und höher unterstützt Datastore
 Sie müssen Storage-Cluster zum SnapCenter-Plug-in für VMware vSphere und ONTAP-Tools für VMware vSphere für vVol Data Protection hinzufügen, um arbeiten zu können.
 
 +
-Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
+Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 
 
@@ -103,7 +103,7 @@ Wenn Sie eine Storage-VM mit einem Namen hinzufügen, der nicht zur Management-L
 
 | AutoSupport-Benachrichtigung für fehlgeschlagenen Vorgang an das Speichersystem senden | Aktivieren Sie das Kontrollkästchen, wenn AutoSupport-Benachrichtigungen für fehlgeschlagene Datensicherungsaufträge angezeigt werden sollen. Sie müssen auch AutoSupport auf der Storage VM aktivieren und die AutoSupport E-Mail-Einstellungen konfigurieren. 
 |===
-. Klicken Sie Auf *Hinzufügen*.
+. Wählen Sie *Hinzufügen*.
 +
 Wenn Sie ein Storage-Cluster hinzugefügt haben, werden alle Storage-VMs in diesem Cluster automatisch hinzugefügt. Automatisch hinzugefügte Speicher-VMs (manchmal auch „implizite“ Speicher-VMs genannt) werden auf der Cluster-Übersichtsseite mit einem Bindestrich (-) anstelle eines Benutzernamens angezeigt. Benutzernamen werden nur für explizite Speichereinheiten angezeigt.
 

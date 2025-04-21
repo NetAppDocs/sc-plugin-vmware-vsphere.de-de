@@ -27,5 +27,5 @@ Wenn Sie versuchen, eine Backup-Kopie eines NFS-Datenspeichers auf einer Storage
 
 IMPORTANT: Stellen Sie sicher, dass Sie den richtigen Datastore zum Aufheben der Bereitstellung auswählen. Andernfalls können Sie Auswirkungen auf die Produktionsarbeit haben.
 
-. Wählen Sie im Dialogfeld *geklonter Datastore* einen Datastore aus, aktivieren Sie das Kontrollkästchen *Unmount the geklonten Datastore* und klicken Sie dann auf *Unmount*.
+. Wählen Sie im Dialogfeld *Unmounten geklonter Datastore* einen Datastore aus, aktivieren Sie das Kontrollkästchen *Unmounten des geklonten Datastore* und wählen Sie dann *Unmounten* aus.
 

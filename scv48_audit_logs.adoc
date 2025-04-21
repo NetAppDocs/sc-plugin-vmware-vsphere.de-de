@@ -171,7 +171,7 @@ Diese Aufgabe unterstützt Sie bei der Konfiguration des Syslog-Servers.
 ** Syslog-Serverzertifikat
 
 
-. Klicken Sie auf *SAVE*, um die Syslog-Server-Einstellungen zu speichern.
+. Wählen Sie *SAVE*, um die Syslog-Server-Einstellungen zu speichern.
 
 
 

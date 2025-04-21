@@ -25,7 +25,7 @@ NOTE: Für IPv6-Adressen-HTML-Web-Clients müssen Sie entweder Chrome oder Firef
 
 . Melden Sie sich auf der Seite *VMware vCenter Single Sign-On an*.
 . Klicken Sie im Navigationsbereich mit der rechten Maustaste auf ein beliebiges Inventurobjekt, das ein gültiges übergeordnetes Objekt einer virtuellen Maschine ist, z. B. ein Rechenzentrum, einen Ordner, einen Cluster oder einen Host, und wählen Sie *OVF-Vorlage bereitstellen* aus, um den VMware-Bereitstellungsassistenten zu starten.
-. Geben Sie auf der Seite *Wählen Sie eine OVF-Vorlage* den Speicherort des an `.ova` Datei (wie in der folgenden Tabelle aufgeführt) und klicken Sie auf *Weiter*.
+. Geben Sie auf der Seite *Wählen Sie eine OVF-Vorlage* den Speicherort der Datei an `.ova` (wie in der folgenden Tabelle aufgeführt), und wählen Sie *Weiter*.
 +
 |===
 | Auf dieser Assistentenseite… | Do this… 
@@ -59,14 +59,14 @@ Geben Sie im Abschnitt *Netzwerkeigenschaften einrichten* die Netzwerkinformatio
 
 
 
-| Fertig | Überprüfen Sie die Seite und klicken Sie auf *Fertig stellen*. 
+| Fertig | Überprüfen Sie die Seite und wählen Sie *Fertig stellen*. 
 |===
 +
 
 NOTE: Alle Hosts müssen mit IP-Adressen konfiguriert sein (FQDN-Hostnamen werden nicht unterstützt). Der Bereitstellungsvorgang überprüft Ihre Eingaben vor der Bereitstellung nicht.
 
-. Navigieren Sie zu der VM, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wurde, klicken Sie dann auf die Registerkarte *Zusammenfassung*, und klicken Sie dann auf das Feld *Einschalten*, um das SnapCenter-Plug-in für VMware vSphere zu starten.
-. Während das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das bereitgestellte SnapCenter-Plug-in für VMware vSphere, wählen Sie *Gastbetriebssystem* aus und klicken Sie dann auf *VMware-Tools installieren*.
+. Navigieren Sie zu der VM, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wurde, wählen Sie dann die Registerkarte *Zusammenfassung* aus, und wählen Sie dann das Feld *Einschalten* aus, um das SnapCenter-Plug-in für VMware vSphere zu starten.
+. Während das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das bereitgestellte SnapCenter-Plug-in für VMware vSphere, wählen Sie *Gastbetriebssystem* aus und wählen Sie dann *VMware-Tools installieren* aus.
 +
 Die Implementierung kann einige Minuten dauern. Die erfolgreiche Bereitstellung wird angezeigt, wenn das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, die VMware-Tools installiert sind und Sie auf dem Bildschirm aufgefordert werden, sich beim SnapCenter-Plug-in für VMware vSphere anzumelden.
 
@@ -80,5 +80,5 @@ Verwenden Sie das Format `\https://<appliance-IP-address>:8080` Um auf die Manag
 +
 Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.
 
-. Melden Sie sich beim vCenter HTML5-Client an, klicken Sie dann in der Symbolleiste auf *Menü* und wählen Sie dann *SnapCenter-Plug-in für VMware vSphere*
+. Melden Sie sich beim vCenter HTML5 Client an, wählen Sie dann *Menü* in der Symbolleiste und dann *SnapCenter Plug-in für VMware vSphere*
 

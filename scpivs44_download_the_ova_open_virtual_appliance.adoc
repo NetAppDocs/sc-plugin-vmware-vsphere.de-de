@@ -22,14 +22,14 @@ In VMware vCenter 7.0.3 Versionen und höher ist die OVA, die vom Vertrauenzerti
 . So laden Sie das SnapCenter Plug-in für VMware herunter:
 +
 ** Loggen Sie sich auf der NetApp Support Site ein ( https://mysupport.netapp.com/products/index.html["https://mysupport.netapp.com/products/index.html"^]).
-** Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* und klicken Sie dann auf die Schaltfläche *Neueste Version herunterladen*.
+** Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere* aus und klicken Sie dann auf die Schaltfläche *Neueste Version herunterladen*.
 ** Laden Sie das SnapCenter Plug-in für VMware vSphere herunter `.tar` Datei an jedem Speicherort.
 
 
 . Extrahieren Sie den Inhalt der tar-Datei. Die tar-Datei enthält den Ordner OVA und certs. Der Ordner „Zertifikaten“ enthält die Zertifikate „Stammanvertrauen“ und „Intermediate“.
 . Melden Sie sich mit dem vSphere Client am vCenter Server an.
 . Navigieren Sie zu *Administration > Zertifikate > Zertifikatverwaltung*.
-. Klicken Sie neben *Trusted Root Certificates* auf *Add*
+. Wählen Sie neben *Trusted Root Certificates* *Add*
 +
 ** Wechseln Sie zum Ordner _certs_.
 ** Wählen Sie Root- und Intermediate-Zertifikate anvertrauen aus.

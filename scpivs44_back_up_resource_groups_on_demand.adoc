@@ -29,9 +29,9 @@ IMPORTANT: Starten Sie keinen On-Demand-Backup-Job, wenn bereits ein Job zum Sic
 In früheren Versionen der Virtual Storage Console (VSC) können Sie ein On-Demand-Backup durchführen, ohne einen Backup-Job für eine VM oder einen Datastore konfigurieren zu müssen. Für das SnapCenter-Plug-in für VMware vSphere müssen sich VMs und Datastores jedoch in einer Ressourcengruppe befinden, bevor Sie Backups durchführen können.
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und wählen Sie dann *Jetzt ausführen* aus image:scpivs44_image38.png["Wiedergabesymbol"] , um das Backup zu starten.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen* aus, wählen Sie dann eine Ressourcengruppe aus und wählen Sie dann *Jetzt ausführen* ausimage:scpivs44_image38.png["Wiedergabesymbol"], um das Backup zu starten.
 . Wenn die Ressourcengruppe mehrere Richtlinien konfiguriert hat, wählen Sie im Dialogfeld *Jetzt sichern* die Richtlinie aus, die Sie für diesen Sicherungsvorgang verwenden möchten.
-. Klicken Sie auf *OK*, um die Sicherung zu starten.
+. Wählen Sie *OK*, um die Sicherung zu starten.
 . Optional: Überwachen Sie den Betriebsfortschritt, indem Sie unten im Fenster auf *Letzte Aufgaben* oder auf dem Dashboard *Job Monitor* klicken, um weitere Informationen zu erhalten. .Result
 
 

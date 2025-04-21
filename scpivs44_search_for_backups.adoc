@@ -17,21 +17,21 @@ summary: Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup ei
 Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM oder eines Datenspeichers suchen. Nachdem Sie ein Backup gefunden haben, können Sie es dann wiederherstellen.
 
 .Schritte
-. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und führen Sie dann einen der folgenden Schritte aus:
+. Wählen Sie in der VMware vSphere-Client-GUI in der Symbolleiste *Menü* aus, und führen Sie einen der folgenden Schritte aus:
 +
 |===
 | So zeigen Sie Backups für… an | Gehen Sie wie folgt vor… 
 
 
-| VMs | Klicken Sie auf die Menüoption *Hosts und Cluster*, wählen Sie dann eine VM aus, klicken Sie dann auf die Registerkarte *Configure* und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*. 
+| VMs | Wählen Sie die Menüoption *Hosts und Cluster* aus, wählen Sie dann eine VM aus, wählen Sie dann die Registerkarte *Configure* aus und wählen Sie dann *Backups* im Abschnitt *SnapCenter Plug-in für VMware vSphere* aus. 
 
 
-| Datenspeicher | Klicken Sie auf die Menüoption *Speicherung*, wählen Sie dann einen Datenspeicher aus, klicken Sie dann auf die Registerkarte *Konfigurieren* und klicken Sie dann im Abschnitt *SnapCenter Plug-in für VMware vSphere* auf *Backups*. 
+| Datenspeicher | Wählen Sie die Menüoption *Speicher* aus, wählen Sie dann einen Datastore aus, wählen Sie dann die Registerkarte *Konfigurieren* aus und wählen Sie dann *Backups* im Abschnitt *SnapCenter Plug-in für VMware vSphere* aus. 
 |===
 . Erweitern Sie im linken Navigationsbereich das Rechenzentrum, das die VM oder den Datenspeicher enthält.
 . Optional: Klicken Sie mit der rechten Maustaste auf eine VM oder einen Datastore, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
-. Geben Sie im Assistenten * Wiederherstellen* einen Suchnamen ein und klicken Sie auf *Suchen*.
+. Geben Sie im *Restore*-Assistenten einen Suchnamen ein und wählen Sie *Suche*.
 +
-Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Backups mit VMware-Snapshots, gemountete Backups und den Speicherort enthalten sollen. Klicken Sie auf *OK*.
+Sie können die Sicherungsliste filtern, indem Sie das Filtersymbol auswählen und einen Datums- und Zeitbereich auswählen. Wählen Sie dann aus, ob Backups mit VMware-Snapshots, gemountete Backups und den Speicherort enthalten sollen. Wählen Sie *OK*.
 
 

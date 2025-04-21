@@ -32,12 +32,12 @@ Sie müssen die IP-Adresse und die Anmeldedaten für das SnapCenter Plug-in für
 +
 Verwenden Sie das Format `\https://<appliance-IP-address>:8080`
 
-. Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
+. Wählen Sie das Symbol Einstellungen in der oberen Symbolleiste.
 +
 image:scpivs44_image28.jpg["SnapCenter Plug-in für VMware vSphere"]
 
-. Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Datum und Uhrzeit* auf *Bearbeiten*.
-. Wählen Sie die neue Zeitzone aus und klicken Sie auf *Speichern*.
+. Wählen Sie auf der Seite *Einstellungen* im Abschnitt *Datum und Uhrzeit* *Bearbeiten*.
+. Wählen Sie die neue Zeitzone aus und wählen Sie *Speichern*.
 +
 Die neue Zeitzone wird für alle Backups verwendet, die vom SnapCenter-Plug-in für VMware vSphere durchgeführt werden.
 

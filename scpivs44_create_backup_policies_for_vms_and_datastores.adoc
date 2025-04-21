@@ -54,7 +54,7 @@ NOTE: In der Fan-out-Konfiguration wird die Konsistenzgruppe für einen tertiär
 Die meisten Felder auf diesen Assistentenseiten sind selbsterklärend. In den folgenden Informationen werden einige der Felder beschrieben, für die Sie möglicherweise eine Anleitung benötigen.
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Richtlinien*.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Richtlinien* aus.
 . Wählen Sie auf der Seite *Policies* *Create* aus, um den Assistenten zu starten.
 . Geben Sie auf der Seite *New Backup Policy* den Richtliniennamen und eine Beschreibung ein.
 +
@@ -153,7 +153,7 @@ Geben Sie den vollständig qualifizierten Pfad des Prescript oder Postscripts ei
 NOTE: Prescripts und Postscripts müssen auf der VM der virtuellen Appliance liegen. Um mehrere Skripte einzugeben, drücken Sie nach jedem Skriptpfad *Enter*, um jedes Skript in einer eigenen Zeile aufzulisten. Das Zeichen „;“ ist nicht zulässig.
 
 |===
-. Klicken Sie Auf *Hinzufügen.*
+. Wählen Sie *Hinzufügen*
 +
 Sie können die Erstellung der Richtlinie überprüfen und die Richtlinienkonfiguration überprüfen, indem Sie die Richtlinie auf der Seite Richtlinien auswählen.
 

@@ -16,6 +16,6 @@ summary:
 [role="lead"]
 Befolgen Sie die unten angegebenen Anweisungen, um Backup-Richtlinien zu erstellen
 
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Richtlinien* und wählen Sie dann *Neue Richtlinie* aus.
-. Geben Sie auf der Seite *Neue Sicherungsrichtlinie* die Konfigurationsdaten der Richtlinie ein und klicken Sie dann auf *Hinzufügen*.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Richtlinien* aus, und wählen Sie dann *Neue Richtlinie* aus.
+. Geben Sie auf der Seite *New Backup Policy* die Konfigurationsinformationen für die Richtlinie ein, und wählen Sie dann *Add* aus.
 

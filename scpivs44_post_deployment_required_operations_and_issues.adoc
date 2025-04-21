@@ -47,7 +47,7 @@ Gehen Sie wie folgt vor, um eine dieser Probleme zu beheben:
 +
 Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere-Client-Service neu
 
-. Melden Sie sich bei vCenter an, klicken Sie dann in der Symbolleiste auf *Menü* und wählen Sie dann *SnapCenter Plug-in für VMware vSphere*.
+. Melden Sie sich bei vCenter an, wählen Sie dann in der Symbolleiste *Menü* aus und wählen Sie dann *SnapCenter-Plug-in für VMware vSphere* aus.
 
 
 
@@ -84,9 +84,9 @@ Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf de
 
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich der SnapCenter-GUI auf *Hosts*.
+. Wählen Sie im linken Navigationsbereich der SnapCenter-Benutzeroberfläche *Hosts* aus.
 . Überprüfen Sie, ob die Registerkarte *verwaltete Hosts* oben ausgewählt ist. Suchen Sie anschließend den Host-Namen der virtuellen Appliance und überprüfen Sie, ob diese vom SnapCenter-Server aufgelöst wird.
-. Klicken Sie auf *Hinzufügen*, um den Assistenten zu starten.
+. Wählen Sie *Hinzufügen*, um den Assistenten zu starten.
 . Geben Sie im Dialogfeld *Hosts hinzufügen* den Host an, den Sie dem SnapCenter-Server hinzufügen möchten, wie in der folgenden Tabelle aufgeführt:
 +
 |===
@@ -101,11 +101,11 @@ Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf de
 
 | Anmeldedaten | Geben Sie den Benutzernamen und das Kennwort für das SnapCenter-Plug-in für VMware vSphere ein, das während der Bereitstellung bereitgestellt wurde. 
 |===
-. Klicken Sie Auf *Absenden*.
+. Wählen Sie *Senden*.
 +
 Wenn der VM-Host erfolgreich hinzugefügt wurde, wird er auf der Registerkarte Managed Hosts angezeigt.
 
-. Klicken Sie im linken Navigationsbereich auf *Einstellungen*, klicken Sie dann auf die Registerkarte *Credential* und wählen Sie dann *Hinzufügen*, um Anmeldeinformationen für die virtuelle Appliance hinzuzufügen.
+. Wählen Sie im linken Navigationsbereich *Einstellungen*, dann die Registerkarte *Credential* und wählen Sie dann *Add*, um Anmeldeinformationen für die virtuelle Appliance hinzuzufügen.
 . Geben Sie die Anmeldeinformationen an, die während der Bereitstellung des SnapCenter Plug-ins für VMware vSphere angegeben wurden.
 +
 

@@ -18,7 +18,7 @@ Wenn das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird, ist SSH sta
 
 .Schritte
 . Wählen Sie im VMware vSphere-Client die VM aus, auf der sich das SnapCenter-Plug-in für VMware vSphere befindet.
-. Klicken Sie auf der Registerkarte *Zusammenfassung* der virtuellen Appliance auf *Remote-Konsole starten*, um ein Fenster der Wartungskonsole zu öffnen, und melden Sie sich dann an.
+. Wählen Sie auf der Registerkarte *Zusammenfassung* der virtuellen Appliance *Remote Console starten* aus, um ein Fenster der Wartungskonsole zu öffnen, und melden Sie sich dann an.
 +
 Informationen zum Zugriff auf die Wartungskonsole und zur Anmeldung finden Sie unter link:scpivs44_access_the_maintenance_console.html["Öffnen Sie die Wartungskonsole"^].
 

@@ -73,9 +73,9 @@ Diese Option verwendet die E-Mail-Einstellungen, die beim Einrichten des VMware 
 
 
 
-. Überprüfen Sie die Zusammenfassung und klicken Sie dann auf *Fertig stellen*.
+. Überprüfen Sie die Zusammenfassung und wählen Sie dann *Fertig stellen*.
 +
-Bevor Sie auf *Fertig stellen* klicken, können Sie zu einer beliebigen Seite im Assistenten zurückkehren und die Informationen ändern.
+Bevor Sie *Fertig stellen* auswählen, können Sie zu einer beliebigen Seite des Assistenten zurückkehren und die Informationen ändern.
 
 . Warten Sie, bis der Attach-Vorgang abgeschlossen ist.
 +
@@ -90,9 +90,9 @@ In der Tabelle Gastsession Monitor können Sie zusätzliche Informationen zu ein
 +
 Allen Partitionen wird ein Laufwerksbuchstabe zugewiesen, einschließlich systemreservierter Partitionen. Wenn eine VMDK über mehrere Partitionen verfügt, können Sie ein bestimmtes Laufwerk auswählen, indem Sie das Laufwerk in der Dropdown-Liste im Laufwerkfeld oben auf der Seite „Durchsuchen der Gastdatei“ auswählen.
 
-. Klicken Sie auf das Symbol *Dateien durchsuchen*, um eine Liste von Dateien und Ordnern auf dem virtuellen Laufwerk anzuzeigen.
+. Wählen Sie das Symbol *Dateien durchsuchen*, um eine Liste der Dateien und Ordner auf dem virtuellen Laufwerk anzuzeigen.
 +
-Wenn Sie zum Durchsuchen und Auswählen einzelner Dateien auf einen Ordner doppelklicken, kann es zu einer bestimmten Zeit kommen, während die Liste der Dateien abgerufen wird, da der Abrufvorgang zur Laufzeit durchgeführt wird.
+Wenn Sie einen Ordner zum Durchsuchen und Auswählen einzelner Dateien doppelt auswählen, kann es beim Abrufen der Dateiliste zu einer Zeitlatenz kommen, da der Abrufvorgang zur Laufzeit ausgeführt wird.
 
 +
 Um das Durchsuchen zu vereinfachen, können Sie Filter in Ihrer Suchzeichenfolge verwenden. Bei den Filtern handelt es sich um Groß- und Kleinschreibung-Perlausdrücke ohne Leerzeichen. Der standardmäßige Suchstring lautet `.`*. Die folgende Tabelle zeigt ein Beispiel für Perl-Suchausdrücke.
@@ -140,7 +140,7 @@ Um das Durchsuchen zu vereinfachen, können Sie Filter in Ihrer Suchzeichenfolge
 +
 Auf der Seite „Durchsuchen der Gastdatei“ werden alle verborgenen Dateien und Ordner sowie alle anderen Dateien und Ordner angezeigt.
 
-. Wählen Sie eine oder mehrere Dateien oder Ordner aus, die wiederhergestellt werden sollen, und klicken Sie dann auf *Speicherort wiederherstellen*.
+. Wählen Sie eine oder mehrere Dateien oder Ordner aus, die Sie wiederherstellen möchten, und wählen Sie dann *Speicherort für Wiederherstellung auswählen*.
 +
 Die wiederherzustellenden Dateien und Ordner sind in der Tabelle Ausgewählte Dateien aufgeführt.
 
@@ -163,7 +163,7 @@ NOTE: Wenn der Ordner bereits vorhanden ist, wird der Inhalt des Ordners mit dem
 
 | Trennen Sie die Gastsitzung nach erfolgreicher Wiederherstellung | Wählen Sie diese Option aus, wenn die Wiederherstellungssitzung der Gastdatei gelöscht werden soll, wenn der Wiederherstellungsvorgang abgeschlossen ist. 
 |===
-. Klicken Sie Auf *Wiederherstellen*.
+. Wählen Sie *Wiederherstellen*.
 +
 Sie können den Fortschritt des Wiederherstellungsvorgangs in der Job-Überwachung des Dashboards anzeigen oder auf die E-Mail-Benachrichtigung warten. Die Zeit, die benötigt wird, bis die E-Mail-Benachrichtigung gesendet wird, hängt von der Dauer ab, die der Wiederherstellungsvorgang dauert.
 

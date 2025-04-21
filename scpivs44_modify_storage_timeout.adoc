@@ -19,8 +19,8 @@ Obwohl Backups in der Vergangenheit erfolgreich ausgeführt wurden, können sie 
 Möglicherweise tritt der Fehler auf `Unable to discover resources on SCV: Unable to get storage details for datastore <xxx>…`
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Storage Systems*.
-. Wählen Sie auf der Seite Speichersysteme das zu bearbeitendes Speichersystem aus und klicken Sie auf *Bearbeiten*.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Storage Systems* aus.
+. Wählen Sie auf der Seite Speichersysteme das zu ändernde Speichersystem aus und wählen Sie *Bearbeiten*.
 . Erhöhen Sie im Feld Timeout die Anzahl der Sekunden.
 +
 

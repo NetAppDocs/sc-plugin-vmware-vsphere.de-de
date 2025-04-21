@@ -39,11 +39,11 @@ Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von 
 
 
 .Schritte
-. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+. Wählen Sie in der VMware vSphere-Client-GUI *Menü* in der Symbolleiste aus, und wählen Sie dann *VMs und Vorlagen* aus der Dropdown-Liste aus.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
 . Wählen Sie im Assistenten *Wiederherstellen* auf der Seite Sicherung auswählen die Sicherungskopie aus, aus der Sie die Sicherungskopie wiederherstellen möchten.
 +
-Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den primären oder sekundären Speicherort aus. Klicken Sie auf *OK*, um zum Assistenten zurückzukehren.
+Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Namen suchen, oder Sie können die Backup-Liste filtern, indem Sie auf das Filtersymbol klicken und einen Datums- und Zeitbereich auswählen. Wählen Sie aus, ob Sie Backups mit VMware-Snapshots erstellen möchten, ob Sie Backups mounten möchten, und wählen Sie den primären oder sekundären Speicherort aus. Wählen Sie *OK*, um zum Assistenten zurückzukehren.
 
 . Wählen Sie auf der Seite *Bereich auswählen* das Wiederherstellungsziel aus.
 +
@@ -51,13 +51,13 @@ Sie können nach einem bestimmten Backup-Namen oder einem partiellen Backup-Name
 | Wiederherstellen auf… | Geben Sie das Wiederherstellungsziel… an 
 
 
-| Den ursprünglichen Datenspeicher verwendet | Wählen Sie in der Dropdown-Liste * bestimmtes Laufwerk* aus und klicken Sie dann auf *Weiter*. In der Tabelle Datastore Selection können Sie beliebige VMDKs auswählen oder deren Auswahl aufheben. 
+| Den ursprünglichen Datenspeicher verwendet | Wählen Sie aus der Dropdown-Liste *particular Disk* aus und wählen Sie dann *Next* aus. In der Tabelle Datastore Selection können Sie beliebige VMDKs auswählen oder deren Auswahl aufheben. 
 
 
-| Einen alternativen Datenspeicher an einem alternativen Speicherort | Klicken Sie auf den Ziel-Datastore und wählen Sie einen anderen Datastore aus der Liste aus. 
+| Einen alternativen Datenspeicher an einem alternativen Speicherort | Wählen Sie den Ziel-Datastore aus und wählen Sie einen anderen Datastore aus der Liste aus. 
 |===
 . Wählen Sie auf der Seite *Speicherort auswählen* den Snapshot aus, den Sie wiederherstellen möchten (primär oder sekundär).
-. Überprüfen Sie die Übersichtsseite und klicken Sie dann auf *Fertig stellen*.
+. Überprüfen Sie die Übersichtsseite und wählen Sie dann *Fertig stellen*.
 . Optional: Überwachen Sie den Arbeitsfortschritt, indem Sie unten auf dem Bildschirm auf *Letzte Aufgaben* klicken.
 . Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 

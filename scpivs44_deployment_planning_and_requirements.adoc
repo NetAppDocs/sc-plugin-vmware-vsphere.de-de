@@ -42,7 +42,7 @@ Nehmen wir beispielsweise an, Sie möchten Backups von sechs verschiedenen Insta
 
 * Zur Sicherung von vVol VMs (VMs auf VMware vVol Datastores) müssen Sie zuerst ONTAP Tools für VMware vSphere einsetzen. Durch die ONTAP Tools wird Storage für VVols auf ONTAP und auf dem VMware Web-Client bereitgestellt und konfiguriert.
 +
-Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
+Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 * Das SnapCenter Plug-in für VMware vSphere bietet eingeschränkte Unterstützung gemeinsam genutzter PCI- oder PCIe-Geräte (z. B. NVIDIA Grid GPU), da die Virtual Machines bei der Unterstützung von Storage vMotion beschränkt sind. Weitere Informationen finden Sie im Dokument Deployment Guide for VMware des Bieters.
 +
@@ -122,9 +122,9 @@ Wiederherstellung einer vollständigen VM, wenn eine oder mehrere VMDKs auf eine
 | VMware Application vStorage API für Array Integration (VAAI) | Das SnapCenter Plug-in für VMware vSphere nutzt diese Technologie zur Verbesserung der Performance von Restore-Vorgängen. Außerdem verbessert es die Performance in NFS Umgebungen. 
 
 
-| ONTAP Tools für VMware | Das SnapCenter Plug-in für VMware vSphere verwendet dieses Tool zum Management von vVol Datastores (virtuelle VMware Volumes). Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^]. 
+| ONTAP Tools für VMware | Das SnapCenter Plug-in für VMware vSphere verwendet dieses Tool zum Management von vVol Datastores (virtuelle VMware Volumes). Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^]. 
 |===
-Aktuelle Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
+Aktuelle Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
 
 
 

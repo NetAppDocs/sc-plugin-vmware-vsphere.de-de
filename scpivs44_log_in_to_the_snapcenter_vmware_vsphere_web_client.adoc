@@ -26,5 +26,5 @@ Transport Layer Security (TLS) muss in vCenter aktiviert sein. Lesen Sie die VMw
 
 IMPORTANT: Klicken Sie auf die Schaltfläche *Login*. Aufgrund eines bekannten VMware-Problems, verwenden Sie nicht den EINGABETASTE, um sich anzumelden. Weitere Informationen finden Sie in der VMware-Dokumentation zu Problemen mit dem ESXi Embedded Host Client.
 
-. Klicken Sie auf der Seite *VMware vSphere Client* in der Symbolleiste auf Menü und wählen Sie dann *SnapCenter Plug-in für VMware vSphere*.
+. Wählen Sie auf der Seite *VMware vSphere Client* die Option Menü in der Symbolleiste und dann *SnapCenter Plug-in für VMware vSphere*.
 

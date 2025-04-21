@@ -27,10 +27,10 @@ Um sich beim SnapCenter Plug-in für die Management-GUI von VMware vSphere anzum
 +
 Verwenden Sie das Format `\https://<OVA-IP-address>:8080`.
 
-. Klicken Sie in der oberen Symbolleiste auf das Symbol Einstellungen.
+. Wählen Sie das Symbol Einstellungen in der oberen Symbolleiste.
 +
 image:scpivs44_image10.png["SnapCenter Plug-in für VMware vSphere Schnittstelle"]
 
-. Klicken Sie auf der Seite *Einstellungen* im Abschnitt *Support* auf *Support* Paket generieren.
-. Nachdem das Support Bundle generiert wurde, klicken Sie auf den Link, der zur Verfügung steht, um das Bundle auf NetApp herunterzuladen.
+. Wählen Sie auf der Seite *Einstellungen* im Abschnitt *Support* die Option *Support* Bundle generieren.
+. Wählen Sie nach dem Generieren des Support-Bundles den Link aus, über den das Bundle auf NetApp heruntergeladen werden kann.
 

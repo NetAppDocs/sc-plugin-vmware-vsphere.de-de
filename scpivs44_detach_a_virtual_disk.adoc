@@ -17,10 +17,10 @@ summary: Nachdem Sie ein virtuelles Laufwerk zur Wiederherstellung einzelner Dat
 Nachdem Sie ein virtuelles Laufwerk zur Wiederherstellung einzelner Dateien angeschlossen haben, können Sie das virtuelle Laufwerk von der übergeordneten VM trennen.
 
 .Schritte
-. Klicken Sie in der VMware vSphere-Client-GUI in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+. Wählen Sie in der VMware vSphere-Client-GUI *Menü* in der Symbolleiste aus, und wählen Sie dann *VMs und Vorlagen* aus der Dropdown-Liste aus.
 . Wählen Sie im linken Navigationsbereich eine VM aus.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf die VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *virtuelles Laufwerk trennen* in der sekundären Dropdown-Liste aus.
-. Wählen Sie auf dem Bildschirm *Virtuelles Laufwerk trennen* eine oder mehrere Festplatten aus, die Sie entfernen möchten, und aktivieren Sie dann das Kontrollkästchen *Ausgewählte Datenträger trennen* und klicken Sie auf *ENTFERNEN*.
+. Wählen Sie auf dem Bildschirm *Virtuelles Laufwerk trennen* eine oder mehrere Laufwerke aus, die Sie trennen möchten, und aktivieren Sie dann das Kontrollkästchen *Ausgewählte Datenträger trennen*, und wählen Sie *TRENNEN*.
 +
 
 IMPORTANT: Stellen Sie sicher, dass Sie das richtige virtuelle Laufwerk auswählen. Die Auswahl der falschen Festplatte kann die Produktionsarbeit beeinträchtigen.
@@ -31,7 +31,7 @@ Aktualisieren Sie den Bildschirm, um aktualisierte Informationen anzuzeigen.
 
 . Stellen Sie sicher, dass das virtuelle Laufwerk getrennt ist, indem Sie Folgendes durchführen:
 +
-.. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *VMs und Vorlagen* aus.
+.. Wählen Sie in der Symbolleiste *Menu* aus, und wählen Sie dann *VMs und Vorlagen* aus der Dropdown-Liste aus.
 .. Klicken Sie im linken Navigationsfenster mit der rechten Maustaste auf eine VM, und wählen Sie dann in der Dropdown-Liste *Einstellungen bearbeiten* aus.
 .. Erweitern Sie im Fenster *Einstellungen bearbeiten* die Liste für jede Festplatte, um die Liste der Festplattendateien anzuzeigen.
 +

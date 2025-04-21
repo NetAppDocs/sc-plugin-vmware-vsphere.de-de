@@ -26,8 +26,8 @@ NOTE: Ressourcengruppen werden als Backup-Jobs in der Virtual Storage Console (V
 Sie können geplante Vorgänge vorübergehend vom Starten einer Ressourcengruppe deaktivieren. Später können Sie diese Vorgänge aktivieren.
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie eine Ressourcengruppe aus und klicken Sie auf *Unterbrechen* (oder klicken Sie auf *Fortsetzen*).
-. Klicken Sie im Bestätigungsfeld zur Bestätigung auf *OK*.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen*, wählen Sie eine Ressourcengruppe aus und wählen Sie *Unterbrechen* (oder wählen Sie *Fortsetzen*) aus.
+. Wählen Sie im Bestätigungsfeld zur Bestätigung *OK* aus.
 
 
 .Nachdem Sie fertig sind
@@ -49,12 +49,12 @@ Wenn Sie den Namen einer Ressourcengruppe ändern möchten, verwenden Sie die fo
 Ein Unterstrich (_) ist zulässig.
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie auf *Bearbeiten*.
-. Klicken Sie in der linken Liste im Assistenten * Ressourcengruppe bearbeiten* auf die Kategorie, die Sie ändern möchten, und geben Sie Ihre Änderungen ein.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und wählen Sie *Bearbeiten* aus.
+. Wählen Sie in der linken Liste im Assistenten *Ressourcengruppe bearbeiten* die Kategorie aus, die Sie ändern möchten, und geben Sie Ihre Änderungen ein.
 +
 Sie können Änderungen in mehreren Kategorien vornehmen. Mit dieser Option können Sie auch sekundäre geschützte Ressourcen bearbeiten.
 
-. Klicken Sie auf *Weiter*, bis die Übersichtsseite angezeigt wird, und klicken Sie dann auf *Fertig stellen*.
+. Wählen Sie *Weiter*, bis die Übersichtsseite angezeigt wird, und wählen Sie dann *Fertig stellen*.
 
 
 
@@ -70,6 +70,6 @@ Alle Löschvorgänge der Ressourcengruppe werden als erzwang Löschvorgänge aus
 NOTE: In einer SnapVault Beziehung kann der letzte Snapshot nicht gelöscht werden, daher kann die Ressourcengruppe nicht gelöscht werden. Bevor Sie eine Ressourcengruppe löschen, die Teil einer SnapVault-Beziehung ist, müssen Sie entweder OnCommand System Manager oder die ONTAP-CLI verwenden, um die SnapVault-Beziehung zu entfernen, und dann müssen Sie den letzten Snapshot löschen.
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie auf *Löschen*.
-. Klicken Sie im Bestätigungsfeld *Ressourcengruppe löschen* auf *OK*, um zu bestätigen.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und wählen Sie *Löschen* aus.
+. Wählen Sie im Bestätigungsfeld *Ressourcengruppe löschen* zur Bestätigung *OK* aus.
 

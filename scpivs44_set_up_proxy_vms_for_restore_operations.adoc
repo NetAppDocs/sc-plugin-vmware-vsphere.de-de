@@ -31,7 +31,7 @@ Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte für die Wie
 | Neue Anmeldedaten hinzufügen  a| 
 .. Wählen Sie *Hinzufügen*.
 .. Geben Sie im Dialogfeld *Ausführen als Anmeldeinformationen* die Anmeldeinformationen ein.
-.. Klicken Sie auf *Select VM* und wählen Sie dann im Dialogfeld *Proxy VM* eine VM aus. Klicken Sie auf *Speichern*, um zum Dialogfeld *Ausführen als Anmeldeinformationen* zurückzukehren.
+.. Wählen Sie *Select VM* aus, und wählen Sie dann im Dialogfeld *Proxy VM* eine VM aus. Wählen Sie *Speichern*, um zum Dialogfeld *Run As Credentials* zurückzukehren.
 .. Geben Sie die Anmeldeinformationen ein. Für den Benutzernamen müssen Sie „Administrator“ eingeben.
 
 
@@ -42,8 +42,8 @@ Das SnapCenter Plug-in für VMware vSphere verwendet die ausgewählten Anmeldein
 +
 Die Anmeldeinformationen „Ausführen als“ müssen der standardmäßige Domänenadministrator sein, der von Windows oder dem integrierten lokalen Administrator bereitgestellt wird. Workgroup-Benutzer können das integrierte lokale Administratorkonto verwenden.
 
-. Klicken Sie im Abschnitt *Proxy Credentials* auf *Add*, um eine VM hinzuzufügen, die als Proxy verwendet werden soll.
-. Füllen Sie im Dialogfeld *Proxy VM* die Informationen aus und klicken Sie dann auf *Speichern*.
+. Wählen Sie im Abschnitt *Proxy Credentials* *Hinzufügen* aus, um eine VM hinzuzufügen, die als Proxy verwendet werden soll.
+. Füllen Sie im Dialogfeld *Proxy VM* die Informationen aus, und wählen Sie dann *Speichern*.
 
 
 

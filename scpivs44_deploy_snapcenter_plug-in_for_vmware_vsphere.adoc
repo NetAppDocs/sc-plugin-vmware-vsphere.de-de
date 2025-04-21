@@ -32,7 +32,7 @@ NOTE:  Die OVA-Implementierung wird in VMware vCenter 7u1 und höher unterstütz
 * Sie müssen alle Browser-Sitzungen des vSphere-Clients abgemeldet und geschlossen haben und den Browser-Cache gelöscht haben, um Probleme mit dem Browser-Cache während der Bereitstellung des SnapCenter-Plug-ins für VMware vSphere zu vermeiden.
 * In vCenter müssen Sie Transport Layer Security (TLS) aktivieren. Lesen Sie die VMware-Dokumentation.
 * Wenn Sie in anderen vCenter-Zentren als dem SnapCenter-Plug-in für VMware vSphere Backups durchführen möchten, müssen der ESXi-Server, das SnapCenter-Plug-in für VMware vSphere und jedes vCenter zur gleichen Zeit synchronisiert werden.
-* Um VMs auf vVol Datastores zu schützen, müssen Sie zuerst ONTAP Tools für VMware vSphere implementieren. Aktuelle Informationen zu unterstützten Versionen von ONTAP-Tools finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^]. Durch die ONTAP Tools wird Storage auf ONTAP und im VMware Web-Client bereitgestellt und konfiguriert.
+* Um VMs auf vVol Datastores zu schützen, müssen Sie zuerst ONTAP Tools für VMware vSphere implementieren. Aktuelle Informationen zu unterstützten Versionen von ONTAP-Tools finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^]. Durch die ONTAP Tools wird Storage auf ONTAP und im VMware Web-Client bereitgestellt und konfiguriert.
 
 
 Stellen Sie das SnapCenter-Plug-in für VMware vSphere in derselben Zeitzone wie vCenter bereit. Backup-Zeitpläne werden in der Zeitzone ausgeführt, in der das SnapCenter Plug-in für VMware vSphere bereitgestellt wird. VCenter meldet Daten in der Zeitzone, in der sich vCenter befindet. Wenn sich das SnapCenter-Plug-in für VMware vSphere und vCenter daher in unterschiedlichen Zeitzonen befinden, sind die Daten im SnapCenter-Plug-in für VMware vSphere Dashboard möglicherweise nicht mit den Daten in den Berichten identisch.
@@ -47,16 +47,16 @@ NOTE: Für IPv6-Adressen-HTML-Web-Clients müssen Sie entweder Chrome oder Firef
 . Melden Sie sich auf der Seite *VMware vCenter Single Sign-On* an.
 . Klicken Sie im Navigationsfenster mit der rechten Maustaste auf ein Inventarobjekt, das ein gültiges übergeordnetes Objekt einer virtuellen Maschine ist, z. B. ein Rechenzentrum, Cluster oder Host, und wählen Sie *Deploy OVF Template* aus, um den VMware Deploy Wizard zu starten.
 . Extrahieren Sie die .tar-Datei, die die .ova-Datei auf Ihr lokales System enthält. Geben Sie auf der Seite *Wählen Sie eine OVF-Vorlage* den Speicherort des an `.ova` Datei im extrahierten Ordner .tar.
-. Klicken Sie Auf *Weiter*.
-. Geben Sie auf der Seite *Name und Ordner* einen eindeutigen Namen für die VM oder vApp ein, und wählen Sie einen Speicherort für die Bereitstellung aus, und klicken Sie dann auf *Weiter*.
+. Wählen Sie *Weiter*.
+. Geben Sie auf der Seite *Namen und Ordner auswählen* einen eindeutigen Namen für die VM oder vApp ein, wählen Sie einen Bereitstellungsort aus und wählen Sie dann *Weiter* aus.
 +
 In diesem Schritt wird festgelegt, wo der importiert werden soll `.tar` Datei in vCenter. Der Standardname für die VM entspricht dem Namen der ausgewählten `.ova` Datei: Wenn Sie den Standardnamen ändern, wählen Sie einen Namen aus, der in jedem vCenter Server VM-Ordner eindeutig ist.
 
 +
 Der Standardbereitstellungs-Speicherort für die VM ist das Inventurobjekt, an dem Sie den Assistenten gestartet haben.
 
-. Wählen Sie auf der Seite *Select a Resource* die Ressource aus, auf der Sie die bereitgestellte VM-Vorlage ausführen möchten, und klicken Sie auf *Next*.
-. Überprüfen Sie auf der Seite * Details* die `.tar` Vorlagendetails und klicken Sie auf *Weiter*.
+. Wählen Sie auf der Seite *Select a Resource* die Ressource aus, auf der Sie die bereitgestellte VM-Vorlage ausführen möchten, und wählen Sie *Next* aus.
+. Überprüfen Sie auf der Seite *Details überprüfen* die `.tar` Vorlagendetails und wählen Sie *Weiter* aus.
 . Aktivieren Sie auf der Seite *Lizenzvereinbarungen* das Kontrollkästchen für *Ich akzeptiere alle Lizenzvereinbarungen*.
 . Legen Sie auf der Seite * Storage auswählen* fest, wo und wie die Dateien für die bereitgestellte OVF-Vorlage gespeichert werden sollen.
 +
@@ -80,7 +80,7 @@ Wählen Sie einen Datenspeicher aus, der ausreichend groß ist, um die virtuelle
 +
 In der Spalte Source Network werden alle Netzwerke aufgelistet, die in der OVA-Vorlage definiert sind.
 
-.. Wählen Sie im Abschnitt *IP Allocation Settings* das gewünschte IP-Adressenprotokoll aus und klicken Sie dann auf *Weiter*.
+.. Wählen Sie im Abschnitt *IP Allocation Settings* das gewünschte IP-Adressenprotokoll aus und wählen Sie dann *Next* aus.
 +
 Das SnapCenter Plug-in für VMware vSphere unterstützt eine Netzwerkschnittstelle. Wenn Sie mehrere Netzwerkadapter benötigen, müssen Sie diese manuell einrichten. Siehe https://kb.netapp.com/Advice_and_Troubleshooting/Data_Protection_and_Security/SnapCenter/How_to_create_additional_network_adapters_in_NDB_and_SCV_4.3["KB-Artikel: So erstellen Sie zusätzliche Netzwerkadapter"^].
 
@@ -117,7 +117,7 @@ IMPORTANT: Sie können diese Schritte überspringen und die Einträge im Abschni
 .. Wählen Sie unter *Setup Datum und Uhrzeit* die Zeitzone aus, in der sich das vCenter befindet.
 
 
-. Überprüfen Sie die Seite auf der Seite *Ready to Complete* und klicken Sie auf *Finish*.
+. Überprüfen Sie die Seite auf der Seite *Ready to Complete*, und wählen Sie *Finish*.
 +
 Alle Hosts müssen mit IP-Adressen konfiguriert sein (FQDN-Hostnamen werden nicht unterstützt). Der Bereitstellungsvorgang überprüft Ihre Eingaben vor der Bereitstellung nicht.
 
@@ -127,8 +127,8 @@ Sie können den Fortschritt der Bereitstellung im Fenster „Letzte Aufgaben“ 
 +
 Wenn das SnapCenter-Plug-in für VMware vSphere erfolgreich bereitgestellt wurde, wird es als Linux-VM bereitgestellt, bei vCenter registriert und ein VMware vSphere-Client installiert.
 
-. Navigieren Sie zu der VM, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wurde, klicken Sie dann auf die Registerkarte *Zusammenfassung*, und klicken Sie dann auf das Feld *Einschalten*, um die virtuelle Appliance zu starten.
-. Während das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das bereitgestellte SnapCenter-Plug-in für VMware vSphere, wählen Sie *Gastbetriebssystem* aus und klicken Sie dann auf *VMware-Tools installieren*.
+. Navigieren Sie zu der VM, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wurde, wählen Sie dann die Registerkarte *Zusammenfassung* aus, und wählen Sie dann das Feld *Einschalten* aus, um die virtuelle Appliance zu starten.
+. Während das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, klicken Sie mit der rechten Maustaste auf das bereitgestellte SnapCenter-Plug-in für VMware vSphere, wählen Sie *Gastbetriebssystem* aus und wählen Sie dann *VMware-Tools installieren* aus.
 +
 Die VMware-Tools werden auf der VM installiert, auf der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird. Weitere Informationen zum Installieren von VMware-Tools finden Sie in der VMware-Dokumentation.
 

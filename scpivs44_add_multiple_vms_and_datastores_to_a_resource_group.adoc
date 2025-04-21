@@ -30,19 +30,19 @@ Eine Ressourcengruppe kann eine der folgenden Elemente enthalten:
 NOTE: VVol VMs, die mehrere vVol Datastores umfassen, werden nicht unterstützt, da SnapCenter nur VVols im primären, ausgewählten vVol Datastore sichert.
 
 .Schritte
-. Klicken Sie im linken Navigationsbereich des SCV-Plug-ins auf *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und klicken Sie dann auf image:scpivs44_image39.png["Symbol bearbeiten"] *Ressourcengruppe bearbeiten*, um den Assistenten zu starten.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen* aus, wählen Sie dann eine Ressourcengruppe aus und wählen Sie dann *Ressourcengruppe bearbeiten* ausimage:scpivs44_image39.png["Symbol bearbeiten"], um den Assistenten zu starten.
 . Gehen Sie auf der Seite *Ressource* wie folgt vor:
 +
 .. Navigieren Sie im Feld Datastores zu den VMs oder Datastores, die Sie hinzufügen möchten.
-.. Wählen Sie in der Liste Verfügbare Einheiten eine oder mehrere VMs oder Datastores aus, die der Ressourcengruppe hinzugefügt werden sollen. Klicken Sie dann auf *>*, um Ihre Auswahl in die Liste der ausgewählten Einheiten zu verschieben. Klicken Sie auf *>>*, um alle verfügbaren Entitäten zu verschieben.
+.. Wählen Sie in der Liste Verfügbare Entitäten eine oder mehrere VMs oder Datastores aus, die Sie der Ressourcengruppe hinzufügen möchten, und wählen Sie dann *>* aus, um Ihre Auswahl in die Liste Ausgewählte Entitäten zu verschieben. Wählen Sie *>>*, um alle verfügbaren Entitäten zu verschieben.
 +
-Standardmäßig wird das Datacenter-Objekt in der Liste Verfügbare Entitäten angezeigt. Sie können auf einen Datenspeicher klicken, um die VMs im Datenspeicher anzuzeigen und sie der Ressourcengruppe hinzuzufügen.
+Standardmäßig wird das Datacenter-Objekt in der Liste Verfügbare Entitäten angezeigt. Sie können einen Datenspeicher auswählen, um die VMs im Datastore anzuzeigen und dieser Ressourcengruppe hinzuzufügen.
 
 +
-Wenn Sie auf *Weiter* klicken, prüft das System zunächst, ob SnapCenter verwaltet wird und mit dem Speicher kompatibel ist, auf dem sich die ausgewählten VMs oder Datastores befinden. Wenn die Meldung `Some entities are not SnapCenter compatible` angezeigt wird, ist eine ausgewählte VM oder ein ausgewählter Datastore nicht mit SnapCenter kompatibel. Weitere Informationen finden Sie unter link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Managen Sie Fehler bei der Kompatibilitätsprüfung"] .
+Wenn Sie *Weiter* auswählen, prüft das System zunächst, ob SnapCenter den Speicher verwaltet und kompatibel ist, auf dem sich die ausgewählten VMs oder Datastores befinden. Wenn die Meldung `Some entities are not SnapCenter compatible` angezeigt wird, ist eine ausgewählte VM oder ein ausgewählter Datastore nicht mit SnapCenter kompatibel. Weitere Informationen finden Sie unter link:scpivs44_create_resource_groups_for_vms_and_datastores.html#manage-compatibility-check-failures["Managen Sie Fehler bei der Kompatibilitätsprüfung"] .
 
 
 
 . Wiederholen Sie Schritt 2 für jede VM oder jeden Datenspeicher, den Sie hinzufügen möchten.
-. Klicken Sie auf *Weiter*, bis Sie die Seite *Zusammenfassung* erreichen, und überprüfen Sie dann die Zusammenfassung und klicken Sie auf *Fertig stellen*.
+. Wählen Sie *Weiter*, bis Sie die Seite *Zusammenfassung* erreichen, überprüfen Sie die Zusammenfassung und wählen Sie *Fertig*.
 

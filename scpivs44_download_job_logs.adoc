@@ -29,7 +29,7 @@ NOTE: Der Standardwert für die Aufbewahrung von Jobprotokollen beträgt 30 Tage
 Möglicherweise müssen Sie nach rechts blättern, um das Symbol zu sehen.
 
 +
-Sie können auch auf einen Job doppelklicken, um auf das Fenster Job Details zuzugreifen und dann auf *Job Logs herunterladen* klicken.
+Sie können auch auf einen Job doppelklicken, um das Fenster Job-Details aufzurufen, und dann *Job-Protokolle herunterladen* auswählen.
 
 
 

@@ -41,10 +41,10 @@ Der Mount-Vorgang kann fehlschlagen, wenn die Storage-Tier der FabricPool, auf d
 .Schritte
 . Wählen Sie auf der Seite VMware vSphere Client Shortcuts *Storage* aus.
 . Klicken Sie mit der rechten Maustaste auf einen Datastore, und wählen Sie *SnapCenter Plug-in für VMware vSphere* > *Mount Backup*.
-. Wählen Sie auf der Seite * Mount Datastore* ein Backup und einen Backup-Speicherort (primär oder sekundär) aus, und klicken Sie dann auf *Finish*.
+. Wählen Sie auf der Seite *Mount Datastore* ein Backup und einen Backup-Speicherort (primär oder sekundär) aus, und wählen Sie dann *Finish* aus.
 . Optional: Gehen Sie wie folgt vor, um zu überprüfen, ob der Datenspeicher angehängt ist:
 +
-.. Klicken Sie in der Symbolleiste auf *Menü* und wählen Sie dann in der Dropdown-Liste *Storage* aus.
+.. Wählen Sie in der Symbolleiste *Menü* aus, und wählen Sie dann *Speicher* aus der Dropdown-Liste aus.
 .. Im linken Navigationsbereich wird der Datastore angezeigt, den Sie oben in der Liste gemountet haben.
 +
 Wenn Sie auf einem SnapVault-Zielvolume, das durch SnapVault-Zeitpläne geschützt ist und ONTAP 8.3 ausführt, einen Attach- oder Mount-Vorgang durchführen, wird möglicherweise ein zusätzlicher Snapshot im Dialogfeld „Anhängen“ oder „Bereitstellen“ angezeigt. Das liegt daran, dass durch den Anbinden- oder Mount-Vorgang das SnapVault-Ziel-Volume klont und ONTAP das Volume durch die Erstellung eines neuen Snapshots aktualisiert.

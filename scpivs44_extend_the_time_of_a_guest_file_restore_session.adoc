@@ -20,8 +20,8 @@ Standardmäßig ist eine angeschlossene Gastdatei-Wiederherstellung VMDK für 24
 Es ist vielleicht möglich, eine Wiederherstellungssitzung für Gastdateien zu erweitern, wenn Sie zu einem späteren Zeitpunkt zusätzliche Dateien oder Ordner aus der beigefügten VMDK wiederherstellen möchten. Da allerdings für die Wiederherstellung von Gastdateien viele Ressourcen verwendet werden, sollte die Sitzungsdauer nur gelegentlich verlängert werden.
 
 .Schritte
-. Klicken Sie im VMware vSphere-Client auf *Wiederherstellung der Gastdatei*.
-. Wählen Sie eine Gastdatei-Wiederherstellungssitzung aus, und klicken Sie in der Titelleiste des Gastsession-Monitors auf das Symbol Ausgewählte Gastsitzung erweitern.
+. Wählen Sie im VMware vSphere-Client *Guest File Restore* aus.
+. Wählen Sie eine Sitzung zur Wiederherstellung einer Gastdatei aus, und klicken Sie dann in der Titelleiste des Gast-Sitzungsmonitors auf das Symbol Ausgewählte Gastsitzung erweitern.
 +
 Die Sitzung wird um weitere 24 Stunden verlängert.
 

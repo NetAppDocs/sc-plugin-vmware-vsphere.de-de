@@ -19,7 +19,7 @@ Sie können Statusinformationen im vSphere-Client-Dashboard anzeigen. Die Status
 .Schritte
 . Wählen Sie auf der Verknüpfungsseite des vCenter-Clients die Option SnapCenter-Plug-in für VMware vSphere (SCV) aus.
 . Wählen Sie im linken Navigationsbereich des SCV *Dashboard* > *Status*.
-. Zeigen Sie eine Übersicht Statusinformationen an, oder klicken Sie auf einen Link, um weitere Informationen zu erhalten, wie in der folgenden Tabelle aufgeführt.
+. Zeigen Sie Statusinformationen für die Übersicht an, oder wählen Sie einen Link für weitere Details aus, wie in der folgenden Tabelle aufgeführt.
 +
 |===
 | Dieses Dashboard-Feld… | Zeigt die folgenden Informationen an… 
@@ -30,8 +30,8 @@ Zuletzt verwendete Job-Aktivitäten
  a| 
 Die drei bis fünf letzten Backup-, Restore- und Mount-Aufgaben.
 
-** Klicken Sie auf eine Job-ID, um weitere Details zu diesem Job anzuzeigen.
-** Klicken Sie auf *Alle anzeigen*, um zur Registerkarte Job Monitor zu gelangen, um weitere Details zu allen Jobs anzuzeigen.
+** Wählen Sie auf einer Job-ID aus, um weitere Details zu diesem Job anzuzeigen.
+** Wählen Sie *Alle anzeigen*, um auf die Registerkarte Job Monitor zu gelangen, um weitere Details zu allen Jobs zu erhalten.
 
 
 
@@ -48,7 +48,7 @@ Aktuelle Zusammenfassung Des Schutzes
  a| 
 Zusammenfassungen des Datensicherungsstatus von primären und sekundären VMs oder Datastores im ausgewählten Zeitfenster.
 
-** Klicken Sie auf das Dropdown-Menü, um *VMs* oder *Datastores* auszuwählen.
+** Wählen Sie das Dropdown-Menü aus, um *VMs* oder *Datastores* auszuwählen.
 ** Wählen Sie als Sekundärspeicher *SnapVault* oder *SnapMirror* aus.
 ** Bewegen Sie den Mauszeiger über einen Abschnitt eines Diagramms, um die Anzahl der VMs oder Datastores in dieser Kategorie anzuzeigen. In der Kategorie erfolgreich wird für jede Ressource das aktuellste Backup aufgeführt.
 ** Sie können das Zeitfenster ändern, indem Sie die Konfigurationsdatei bearbeiten. Der Standardwert ist 7 Tage. Weitere Informationen finden Sie unter link:scpivs44_customize_your_configuration.html["Passen Sie Ihre Konfiguration an"].
