@@ -28,7 +28,7 @@ Für alle SnapCenter Plug-ins sind die folgenden Mindestberechtigungen erforderl
 |===
 
 
-| All-Access-Befehle: Mindestberechtigungen für ONTAP 8.3 und höher erforderlich. 
+| Alle Befehle: Minimale ONTAP Privileges. 
 
 
 | Event Generate-AutoSupport-log 
@@ -54,13 +54,13 @@ Job beenden
 | vserver cifs vServer cifs Freigabe vserver erstellen cifs Freigabe vserver löschen vserver cifs shadowcopy vServer zeigen cifs share vserver zeigen vserver Export-Policy vServer Export-Policy vServer Export-Policy erstellen vServer Export-Policy löschen vServer NVMe-Subsystem vserver NVMe-Subsystem wserver vserver nvme-Subsystem abbilden vserver Export-Policy-Regel zeigen vserver Export-Policy zeigen vserver zeigen vserver iscsi vserver iscsi-Verbindung zeigen vserver zeigen vserver 
 |===
 |===
-| Schreibgeschützter Befehl: Mindestberechtigungen für ONTAP 8.3 und höher erforderlich 
+| Schreibgeschützte Befehle: Minimale ONTAP Privileges 
 
 
 | Cluster Identity show Network Interface show vserver vserver Peer vserver show 
 |===
 |===
-| All-Access-Befehle: Mindestberechtigungen für ONTAP 9 und höher erforderlich. 
+| Alle Befehle: Minimale ONTAP Privileges 
 
 
 | Zeigt die Storage-Einheit der Konsistenzgruppe an 
@@ -74,15 +74,6 @@ NOTE: Sie können die Warnmeldungen zu den nicht unterstützten vServer-Befehlen
 
 == Weitere ONTAP-Informationen
 
-* Wenn Sie ONTAP 8.2.x verwenden:
-+
-Sie müssen sich als anmelden `vsadmin` Auf der Storage-VM die entsprechenden Berechtigungen für das SnapCenter-Plug-in für den Betrieb von VMware vSphere.
-
-* Wenn Sie ONTAP 8.3 und höher verwenden:
-+
-Sie müssen sich als anmelden `vsadmin` Oder mit einer Rolle, die die in den obigen Tabellen aufgeführten Mindestberechtigungen hat.
-
-* Sie müssen der Cluster-Administrator sein, um Benutzerrollen zu erstellen und zu managen. Sie können die Benutzer entweder der Cluster Storage VM oder der Storage VM zuordnen.
 * Zur Verwendung der SnapMirror Active Sync Funktion benötigen Sie ONTAP 9.12.1 oder höher.
 * So verwenden Sie die tamperproof Snapshot (TPS)-Funktion:
 +

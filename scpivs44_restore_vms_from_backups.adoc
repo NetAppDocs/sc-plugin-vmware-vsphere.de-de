@@ -100,7 +100,7 @@ Auch wenn ein VMware Konsistenz-Snapshot für eine VM ausfällt, wird die VM tro
 . Wählen Sie in der VMware vSphere-Client-GUI *Menü* in der Symbolleiste aus, und wählen Sie dann *VMs und Vorlagen* aus der Dropdown-Liste aus.
 +
 
-NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformationen der Speicher-VM, die zum SnapCenter-Plug-in für VMware vSphere hinzugefügt wurden, ein Benutzerkonto oder sein `vsadmin` , das über alle gleichen Berechtigungen wie verfügt `vsadmin`. Der Host muss sich auf einem Storage-System mit ONTAP 8.2.2 oder höher befindet.
+NOTE: Wenn Sie eine gelöschte VM wiederherstellen, müssen die Anmeldeinformationen der Speicher-VM, die zum SnapCenter-Plug-in für VMware vSphere hinzugefügt wurden, ein Benutzerkonto oder sein `vsadmin` , das über alle gleichen Berechtigungen wie verfügt `vsadmin`.
 
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus, um den Assistenten zu starten.
 . Wählen Sie im *Restore*-Assistenten auf der Seite *Backup auswählen* den Backup-Snapshot aus, den Sie wiederherstellen möchten.

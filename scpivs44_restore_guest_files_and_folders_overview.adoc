@@ -105,7 +105,6 @@ Sie können keine Dateien und Ordner von einer VM wiederherstellen, auf der das 
 Wenn Sie versuchen, vom NTFS-Format in DAS FAT-Format wiederherzustellen, wird der NTFS-Sicherheitsdeskriptor nicht kopiert, da das FAT-Dateisystem Windows-Sicherheitsattribute nicht unterstützt.
 
 * Sie können Gastdateien nicht aus einer geklonten VMDK oder einer nicht initialisierten VMDK wiederherstellen.
-* Sie können keine sekundären Backups wiederherstellen, wenn das Backup auf einem System mit ONTAP 9.2 oder neuer ausgeführt wurde und die Option VMware Consistency aktiviert war.
 * Sie können die Verzeichnisstruktur für eine Datei nicht wiederherstellen.
 +
 Wenn eine Datei in einem verschachtelten Verzeichnis zur Wiederherstellung ausgewählt ist, wird die Datei nicht mit derselben Verzeichnisstruktur wiederhergestellt. Der Verzeichnisbaum wird nicht wiederhergestellt, nur die Datei. Wenn Sie eine Verzeichnisstruktur wiederherstellen möchten, können Sie das Verzeichnis selbst oben in der Struktur kopieren.

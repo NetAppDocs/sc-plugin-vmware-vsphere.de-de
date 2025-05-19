@@ -41,7 +41,7 @@ NOTE: SnapMirror Active Sync wird nur für VMFS Datastores unterstützt.
 Zum Schutz eines VMFS-Datenspeichers in einer Implementierung mit aktiver SnapMirror Synchronisierung müssen Sie als SnapCenter-Administrator Folgendes tun:
 
 +
-** Konfigurieren Sie Cluster und Mediator wie im technischen Bericht beschrieben: https://www.netapp.com/pdf.html?item=/media/21888-tr-4878.pdf["TR-4878: SnapMirror Active Sync (ehemals SMBC)"].
+** Konfigurieren Sie Cluster und Mediator wie im technischen Bericht beschrieben: https://docs.netapp.com/us-en/ontap/snapmirror-active-sync/mediator-install-task.html["Konfigurieren Sie den ONTAP Mediator und die Cluster für SnapMirror Active Sync"].
 ** Fügen Sie das dem VMFS-Datastore zugeordnete Volume zur Konsistenzgruppe hinzu und erstellen Sie mithilfe der _AutomatedFailOver_- oder _AutomatedFailOverDuplex_-Schutzrichtlinie zwischen zwei ONTAP-Speichersystemen eine Datensicherungsbeziehung. _AutomaticatedFailOverDuplex_-Richtlinie wird ab ONTAP 9.15.1 unterstützt.
 
 
@@ -87,7 +87,9 @@ IMPORTANT: Sie sollten den Aufbewahrungswert auf 2 Backups oder höher einstelle
 
 +
 
-NOTE: Der maximale Aufbewahrungswert sind 1018 Backups für Ressourcen auf ONTAP 9.4 oder höher und 254 Backups für Ressourcen auf ONTAP 9.3 oder früher. Backups schlagen fehl, wenn die Aufbewahrung auf einen Wert festgelegt ist, der höher ist, als die zugrunde liegende ONTAP Version unterstützt. Das gilt auch für das Spanning von Datenspeichern. Wenn ein Spanning Datastore Ressourcen sowohl auf ONTAP 9.3 als auch früher sowie auf ONTAP 9.4 und höher enthält, müssen Sie den Aufbewahrungswert unter 254 festlegen.
+NOTE: Der maximale Aufbewahrungswert beträgt 1018 Backups. Backups schlagen fehl, wenn die Aufbewahrung auf einen Wert festgelegt ist, der höher ist, als die zugrunde liegende ONTAP Version unterstützt. Das gilt auch für das Spanning von Datenspeichern.
+
+
 
 . Geben Sie in den Feldern *Replikation* den Replikationstyp auf sekundären Speicher an, wie in der folgenden Tabelle dargestellt:
 +
