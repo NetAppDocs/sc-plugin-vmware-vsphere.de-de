@@ -129,7 +129,7 @@ Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können je
 | VCenter Server | Wählen Sie einen vCenter-Server aus. 
 
 
-| Name | Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - [vertikaler Balken] ; ' , . Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Mode verfügt jedes vCenter über ein separates SnapCenter Plug-in für VMware vSphere Repository. Daher können Sie doppelte Namen in allen vCenters verwenden. 
+| Name | Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - [vertikaler Strich] ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Mode verfügt jedes vCenter über ein separates SnapCenter Plug-in für VMware vSphere Repository. Daher können Sie doppelte Namen in allen vCenters verwenden. 
 
 
 | Beschreibung | Geben Sie eine Beschreibung der Ressourcengruppe ein. 

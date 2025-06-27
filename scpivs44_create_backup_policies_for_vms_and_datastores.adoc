@@ -64,7 +64,7 @@ Im Linked-Modus besitzt jedes vCenter eine separate virtuelle Appliance. Daher k
 
 ** Nicht unterstützte Zeichen
 +
-Verwenden Sie nicht die folgenden Sonderzeichen in VMs, Datenspeicher, Cluster, Richtlinien, Backups, Oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - ; ' , .
+Verwenden Sie nicht die folgenden Sonderzeichen in VMs, Datenspeicher, Cluster, Richtlinien, Backups, Oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - | ; ' und Leerzeichen.
 
 +
 Ein Unterstrich (_) ist zulässig.

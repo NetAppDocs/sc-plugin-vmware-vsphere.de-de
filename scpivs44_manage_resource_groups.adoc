@@ -44,9 +44,7 @@ Ressourcen in Ressourcengruppen in vCenter können entfernt oder hinzugefügt, R
 .Über diese Aufgabe
 Wenn Sie den Namen einer Ressourcengruppe ändern möchten, verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen:
 
-% & * # @ ! \ / : * ? " < > - ; ' , .
-
-Ein Unterstrich (_) ist zulässig.
+% & * # @ ! \ / : * ? " < > - | ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig.
 
 .Schritte
 . Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und wählen Sie *Bearbeiten* aus.
