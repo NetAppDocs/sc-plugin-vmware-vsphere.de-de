@@ -27,7 +27,7 @@ Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für 
 Um dieses Problem zu beheben, konfigurieren Sie die SnapMirror-Aufbewahrungsrichtlinie für sekundären Speicher, um zu vermeiden, dass die maximale Snapshot-Grenze erreicht wird.
 
 +
-Informationen darüber, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie unter https://docs.netapp.com/us-en/snapcenter/concept/concept_types_of_role_based_access_control_in_snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^].
+Informationen dazu, wie Administratoren Benutzern Ressourcen zuweisen, finden Sie unter https://docs.netapp.com/us-en/snapcenter/get-started/rbac-snapcenter.html["SnapCenter-Informationen zur Nutzung der rollenbasierten Zugriffssteuerung"^] .
 
 
 
