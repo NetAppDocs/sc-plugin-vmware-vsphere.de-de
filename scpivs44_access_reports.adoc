@@ -35,7 +35,7 @@ Doppelklicken Sie auf einen Job, um einen detaillierten Bericht für diesen Job 
 
 . Optional: Wählen Sie auf der Registerkarte Berichte *Download* und wählen Sie das Format (HTML oder CSV) aus.
 +
-Sie können auch das Download-Symbol auswählen, um Plug-in-Protokolle herunterzuladen.
+Sie können das Download-Symbol auswählen, um Plug-In-Protokolle herunterzuladen.
 
 
 

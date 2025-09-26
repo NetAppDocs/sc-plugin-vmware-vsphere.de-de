@@ -39,7 +39,7 @@ Die VM, die Sie wiederherstellen möchten, darf sich nicht in einem Zustand von 
 
 
 .Schritte
-. Wählen Sie in der VMware vSphere-Client-GUI *Menü* in der Symbolleiste aus, und wählen Sie dann *VMs und Vorlagen* aus der Dropdown-Liste aus.
+. Wählen Sie in der Benutzeroberfläche des VMware vSphere-Clients in der Symbolleiste *Menü* und dann *VMs und Vorlagen* aus der Dropdown-Liste.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, wählen Sie dann *SnapCenter Plug-in für VMware vSphere* in der Dropdown-Liste aus, und wählen Sie dann *Wiederherstellen* in der sekundären Dropdown-Liste aus.
 . Wählen Sie im Assistenten *Wiederherstellen* auf der Seite Sicherung auswählen die Sicherungskopie aus, aus der Sie die Sicherungskopie wiederherstellen möchten.
 +

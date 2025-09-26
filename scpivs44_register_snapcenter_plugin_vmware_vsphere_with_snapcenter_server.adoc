@@ -24,7 +24,7 @@ Wenn Sie als SnapCenter-Benutzer ein Upgrade auf SnapCenter 4.2 ausführen und I
 
 
 .Über diese Aufgabe
-* Sie registrieren SnapCenter-Plug-in für VMware vSphere mit SnapCenter-Server, indem Sie die SnapCenter-GUI verwenden, um einen Host vom Typ „vsphere“ hinzuzufügen.
+* Sie registrieren das SnapCenter Plug-in for VMware vSphere beim SnapCenter -Server, indem Sie über die SnapCenter Benutzeroberfläche einen Host vom Typ „vsphere“ hinzufügen.
 +
 Port 8144 ist vordefiniert für die Kommunikation innerhalb des SnapCenter Plug-ins für VMware vSphere.
 
@@ -35,7 +35,7 @@ Sie können mehrere Instanzen des SnapCenter-Plug-ins für VMware vSphere auf de
 
 
 .Schritte
-. Wählen Sie im linken Navigationsbereich der SnapCenter-Benutzeroberfläche *Hosts* aus.
+. Wählen Sie im linken Navigationsbereich der SnapCenter Benutzeroberfläche *Hosts* aus.
 . Überprüfen Sie, ob die Registerkarte *verwaltete Hosts* oben ausgewählt ist. Suchen Sie anschließend den Host-Namen der virtuellen Appliance und überprüfen Sie, ob diese vom SnapCenter-Server aufgelöst wird.
 . Wählen Sie *Hinzufügen*, um den Assistenten zu starten.
 . Geben Sie im Dialogfeld *Hosts hinzufügen* den Host an, den Sie dem SnapCenter-Server hinzufügen möchten, wie in der folgenden Tabelle aufgeführt:

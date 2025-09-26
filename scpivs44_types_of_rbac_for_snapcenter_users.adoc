@@ -35,7 +35,7 @@ Der vSphere Administrator richtet die RBAC für vCenter Server folgendermaßen e
 * Legen Sie die vCenter Server-Berechtigungen auf dem Root-Objekt (auch als Stammordner bekannt) fest. Sie können dann die Sicherheit verbessern, indem Sie untergeordnete Entitäten, die diese Berechtigungen nicht benötigen, einschränken.
 * Zuweisen der SCV-Rollen zu Active Directory-Benutzern.
 +
-Mindestens müssen alle Benutzer in der Lage sein, vCenter Objekte anzuzeigen. Ohne diese Berechtigung können Benutzer nicht auf die VMware vSphere Client GUI zugreifen.
+Alle Benutzer müssen mindestens in der Lage sein, vCenter-Objekte anzuzeigen.  Ohne diese Berechtigung können Benutzer nicht auf die Benutzeroberfläche des VMware vSphere-Clients zugreifen.
 
 
 

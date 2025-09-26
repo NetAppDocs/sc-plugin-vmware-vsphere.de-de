@@ -22,9 +22,16 @@ Das Upgrade auf das SnapCenter-Plug-in für VMware vSphere (SCV) 4.8 und höher 
 
 
  a| 
+SCV 6,1
+ a| 
+SCV 6,2
+
+
+
+ a| 
 SCV 6,0
  a| 
-SCV 6,1
+SCV 6.1 und SCV 6.2
 
 
 
@@ -40,26 +47,21 @@ SCV 4.9
  a| 
 SCV 5.0 und SCV 6.0
 
-
-
- a| 
-SCV 4.8
- a| 
-SCV 4.9 und SCV 5.0
-
-
-
- a| 
-SCV 4.7
- a| 
-SCV 4.8 und SCV 4.9
-
 |===
 Bei virtualisierten Datenbanken und Filesystemen, die mit SnapCenter integriert sind, handelt es sich um einen Upgrade-Pfad:
 
 [cols="30%,30%,40%"]
 |===
 | Wenn Sie verwenden | Wenn Ihr VMware Plug-in… lautet | Sie können direkt auf… upgraden 
+
+
+ a| 
+SnapCenter 6.2
+ a| 
+SCV 6,1
+ a| 
+SCV 6,2
+
 
 
  a| 

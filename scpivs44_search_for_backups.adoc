@@ -17,7 +17,7 @@ summary: Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup ei
 Mit dem Restore-Assistenten können Sie nach einem bestimmten Backup einer VM oder eines Datenspeichers suchen. Nachdem Sie ein Backup gefunden haben, können Sie es dann wiederherstellen.
 
 .Schritte
-. Wählen Sie in der VMware vSphere-Client-GUI in der Symbolleiste *Menü* aus, und führen Sie einen der folgenden Schritte aus:
+. Wählen Sie in der Benutzeroberfläche des VMware vSphere-Clients in der Symbolleiste *Menü* aus und führen Sie dann einen der folgenden Schritte aus:
 +
 |===
 | So zeigen Sie Backups für… an | Gehen Sie wie folgt vor… 

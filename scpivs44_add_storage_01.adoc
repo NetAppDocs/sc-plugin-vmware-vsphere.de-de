@@ -16,7 +16,7 @@ summary: Durch Hinzufügen von Storage kann das SnapCenter Plug-in für VMware v
 [role="lead"]
 Bevor Sie VMs sichern oder wiederherstellen können, müssen Sie Storage-Cluster oder Storage-VMs hinzufügen. Durch Hinzufügen von Storage kann das SnapCenter Plug-in für VMware vSphere Backup- und Restore-Vorgänge in vCenter erkennen und managen.
 
-* Welche GUI verwendet werden soll
+* Welche Benutzeroberfläche soll verwendet werden?
 +
 Verwenden Sie den VMware vSphere Client, um Storage hinzuzufügen.
 
@@ -40,7 +40,7 @@ Der ESXi-Server, das SnapCenter-Plug-in für VMware vSphere und jedes vCenter m�
 Das SnapCenter Plug-in für VMware vSphere führt Backup- und Restore-Vorgänge auf direkt verbundenen Storage-VMs und Storage-VMs in einem Storage-Cluster durch.
 
 
-NOTE: Wenn Sie das SnapCenter Plug-in für VMware vSphere zur Unterstützung applikationsbasierter Backups auf VMDKs verwenden, müssen Sie die SnapCenter Benutzeroberfläche verwenden, um Details zur Storage-Authentifizierung einzugeben und Storage-Systeme zu registrieren.
+NOTE: Wenn Sie das SnapCenter Plug-in for VMware vSphere verwenden, um anwendungsbasierte Backups auf VMDKs zu unterstützen, müssen Sie die SnapCenter Benutzeroberfläche verwenden, um Speicherauthentifizierungsdetails einzugeben und Speichersysteme zu registrieren.
 
 * Bei vCenters im Linked-Modus müssen Sie jedem vCenter separat Storage-Systeme hinzufügen.
 * Wenn Sie SVMs hinzufügen, müssen die Namen von Storage-VMs den Management-LIFs zugewiesen werden.

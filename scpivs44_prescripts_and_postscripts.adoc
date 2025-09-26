@@ -28,7 +28,11 @@ Perl- und Shell-Skripte werden unterstützt. Shell-Skripte müssen mit beginnen 
 
 Prescripts und Postscripts werden vom SnapCenter Plug-in für VMware vSphere ausgeführt. Daher müssen die Skripte im SnapCenter Plug-in für VMware vSphere OVA mit ausführbaren Berechtigungen zu finden sein.
 
-Zum Beispiel: * Möglicherweise Ist Ein PERL-Skript-Pfad `/support/support/script.pl`* Möglicherweise Ist Ein Shell Skript-Pfad `/support/support/script.sh`
+Beispiel:
+
+* Ein PERL-Skriptpfad könnte sein `/support/support/script.pl`
+* Ein Shell-Skriptpfad könnte sein `/support/support/script.sh`
+
 
 Der Skriptpfad wird zum Zeitpunkt der Ausführung des Skripts validiert.
 
@@ -64,7 +68,11 @@ Postscripts werden in DER PHASE POST_BACKUP des Vorgangs ausgeführt, nachdem da
 
 NOTE: Wenn ein Postscript fehlschlägt, wird das Backup erfolgreich abgeschlossen und eine Warnmeldung gesendet.
 
-Überprüfen Sie Folgendes, ob die Skriptwerte ausgefüllt sind: * Für PERL-Skripte: `/support/support/log_env.log`* Für Shell-Skripte: `/support/support/log_file.log`
+Überprüfen Sie Folgendes, um sicherzustellen, dass die Skriptwerte ausgefüllt sind:
+
+* Für PERL-Skripte: `/support/support/log_env.log`
+* Für Shell-Skripte: `/support/support/log_file.log`
+
 
 
 

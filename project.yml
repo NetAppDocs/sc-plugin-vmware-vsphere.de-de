@@ -1,14 +1,16 @@
 ---
 settings:
-  name: SnapCenter Plug-in for VMware vSphere
+  name: SnapCenter Plug-in for VMware vSphere 6.2
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: false
   versions:
-  - version-number: '6.1'
+  - version-number: '6.2'
     url: "/sc-plugin-vmware-vsphere"
+  - version-number: '6.1'
+    url: "/sc-plugin-vmware-vsphere-61"
   - version-number: '6.0'
     url: "/sc-plugin-vmware-vsphere-60"
   - version-number: '5.0'
@@ -26,13 +28,13 @@ settings:
   langs: de-de,us-en,es-es,fr-fr,it-it,pt-br,ja-jp,ko-kr,zh-cn,zh-tw
 sidebar:
   entries:
-  - title: SnapCenter Plug-in für VMware vSphere 6.1
+  - title: SnapCenter Plug-in for VMware vSphere 6.2
     url: "/index.html"
   - title: Versionshinweise
     entries:
     - title: Versionshinweise zum SnapCenter Plug-in für VMware vSphere
       url: "/scpivs44_release_notes.html"
-    - title: Was ist neu in SnapCenter Plug-in für VMware vSphere 6.1
+    - title: Was ist neu im SnapCenter Plug-in for VMware vSphere 6.2
       url: "/scv_releasenotes_whats_new.html"
     - title: Upgrade-Pfade
       url: "/scv_rn_upgrade_paths.html"
@@ -40,7 +42,7 @@ sidebar:
     entries:
     - title: Produktübersicht
       url: "/scpivs44_concepts_overview.html"
-    - title: Überblick über die verschiedenen SnapCenter GUIs
+    - title: Übersicht über die verschiedenen SnapCenter -Benutzeroberflächen
       url: "/scpivs44_overview_of_different_snapcenter_guis.html"
     - title: Lizenzierung
       url: "/scpivs44_licensing.html"
@@ -100,8 +102,8 @@ sidebar:
       url: "/scpivs44_download_job_logs.html"
     - title: Aufrufen von Berichten
       url: "/scpivs44_access_reports.html"
-    - title: Generieren Sie ein Support-Bundle über das SnapCenter Plug-in für die
-        VMware vSphere GUI
+    - title: Generieren Sie ein Support-Paket aus dem SnapCenter Plug-in for VMware
+        vSphere Benutzeroberfläche
       url: "/scpivs44_generate_a_support_bundle_from_the_snapcenter_plug-in_for_vmware_vsphere_gui.html"
     - title: Generieren Sie ein Support-Bundle über die Wartungskonsole
       url: "/scpivs44_generate_a_support_bundle_from_the_maintenance_console.html"

@@ -46,7 +46,7 @@ Gehen Sie wie folgt vor, um NVMe Controller zur Festplatte hinzuzufügen.
 
 
 .Schritte
-. Wählen Sie in der VMware vSphere-Client-GUI in der Symbolleiste *Menü* aus, und wählen Sie dann *Hosts und Cluster* aus der Dropdown-Liste aus.
+. Wählen Sie in der Benutzeroberfläche des VMware vSphere-Clients in der Symbolleiste *Menü* und dann *Hosts und Cluster* aus der Dropdown-Liste.
 . Klicken Sie im linken Navigationsbereich mit der rechten Maustaste auf eine VM, und wählen Sie dann *SnapCenter Plug-in für VMware vSphere* > *Virtuelle Festplatte(n) anhängen* aus.
 . Wählen Sie im Fenster *Virtuelles Laufwerk anhängen* im Abschnitt *Sicherung* ein Backup aus.
 +

@@ -24,5 +24,5 @@ Verwenden Sie die folgende REST-API im Abschnitt Jobs, um Jobs zu ändern, die s
 | REST API | Kommentare 
 
 
-| `/4.1/jobs/{id}/failJobs` | Wenn Sie die IDs von Jobs übergeben, die sich in einem laufenden Zustand befinden, `failJobs` Markiert diese Jobs als fehlgeschlagen. Um Jobs zu identifizieren, die sich in einem laufenden Zustand befinden, können Sie über die Job-Monitor-GUI den Status jedes Jobs und die Job-ID anzeigen. 
+| `/4.1/jobs/{id}/failJobs` | Wenn Sie die IDs von Jobs übergeben, die im laufenden Zustand hängen bleiben, `failJobs` markiert diese Jobs als fehlgeschlagen.  Um Jobs zu identifizieren, die im laufenden Status hängen geblieben sind, verwenden Sie die Benutzeroberfläche des Job-Monitors, um den Status jedes Jobs und die Job-ID anzuzeigen. 
 |===

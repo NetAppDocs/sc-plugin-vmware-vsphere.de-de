@@ -18,40 +18,17 @@ Eine Ressourcengruppe ist der Container für VMs, Datastores, vSphere Tags und v
 
 Eine Ressourcengruppe kann Folgendes enthalten:
 
-* Herkömmliche VMs und Datenspeicher
-+
-Beliebige Kombination aus herkömmlichen VMs, herkömmlichen SAN-Datenspeichern und herkömmlichen NAS-Datastores Herkömmliche VMs können nicht mit vVol VMs kombiniert werden.
-
-* FlexGroup Datenspeicher
-+
-Einem einzelnen FlexGroup Datastore. Spanning FlexGroup Datastores werden nicht unterstützt. Ein FlexGroup Datastore kann nicht mit herkömmlichen VMs oder Datastores kombiniert werden.
-
-* FlexVol Datenspeicher
-+
-Ein oder mehrere FlexVol Datastores. Spanning-Datenspeicher werden unterstützt.
-
-* VVol VMs
-+
-Ein oder mehrere vVol VMs. VVol VMs können nicht mit herkömmlichen VMs oder Datastores kombiniert werden.
-
-* VSphere-Tag
-+
-Alle VMs und Datastores, ausgenommen vVol Datastores, die das angegebene vSphere-Tag haben.
-
-* VVol VMs in einem Ordner
-+
-Alle VVols in einem einzelnen, angegebenen vVol Ordner. Wenn der Ordner eine Kombination aus vVol VMs und herkömmlichen VMs enthält, sichert das SnapCenter Plug-in für VMware vSphere die vVol VMs und überspringt die herkömmlichen VMs.
-
-* VMs und Datenspeicher auf ASA r2
-+
-Sie können ASA r2 VMs und Datenspeicher nicht mit anderen VMs und Datastores kombinieren.
+* Beliebige Kombination aus herkömmlichen VMs, herkömmlichen SAN-Datenspeichern und herkömmlichen NAS-Datastores Herkömmliche VMs können nicht mit vVol VMs kombiniert werden.
+* Ein einzelner FlexGroup Datenspeicher.  SCV unterstützt keine übergreifenden FlexGroup Datenspeicher.  Ein FlexGroup -Datenspeicher kann nicht mit herkömmlichen VMs oder Datenspeichern kombiniert werden.
+* Ein oder mehrere FlexVol Datastores. Spanning-Datenspeicher werden unterstützt.
+* Ein oder mehrere vVol VMs. VVol VMs können nicht mit herkömmlichen VMs oder Datastores kombiniert werden.
+* Alle VMs und Datastores, ausgenommen vVol Datastores, die das angegebene vSphere-Tag haben.
+* Alle VVols in einem einzelnen, angegebenen vVol Ordner. Wenn der Ordner eine Kombination aus vVol VMs und herkömmlichen VMs enthält, sichert das SnapCenter Plug-in für VMware vSphere die vVol VMs und überspringt die herkömmlichen VMs.
+* VMs und Datenspeicher auf ASA R2-Speichersystemen.  Sie können ASA R2-VMs und -Datenspeicher nicht mit anderen VMs und Datenspeichern kombinieren.
 
 
 
-Für alle Ressourcengruppen:
-
-
-IMPORTANT: Wenn Sie den VMware vSphere-Clusterdienst (VCLS) verwenden, nehmen Sie keine von VCLS verwalteten VMs in das SnapCenter-Plug-in für VMware vSphere-Ressourcengruppen auf.
+IMPORTANT: Wenn Sie VMware vSphere Cluster Service (vCLS) verwenden, fügen Sie dem SnapCenter Plug-in for VMware vSphere Ressourcengruppen keine von vCLS verwalteten VMs hinzu.
 
 Weitere Informationen finden Sie unter https://kb.netapp.com/data-mgmt/SnapCenter/SC_KBs/SCV_unable_to_backup_vCLS_VMs_after_updating_vCenter_to_7.0.x["SCV kann VCLS-VMs nicht sichern, nachdem vCenter auf 7.0.x aktualisiert wurde"]
 
@@ -64,63 +41,37 @@ IMPORTANT: Fügen Sie keine VMs hinzu, die sich in einem nicht zugänglichen Zus
 .Bevor Sie beginnen
 ONTAP Tools für VMware müssen bereitgestellt werden, bevor Sie eine Ressourcengruppe erstellen, die vVol VMs enthält.
 
-Weitere Informationen finden Sie in der Dokumentation zu ONTAP Tools für VMware vSphere. Außerdem finden Sie aktuelle Informationen zu den unterstützten Versionen von ONTAP Tools unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^].
+Weitere Informationen finden Sie in der Dokumentation zu den ONTAP tools for VMware vSphere .  Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] .
 
 .Über diese Aufgabe
-Sie können jederzeit Ressourcen einer Ressourcengruppe hinzufügen oder aus dieser entfernen.
-
-* Sicherung einer einzelnen Ressource
-+
-Um eine einzelne Ressource zu sichern (z. B. eine einzelne VM), müssen Sie eine Ressourcengruppe erstellen, die diese einzelne Ressource enthält.
-
-* Sicherung mehrerer Ressourcen
-+
-Um mehrere Ressourcen zu sichern, müssen Sie eine Ressourcengruppe erstellen, die mehrere Ressourcen enthält.
-
-* Ressourcengruppen, die FlexGroup Volumes in MetroCluster-Umgebungen enthalten
-+
-Wenn Sie ONTAP 9.8 oder ONTAP 9.9 ausführen, müssen Sie nach einem Switchover oder Switchback den Service SnapCenter Plug-in für VMware vSphere neu starten und die SnapMirror Beziehungen neu synchronisieren, bevor Sie Ressourcengruppen in MetroCluster Umgebungen sichern.
-
-+
-In ONTAP 9.8 hängen die Backups nach dem Wechsel zurück. Dieses Problem wurde in ONTAP 9.9 behoben.
-
-* Snapshots werden optimiert
-+
-Um Snapshots zu optimieren, sollten Sie die VMs und Datenspeicher, die mit demselben Volume verbunden sind, zu einer Ressourcengruppe gruppieren.
-
-* Backup-Richtlinien
-+
-Sie können zwar eine Ressourcengruppe ohne Sicherungsrichtlinie erstellen, aber Datensicherheitsvorgänge sind nur möglich, wenn mindestens eine Richtlinie an die Ressourcengruppe angehängt ist. Sie haben die Möglichkeit, eine vorhandene Richtlinie zu verwenden oder während des Erstellungsprozesses einer Ressourcengruppe eine neue zu erstellen.
-
+* Sie können einer Ressourcengruppe jederzeit Ressourcen hinzufügen oder daraus entfernen.
+* Um eine einzelne Ressource, beispielsweise eine VM, zu sichern, erstellen Sie eine Ressourcengruppe, die nur diese Ressource enthält.
+* Um mehrere Ressourcen zu sichern, erstellen Sie eine Ressourcengruppe, die alle Ressourcen enthält, die Sie schützen möchten.
+* Wenn Sie für FlexGroup -Volumes in MetroCluster Umgebungen ONTAP 9.8 oder 9.9 verwenden, starten Sie das SnapCenter Plug-in for VMware vSphere Dienst neu und synchronisieren Sie die SnapMirror -Beziehungen nach einem Switchover oder Switchback neu, bevor Sie Ressourcengruppen sichern.  In ONTAP 9.8 können Backups nach einem Switchback hängen bleiben. Dieses Problem wurde in ONTAP 9.9 behoben.
+* Um eine optimale Snapshot-Leistung zu erzielen, gruppieren Sie VMs und Datenspeicher auf demselben Volume in einer einzigen Ressourcengruppe.
+* Sie können eine Ressourcengruppe ohne Sicherungsrichtlinie erstellen, für den Datenschutz ist jedoch mindestens eine Richtlinie erforderlich.  Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie während der Erstellung der Ressourcengruppe eine neue.
 +
 
 NOTE: Wenn Sie eine Backup-Richtlinie mit Snapshot-Sperrfrist auswählen, müssen Sie ONTAP 9.12.1 oder höher auswählen.
 
-* Kompatibilitätsprüfungen
-+
-Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfungen durch.
-
+* Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfungen durch.
 +
 <<Managen Sie Fehler bei der Kompatibilitätsprüfung>>
 
 * Erstellen Sie einen sekundären Schutz für eine Ressourcengruppe
 +
-Der sekundäre Schutz sorgt dafür, dass Replikationsbeziehungen für die Ressourcen erstellt werden, die in der Ressourcengruppe hinzugefügt werden. Sie müssen unter Verwendung einer angegebenen Richtlinie vom primären Cluster eine auf Konsistenzgruppen basierende SnapMirror-Beziehung im bevorzugten Cluster und der bevorzugten SVM erstellen. Die sekundäre Sicherung wird nur für auf einem ASA r2 System basierende Datastores und Virtual Machines unterstützt. Cluster-Peering und SVM-Peering sollten vorkonfiguriert sein. Der sekundäre Schutz ermöglicht nur asynchrone SnapMirror-Richtlinien. Sie müssen beim Erstellen des sekundären Schutzes das Suffix von Konsistenzgruppen angeben.
+Der sekundäre Schutz ermöglicht die Replikation für die Ressourcen in der Ressourcengruppe.  Um den sekundären Schutz zu verwenden, erstellen Sie mithilfe einer angegebenen Richtlinie eine auf einer Konsistenzgruppe basierende SnapMirror -Beziehung vom primären zum bevorzugten Cluster und SVM.  Diese Funktion wird nur für auf dem ASA R2-System basierende Datenspeicher und virtuelle Maschinen unterstützt.  Stellen Sie sicher, dass Cluster- und SVM-Peering im Voraus konfiguriert sind.  Es werden nur asynchrone SnapMirror Richtlinien unterstützt.  Beim Konfigurieren des sekundären Schutzes müssen Sie ein Konsistenzgruppensuffix angeben.
 
 
-
-Der sekundäre Schutz sorgt dafür, dass Replikationsbeziehungen für die Ressourcen erstellt werden, die in der Ressourcengruppe hinzugefügt werden.
 
 .Schritte
-. Wählen Sie im linken Navigationsfenster des SCV-Plug-ins *Ressourcengruppen* aus, und wählen Sie dann *Erstellen* aus, um den Assistenten zu starten.
-
-
-Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können jedoch auch eine Ressourcengruppe mit einer Ressource erstellen, indem Sie eine der folgenden Schritte ausführen:
-
-* Um eine Ressourcengruppe für eine VM zu erstellen, wählen Sie auf der Seite Verknüpfungen *Hosts und Cluster* aus, klicken Sie mit der rechten Maustaste auf eine VM und wählen Sie *SnapCenter-Plug-in für VMware vSphere* > *Ressourcengruppe erstellen* aus.
-* Um eine Ressourcengruppe für einen Datastore zu erstellen, wählen Sie auf der Shortcuts-Seite *Hosts und Cluster* aus, klicken Sie mit der rechten Maustaste auf einen Datastore, wählen Sie *SnapCenter-Plug-in für VMware vSphere* > *Ressourcengruppe erstellen* aus.
+. Wählen Sie im linken Navigationsbereich des SCV-Plug-Ins *Ressourcengruppen* und dann *Erstellen* aus, um den Assistenten zu starten.  Alternativ können Sie eine Ressourcengruppe für eine einzelne Ressource erstellen, indem Sie einen der folgenden Schritte ausführen:
 +
-.. Gehen Sie auf der Seite *Allgemeine Informationen & Benachrichtigungen* im Assistenten wie folgt vor:
+** Um eine Ressourcengruppe für eine VM zu erstellen, wählen Sie auf der Seite Verknüpfungen *Hosts und Cluster* aus, klicken Sie mit der rechten Maustaste auf eine VM und wählen Sie *SnapCenter-Plug-in für VMware vSphere* > *Ressourcengruppe erstellen* aus.
+** Um eine Ressourcengruppe für einen Datastore zu erstellen, wählen Sie auf der Shortcuts-Seite *Hosts und Cluster* aus, klicken Sie mit der rechten Maustaste auf einen Datastore, wählen Sie *SnapCenter-Plug-in für VMware vSphere* > *Ressourcengruppe erstellen* aus.
+
+
+. Gehen Sie auf der Seite *Allgemeine Informationen & Benachrichtigungen* im Assistenten wie folgt vor:
 +
 |===
 | Für dieses Feld… | Do this… 
@@ -129,7 +80,7 @@ Dies ist der einfachste Weg, eine Ressourcengruppen zu erstellen. Sie können je
 | VCenter Server | Wählen Sie einen vCenter-Server aus. 
 
 
-| Name | Geben Sie einen Namen für die Ressourcengruppe ein. Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-, Backup- oder Ressourcengruppennamen: % & * € # @ ! \ / : * ? " < > - [vertikaler Strich] ; ' und Leerzeichen. Ein Unterstrich (_) ist zulässig. VM- oder Datastore-Namen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert. Im Linked Mode verfügt jedes vCenter über ein separates SnapCenter Plug-in für VMware vSphere Repository. Daher können Sie doppelte Namen in allen vCenters verwenden. 
+| Name | Geben Sie einen Namen für die Ressourcengruppe ein.  Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datenspeicher-, Richtlinien-, Sicherungs- oder Ressourcengruppennamen: % & * $ # @ !  \ / : * ?  " < > - [vertikaler Strich] ; ' und Leerzeichen.  Ein Unterstrich (_) ist zulässig.  VM- oder Datenspeichernamen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert.  Im verknüpften Modus verwaltet jedes vCenter sein eigenes SnapCenter Plug-in for VMware vSphere Repository.  Dadurch können Sie dieselben Ressourcengruppennamen in verschiedenen vCentern verwenden. 
 
 
 | Beschreibung | Geben Sie eine Beschreibung der Ressourcengruppe ein. 
@@ -161,13 +112,13 @@ NOTE: Das ASA r2-Speichersystem unterstützt das Umbenennen von Snapshots nicht 
 | Benutzerdefiniertes Snapshot-Format  a| 
 Wenn Sie ein benutzerdefiniertes Format für die Snapshot-Namen verwenden möchten, aktivieren Sie dieses Kontrollkästchen, und geben Sie das Namensformat ein.
 
-*** Diese Funktion ist standardmäßig deaktiviert.
-*** Die standardmäßigen Snapshot-Namen verwenden das Format `<ResourceGroup>_<Date-TimeStamp>`. Sie können jedoch ein benutzerdefiniertes Format angeben, indem Sie die Variablen Ressourcengruppe, Richtlinie für US-Dollar, Hostname für US-Dollar, Planungstyp für US-Dollar und CustomText für US-Dollar verwenden. Verwenden Sie die Dropdown-Liste im benutzerdefinierten Namensfeld, um auszuwählen, welche Variablen Sie verwenden möchten, und in welcher Reihenfolge sie verwendet werden. Wenn Sie CustomText in US-Dollar auswählen, lautet das Namensformat `<CustomName>_<Date-TimeStamp>`. Geben Sie den benutzerdefinierten Text in das zusätzliche Feld ein, das bereitgestellt wird. [HINWEIS]: Wenn Sie auch das Suffix „_recent“ auswählen, müssen Sie sicherstellen, dass die benutzerdefinierten Snapshot-Namen im Datastore eindeutig sind. Daher sollten Sie dem Namen die Variablen „Ressourcengruppe €“ und „Richtlinie € €“ hinzufügen.
-*** Sonderzeichen für Sonderzeichen in Namen, befolgen Sie die gleichen Richtlinien für das Namensfeld.
+** Diese Funktion ist standardmäßig deaktiviert.
+** Standardmäßig folgen Snapshot-Namen dem Format `<ResourceGroup>_<Date-TimeStamp>` .  Sie können den Snapshot-Namen mithilfe von Variablen wie $ResourceGroup, $Policy, $HostName, $ScheduleType und $CustomText anpassen.  Wählen Sie die gewünschten Variablen und deren Reihenfolge aus der Dropdown-Liste im Feld „Benutzerdefinierter Name“ aus.  Wenn Sie $CustomText einschließen, wird das Format `<CustomName>_<Date-TimeStamp>` .  Geben Sie Ihren benutzerdefinierten Text in das bereitgestellte Feld ein.  [HINWEIS]: Wenn Sie das Suffix „_recent“ auswählen, stellen Sie sicher, dass Ihre benutzerdefinierten Snapshot-Namen innerhalb des Datenspeichers eindeutig sind, indem Sie die Variablen $ResourceGroup und $Policy in den Namen aufnehmen.
+** Sonderzeichen für Sonderzeichen in Namen, befolgen Sie die gleichen Richtlinien für das Namensfeld.
 
 
 |===
-.. Gehen Sie auf der Seite *Ressourcen* wie folgt vor:
+. Gehen Sie auf der Seite *Ressourcen* wie folgt vor:
 +
 |===
 | Für dieses Feld… | Do this… 
@@ -197,17 +148,17 @@ Wenn die Meldung `Selected <resource-name> is not SnapCenter compatible` angezei
 +
 Um einen oder mehrere Datastores global von Backups auszuschließen, müssen Sie den/die Datastore-Namen in der Eigenschaft in der Konfigurationsdatei angeben `global.ds.exclusion.pattern` `scbr.override` . Siehe link:scpivs44_properties_you_can_override.html["Eigenschaften, die Sie überschreiben können"].
 
-.. Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
+. Wählen Sie auf der Seite *Spanning Disks* eine Option für VMs mit mehreren VMDKs über mehrere Datastores aus:
 +
-*** Schließen Sie immer alle Spanning Datastores aus (dies ist der Standard für Datastores.)
-*** Berücksichtigen Sie immer alle spannenden Datenspeicher (dies ist der Standard für VMs).
-*** Wählen Sie manuell die Spanning-Datenspeicher aus, die einbezogen werden sollen
+** Schließen Sie immer alle Spanning Datastores aus (dies ist der Standard für Datastores.)
+** Berücksichtigen Sie immer alle spannenden Datenspeicher (dies ist der Standard für VMs).
+** Wählen Sie manuell die Spanning-Datenspeicher aus, die einbezogen werden sollen
 +
 Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.
 
 
 
-.. Wählen oder erstellen Sie auf der Seite *Richtlinien* eine oder mehrere Backup-Richtlinien, wie in der folgenden Tabelle dargestellt:
+. Wählen oder erstellen Sie auf der Seite *Richtlinien* eine oder mehrere Backup-Richtlinien, wie in der folgenden Tabelle dargestellt:
 +
 |===
 | Um… zu verwenden | Do this… 
@@ -217,19 +168,16 @@ Spanning-VMs werden für FlexGroup- und vVol-Datenspeicher nicht unterstützt.
 
 
 | Eine neue Richtlinie  a| 
-... Wählen Sie *Erstellen*.
-... Schließen Sie den Assistenten für neue Backup-Richtlinien ab, um zum Assistenten „Ressourcengruppe erstellen“ zurückzukehren.
+.. Wählen Sie *Erstellen*.
+.. Schließen Sie den Assistenten für neue Backup-Richtlinien ab, um zum Assistenten „Ressourcengruppe erstellen“ zurückzukehren.
 
 
 |===
 +
 Im verknüpften Modus enthält die Liste Richtlinien in allen verknüpften vCenters. Sie müssen eine Richtlinie auswählen, die sich im selben vCenter befindet wie die Ressourcengruppe.
 
-.. Auf der Seite *Secondary Protection* wird die Liste der ausgewählten Ressourcen mit ihrem Schutzstatus angezeigt. Um die ungeschützten Ressourcen zu schützen, wählen Sie aus der Dropdown-Liste den Typ der Replikationsrichtlinie, das Suffix der Konsistenzgruppe, das Ziel-Cluster und die Ziel-SVM aus. Beim Erstellen einer Ressourcengruppe wird ein separater Job für sekundären Schutz erstellt, und Sie können ihn im Fenster Job Monitor sehen.
-
-
-
-
+. Auf der Seite *Sekundärer Schutz* sehen Sie die ausgewählten Ressourcen zusammen mit ihrem aktuellen Schutzstatus.  Um den Schutz für alle ungeschützten Ressourcen zu aktivieren, wählen Sie den Replikationsrichtlinientyp, geben Sie ein Konsistenzgruppensuffix ein und wählen Sie den Zielcluster und die Ziel-SVM aus den Dropdown-Menüs aus.  Wenn die Ressourcengruppe erstellt wird, startet SCV einen separaten Job für den sekundären Schutz.  Sie können diesen Job im Job-Monitor-Fenster überwachen.
++
 |===
 | Felder | Beschreibung 
 
@@ -237,28 +185,29 @@ Im verknüpften Modus enthält die Liste Richtlinien in allen verknüpften vCent
 | Name der Replikationsrichtlinie | Name der SnapMirror-Richtlinie Es werden nur die sekundären Richtlinien *Asynchronous* und *Mirror und Vault* unterstützt. 
 
 
-| Suffix für Konsistenzgruppen | Eine Zieleinstellung, die zum Anhängen an die primäre Konsistenzgruppe verwendet wird, um den Namen der Ziel-Konsistenzgruppe zu bilden. Beispiel: Wenn der Name der primären Konsistenzgruppe „sccg_2024-11-28_120918“ lautet und Sie „dest“ als Suffix eingeben, wird die sekundäre Konsistenzgruppe als „sccg_2024-11-28_120918_dest“ erstellt. Das Suffix gilt nur für ungeschützte Konsistenzgruppen. 
+| Suffix für Konsistenzgruppen | Geben Sie beim Erstellen der Zielkonsistenzgruppe ein Suffix ein, das an den Namen der primären Konsistenzgruppe angehängt werden soll.  Wenn der Name der primären Konsistenzgruppe beispielsweise `sccg_2024-11-28_120918` und du gehst hinein `_dest` als Suffix wird die sekundäre Konsistenzgruppe benannt `sccg_2024-11-28_120918_dest` .  Dieses Suffix wird nur für ungeschützte Konsistenzgruppen verwendet. 
 
 
-| Ziel-Cluster | Für alle ungeschützten Speichereinheiten zeigt SCV die Namen der Peered Cluster in der Dropdown-Liste an. Wenn sich der zu SCV hinzugefügte Storage im SVM-Umfang befindet, wird aufgrund der ONTAP-Beschränkung anstelle des Namens die Cluster-ID angezeigt. 
+| Ziel-Cluster | Für alle ungeschützten Speichereinheiten zeigt SCV die Namen der Peering-Cluster im Dropdown-Menü an.  Wenn der Speicher mit SVM-Bereich zu SCV hinzugefügt wird, wird aufgrund von ONTAP Einschränkungen die Cluster-ID anstelle des Clusternamens angezeigt. 
 
 
-| Ziel-SVM | Für alle ungeschützten Speichereinheiten zeigt SCV die Namen der bespeisten SVM(s) an. Cluster und SVM werden automatisch ausgewählt, wenn eine der Storage-Einheiten, die Teil der Konsistenzgruppe sind, ausgewählt wird. Das gleiche gilt für alle anderen Speichereinheiten in derselben Konsistenzgruppe. 
+| Ziel-SVM | Für alle ungeschützten Speichereinheiten zeigt SCV die Namen der per Peering verbundenen SVMs an.  Wenn Sie eine Speichereinheit auswählen, die Teil einer Konsistenzgruppe ist, werden der entsprechende Cluster und die SVM automatisch für alle anderen Speichereinheiten in dieser Konsistenzgruppe ausgewählt. 
 
 
 | Sekundäre geschützte Ressourcen | Für alle geschützten Storage-Einheiten der Ressourcen, die auf der Seite Ressourcen hinzugefügt werden, werden die Details der sekundären Beziehung angezeigt, einschließlich Cluster, SVM und Replizierungstyp. 
 |===
++
 image:secondary_protection.png["Fenster Ressourcengruppe erstellen"]
 
-. Konfigurieren Sie auf der Seite *Schedules* den Backup-Zeitplan für jede ausgewählte Richtlinie.
+. Richten Sie auf der Seite *Zeitpläne* den Sicherungszeitplan für jede ausgewählte Richtlinie ein.
 +
 Geben Sie im Feld Startzeit ein Datum und eine andere Zeit als null ein. Das Datum muss das Format haben `day/month/year`.
 
 +
-Wenn Sie in jedem Feld eine Anzahl von Tagen auswählen, werden die Backups an Tag 1 des Monats und danach in jedem angegebenen Intervall durchgeführt. Wenn Sie zum Beispiel die Option *alle 2 Tage* wählen, dann werden Backups am Tag 1, 3, 5, 7 usw. im Laufe des Monats durchgeführt, unabhängig davon, ob das Startdatum gerade oder ungerade ist.
+Wenn Sie im Feld *Alle* einen Wert auswählen (z. B. *Alle 2 Tage*), werden die Sicherungen am ersten Tag des Monats ausgeführt und dann für den Rest des Monats im angegebenen Intervall (Tag 1, 3, 5, 7 usw.) wiederholt, unabhängig davon, ob das Startdatum gerade oder ungerade ist.
 
 +
-Sie müssen jedes Feld ausfüllen. Das SnapCenter Plug-in für VMware vSphere erstellt Zeitpläne in der Zeitzone, in der das SnapCenter Plug-in für VMware vSphere implementiert ist. Sie können die Zeitzone mithilfe des SnapCenter Plug-in für VMware vSphere ändern.
+Alle Felder sind Pflichtfelder.  Das SnapCenter Plug-in for VMware vSphere erstellt Sicherungspläne basierend auf der Zeitzone, in der es bereitgestellt wird.  Um die Zeitzone zu ändern, verwenden Sie die Benutzeroberfläche des SnapCenter Plug-in for VMware vSphere .
 
 +
 link:scpivs44_modify_the_time_zones.html["Ändern der Zeitzonen für Backups"].
@@ -272,7 +221,7 @@ Nachdem Sie *Fertig stellen* ausgewählt haben, wird die neue Ressourcengruppe z
 
 +
 
-NOTE: Wenn der Quiesce-Vorgang für eine der VMs im Backup fehlschlägt, dann ist der Backup als nicht VM-konsistent gekennzeichnet, auch wenn die ausgewählte Richtlinie die VM-Konsistenz ausgewählt hat. In diesem Fall ist es möglich, dass einige der VMs erfolgreich stillgelegt wurden.
+NOTE: Wenn der Stilllegungsvorgang für eine der VMs im Backup fehlschlägt, markiert SCV das Backup als nicht VM-konsistent, auch wenn Sie eine Richtlinie mit VM-Konsistenz ausgewählt haben.  In diesem Fall ist es möglich, dass einige der VMs erfolgreich stillgelegt wurden.
 
 
 
@@ -288,10 +237,10 @@ Beim Erstellen einer Ressourcengruppe führt SnapCenter Kompatibilitätsprüfung
 * Die Storage-VM ist ausgefallen.
 
 
-Gehen Sie wie folgt vor, um einen Kompatibilitätsfehler zu beheben:
+Um einen Kompatibilitätsfehler zu beheben, gehen Sie wie folgt vor:
 
 . Stellen Sie sicher, dass die Storage-VM ausgeführt wird.
 . Stellen Sie sicher, dass das Speichersystem, auf dem sich die VMs befinden, zum SnapCenter-Plug-in für den VMware vSphere-Bestand hinzugefügt wurde.
-. Stellen Sie sicher, dass die Storage-VM zu SnapCenter hinzugefügt wird. Verwenden Sie die Option Add Storage System in der VMware vSphere Client GUI.
+. Stellen Sie sicher, dass die Speicher-VM zu SnapCenter hinzugefügt wird.  Verwenden Sie die Option „Speichersystem hinzufügen“ auf der Benutzeroberfläche des VMware vSphere-Clients.
 . Wenn VMs über VMDKs sowohl auf NetApp als auch auf Datastores anderer Anbieter verfügen, verschieben Sie die VMDKs zu NetApp Datastores.
 

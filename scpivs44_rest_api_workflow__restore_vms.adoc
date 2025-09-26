@@ -14,7 +14,7 @@ summary: Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in fü
 
 
 [role="lead"]
-Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen.
+Um VM-Backups mit dem SnapCenter Plug-in for VMware vSphere REST-APIs wiederherzustellen, befolgen Sie die erforderliche Abfolge von REST-API-Aufrufen, wie unten beschrieben.
 
 Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseite der REST-API zu einem vollständigen Endpunkt
 

@@ -23,7 +23,7 @@ NOTE: Ressourcengruppen werden als Backup-Jobs in der Virtual Storage Console (V
 
 == Unterbrechen und Fortsetzen des Betriebs von Ressourcengruppen
 
-Sie können geplante Vorgänge vorübergehend vom Starten einer Ressourcengruppe deaktivieren. Später können Sie diese Vorgänge aktivieren.
+Unterbrechen Sie geplante Vorgänge für eine Ressourcengruppe.  Aktivieren Sie sie bei Bedarf erneut.
 
 .Schritte
 . Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen*, wählen Sie eine Ressourcengruppe aus und wählen Sie *Unterbrechen* (oder wählen Sie *Fortsetzen*) aus.
@@ -59,15 +59,15 @@ Sie können Änderungen in mehreren Kategorien vornehmen. Mit dieser Option kön
 
 == Löschen von Ressourcengruppen
 
-Sie können eine Ressourcengruppe in vCenter löschen, wenn Sie die Ressourcen in der Ressourcengruppe nicht mehr schützen müssen. Sie müssen sicherstellen, dass alle Ressourcengruppen gelöscht werden, bevor Sie das SnapCenter Plug-in für VMware vSphere aus vCenter entfernen.
+Löschen Sie eine Ressourcengruppe in vCenter, wenn Sie die Ressourcen nicht schützen müssen.  Löschen Sie alle Ressourcengruppen, bevor Sie das SnapCenter Plug-in for VMware vSphere entfernen.
 
 .Über diese Aufgabe
-Alle Löschvorgänge der Ressourcengruppe werden als erzwang Löschvorgänge ausgeführt. Der Löschvorgang trennt alle Richtlinien aus der vCenter-Ressourcengruppe, entfernt die Ressourcengruppe aus dem SnapCenter-Plug-in für VMware vSphere und löscht alle Backups und Snapshots der Ressourcengruppe.
+Alle Löschvorgänge für Ressourcengruppen werden als erzwungene Löschungen ausgeführt.  Wenn Sie eine Ressourcengruppe löschen, trennt das System alle Richtlinien von der vCenter-Ressourcengruppe, entfernt die Ressourcengruppe aus dem SnapCenter Plug-in for VMware vSphere und löscht alle Sicherungen und Snapshots der Ressourcengruppe.
 
 
-NOTE: In einer SnapVault Beziehung kann der letzte Snapshot nicht gelöscht werden, daher kann die Ressourcengruppe nicht gelöscht werden. Bevor Sie eine Ressourcengruppe löschen, die Teil einer SnapVault-Beziehung ist, müssen Sie entweder System Manager oder die ONTAP-CLI verwenden, um die SnapVault-Beziehung zu entfernen. Anschließend müssen Sie den letzten Snapshot löschen.
+NOTE: In einer SnapVault -Beziehung können Sie den letzten Snapshot nicht löschen und daher auch nicht die Ressourcengruppe.  Bevor Sie eine Ressourcengruppe in einer SnapVault -Beziehung löschen, entfernen Sie die Beziehung mit System Manager oder ONTAP CLI und löschen Sie dann den letzten Snapshot.
 
 .Schritte
 . Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Ressourcengruppen*, wählen Sie dann eine Ressourcengruppe aus und wählen Sie *Löschen* aus.
-. Wählen Sie im Bestätigungsfeld *Ressourcengruppe löschen* zur Bestätigung *OK* aus.
+. Wählen Sie im Bestätigungsdialogfeld *Ressourcengruppe löschen* zur Bestätigung *OK* aus.  Durch das Löschen einer Ressourcengruppe wird der sekundäre Schutz nicht entfernt.  Verwenden Sie bei Bedarf den System Manager, um den sekundären Schutz zu löschen.  Für die Ressourcengruppe erstellte Konsistenzgruppen werden nicht automatisch entfernt. Sie müssen sie manuell mithilfe von System Manager oder einer anderen unterstützten Schnittstelle aus ONTAP löschen.
 

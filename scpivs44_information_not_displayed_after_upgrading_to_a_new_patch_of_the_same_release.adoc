@@ -40,7 +40,7 @@ Der Cache befindet sich an den folgenden Orten, abhängig vom Typ des Serverbetr
 
 == Problemumgehung, wenn Sie bereits vor dem Löschen des Caches aktualisiert haben
 
-. Melden Sie sich im SnapCenter Plug-in für die Management-GUI von VMware vSphere an.
+. Melden Sie sich bei der Verwaltungsbenutzeroberfläche des SnapCenter Plug-in for VMware vSphere an.
 +
 Die IP-Adresse wird angezeigt, wenn Sie das SnapCenter-Plug-in für VMware vSphere bereitstellen.
 

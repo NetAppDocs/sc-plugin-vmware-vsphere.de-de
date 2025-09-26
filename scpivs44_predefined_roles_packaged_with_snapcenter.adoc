@@ -22,7 +22,7 @@ Als Administrator können Sie diese Rollen den entsprechenden Benutzern zuweisen
 
 Das SnapCenter-Plug-in für VMware vSphere setzt diese Rollen bei jedem Neustart des vCenter-Webclient-Dienstes oder bei der Änderung der Installation auf die Standardwerte (anfängliche Berechtigungseinstellung) zurück. Wenn Sie das SnapCenter-Plug-in für VMware vSphere aktualisieren, werden die vordefinierten Rollen automatisch aktualisiert, um mit dieser Version des Plug-ins zu arbeiten.
 
-Sie können die vordefinierten Rollen in der vCenter GUI anzeigen, indem Sie *Menü > Administration > Rollen* auswählen, wie in der folgenden Tabelle dargestellt.
+Sie können die vordefinierten Rollen in der vCenter-Benutzeroberfläche sehen, indem Sie *Menü > Verwaltung > Rollen* auswählen, wie in der folgenden Tabelle gezeigt.
 
 |===
 | Rolle | Beschreibung 

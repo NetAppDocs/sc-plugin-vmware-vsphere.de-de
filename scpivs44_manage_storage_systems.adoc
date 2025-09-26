@@ -25,7 +25,7 @@ Mit dem VMware vSphere Client können Sie die Konfigurationen der Cluster und St
 Wenn Sie eine Storage-VM ändern, die automatisch als Teil eines Clusters hinzugefügt wurde (manchmal auch als implizite Storage-VM bezeichnet), dann ändert sich diese Storage-VM in eine explizite Storage-VM und kann separat gelöscht werden, ohne die restlichen Storage-VMs in diesem Cluster zu ändern. Auf der Seite Storage Systems wird der Benutzername als N/A angezeigt, wenn die Authentifizierungsmethode über das Zertifikat erfolgt. Benutzernamen werden nur für explizite Speicher-VMs in der Cluster-Liste angezeigt und lassen das ExplicitSVM-Flag auf true gesetzt. Alle Storage-VMs werden immer unter dem zugehörigen Cluster aufgeführt.
 
 
-IMPORTANT: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgänge über die SnapCenter GUI hinzugefügt haben, müssen Sie diese Storage-VMs über dieselbe GUI ändern.
+IMPORTANT: Wenn Sie Speicher-VMs für anwendungsbasierte Datenschutzvorgänge über die SnapCenter -Benutzeroberfläche hinzugefügt haben, müssen Sie zum Ändern dieser Speicher-VMs dieselbe Benutzeroberfläche verwenden.
 
 .Schritte
 . Wählen Sie im linken Navigationsbereich des SCV-Plug-ins *Storage Systems* aus.
@@ -40,7 +40,7 @@ IMPORTANT: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgän
 Sie können den VMware vSphere-Client verwenden, um Storage-VMs aus dem Inventar in vCenter zu entfernen.
 
 
-NOTE: Wenn Sie Storage-VMs für applikationsbasierte Datensicherungsvorgänge über die SnapCenter GUI hinzugefügt haben, müssen Sie diese Storage-VMs über dieselbe GUI ändern.
+NOTE: Wenn Sie Speicher-VMs für anwendungsbasierte Datenschutzvorgänge über die SnapCenter -Benutzeroberfläche hinzugefügt haben, müssen Sie zum Ändern dieser Speicher-VMs dieselbe Benutzeroberfläche verwenden.
 
 .Bevor Sie beginnen
 Sie müssen alle Datenspeicher in der Storage-VM unmounten, bevor Sie die Storage-VM entfernen können.

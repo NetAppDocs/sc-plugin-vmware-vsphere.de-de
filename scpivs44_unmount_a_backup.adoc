@@ -16,9 +16,9 @@ summary: Sie können die Bereitstellung eines Backups aufheben, wenn Sie nicht m
 [role="lead"]
 Sie können die Bereitstellung eines Backups aufheben, wenn Sie nicht mehr auf die Dateien im Datastore zugreifen müssen.
 
-Wenn ein Backup als in der VMware vSphere-Client-GUI eingebunden aufgeführt wird, aber nicht auf dem unmounten Backup-Bildschirm aufgeführt ist, müssen Sie die REST-API verwenden `/backup/{backup-Id}/cleanup` Um die Out-of-gebundene Datastores zu bereinigen und dann die Unmount-Prozedur erneut zu versuchen.
+Wenn ein Backup in der Benutzeroberfläche des VMware vSphere-Clients als gemountet aufgeführt ist, es aber nicht im Bildschirm zum Unmounten von Backups aufgeführt ist, müssen Sie die REST-API verwenden. `/backup/{backup-Id}/cleanup` um die Out-of-Bound-Datenspeicher zu bereinigen und dann den Unmount-Vorgang erneut zu versuchen.
 
-Wenn Sie versuchen, eine Backup-Kopie eines NFS-Datenspeichers auf einer Storage-VM (SVM) mit dem Root-Volume in einer Mirror-Beziehung zur Lastverteilung bereitzustellen, kann dies möglicherweise zu einem Fehler führen `You may have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` Um dieses Problem zu vermeiden, ändern Sie die Einstellung für maximale Volumes, indem Sie zu *ESX* > *Verwalten* > *Einstellungen* > *Advance System Settings* navigieren und den Wert NFS.MaxVolumes ändern. Der maximale Wert ist 256.
+Wenn Sie versuchen, eine Sicherungskopie eines NFS-Datenspeichers auf einer Speicher-VM (SVM) mit dem Stammvolume in einer Lastenteilungs-Spiegelbeziehung zu mounten, tritt möglicherweise der Fehler `You might have reached the maximum number of NFS volumes configured in the vCenter. Check the vSphere Client for any error messages.` Um dieses Problem zu vermeiden, ändern Sie die Einstellung für die maximalen Volumes, indem Sie zu *ESX* > *Verwalten* > *Einstellungen* > *Erweiterte Systemeinstellungen* navigieren und den Wert NFS.MaxVolumes ändern.  Der Maximalwert ist 256.
 
 .Schritte
 . Wählen Sie auf der Seite VMware vSphere Client Shortcuts *Storage* aus.

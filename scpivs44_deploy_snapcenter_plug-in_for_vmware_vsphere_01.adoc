@@ -71,11 +71,11 @@ NOTE: Alle Hosts müssen mit IP-Adressen konfiguriert sein (FQDN-Hostnamen werde
 Die Implementierung kann einige Minuten dauern. Die erfolgreiche Bereitstellung wird angezeigt, wenn das SnapCenter-Plug-in für VMware vSphere eingeschaltet ist, die VMware-Tools installiert sind und Sie auf dem Bildschirm aufgefordert werden, sich beim SnapCenter-Plug-in für VMware vSphere anzumelden.
 
 +
-Auf dem Bildschirm wird die IP-Adresse angezeigt, an der das SnapCenter-Plug-in für VMware vSphere bereitgestellt wird. Notieren Sie sich die IP-Adresse. Sie müssen sich bei der SnapCenter-Plug-in für VMware vSphere-Management-GUI anmelden, wenn Sie Änderungen an der Konfiguration des SnapCenter-Plug-ins für VMware vSphere vornehmen möchten.
+Auf dem Bildschirm wird die IP-Adresse angezeigt, unter der das SnapCenter Plug-in for VMware vSphere bereitgestellt wird.  Notieren Sie sich die IP-Adresse.  Sie müssen sich bei der Verwaltungsbenutzeroberfläche des SnapCenter Plug-in for VMware vSphere anmelden, wenn Sie Änderungen an der Konfiguration des SnapCenter Plug-in for VMware vSphere vornehmen möchten.
 
-. Melden Sie sich mit der im Bereitstellungsbildschirm angezeigten IP-Adresse mit den im Bereitstellungsassistenten angegebenen Anmeldeinformationen an der SnapCenter-Plug-in für VMware vSphere-Managementschnittstelle an, und überprüfen Sie dann im Dashboard, ob das SnapCenter-Plug-in für VMware vSphere erfolgreich mit vCenter verbunden und aktiviert ist.
+. Melden Sie sich mit der auf dem Bereitstellungsbildschirm angezeigten IP-Adresse und den Anmeldeinformationen, die Sie im Bereitstellungsassistenten angegeben haben, bei der Verwaltungsbenutzeroberfläche des SnapCenter Plug-in for VMware vSphere für VMware vSphere an. Überprüfen Sie dann auf dem Dashboard, ob das SnapCenter Plug-in for VMware vSphere erfolgreich mit vCenter verbunden und aktiviert ist.
 +
-Verwenden Sie das Format `\https://<appliance-IP-address>:8080` Um auf die Management-GUI zuzugreifen.
+Verwenden Sie das Format `\https://<appliance-IP-address>:8080` um auf die Verwaltungsbenutzeroberfläche zuzugreifen.
 
 +
 Melden Sie sich bei der Implementierung mit dem Admin-Benutzernamen und -Passwort an, und verwenden Sie das MFA-Token, das über die Wartungskonsole generiert wurde.
