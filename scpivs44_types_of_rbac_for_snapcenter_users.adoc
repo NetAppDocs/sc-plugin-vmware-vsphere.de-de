@@ -32,6 +32,7 @@ Das SnapCenter Plug-in für die Bereitstellung von VMware vSphere erstellt für 
 
 Der vSphere Administrator richtet die RBAC für vCenter Server folgendermaßen ein:
 
+* Sie können Benutzern unter globalen Berechtigungen vordefinierte Rollen zuordnen.
 * Legen Sie die vCenter Server-Berechtigungen auf dem Root-Objekt (auch als Stammordner bekannt) fest. Sie können dann die Sicherheit verbessern, indem Sie untergeordnete Entitäten, die diese Berechtigungen nicht benötigen, einschränken.
 * Zuweisen der SCV-Rollen zu Active Directory-Benutzern.
 +
