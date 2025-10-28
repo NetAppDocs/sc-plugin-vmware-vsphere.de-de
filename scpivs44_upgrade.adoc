@@ -54,7 +54,7 @@ TIP: Sichern Sie das SnapCenter Plug-in für VMware vSphere OVA, bevor Sie ein U
 
 NOTE: Das Umschalten der Netzwerkkonfiguration von statisch auf DHCP wird nicht unterstützt.
 
-Die neuesten Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/matrix/imt.jsp?components=134348;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
+Aktuelle Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
 
 .Schritte
 . Bereiten Sie sich auf das Upgrade vor, indem Sie das SnapCenter Plug-in für VMware vSphere deaktivieren.
