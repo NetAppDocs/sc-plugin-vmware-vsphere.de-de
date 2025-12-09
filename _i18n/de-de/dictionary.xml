@@ -1831,8 +1831,6 @@ Der <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx
   <block id="856e1714b1d49f0d567463f553ef9120" category="cell">8 Kerne</block>
   <block id="2a9f9ccc193010032b655ecfc76e40c8" category="cell">Empfohlener RAM</block>
   <block id="dde8b54fa4a91beedb7b736869c08569" category="cell">24GB</block>
-  <block id="f8bce6aa95f5621d608c29e258b620d2" category="cell">Maximale Heapgröße des vmcontrol-Dienstes im Gerät</block>
-  <block id="af5700014f646d2567efa6288d85ab2b" category="cell">8GB</block>
   <block id="4fa7e925220267d7b768f4b3a78c6148" category="admonition">Das ASA r2-Speichersystem unterstützt das Umbenennen von Backups nicht.</block>
   <block id="d106abcc28b08528e977427482cfc257" category="paragraph">Sie können Änderungen in mehreren Kategorien vornehmen. Mit dieser Option können Sie auch sekundäre geschützte Ressourcen bearbeiten.</block>
   <block id="875b0302744a0f026125fde0002031ee" category="cell">Volume-Klon erstellen Volume-Klon zeigen Volume-Klon teilen starten Volume-Klon-Split-Status Volume-Clone-Split-Volume stoppen Volume erstellen Volume löschen Volume löschen Datei-Klon erstellen Volume-Datei zeigen-Disk-Nutzung Volume offline Volume online Volume-Volume verwalten Volume-Volume ändern Volume-qtree Volume erstellen qtree Volume löschen Volume-Volume ändern Volume-Snapshot Volume erstellen Volume löschen Snapshot Volume ändern Volume-SnapLock-Ablauf-Zeit Volume-Snapshot umbenennen Volume-Snapshot wiederherstellen-Datei-Volume-Snapshot wiederherstellen-Laufwerk zeigen Delta zeigen</block>
@@ -2202,4 +2200,7 @@ Der <block ref="205a43536d4d7a501f66e7fd657c91ca" category="inline-link-macro-rx
   <block id="95477275bd206a7fb98bf4a8ec799a0b" category="paragraph">Aktuelle Informationen zu unterstützten Versionen finden Sie unter<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
   <block id="65d35124c2bde72fba0fccdd4037d284" category="paragraph">Sie können keine Dateien und Ordner von einer VM wiederherstellen, auf der ein Linux-Gastbetriebssystem ausgeführt wird. Sie können jedoch ein VMDK anhängen und die Dateien und Ordner dann manuell wiederherstellen. Aktuelle Informationen zu unterstützten Gastbetriebssystemen finden Sie unter<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
   <block id="eccd74f81ec87affcad9c90ed7e1c714" category="paragraph">Sie können keine Dateien und Ordner von einer VM wiederherstellen, auf der ein Linux-Gastbetriebssystem ausgeführt wird. Sie können jedoch ein VMDK anhängen und die Dateien und Ordner dann manuell wiederherstellen. Aktuelle Informationen zu unterstützten Gastbetriebssystemen finden Sie im<block ref="dd731ea0dfaa7ba4b5325a39b353b5a2" category="inline-link-rx"></block> .</block>
+  <block id="dcd97a739116b3e37a21b24d1b1d508d" category="cell">Amazon FSxN für NetApp ONTAP -Speicher</block>
+  <block id="b6e6ac3bc87c50849332d71bd687f2ee" category="cell">9.10 und höher</block>
+  <block id="af6ccd5ef578462110c3f8bfdb7d3622" category="paragraph">Ab dieser Version unterstützt das SnapCenter Plug-in for VMware vSphere Amazon FSxN für NetApp ONTAP -Speichersysteme ab Version 9.10.</block>
 </blocks>

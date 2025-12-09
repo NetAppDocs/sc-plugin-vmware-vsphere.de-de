@@ -20,3 +20,5 @@ Das SnapCenter Plug-in for VMware vSphere 6.2 bietet Unterstützung für die Sic
 * Ausführen von Wiederherstellungsworkflows
 * Stellen Sie beim Erstellen oder Ändern von Ressourcengruppen einen sekundären Schutz bereit (verfügbar mit ONTAP 9.16.1 und späteren Versionen)
 
+
+Ab dieser Version unterstützt das SnapCenter Plug-in for VMware vSphere Amazon FSxN für NetApp ONTAP -Speichersysteme ab Version 9.10.
