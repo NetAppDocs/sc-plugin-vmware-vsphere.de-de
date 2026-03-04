@@ -4,7 +4,7 @@ permalink: scpivs44_restore_deleted_vms_from_backups.html
 keywords:  
 summary: Sie können eine gelöschte VM aus einem primären oder sekundären Datastore-Backup auf einem von Ihnen ausgewählten ESXi Host wiederherstellen. 
 ---
-= Gelöschte VMs aus Backups wiederherstellen
+= Gelöschte VMs mithilfe des SCV aus Backups wiederherstellen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

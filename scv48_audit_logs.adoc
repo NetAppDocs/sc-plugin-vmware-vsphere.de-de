@@ -4,7 +4,7 @@ permalink: scv48_audit_logs.html
 keywords:  
 summary: Audit-Protokoll bietet Rückverfolgbarkeit, wer was wann gemacht hat. Ein Audit-Protokoll ist eine Sammlung von Ereignissen in chronologischer Reihenfolge, und es wird in eine Datei innerhalb der Appliance geschrieben. 
 ---
-= Prüfprotokolle
+= Audit-Protokolle für das SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

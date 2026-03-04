@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__attach_and_detach_vmdks.html
 keywords:  
 summary: Um mithilfe des SnapCenter Plug-ins für VMware vSphere REST-APIs Verbindungen zu und Abtrennen von VMDKs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
 ---
-= REST-API-Workflows zum Verbinden und Trennen von VMDKs
+= REST API-Workflows zum Anhängen und Trennen von VMDKs im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

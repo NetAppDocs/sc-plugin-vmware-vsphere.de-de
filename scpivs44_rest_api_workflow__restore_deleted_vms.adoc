@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflow__restore_deleted_vms.html
 keywords:  
 summary: Um die Restore-Vorgänge für VM-Backups mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
 ---
-= REST-API-Workflow zur Wiederherstellung gelöschter VMs
+= REST-API-Workflow zur Wiederherstellung gelöschter VMs mithilfe des SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

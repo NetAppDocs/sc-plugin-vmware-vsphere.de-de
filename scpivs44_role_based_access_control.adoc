@@ -4,7 +4,7 @@ permalink: scpivs44_role_based_access_control.html
 keywords:  
 summary: Das SnapCenter Plug-in für VMware vSphere bietet zusätzliche RBAC-Funktionen für das Management virtualisierter Ressourcen. Das Plug-in unterstützt sowohl vCenter Server RBAC als auch ONTAP RBAC. 
 ---
-= Rollenbasierte Zugriffssteuerung (Role Based Access Control, RBAC)
+= Rollenbasierte Zugriffskontrolle für den SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

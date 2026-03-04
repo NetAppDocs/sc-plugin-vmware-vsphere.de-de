@@ -4,7 +4,7 @@ permalink: scpivs44_access_rest_apis_using_the_swagger_api_web_page.html
 keywords:  
 summary: REST-APIs sind über die Swagger Webseite zugänglich. Sie können auf die Swagger-Webseite zugreifen, um den SnapCenter-Server oder das SnapCenter-Plug-in für VMware vSphere REST-APIs anzuzeigen, sowie einen API-Aufruf manuell auszuführen. Verwenden Sie das SnapCenter Plug-in für VMware vSphere REST-APIs, um Sicherungsvorgänge bei VMs und Datastores durchzuführen. 
 ---
-= Greifen Sie über die Swagger API-Webseite auf REST-APIs zu
+= Greifen Sie über die Swagger API-Webseite für den SCV auf REST-APIs zu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_modify_storage_timeout.html
 keywords:  
 summary: Obwohl Backups in der Vergangenheit erfolgreich ausgeführt wurden, können sie zu dem Zeitpunkt fehlschlagen, zu dem das SnapCenter-Plug-in für VMware vSphere warten muss, bis das Speichersystem den konfigurierten Timeout-Zeitraum überschreitet. Wenn diese Bedingung eintritt, können Sie die konfigurierte Zeitüberschreitung erhöhen. 
 ---
-= Ändern Sie die konfigurierte Storage-Zeitüberschreitung
+= Ändern Sie die Zeitüberschreitung im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

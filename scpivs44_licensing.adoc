@@ -4,7 +4,7 @@ permalink: scpivs44_licensing.html
 keywords:  
 summary: Dieser Abschnitt enthält die Lizenzierungsinformationen für das SnapCenter Plug-in für VMware vSphere. 
 ---
-= Lizenzierung
+= Lizenzierung für das SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scv48_add_certificates_to_certificate_store.html
 keywords:  
 summary: Fügen Sie die Root- und Intermediate-Zertifikate der Zertifizierungsstelle zum VMware vCenter hinzu, um dem Zertifikat und den Artefakten zu vertrauen, die damit signiert sind. 
 ---
-= Fügen Sie Zertifikate zum VMware Certificate Store hinzu
+= Fügen Sie dem VMware-Zertifikatspeicher Zertifikate für den SCV hinzu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

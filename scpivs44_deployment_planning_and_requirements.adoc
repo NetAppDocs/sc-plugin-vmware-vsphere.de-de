@@ -4,7 +4,7 @@ permalink: scpivs44_deployment_planning_and_requirements.html
 keywords:  
 summary: Vor der Bereitstellung der virtuellen Appliance sollten Sie die Implementierungsanforderungen kennen. 
 ---
-= Implementierungsplanung und -Anforderungen
+= Bereitstellungsplanung und Anforderungen für das SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

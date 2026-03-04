@@ -4,7 +4,7 @@ permalink: scpivs44_attach_vmdks_to_a_vm.html
 keywords:  
 summary: Sie können eine oder mehrere VMDKs aus einem Backup an die übergeordnete VM oder an eine alternative VM auf demselben ESXi Host oder an eine alternative VM auf einem alternativen ESXi Host anschließen, der im verknüpften Modus von demselben vCenter oder einem anderen vCenter gemanagt wird. VMs in herkömmlichen Datenspeichern und in vVol Datastores werden unterstützt. 
 ---
-= Weisen Sie VMDKs an eine VM oder vVol VM zu
+= Binden Sie VMDKs mithilfe des SnapCenter Plug-in for VMware vSphere an eine VM an
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

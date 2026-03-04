@@ -4,7 +4,7 @@ permalink: scpivs44_upgrade.html
 keywords:  
 summary: Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwenden, können Sie ein Upgrade auf eine neuere Version durchführen. 
 ---
-= Upgrade von einer früheren Version des SnapCenter Plug-ins für VMware vSphere
+= Upgrade von einer früheren Version des SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

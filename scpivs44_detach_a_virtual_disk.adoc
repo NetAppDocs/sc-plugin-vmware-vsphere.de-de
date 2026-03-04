@@ -4,7 +4,7 @@ permalink: scpivs44_detach_a_virtual_disk.html
 keywords:  
 summary: Nachdem Sie ein virtuelles Laufwerk zur Wiederherstellung einzelner Dateien angeschlossen haben, können Sie das virtuelle Laufwerk von der übergeordneten VM trennen. 
 ---
-= Trennen Sie eine virtuelle Festplatte
+= Trennen einer virtuellen Festplatte im SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

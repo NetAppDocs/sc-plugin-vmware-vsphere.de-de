@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__modify_built-in_schedules.html
 keywords:  
 summary: Um integrierte Zeitpläne für VMware vSphere Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu ändern, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
 ---
-= REST-API-Workflow zum Ändern integrierter Zeitpläne
+= REST-API-Workflow zum Ändern integrierter Zeitpläne im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

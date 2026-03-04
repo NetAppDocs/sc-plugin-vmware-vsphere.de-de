@@ -4,7 +4,7 @@ permalink: scpivs44_guest_file_restore_scenarios_you_might_encounter.html
 keywords:  
 summary: Beim Versuch, eine Gastdatei wiederherzustellen, treten möglicherweise Szenarien auf, in denen die Sitzung zur Wiederherstellung der Gastdatei leer ist, der Vorgang zur Wiederherstellung der Gastdatei schlägt fehl, oder die Backups werden nach dem Abbruch der Wiederherstellungssession für die Gastdatei nicht mehr getrennt. 
 ---
-= Szenario zur Wiederherstellung von Gastdateien, in denen Sie möglicherweise auftreten können
+= Szenarien zur Wiederherstellung von Gastdateien im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

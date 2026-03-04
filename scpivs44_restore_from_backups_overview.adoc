@@ -4,7 +4,7 @@ permalink: scpivs44_restore_from_backups_overview.html
 keywords:  
 summary: Sie können VMs, VMDKs, Dateien und Ordner von primären oder sekundären Backups wiederherstellen. 
 ---
-= Restore-Übersicht
+= Wiederherstellungsoptionen für das SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

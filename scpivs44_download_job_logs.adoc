@@ -4,7 +4,7 @@ permalink: scpivs44_download_job_logs.html
 keywords:  
 summary: Sie können die Jobprotokolle von der Registerkarte Job Monitor auf dem Dashboard des SnapCenter VMware vSphere Clients herunterladen. 
 ---
-= Job-Protokolle herunterladen
+= Laden Sie Jobprotokolle vom SnapCenter Plug-in für VMware vSphere herunter
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

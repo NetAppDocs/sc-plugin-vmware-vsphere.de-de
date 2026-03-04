@@ -4,7 +4,7 @@ permalink: scpivs44_restore_vms_from_backups.html
 keywords:  
 summary: Wenn Sie eine VM wiederherstellen, können Sie den vorhandenen Inhalt mit der von Ihnen ausgewählten Backup-Kopie überschreiben oder eine Kopie der VM erstellen. 
 ---
-= Wiederherstellung von VMs aus Backups
+= VMs mithilfe des SCV aus Backups wiederherstellen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

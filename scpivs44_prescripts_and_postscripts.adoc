@@ -4,7 +4,7 @@ permalink: scpivs44_prescripts_and_postscripts.html
 keywords:  
 summary: Im Rahmen Ihrer Datensicherungsabläufe können Sie benutzerdefinierte Prescripts und Postskripte verwenden. Diese Skripte ermöglichen die Automatisierung entweder vor oder nach Ihrem Datensicherungsauftrag. 
 ---
-= Vorschriften und Postskripte
+= Vor- und Nachskripte für das SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

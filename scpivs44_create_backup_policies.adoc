@@ -4,7 +4,7 @@ permalink: scpivs44_create_backup_policies.html
 keywords:  
 summary:  
 ---
-= Backup-Richtlinien erstellen
+= Erstellen Sie Sicherungsrichtlinien im SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

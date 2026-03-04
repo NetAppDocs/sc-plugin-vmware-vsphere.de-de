@@ -4,7 +4,7 @@ permalink: scpivs44_minimum_ontap_privileges_required.html
 keywords:  
 summary: Die erforderlichen Mindestberechtigungen für ONTAP variieren je nach SnapCenter Plug-ins, die Sie zur Datensicherung verwenden. 
 ---
-= ONTAP-Berechtigungen erforderlich
+= Minimale ONTAP-Berechtigungen erforderlich für die SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: rename_storage.html
 keywords:  
 summary: Sie können den Speicher mit REST API umbenennen. 
 ---
-= Backup des umbenannten Speichers wiederherstellen
+= Stellen Sie Backups aus umbenanntem Speicher mithilfe des SCV wieder her
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

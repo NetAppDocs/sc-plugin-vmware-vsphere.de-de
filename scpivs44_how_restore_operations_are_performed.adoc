@@ -4,7 +4,7 @@ permalink: scpivs44_how_restore_operations_are_performed.html
 keywords:  
 summary: 'Für VMFS Umgebungen verwendet das SnapCenter Plug-in für VMware vSphere Klon- und Mount-Vorgänge mit Storage VMotion, um Restore-Vorgänge durchzuführen. Für NFS-Umgebungen verwendet das Plug-in natives ONTAP Single File SnapRestore (SFSR), um die Effizienz für die meisten Wiederherstellungsvorgänge zu steigern. Für vVol VMs verwendet das Plug-in die Wiederherstellung von Snapshots mit einfacher ONTAP-Datei und die Wiederherstellung von SnapMirror-Daten.' 
 ---
-= Durchführen von Restore-Vorgängen
+= Wie der SCV Wiederherstellungsvorgänge durchführt
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_set_up_proxy_vms_for_restore_operations.html
 keywords:  
 summary: Wenn Sie eine Proxy-VM zum Anschließen einer virtuellen Festplatte für die Wiederherstellung von Gastdateien verwenden möchten, müssen Sie die Proxy-VM einrichten, bevor Sie mit der Wiederherstellung beginnen. Sie können zwar jederzeit eine Proxy-VM einrichten, jedoch ist es unter Umständen günstiger, sie sofort nach Abschluss der Plug-in-Bereitstellung einzurichten. 
 ---
-= Einrichten von Proxy-VMs für Wiederherstellungsvorgänge
+= Richten Sie Proxy-VMs für Wiederherstellungsvorgänge im SCV ein
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

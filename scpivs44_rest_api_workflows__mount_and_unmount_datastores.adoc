@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflows__mount_and_unmount_datastores.html
 keywords:  
 summary: Um Mount- und Unmount-Vorgänge für Datastore-Backups mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgegebene Sequenz von REST-API-Aufrufen befolgen. 
 ---
-= REST-API-Workflows zum Mounten und Unmounten von Datastores
+= REST API-Workflows zum Einbinden und Aushängen von Datastores im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

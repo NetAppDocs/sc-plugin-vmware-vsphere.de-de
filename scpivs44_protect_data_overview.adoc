@@ -4,7 +4,7 @@ permalink: scpivs44_protect_data_overview.html
 keywords:  
 summary: Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die eine oder mehrere VMs und Datastores beliebig kombinieren können. Sie können Backups nach Bedarf oder gemäß einem definierten Schutzzeitplan erstellen. 
 ---
-= Datensicherungs-Workflow
+= Datenschutz-Workflow für das SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

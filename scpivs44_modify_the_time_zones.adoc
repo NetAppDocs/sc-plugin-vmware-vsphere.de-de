@@ -4,7 +4,7 @@ permalink: scpivs44_modify_the_time_zones.html
 keywords:  
 summary: Wenn Sie einen Sicherungszeitplan für eine SnapCenter Plug-in for VMware vSphere Ressourcengruppe konfigurieren, wird der Zeitplan automatisch auf die Zeitzone eingestellt, in der das SnapCenter Plug-in for VMware vSphere bereitgestellt wird.  Sie können diese Zeitzone mithilfe der Verwaltungsbenutzeroberfläche oder Wartungskonsole des SnapCenter Plug-in for VMware vSphere ändern. 
 ---
-= Ändern der Zeitzonen für Backups
+= Ändern Sie die Zeitzonen für Backups im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

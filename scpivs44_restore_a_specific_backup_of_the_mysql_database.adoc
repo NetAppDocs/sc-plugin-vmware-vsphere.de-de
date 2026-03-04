@@ -4,7 +4,7 @@ permalink: scpivs44_restore_a_specific_backup_of_the_mysql_database.html
 keywords:  
 summary: 'Mit der Wartungskonsole können Sie ein bestimmtes Backup der MySQL-Datenbank (auch als NSM-Datenbank bezeichnet) für das SnapCenter Plug-in für die virtuelle Appliance VMware vSphere wiederherstellen.' 
 ---
-= Stellen Sie ein bestimmtes Backup der MySQL-Datenbank wieder her
+= Stellen Sie eine bestimmte Sicherung der SCV MySQL-Datenbank wieder her
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_create_backup_policies_for_vms_and_datastores.html
 keywords:  
 summary: Sie müssen Backup-Richtlinien erstellen, bevor Sie das SnapCenter Plug-in für VMware vSphere zum Backup von VMs und Datastores verwenden. 
 ---
-= Erstellen von Backup-Richtlinien für VMs und Datastores
+= Erstellen Sie Sicherungsrichtlinien für VMs und Datenspeicher im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

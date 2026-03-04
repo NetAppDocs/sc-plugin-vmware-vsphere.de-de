@@ -4,7 +4,7 @@ permalink: scpivs44_rest_api_workflow__restore_vmdks.html
 keywords:  
 summary: Um Restore-Vorgänge für VMDKs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs durchzuführen, müssen Sie die vorgeschriebene Sequenz von REST-API-Aufrufen befolgen. 
 ---
-= REST-API-Workflow zur Wiederherstellung von VMDKs
+= REST-API-Workflow zur Wiederherstellung von VMDKs mithilfe des SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

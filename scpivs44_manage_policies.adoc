@@ -4,7 +4,7 @@ permalink: scpivs44_manage_policies.html
 keywords:  
 summary: Backup-Richtlinien für das SnapCenter Plug-in für VMware vSphere lassen sich erstellen, ändern, anzeigen, trennen und löschen. Zur Durchführung von Datensicherungsvorgängen sind Richtlinien erforderlich. 
 ---
-= Management von Richtlinien
+= Richtlinien im SnapCenter Plug-in für VMware vSphere verwalten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_access_the_maintenance_console.html
 keywords:  
 summary: Applikations-, System- und Netzwerkkonfigurationen können über die Wartungskonsole für das SnapCenter Plug-in für VMware vSphere gemanagt werden. Sie können Ihr Administratorpasswort, das Wartungspasswort, das Generieren von Support Bundles und das Starten der Remote Diagnostics ändern. 
 ---
-= Öffnen Sie die Wartungskonsole
+= Greifen Sie auf die SnapCenter Plug-in für VMware vSphere Wartungskonsole zu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

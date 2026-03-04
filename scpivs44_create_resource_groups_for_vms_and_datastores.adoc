@@ -4,7 +4,7 @@ permalink: scpivs44_create_resource_groups_for_vms_and_datastores.html
 keywords:  
 summary: Eine Ressourcengruppe ist der Container für VMs, Datastores, vSphere Tags und vSphere VM-Ordner, den Sie schützen möchten. 
 ---
-= Erstellen von Ressourcengruppen
+= Erstellen Sie Ressourcengruppen für VMs und Datenspeicher im SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

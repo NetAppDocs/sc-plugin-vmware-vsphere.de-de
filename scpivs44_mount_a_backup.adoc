@@ -4,7 +4,7 @@ permalink: scpivs44_mount_a_backup.html
 keywords:  
 summary: Sie können einen herkömmlichen Datenspeicher aus einem Backup einbinden, wenn Sie auf die Dateien im Backup zugreifen möchten. Sie können das Backup entweder auf demselben ESXi Host mounten, auf dem das Backup erstellt wurde, oder auf einem alternativen ESXi Host, der denselben Typ von VM- und Host-Konfigurationen hat. Sie können einen Datastore mehrmals auf einem Host mounten. 
 ---
-= Mounten Sie ein Backup
+= Binden Sie eine Sicherung mithilfe des SnapCenter Plug-in für VMware vSphere ein
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: scpivs44_restore_guest_files_and_folders_from_vmdks.html
 keywords:  
 summary: Sie können eine oder mehrere Dateien oder Ordner von einer VMDK auf einem Windows Gastbetriebssystem wiederherstellen. 
 ---
-= Wiederherstellung von Gastdateien und Ordnern über VMDKs
+= Stellen Sie Gastdateien und -ordner aus VMDKs mithilfe des SCV wieder her
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

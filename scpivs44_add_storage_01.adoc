@@ -4,7 +4,7 @@ permalink: scpivs44_add_storage_01.html
 keywords:  
 summary: Durch Hinzufügen von Storage kann das SnapCenter Plug-in für VMware vSphere Backup- und Restore-Vorgänge in vCenter erkennen und managen. 
 ---
-= Erweitern Sie Ihren Storage
+= Fügen Sie dem SnapCenter Plug-in für VMware vSphere Speichersysteme hinzu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

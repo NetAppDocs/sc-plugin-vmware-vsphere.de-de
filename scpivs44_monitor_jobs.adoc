@@ -4,7 +4,7 @@ permalink: scpivs44_monitor_jobs.html
 keywords:  
 summary: Nachdem Sie mit dem VMware vSphere-Client einen Datensicherungsvorgang durchgeführt haben, können Sie den Job-Status über die Registerkarte Job Monitor im Dashboard überwachen und Jobdetails anzeigen. 
 ---
-= Überwachen von Jobs
+= Überwachen Sie Jobs im SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

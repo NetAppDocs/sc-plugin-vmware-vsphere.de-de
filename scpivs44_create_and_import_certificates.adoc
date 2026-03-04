@@ -4,7 +4,7 @@ permalink: scpivs44_create_and_import_certificates.html
 keywords:  
 summary: 'Das SnapCenter Plug-in für VMware vSphere verwendet SSL-Verschlüsselung zur sicheren Kommunikation mit dem Client-Browser. Während dies verschlüsselte Daten über das Netzwerk, die Erstellung eines neuen selbst signiertes Zertifikat, oder mit Ihrer eigenen Certificate Authority (CA) Infrastruktur oder eine Drittanbieter-CA ermöglicht, stellt sicher, dass das Zertifikat ist einzigartig für Ihre Umgebung.' 
 ---
-= Erstellen und Importieren von Zertifikaten
+= Erstellen und importieren Sie Zertifikate für den SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

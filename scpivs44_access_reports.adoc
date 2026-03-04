@@ -4,7 +4,7 @@ permalink: scpivs44_access_reports.html
 keywords:  
 summary: Sie können über das Dashboard Berichte für einen oder mehrere Jobs anfordern. 
 ---
-= Aufrufen von Berichten
+= Zugriffsberichte im SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

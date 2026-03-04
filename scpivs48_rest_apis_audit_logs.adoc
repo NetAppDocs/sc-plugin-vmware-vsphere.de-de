@@ -4,7 +4,7 @@ permalink: scpivs48_rest_apis_audit_logs.html
 keywords:  
 summary: REST-APIs zur Erstellung von Prüfprotokollen 
 ---
-= REST-APIs zur Erstellung von Prüfprotokollen
+= REST-APIs zur Generierung von Audit-Logs für den SCV
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

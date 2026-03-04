@@ -4,7 +4,7 @@ permalink: scpivs44_unmount_a_backup.html
 keywords:  
 summary: Sie können die Bereitstellung eines Backups aufheben, wenn Sie nicht mehr auf die Dateien im Datastore zugreifen müssen. 
 ---
-= Heben Sie die Bereitstellung eines Backups auf
+= Hängen Sie ein Backup mit dem SnapCenter Plug-in für VMware vSphere aus
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

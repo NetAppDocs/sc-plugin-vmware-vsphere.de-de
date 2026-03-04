@@ -4,7 +4,7 @@ permalink: scpivs44_manage_backups.html
 keywords:  
 summary: Sie können Backups umbenennen und löschen, die vom SnapCenter Plug-in für VMware vSphere durchgeführt wurden. Sie können auch mehrere Backups gleichzeitig löschen. 
 ---
-= Backup-Management
+= Backups im SnapCenter Plug-in für VMware vSphere verwalten
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

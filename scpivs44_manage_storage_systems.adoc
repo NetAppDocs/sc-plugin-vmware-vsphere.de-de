@@ -4,7 +4,7 @@ permalink: scpivs44_manage_storage_systems.html
 keywords:  
 summary: Bevor Sie VMs oder Datastores mithilfe des VMware vSphere Clients sichern oder wiederherstellen können, müssen Sie den Storage hinzufügen. 
 ---
-= Management von Storage-Systemen
+= Verwalten Sie Speichersysteme im SnapCenter Plug-in für VMware vSphere
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

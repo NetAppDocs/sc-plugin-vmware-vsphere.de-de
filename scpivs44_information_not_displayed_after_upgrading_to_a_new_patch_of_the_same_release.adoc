@@ -4,7 +4,7 @@ permalink: scpivs44_information_not_displayed_after_upgrading_to_a_new_patch_of_
 keywords:  
 summary: Nach dem Upgrade des SnapCenter Plug-ins für VMware vSphere auf einen neuen Patch derselben Version werden aktuelle Jobs oder andere Informationen möglicherweise nicht im Dashboard und auf der Jobüberwachung angezeigt. 
 ---
-= Informationen, die nach dem Upgrade auf einen neuen Patch derselben Version nicht angezeigt werden
+= Informationen werden nach dem Upgrade auf einen neuen Patch von SCV nicht angezeigt
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

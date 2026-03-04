@@ -4,7 +4,7 @@ permalink: scpivs44_overview_of_different_snapcenter_guis.html
 keywords:  
 summary: Das SnapCenter Plug-in for VMware vSphere ist ein eigenständiges Plug-in, das sich von anderen SnapCenter -Plug-ins unterscheidet.  Sie müssen die VMware vSphere-Client-Benutzeroberfläche in vCenter für alle Sicherungs- und Wiederherstellungsvorgänge für VMs, VMDKs und Datenspeicher verwenden. 
 ---
-= Übersicht über die verschiedenen SnapCenter -Benutzeroberflächen
+= SnapCenter Plug-in für VMware vSphere Benutzeroberflächen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

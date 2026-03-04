@@ -4,7 +4,7 @@ permalink: scpivs44_deployment_workflow_for_new_users.html
 keywords:  
 summary: Sie können diesen Workflow verwenden, wenn Sie SnapCenter noch nicht verwendet haben und keine SnapCenter-Backups besitzen. 
 ---
-= Implementierungs-Workflow für neue Benutzer
+= Bereitstellungsablauf für neue SnapCenter Benutzer
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

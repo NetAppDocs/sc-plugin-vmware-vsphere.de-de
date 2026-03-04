@@ -4,7 +4,7 @@ permalink: scpivs44_deploy_snapcenter_plug-in_for_vmware_vsphere.html
 keywords:  
 summary: Um SnapCenter VMs, Datastores und applikationskonsistente Datenbanken auf virtualisierten Maschinen zu sichern, müssen Sie das SnapCenter Plug-in für VMware vSphere implementieren. 
 ---
-= Implementieren Sie das SnapCenter Plug-in für VMware vSphere
+= Stellen Sie das SnapCenter Plug-in für VMware vSphere bereit
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

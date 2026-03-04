@@ -4,7 +4,7 @@ permalink: scpivs44_restore_vmdks_from_backups.html
 keywords:  
 summary: Sie können vorhandene VMDKs, gelöschte oder abgetrennte VMDKs, entweder von einem primären oder sekundären Backup herkömmlicher VMs oder vVol VMs wiederherstellen. 
 ---
-= Wiederherstellung von VMDKs aus Backups
+= VMDKs aus Backups mithilfe des SCV wiederherstellen
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

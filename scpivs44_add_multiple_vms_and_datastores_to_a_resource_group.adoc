@@ -4,7 +4,7 @@ permalink: scpivs44_add_multiple_vms_and_datastores_to_a_resource_group.html
 keywords:  
 summary: Mithilfe des Assistenten zum Bearbeiten von Ressourcengruppen von SnapCenter VMware vSphere können Sie einer vorhandenen Ressourcengruppe mehrere Ressourcen hinzufügen. 
 ---
-= Fügen Sie mehrere VMs und Datenspeicher einer Ressourcengruppe hinzu
+= Fügen Sie einer Ressourcengruppe im SCV mehrere VMs und Datastores hinzu
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
