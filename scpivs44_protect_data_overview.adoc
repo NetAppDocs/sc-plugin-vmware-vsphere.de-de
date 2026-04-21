@@ -13,7 +13,12 @@ summary: Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die e
 :imagesdir: ./media/
 
 
-[role="lead"]
+[]
+====
+
+NOTE: Verbessern Sie den VMware-Schutz mit NetApp Backup and Recovery, das 3-2-1-Backup, Schutz vor Ransomware, automatisierte Backup-Verwaltung, verbesserte Skalierbarkeit, geringere Kosten und die zentrale Verwaltung mehrerer vCenter Instanzen bietet. Sie können SCV-Richtlinien, Snapshots und Zeitpläne zu NetApp Backup and Recovery migrieren und den gesamten VM-Schutz über eine einzige Konsole verwalten. Weitere Informationen finden Sie unter link:https://docs.netapp.com/us-en/data-services-backup-recovery/["NetApp Backup and Recovery Dokumentation"].
+
+====
 Nutzen Sie den SnapCenter vSphere Client, um Datensicherungsvorgänge für VMs, VMDKs und Datastores durchzuführen. Alle Backup-Vorgänge werden von Ressourcengruppen durchgeführt, die eine oder mehrere VMs und Datastores beliebig kombinieren können. Sie können Backups nach Bedarf oder gemäß einem definierten Schutzzeitplan erstellen.
 
 Wenn Sie einen Datenspeicher sichern, sichern Sie alle VMs in diesem Datenspeicher.

@@ -22,3 +22,32 @@ Das SnapCenter Plug-in for VMware vSphere 6.2 bietet Unterstützung für die Sic
 
 
 Ab dieser Version unterstützt das SnapCenter Plug-in for VMware vSphere Amazon FSxN für NetApp ONTAP -Speichersysteme ab Version 9.10.
+
+[NOTE]
+====
+Sie können jetzt eine nahtlose, unterbrechungsfreie Migration mit nur einem Klick von SnapCenter Plug-in for VMware zu NetApp Backup and Recovery durchführen. NetApp Backup and Recovery bietet erweiterte Funktionen für Datenschutz und -verwaltung, darunter:
+
+* Unterstützung für die 3-2-1-Backup- und Archivierungsstrategie
+* Schutz vor Ransomware mit SnapLock und logisch luftgetrennten Backups mittels Objektsperrung
+* Automatisierte Behebung während Ransomware-Scans
+* Automatisierte SnapMirror Beziehungserstellung für sekundäre und Objektspeicherziele, optimiertes Backup-Aufbewahrungsmanagement und vereinfachte Anwendungs- und VM-Backup-Workflows
+* Verbesserte Skalierbarkeit und Leistung zur Bewältigung wachsender Datenmengen
+* Reduzierter Verwaltungsaufwand und geringere Gesamtbetriebskosten durch einen vollständig verwalteten Backup-Service
+* Zentralisierte Backup-Verwaltung von Datenspeichern und VMs über mehrere vCenter Instanzen hinweg von einer einzigen Schnittstelle
+* Schnelle Wiederherstellung von Dateien und Ordnern aus Windows- und Linux-Gastsystemen
+
+
+====
+Weitere Informationen finden Sie unter den folgenden Links:
+
+* https://docs.netapp.com/us-en/data-services-backup-recovery/["NetApp Backup and Recovery Dokumentation"].
+* https://docs.netapp.com/us-en/data-services-backup-recovery/br-use-vmware-discovery.html["Entdecken Sie VMware-Workloads mit NetApp Backup and Recovery"]
+* https://docs.netapp.com/us-en/data-services-backup-recovery/br-start-login.html["Melden Sie sich bei NetApp Backup and Recovery an"]
+* https://console.netapp.com/unified-backup-restore["Zugriff auf NetApp Backup- und Wiederherstellungsdienst"]
+
+
+
+
+== Schützen Sie Ihre VMware-Umgebung mit NetApp Backup and Recovery
+
+video::UeT9yFssTug[youtube,width=848,height=480]
