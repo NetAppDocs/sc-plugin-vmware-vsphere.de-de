@@ -214,7 +214,7 @@ sidebar:
       url: "/scpivs44_modify_the_time_zones.html"
     - title: Anmeldedaten ändern
       url: "/scpivs44_modify_the_logon_credentials.html"
-    - title: Ändern der Anmeldedaten für vCenter-Anmeldung
+    - title: Aktualisieren Sie die in SCV konfigurierten vCenter-Anmeldeinformationen
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
     - title: Netzwerkeinstellungen ändern
       url: "/scpivs44_modify_the_network_settings.html"
