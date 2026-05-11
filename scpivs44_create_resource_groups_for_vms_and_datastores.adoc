@@ -47,7 +47,7 @@ Weitere Informationen finden Sie in der Dokumentation zu den ONTAP tools for VMw
 * Sie können einer Ressourcengruppe jederzeit Ressourcen hinzufügen oder daraus entfernen.
 * Um eine einzelne Ressource, beispielsweise eine VM, zu sichern, erstellen Sie eine Ressourcengruppe, die nur diese Ressource enthält.
 * Um mehrere Ressourcen zu sichern, erstellen Sie eine Ressourcengruppe, die alle Ressourcen enthält, die Sie schützen möchten.
-* Für FlexGroup Volumes in NetApp MetroCluster Umgebungen, wenn Sie ONTAP 9.8 oder 9.9 verwenden, starten Sie den SnapCenter Plug-in für VMware vSphere Dienst neu und synchronisieren Sie SnapMirror Beziehungen nach einem Switchover oder Switchback erneut, bevor Sie Ressourcengruppen sichern. In ONTAP 9.8 können Backups nach einem Switchback hängen bleiben; dieses Problem ist in ONTAP 9.9 behoben.
+* Für FlexGroup-Volumes in MetroCluster-Umgebungen, wenn Sie ONTAP 9.8 oder 9.9 verwenden, starten Sie den SnapCenter Plug-in for VMware vSphere-Dienst neu und synchronisieren Sie SnapMirror-Beziehungen nach einem Switchover oder Switchback erneut, bevor Sie Ressourcengruppen sichern. In ONTAP 9.8 können Backups nach einem Switchback hängen bleiben; dieses Problem ist in ONTAP 9.9 behoben.
 * Um eine optimale Snapshot-Leistung zu erzielen, gruppieren Sie VMs und Datenspeicher auf demselben Volume in einer einzigen Ressourcengruppe.
 * Sie können eine Ressourcengruppe ohne Sicherungsrichtlinie erstellen, für den Datenschutz ist jedoch mindestens eine Richtlinie erforderlich.  Wählen Sie eine vorhandene Richtlinie aus oder erstellen Sie während der Erstellung der Ressourcengruppe eine neue.
 +
