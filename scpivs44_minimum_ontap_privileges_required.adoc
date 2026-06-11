@@ -51,19 +51,19 @@ Job beenden
 | Volume-Klon erstellen Volume-Klon zeigen Volume-Klon teilen starten Volume-Klon-Split-Status Volume-Clone-Split-Volume stoppen Volume erstellen Volume löschen Volume löschen Datei-Klon erstellen Volume-Datei zeigen-Disk-Nutzung Volume offline Volume online Volume-Volume verwalten Volume-Volume ändern Volume-qtree Volume erstellen qtree Volume löschen Volume-Volume ändern Volume-Snapshot Volume erstellen Volume löschen Snapshot Volume ändern Volume-SnapLock-Ablauf-Zeit Volume-Snapshot umbenennen Volume-Snapshot wiederherstellen-Datei-Volume-Snapshot wiederherstellen-Laufwerk zeigen Delta zeigen 
 
 
-| vserver cifs vServer cifs Freigabe vserver erstellen cifs Freigabe vserver löschen vserver cifs shadowcopy vServer zeigen cifs share vserver zeigen vserver Export-Policy vServer Export-Policy vServer Export-Policy erstellen vServer Export-Policy löschen vServer NVMe-Subsystem vserver NVMe-Subsystem wserver vserver nvme-Subsystem abbilden vserver Export-Policy-Regel zeigen vserver Export-Policy zeigen vserver zeigen vserver iscsi vserver iscsi-Verbindung zeigen vserver zeigen vserver 
+| vserver cifs vserver export-policy vserver export-policy create vserver export-policy delete vserver export-policy rule create vserver export-policy rule show vserver export-policy show vserver iscsi vserver nvme subsystem controller vserver nvme subsystem controller show vserver nvme subsystem create vserver nvme subsystem delete vserver nvme subsystem host vserver nvme subsystem host show vserver nvme subsystem host add vserver nvme subsystem host remove vserver nvme subsystem map vserver nvme subsystem map show vserver nvme subsystem map add vserver nvme subsystem map remove vserver nvme subsystem modify vserver nvme subsystem show vserver nvme namespace create vserver nvme namespace delete vserver nvme namespace modify vserver nvme namespace show network interface 
 |===
 |===
 | Schreibgeschützte Befehle: Minimale ONTAP Privileges 
 
 
-| Cluster Identity show Network Interface show vserver vserver Peer vserver show 
+| Clusteridentität anzeigen Netzwerkschnittstelle anzeigen vserver anzeigen 
 |===
 |===
 | Alle Befehle: Minimale ONTAP Privileges 
 
 
-| Zeigt die Storage-Einheit der Konsistenzgruppe an 
+| vserver consistency-group 
 |===
 Sie können den Befehl _Cluster Identity show_ Cluster Level ignorieren, wenn Sie eine Rolle erstellen, die dem Daten-Vserver zugeordnet werden soll.
 

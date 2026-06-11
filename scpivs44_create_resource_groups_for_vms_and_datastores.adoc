@@ -77,7 +77,7 @@ Der sekundäre Schutz ermöglicht die Replikation für die Ressourcen in der Res
 | Für dieses Feld… | Do this… 
 
 
-| VCenter Server | Wählen Sie einen vCenter-Server aus. 
+| VCenter Server | Wählen Sie einen vCenter Server aus. 
 
 
 | Name | Geben Sie einen Namen für die Ressourcengruppe ein.  Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datenspeicher-, Richtlinien-, Sicherungs- oder Ressourcengruppennamen: % & * $ # @ !  \ / : * ?  " < > - [vertikaler Strich] ; ' und Leerzeichen.  Ein Unterstrich (_) ist zulässig.  VM- oder Datenspeichernamen mit Sonderzeichen werden abgeschnitten, was die Suche nach einem bestimmten Backup erschwert.  Im verknüpften Modus verwaltet jedes vCenter sein eigenes SnapCenter Plug-in for VMware vSphere Repository.  Dadurch können Sie dieselben Ressourcengruppennamen in verschiedenen vCentern verwenden. 

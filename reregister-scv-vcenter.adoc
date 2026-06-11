@@ -1,0 +1,126 @@
+---
+sidebar: sidebar 
+permalink: reregister-scv-vcenter.html 
+keywords: re-register SCV with vCenter, recover SCV registration, SCV not connected to vCenter, update vCenter credentials in SCV, unregister SCV extension 
+summary: Verwenden Sie diese Aufgabe, um die SCV-Registrierung mit vCenter nach Änderungen an Anmeldeinformationen, Netzwerk oder Appliance wiederherzustellen. 
+---
+= SCV-Verbindung und -Registrierung wiederherstellen mit vCenter
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+SnapCenter Plug-in für VMware vSphere (SCV) registriert sich automatisch bei vCenter, wenn Sie die Appliance bereitstellen. Wenn die Registrierung unterbrochen ist, zum Beispiel nach einer vCenter-Passwortänderung, einer Änderung der SCV-IP-Adresse oder des Hostnamens, einem Verbindungsabbruch oder einer teilweise fehlgeschlagenen Bereitstellung, verwenden Sie diese Aufgabe, um die Verbindung und Registrierung wiederherzustellen und zu bestätigen, dass sie ordnungsgemäß funktioniert.
+
+Falls die Registrierung nicht erfolgreich abgeschlossen wird, versuchen Sie es erneut, indem Sie eine der folgenden Aktionen ausführen:
+
+* Der VMware vSphere Clientdienst (`scvservice` wird neu gestartet.
+* Die IP-Adresse oder der Hostname der SCV-Appliance ändert sich.
+* Die vCenter Zugangsdaten werden in SCV erneut gespeichert.
+
+
+.Bevor Sie beginnen
+* Sie müssen die IP-Adresse der SCV-Verwaltungsbenutzeroberfläche und die Anmeldeinformationen kennen.
+* Wenn die Multi-Faktor-Authentifizierung (MFA) aktiviert ist, generieren Sie über die Wartungskonsole ein neues 6-stelliges MFA-Token.
+* Stellen Sie sicher, dass dem von SCV verwendeten vCenter-Konto die erforderlichen Berechtigungen auf der vCenter-Root-Ebene zugewiesen sind.
++
+Weitere Informationen finden Sie unter link:scpivs44_minimum_vcenter_privileges_required.html["Mindestberechtigungen für vCenter, die für das SCV erforderlich sind"].
+
+
+
+
+
+== Wiederherstellungsschritte
+
+. Starten Sie den VMware vSphere Clientdienst neu.
++
+Ein Neustart führt die Erweiterungsregistrierung automatisch erneut aus. Weitere Informationen finden Sie unter link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere Clientdienst für den SCV neu"].
+
+. Sollte ein Neustart das Problem nicht beheben, führen Sie die folgenden Schritte aus:
++
+.. Melden Sie sich bei der SnapCenter Plug-in for VMware vSphere Verwaltungs-Benutzeroberfläche im Format  `\https://<appliance-IP-address>:8080` an.
+.. Wählen Sie *Konfiguration* > *vCenter* > *Bearbeiten*.
+.. Geben Sie das aktuelle Passwort ein und wählen Sie dann *Speichern*.
++
+Weitere Informationen finden Sie unter link:scpivs44_modify_the_vcenter_logon_credentials.html["Aktualisieren Sie die in SCV konfigurierten vCenter-Anmeldeinformationen"].
+
+
+
+. Das Plug-in abmelden und anschließend erneut registrieren.
++
+Falls das Plug-in immer noch nicht verbunden ist, führen Sie die folgenden Schritte aus:
+
++
+.. SCV von vCenter abmelden.
+.. Registrieren Sie SCV erneut, indem Sie die vCenter-Anmeldeinformationen erneut speichern oder den VMware vSphere-Clientdienst neu starten.
++
+Wenn die registrierte Erweiterung auf eine alte SCV-IP-Adresse verweist, werden die Registrierungsinformationen durch Abmeldung und erneute Registrierung des Plug-ins aktualisiert.
+
++
+Weitere Informationen finden Sie unter link:scpivs44_unregister_plugin_from_vcenter.html["Das SnapCenter Plug-in für VMware vSphere von vCenter abmelden"].
+
+
+
+. link:#verify-registration-succeeded["Überprüfen Sie, ob die Registrierung erfolgreich war."].
+
+
+
+
+== Überprüfen Sie, ob die Registrierung erfolgreich war.
+
+Verwenden Sie eine der folgenden Prüfungen, um zu bestätigen, dass SCV registriert und verbunden ist.
+
+* *Verwaltungsbenutzeroberfläche*: Überprüfen Sie auf dem *Dashboard*, ob SCV mit vCenter verbunden und aktiviert ist.
+* *vSphere Client*: Überprüfen Sie, ob das *SnapCenter Plug-in für VMware vSphere*-Menü angezeigt wird und ob die Plug-in-Seiten geladen werden.
+* *Protokolle (Gerät)*: In `/var/log/netapp/vmcontrol/vmcontrol.log` suchen Sie nach Registrierungsmeldungen wie  `Registering Aegis as a Vcenter Extension` und  `Registered com.netapp.aegis extension`. Änderungen der Anmeldeinformationen werden ebenfalls in  `/var/log/netapp/audit/audit.log` protokolliert.
+
+
+[NOTE]
+====
+Die folgenden Referenzen sollten nur für die erweiterte Fehlerbehebung verwendet werden. Verfügbarkeit und genaue Werte können je nach Version und Umgebung variieren.
+
+* Im vCenter Extension Manager sehen Sie möglicherweise die SCV-bezogenen Erweiterungen  `com.netapp.aegis` und  `com.netapp.scv.client`.
+* In manchen Umgebungen wird Ihnen möglicherweise auch die ältere HTML-Client-Erweiterung  `com.netapp.scvm.webclient` angezeigt.
+* Wenn Zugriff auf das Geräteprotokoll möglich ist, können Sie auch die zuvor in diesem Thema erwähnten Einträge zur Registrierung und die API-Aktivität überprüfen.
+
+
+====
+
+
+== Häufige Registrierungsfehler und deren Behebung
+
+* *Ungültige Anmeldedaten*
++
+.. Geben Sie den korrekten vCenter-Benutzernamen (`domain\username` und das Passwort erneut ein.
+.. Generieren Sie über die Wartungskonsole ein neues 6-stelliges MFA-Token.
+
+
+* *Unzureichende Berechtigungen (RBAC)*: Stellen Sie sicher, dass dem vCenter-Konto die von SCV geforderten Berechtigungen, einschließlich der Berechtigung zum Registrieren einer Erweiterung, auf der vCenter-Stammebene zugewiesen sind.
++
+Weitere Informationen finden Sie unter link:scpivs44_minimum_vcenter_privileges_required.html["Mindestberechtigungen für vCenter, die für das SCV erforderlich sind"].
+
+* *Keine Verbindung zu vCenter möglich oder Verbindung abgelehnt*: Überprüfen Sie den vCenter-Host und -Port, die Netzwerk- und Firewall-Konnektivität und dass vCenter läuft.
+* *Unbekannter Host*: Überprüfen Sie den vCenter FQDN oder die IP-Adresse und stellen Sie sicher, dass die DNS-Auflösung vom Gerät aus funktioniert.
+* *Nicht unterstützte vCenter-Version*: SCV unterstützt vCenter Server 7.0U1 und höher.
++
+Weitere Informationen finden Sie unter link:scpivs44_deployment_planning_and_requirements.html["Bereitstellungsplanung und Anforderungen für das SCV"].
+
+* *Dienst wird nicht ausgeführt*: Wenn der VMware vSphere Clientdienst gestoppt ist, kann die Registrierung nicht ausgeführt werden.
++
+Starten Sie den VMware vSphere Clientdienst neu.
+
+
+
+
+
+== Verwandte Themen
+
+* link:scpivs44_modify_the_vcenter_logon_credentials.html["Aktualisieren Sie die in SCV konfigurierten vCenter-Anmeldeinformationen"]
+* link:scpivs44_restart_the_vmware_vsphere_web_client_service.html["Starten Sie den VMware vSphere Clientdienst für den SCV neu"]
+* link:scpivs44_unregister_plugin_from_vcenter.html["Das SnapCenter Plug-in für VMware vSphere von vCenter abmelden"]
+* link:scpivs44_minimum_vcenter_privileges_required.html["Mindestberechtigungen für vCenter, die für das SCV erforderlich sind"]
+

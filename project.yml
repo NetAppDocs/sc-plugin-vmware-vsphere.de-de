@@ -216,6 +216,8 @@ sidebar:
       url: "/scpivs44_modify_the_logon_credentials.html"
     - title: Aktualisieren Sie die in SCV konfigurierten vCenter-Anmeldeinformationen
       url: "/scpivs44_modify_the_vcenter_logon_credentials.html"
+    - title: SCV-Verbindung und -Registrierung wiederherstellen mit vCenter
+      url: "/reregister-scv-vcenter.html"
     - title: Netzwerkeinstellungen ändern
       url: "/scpivs44_modify_the_network_settings.html"
     - title: Ändern Sie die Standardwerte der Konfiguration
