@@ -18,6 +18,7 @@ Sie können Backups umbenennen und löschen, die vom SnapCenter Plug-in für VMw
 
 
 
+[[rename-backups]]
 == Backups umbenennen
 
 Sie können das SnapCenter Plug-in für VMware vSphere Backups umbenennen, wenn Sie einen besseren Namen geben möchten, um die Suchbarkeit zu verbessern.
@@ -39,6 +40,7 @@ Verwenden Sie die folgenden Sonderzeichen nicht in VM-, Datastore-, Richtlinien-
 
 
 
+[[delete-backups]]
 == Backups löschen
 
 Das SnapCenter Plug-in für VMware vSphere Backups kann gelöscht werden, wenn das Backup für andere Datensicherungsvorgänge nicht mehr benötigt wird. Sie können ein Backup löschen oder mehrere Backups gleichzeitig löschen.

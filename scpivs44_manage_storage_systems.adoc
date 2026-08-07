@@ -18,6 +18,7 @@ Bevor Sie VMs oder Datastores mithilfe des VMware vSphere Clients sichern oder w
 
 
 
+[[modify-storage-vms]]
 == Ändern Sie Storage-VMs
 
 Mit dem VMware vSphere Client können Sie die Konfigurationen der Cluster und Storage-VMs, die im SnapCenter Plug-in für VMware vSphere registriert und für VM-Datensicherungsvorgänge verwendet werden, ändern.
@@ -35,6 +36,7 @@ IMPORTANT: Wenn Sie Speicher-VMs für anwendungsbasierte Datenschutzvorgänge ü
 
 
 
+[[remove-storage-vms]]
 == Storage-VMs entfernen
 
 Sie können den VMware vSphere-Client verwenden, um Storage-VMs aus dem Inventar in vCenter zu entfernen.

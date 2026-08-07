@@ -18,6 +18,7 @@ Sie können Dateien oder Ordner von einem Virtual Machine-Laufwerk (VMDK) auf ei
 
 
 
+[[guest-restore-workflow]]
 == Workflow zur Wiederherstellung von Gastspielen
 
 Zur Wiederherstellung von Gastbetriebssystemen gehören die folgenden Schritte:
@@ -48,6 +49,7 @@ Stellen Sie die ausgewählten Dateien oder Ordner an einem bestimmten Speicheror
 
 
 
+[[prerequisites-for-restoring-guest-files-and-folders]]
 == Voraussetzungen für die Wiederherstellung von Gastdateien und -Ordnern
 
 Bevor Sie eine oder mehrere Dateien oder Ordner von einer VMDK auf einem Windows-Gastbetriebssystem wiederherstellen, müssen Sie alle Anforderungen kennen.
@@ -89,6 +91,7 @@ Sie können keine Dateien und Ordner von einer VM wiederherstellen, auf der ein 
 
 
 
+[[guest-file-restore-limitations]]
 == Einschränkungen bei der Wiederherstellung von Gastdateien
 
 Bevor Sie eine Datei oder einen Ordner von einem Gastbetriebssystem wiederherstellen, sollten Sie wissen, was die Funktion nicht unterstützt.

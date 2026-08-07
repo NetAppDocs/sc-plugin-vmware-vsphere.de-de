@@ -41,6 +41,7 @@ Sie können das Download-Symbol auswählen, um Plug-In-Protokolle herunterzulade
 
 
 
+[[types-of-reports-from-the-vmware-vsphere-client]]
 == Berichtstypen vom VMware vSphere Client
 
 Der VMware vSphere Client für SnapCenter bietet anpassbare Berichtsoptionen, die Ihnen Details zu Ihren Datensicherungsaufgaben und zum Plug-in-Ressourcenstatus liefern. Sie können Berichte nur für den Primärschutz erstellen.

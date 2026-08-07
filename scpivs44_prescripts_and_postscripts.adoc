@@ -18,12 +18,14 @@ Im Rahmen Ihrer Datensicherungsabläufe können Sie benutzerdefinierte Prescript
 
 
 
+[[supported-script-types]]
 == Unterstützte Skripttypen
 
 Perl- und Shell-Skripte werden unterstützt. Shell-Skripte müssen mit beginnen `!/bin/bash`. (`!/bin/sh` Wird nicht unterstützt.)
 
 
 
+[[script-path-location]]
 == Speicherort des Skriptpfads
 
 Prescripts und Postscripts werden vom SnapCenter Plug-in für VMware vSphere ausgeführt. Daher müssen die Skripte im SnapCenter Plug-in für VMware vSphere OVA mit ausführbaren Berechtigungen zu finden sein.
@@ -38,6 +40,7 @@ Der Skriptpfad wird zum Zeitpunkt der Ausführung des Skripts validiert.
 
 
 
+[[where-to-specify-scripts]]
 == Angeben von Skripten
 
 Skripte werden in den Backup-Richtlinien angegeben. Wenn ein Sicherungsauftrag gestartet wird, ordnet die Richtlinie das Skript automatisch den gesicherten Ressourcen zu.
@@ -46,6 +49,7 @@ Um mehrere Skripte festzulegen, drücken Sie nach jedem Skriptpfad *Enter*, um j
 
 
 
+[[when-scripts-are-executed]]
 == Wenn Skripte ausgeführt werden
 
 Skripte werden gemäß dem für BACKUP_PHASE eingestellten Wert ausgeführt.
@@ -76,6 +80,7 @@ NOTE: Wenn ein Postscript fehlschlägt, wird das Backup erfolgreich abgeschlosse
 
 
 
+[[environment-variables-passed-to-scripts]]
 == Umgebungsvariablen an Skripte übergeben
 
 Sie können die in der folgenden Tabelle aufgeführten Umgebungsvariablen in Skripten verwenden.
@@ -114,12 +119,14 @@ SUSPENDED`
 |===
 
 
+[[script-timeouts]]
 == Skript-Timeouts
 
 Das Timeout für Backup-Skripts beträgt 15 Minuten und kann nicht geändert werden.
 
 
 
+[[example-perl-script-1]]
 == Beispiel FÜR PERL-Skript #1
 
 Das folgende Beispiel PERL-Skript druckt die Umgebungsvariablen, wenn ein Backup ausgeführt wird.
@@ -138,6 +145,7 @@ Das folgende Beispiel PERL-Skript druckt die Umgebungsvariablen, wenn ein Backup
 
 
 
+[[example-perl-script-2]]
 == Beispiel FÜR PERL-Skript #2
 
 Im folgenden Beispiel werden Informationen zum Backup gedruckt.
@@ -167,6 +175,7 @@ Im folgenden Beispiel werden Informationen zum Backup gedruckt.
 
 
 
+[[example-shell-script]]
 == Beispiel für Shell-Skript
 
 

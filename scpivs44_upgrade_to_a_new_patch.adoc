@@ -24,6 +24,7 @@ Wenn der Plug-in-Cache nicht gelöscht wird, werden die letzten Jobs in den folg
 
 
 
+[[steps-for-clearing-the-cache]]
 == Schritte zum Löschen des Caches
 
 . Suchen Sie das `vsphere-client-serenity` Ordner, und suchen Sie anschließend das `com.netapp.scv.client-<release-number>` Ordner und löschen.

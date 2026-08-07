@@ -18,6 +18,7 @@ Sie sollten mit den folgenden Anforderungen vertraut sein, bevor Sie mit der Ber
 
 
 
+[[host-requirements]]
 == Host-Anforderungen erfüllt
 
 Bevor Sie mit der Bereitstellung des SnapCenter Plug-ins für VMware vSphere (SCV) beginnen, sollten Sie mit den Host-Anforderungen vertraut sein.
@@ -79,6 +80,7 @@ Wiederherstellung einer vollständigen VM, wenn eine oder mehrere VMDKs auf eine
 
 
 
+[[license-requirements]]
 == Lizenzanforderungen
 
 |===
@@ -98,6 +100,7 @@ Wiederherstellung einer vollständigen VM, wenn eine oder mehrere VMDKs auf eine
 |===
 
 
+[[software-support]]
 == Softwaresupport
 
 |===
@@ -142,6 +145,7 @@ Die Mindestanforderungen an die Software für die Unterstützung von NVMe over T
 
 
 
+[[space-sizing-and-scaling-requirements]]
 == Platz-, Dimensionierungs- und Skalierungsanforderungen
 
 |===
@@ -158,6 +162,7 @@ Die Mindestanforderungen an die Software für die Unterstützung von NVMe over T
 |===
 
 
+[[connection-and-port-requirements]]
 == Verbindungs- und Portanforderungen
 
 |===
@@ -181,6 +186,7 @@ Hinweis: Es wird ein benutzerdefinierter Port zum Hinzufügen des SCV-Hosts zu S
 |===
 
 
+[[configurations-supported]]
 == Unterstützte Konfigurationen
 
 Jede Plug-in-Instanz unterstützt nur einen vCenter Server, der sich im verknüpften Modus befindet. Mehrere Plug-in-Instanzen können jedoch denselben SnapCenter Server unterstützen, wie in der folgenden Abbildung dargestellt.
@@ -189,6 +195,7 @@ image:scpivs44_image4.png["Unterstützte grafische Darstellung der Konfiguration
 
 
 
+[[rbac-privileges-required]]
 == RBAC-Berechtigungen erforderlich
 
 Für das vCenter-Administratorkonto muss die erforderliche vCenter-Privileges in der folgenden Tabelle angegeben sein.
@@ -216,6 +223,7 @@ Erweiterung
 |===
 
 
+[[autosupport]]
 == AutoSupport
 
 Das SnapCenter Plug-in für VMware vSphere enthält mindestens Informationen zur Nachverfolgung seiner Nutzung, einschließlich der Plug-in-URL. AutoSupport enthält eine Tabelle installierter Plug-ins, die vom AutoSupport Viewer angezeigt werden.

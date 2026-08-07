@@ -20,6 +20,7 @@ Fügen Sie für jede REST-API hinzu `\https://<server>:<port>` An der Vorderseit
 
 
 
+[[to-attach-vmdks-follow-this-workflow]]
 == Gehen Sie wie folgt vor, um VMDKs anzuhängen:
 
 |===
@@ -45,6 +46,7 @@ NOTE: Um eine VMDK an eine andere VM anzuhängen, übergeben Sie den moref der Z
 |===
 
 
+[[to-detach-vmdks-follow-this-workflow]]
 == Gehen Sie zum Trennen von VMDKs wie folgt vor:
 
 |===

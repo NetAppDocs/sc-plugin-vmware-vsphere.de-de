@@ -18,6 +18,7 @@ Backup-Richtlinien für das SnapCenter Plug-in für VMware vSphere lassen sich e
 
 
 
+[[detach-policies]]
 == Richtlinien trennen
 
 Sie können Richtlinien aus einer SnapCenter Plug-in für VMware vSphere Ressourcengruppe entfernen, wenn diese Richtlinien die Datensicherung für die Ressourcen nicht mehr regeln sollen. Sie müssen eine Richtlinie trennen, bevor Sie sie entfernen können oder bevor Sie die Zeitplanfrequenz ändern.
@@ -36,6 +37,7 @@ Sie können der Ressourcengruppe auch eine Richtlinie hinzufügen, indem Sie die
 
 
 
+[[modify-policies]]
 == Richtlinien ändern
 
 Sie können Richtlinien für ein SnapCenter Plug-in für eine VMware vSphere Ressourcengruppe ändern. Sie können die Häufigkeit, die Replikationsoptionen, die Einstellungen für die Snapshot-Aufbewahrung oder die Skriptinformationen ändern, während eine Richtlinie an eine Ressourcengruppe angehängt ist.
@@ -68,6 +70,7 @@ Die Änderungen werden wirksam, wenn das nächste geplante Backup durchgeführt 
 
 
 
+[[delete-policies]]
 == Richtlinien löschen
 
 Wenn Sie keine konfigurierte Backup-Richtlinie mehr für das SnapCenter Plug-in für VMware vSphere benötigen, möchten Sie sie möglicherweise löschen.

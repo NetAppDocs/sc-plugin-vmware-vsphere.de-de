@@ -18,6 +18,7 @@ Beim Versuch, eine Gastdatei wiederherzustellen, kann es zu einem der folgenden 
 
 
 
+[[guest-file-restore-session-is-blank]]
 == Die Sitzung zur Wiederherstellung der Gastdatei ist leer
 
 Dieses Problem tritt auf, wenn Sie eine Gastdateiwiederherstellungssitzung erstellen und während diese Sitzung aktiv war, wird das Gastbetriebssystem neu gestartet. Wenn diese Funktion eintritt, bleiben VMDKs im Gastbetriebssystem möglicherweise offline. Wenn Sie versuchen, die Sitzung zur Wiederherstellung der Gastdatei zu durchsuchen, ist die Liste leer.
@@ -26,6 +27,7 @@ Um das Problem zu beheben, legen Sie die VMDKs manuell wieder im Gastbetriebssys
 
 
 
+[[guest-file-restore-attach-disk-operation-fails]]
 == Der Vorgang zum Wiederherstellen der Gastdatei schlägt fehl
 
 Dieses Problem tritt auf, wenn Sie eine Wiederherstellung von Gastdateien starten, aber der Vorgang zum Anbinden der Festplatte schlägt fehl, obwohl VMware-Tools ausgeführt werden und die Zugangsdaten für das Gastbetriebssystem korrekt sind. In diesem Fall wird der folgende Fehler zurückgegeben:
@@ -36,12 +38,14 @@ Um das Problem zu beheben, starten Sie den Windows-Dienst für VMware-Tools auf 
 
 
 
+[[guest-email-shows-for-the-file-name]]
 == Gast-E-Mail zeigt ???? Für den Dateinamen
 
 Dieses Problem tritt auf, wenn Sie die Funktion zum Wiederherstellen von Gastdateien verwenden, um Dateien oder Ordner mit nicht-englischen Zeichen in den Namen wiederherzustellen und die E-Mail-Benachrichtigung „???????“ anzeigt. " Für die wiederhergestellten Dateinamen. Der E-Mail-Anhang enthält die Namen der wiederhergestellten Dateien und Ordner korrekt.
 
 
 
+[[backups-are-not-detached-after-guest-file-restore-session-is-discontinued]]
 == Backups werden nach dem Abbruch der Sitzung zur Wiederherstellung von Gastdateien nicht mehr getrennt
 
 Dieses Problem tritt auf, wenn Sie eine Gastdatei über ein VM-konsistentes Backup wiederherstellen. Während die Wiederherstellungssitzung für die Gastdatei aktiv ist, wird ein weiteres VM-konsistentes Backup für dieselbe VM durchgeführt. Wenn die Sitzung zur Wiederherstellung der Gastdatei getrennt wird, entweder manuell oder automatisch nach 24 Stunden, werden die Backups für die Sitzung nicht getrennt.

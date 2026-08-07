@@ -18,12 +18,14 @@ Nach der Bereitstellung des SnapCenter Plug-ins für VMware vSphere müssen Sie 
 
 
 
+[[required-operations-after-deployment]]
 == Erforderliche Vorgänge nach der Implementierung
 
 Als neuer SnapCenter Benutzer müssen Sie SnapCenter Storage-VMs hinzufügen, bevor Sie Datensicherungsvorgänge durchführen können. Geben Sie beim Hinzufügen von Storage VMs die Management-LIF an. Sie können auch ein Cluster hinzufügen und die Cluster-Management-LIF angeben. Informationen zum Hinzufügen von Speicher finden Sie unter link:scpivs44_add_storage_01.html["Erweitern Sie Ihren Storage"^].
 
 
 
+[[deployment-issues-you-might-encounter]]
 == Möglicherweise treten Bereitstellungsprobleme auf
 
 * Nach der Bereitstellung der virtuellen Appliance wird die Registerkarte * Sicherungsjobs* auf dem Dashboard möglicherweise in den folgenden Szenarien nicht geladen:
@@ -52,6 +54,7 @@ Wenn das Problem weiterhin besteht, starten Sie den VMware vSphere-Client-Servic
 
 
 
+[[manage-authentication-errors]]
 == Management von Authentifizierungsfehlern
 
 Wenn Sie die Administratoranmeldeinformationen nicht verwenden, wird möglicherweise nach der Bereitstellung des SnapCenter-Plug-ins für VMware vSphere oder nach der Migration ein Authentifizierungsfehler angezeigt. Wenn ein Authentifizierungsfehler auftritt, müssen Sie den Dienst neu starten.
@@ -63,6 +66,7 @@ Wenn Sie die Administratoranmeldeinformationen nicht verwenden, wird möglicherw
 
 
 
+[[register-snapcenter-plug-in-for-vmware-vsphere-with-snapcenter-server]]
 == Registrieren Sie das SnapCenter Plug-in für VMware vSphere mit SnapCenter Server
 
 Wenn Sie Applikations-Over-VMDK-Workflows in SnapCenter ausführen möchten (applikationsbasierte Sicherungs-Workflows für virtualisierte Datenbanken und Filesysteme), müssen Sie das SnapCenter Plug-in für VMware vSphere mit dem SnapCenter Server registrieren.

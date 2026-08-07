@@ -63,6 +63,7 @@ Die Ereignisse lassen sich in drei Hauptkategorien einteilen:
 
 
 
+[[data-protection-events]]
 == Ereignisse Auf Der Datensicherung
 
 Die Ressourcen in SCV sind:
@@ -102,6 +103,7 @@ In der folgenden Tabelle sind die Vorgänge aufgeführt, die für jede Ressource
 |===
 
 
+[[maintenance-console-events]]
 == Ereignisse Der Wartungskonsole
 
 Der administrative Betrieb in der Wartungskonsole wird geprüft. Folgende Optionen für die Wartungskonsole sind verfügbar:
@@ -127,6 +129,7 @@ Der administrative Betrieb in der Wartungskonsole wird geprüft. Folgende Option
 
 
 
+[[admin-console-events]]
 == Ereignisse Der Admin-Konsole
 
 Die folgenden Vorgänge in der Admin Console-UI werden geprüft:
@@ -149,6 +152,7 @@ Die folgenden Vorgänge in der Admin Console-UI werden geprüft:
 
 
 
+[[configure-syslog-servers]]
 == Konfigurieren Sie Syslog-Server
 
 Prüfprotokolle werden in der Appliance gespeichert und regelmäßig auf ihre Integrität überprüft. Mit der Ereignisweiterleitung können Sie Ereignisse vom Quell- oder Weiterleitungscomputer abrufen und auf einem zentralen Computer, dem Syslog-Server, speichern. Die Daten werden während der Übertragung zwischen Quelle und Ziel verschlüsselt.
@@ -176,6 +180,7 @@ Diese Aufgabe unterstützt Sie bei der Konfiguration des Syslog-Servers.
 
 
 
+[[change-audit-log-settings]]
 == Ändern Sie die Einstellungen des Überwachungsprotokolls
 
 Sie können die Standardkonfigurationen der Protokolleinstellungen ändern.

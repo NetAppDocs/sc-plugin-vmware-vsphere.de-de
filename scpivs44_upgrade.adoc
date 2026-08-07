@@ -19,7 +19,11 @@ NOTE: Ein Upgrade auf SCV 6.2 wird nur für VMware vCenter Server 7 Update 1 und
 Wenn Sie das SnapCenter Plug-in für virtuelle VMware vSphere Appliance verwenden, können Sie ein Upgrade auf eine neuere Version durchführen. Beim Upgrade-Prozess wird das bestehende Plug-in wieder registriert und ein Plug-in wird implementiert, das nur mit vSphere 7.0U1 und höheren Versionen kompatibel ist.
 
 
+CAUTION: Vor dem Upgrade ist zu überprüfen, ob Ihre Umgebung die Systemanforderungen erfüllt. Einzelheiten finden Sie unter link:scpivs44_deployment_planning_and_requirements.html["SnapCenter Plug-in für VMware vSphere Bereitstellungsplanung und Anforderungen"].
 
+
+
+[[upgrade-paths]]
 == Upgrade-Pfade
 
 |===
@@ -54,7 +58,7 @@ TIP: Sichern Sie das SnapCenter Plug-in für VMware vSphere OVA, bevor Sie ein U
 
 NOTE: Das Umschalten der Netzwerkkonfiguration von statisch auf DHCP wird nicht unterstützt.
 
-Aktuelle Informationen zu unterstützten Versionen finden Sie unter https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
+Die aktuellsten Informationen zu den unterstützten Versionen sind unter link:https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool (IMT)"^] zu finden.
 
 .Schritte
 . Bereiten Sie sich auf das Upgrade vor, indem Sie das SnapCenter Plug-in für VMware vSphere deaktivieren.
@@ -65,7 +69,7 @@ Aktuelle Informationen zu unterstützten Versionen finden Sie unter https://imt.
 
 . Laden Sie das Upgrade herunter `.iso` Datei:
 +
-.. Loggen Sie sich auf der NetApp Support Site ein .
+.. Melden Sie sich bei der link:https://mysupport.netapp.com/products/index.html["NetApp Support-Website"^] an.
 .. Wählen Sie aus der Liste der Produkte *SnapCenter Plug-in für VMware vSphere*, und klicken Sie dann auf die Schaltfläche *NEUESTES RELEASE HERUNTERLADEN*.
 .. Laden Sie das Upgrade zum SnapCenter Plug-in für VMware vSphere herunter `.iso` Datei an jedem Speicherort.
 

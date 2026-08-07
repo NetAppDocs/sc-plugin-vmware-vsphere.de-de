@@ -227,6 +227,7 @@ NOTE: Wenn der Stilllegungsvorgang für eine der VMs im Backup fehlschlägt, mar
 
 
 
+[[manage-compatibility-check-failures]]
 == Managen Sie Fehler bei der Kompatibilitätsprüfung
 
 SnapCenter führt Kompatibilitätsprüfungen durch, wenn Sie versuchen, eine Ressourcengruppe zu erstellen. Beziehen Sie sich immer auf https://imt.netapp.com/imt/imt.jsp?components=180121;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool (IMT)"^] für die neuesten Informationen zum SnapCenter Support. Gründe für Inkompatibilität können sein:

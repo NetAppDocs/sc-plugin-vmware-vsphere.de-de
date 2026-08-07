@@ -20,6 +20,7 @@ Der `scbr.override` Die Konfigurationsdatei wird vom SnapCenter-Plug-in für VMw
 
 
 
+[[create-the-scbr-override-configuration-file]]
 == Erstellen Sie die Konfigurationsdatei scbr.override
 
 . Gehen Sie zu `/opt/netapp/scvservice/standalone_aegis/etc/scbr/scbr.override-template`.
@@ -28,6 +29,7 @@ Der `scbr.override` Die Konfigurationsdatei wird vom SnapCenter-Plug-in für VMw
 
 
 
+[[properties-you-can-override]]
 == Eigenschaften, die Sie überschreiben können
 
 * Standardmäßig verwendet die Vorlage Hash-Symbol, um die Konfigurationseigenschaften zu kommentieren. Um einen Konfigurationswert mit einer Eigenschaft zu ändern, müssen Sie den entfernen `#` Zeichen.

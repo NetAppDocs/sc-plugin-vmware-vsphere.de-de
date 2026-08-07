@@ -38,6 +38,7 @@ Der Cache befindet sich an den folgenden Orten, abhängig vom Typ des Serverbetr
 
 
 
+[[workaround-if-you-already-upgraded-before-clearing-the-cache]]
 == Problemumgehung, wenn Sie bereits vor dem Löschen des Caches aktualisiert haben
 
 . Melden Sie sich bei der Verwaltungsbenutzeroberfläche des SnapCenter Plug-in for VMware vSphere an.

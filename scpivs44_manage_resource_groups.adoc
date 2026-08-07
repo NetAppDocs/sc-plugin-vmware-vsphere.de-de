@@ -21,6 +21,7 @@ NOTE: Ressourcengruppen werden als Backup-Jobs in der Virtual Storage Console (V
 
 
 
+[[suspend-and-resume-operations-on-resource-groups]]
 == Unterbrechen und Fortsetzen des Betriebs von Ressourcengruppen
 
 Unterbrechen Sie geplante Vorgänge für eine Ressourcengruppe.  Aktivieren Sie sie bei Bedarf erneut.
@@ -37,6 +38,7 @@ Nachdem die Sicherungsvorgänge wieder aufgenommen wurden, ändert sich der Job-
 
 
 
+[[modify-resource-groups]]
 == Ressourcengruppen ändern
 
 Ressourcen in Ressourcengruppen in vCenter können entfernt oder hinzugefügt, Richtlinien abgetrennt oder zugewiesen, Zeitpläne geändert oder andere Optionen für Ressourcengruppen geändert werden.
@@ -57,6 +59,7 @@ Sie können Änderungen in mehreren Kategorien vornehmen. Mit dieser Option kön
 
 
 
+[[delete-resource-groups]]
 == Löschen von Ressourcengruppen
 
 Löschen Sie eine Ressourcengruppe in vCenter, wenn Sie die Ressourcen nicht schützen müssen.  Löschen Sie alle Ressourcengruppen, bevor Sie das SnapCenter Plug-in for VMware vSphere entfernen.
