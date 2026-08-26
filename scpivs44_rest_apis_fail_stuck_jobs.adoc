@@ -4,7 +4,7 @@ permalink: scpivs44_rest_apis_fail_stuck_jobs.html
 keywords:  
 summary: Um Job-IDs für VMware vSphere-Client-Jobs mit dem SnapCenter Plug-in für VMware vSphere REST-APIs zu finden, müssen DIE REST-API-Aufrufe für VMware vSphere verwendet werden. 
 ---
-= REST API zum Markieren hängengebliebener Jobs als fehlgeschlagen in der SCV
+= Festsitzende Jobs können mithilfe von REST-APIs in SCV als fehlgeschlagen markiert werden.
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

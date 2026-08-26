@@ -4,7 +4,7 @@ permalink: scpivs44_release_notes.html
 keywords:  
 summary: In den Versionshinweisen finden Sie wichtige Informationen zu dieser Version des SnapCenter Plug-ins für VMware vSphere, einschließlich Lizenzierungsanforderungen, bekannten Problemen, Vorsichtsmaßnahmen, Einschränkungen, Und jegliche Aktualisierungen oder Korrekturen der Dokumentation. 
 ---
-= Versionshinweise für das SnapCenter Plug-in für VMware vSphere
+= Versionshinweise für SnapCenter Plug-in für VMware vSphere 6.2
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

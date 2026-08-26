@@ -4,7 +4,7 @@ permalink: scpivs44_log_in_to_the_snapcenter_vmware_vsphere_web_client.html
 keywords:  
 summary: Wenn das SnapCenter Plug-in für VMware vSphere implementiert wird, wird ein VMware vSphere Client in vCenter installiert, der auf dem vCenter Bildschirm mit anderen vSphere Clients angezeigt wird. 
 ---
-= Melden Sie sich beim SnapCenter VMware vSphere-Client an
+= Anmeldung beim SnapCenter Plug-in für VMware vSphere Client
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
