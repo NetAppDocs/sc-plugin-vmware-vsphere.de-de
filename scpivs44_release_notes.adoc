@@ -4,7 +4,7 @@ permalink: scpivs44_release_notes.html
 keywords:  
 summary: In den Versionshinweisen finden Sie wichtige Informationen zu dieser Version des SnapCenter Plug-ins für VMware vSphere, einschließlich Lizenzierungsanforderungen, bekannten Problemen, Vorsichtsmaßnahmen, Einschränkungen, Und jegliche Aktualisierungen oder Korrekturen der Dokumentation. 
 ---
-= Versionshinweise für SnapCenter Plug-in für VMware vSphere 6.2
+= Versionshinweise für SnapCenter Plug-in for VMware vSphere 6.2.1 und 6.2
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,9 @@ summary: In den Versionshinweisen finden Sie wichtige Informationen zu dieser Ve
 
 
 [role="lead"]
-Informieren Sie sich über die neuen und verbesserten Funktionen des SnapCenter Plug-in for VMware vSphere 6.2.
+Informationen zu den neuen und erweiterten Funktionen, die in SnapCenter Plug-in for VMware vSphere 6.2.1 und 6.2 verfügbar sind.
 
-Einzelheiten zu bekannten Problemen, Einschränkungen und behobenen Problemen finden Sie unter https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464["Versionshinweise zum SnapCenter Plug-in for VMware vSphere 6.2"^] .  Sie müssen sich mit Ihrem NetApp -Konto anmelden oder ein Konto erstellen, um auf die Versionshinweise zugreifen zu können.
+Einzelheiten zu bekannten Problemen, Einschränkungen und behobenen Fehlern finden Sie https://library.netapp.com/ecm/ecm_download_file/ECMLP3359464["SnapCenter Plug-in for VMware vSphere 6.2.1 und 6.2 Versionshinweise"^]. Sie müssen sich mit Ihrem NetApp Konto anmelden oder ein Konto erstellen, um auf die Versionshinweise zuzugreifen.
 
 [NOTE]
 ====

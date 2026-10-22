@@ -1,0 +1,56 @@
+---
+permalink: scv_releasenotes_621_whats_new.html 
+sidebar: sidebar 
+keywords: 'what"s new, release notes, scv, 6.2.1' 
+summary: Informationen zu den neuen Funktionen, die in SnapCenter Plug-in for VMware vSphere 6.2.1 verfügbar sind 
+---
+= Neuerungen in SnapCenter Plug-in for VMware vSphere 6.2.1
+:allow-uri-read: 
+
+
+[role="lead"]
+SnapCenter Plug-in for VMware vSphere 6.2.1 ist ein Wartungsrelease. Es aktualisiert die mit der Appliance ausgelieferte Drittanbietersoftware und enthält Fehlerbehebungen für Probleme, die seit dem Release von SnapCenter Plug-in for VMware vSphere 6.2 festgestellt wurden.
+
+
+
+[[updated-components]]
+== Aktualisierte Komponenten
+
+|===
+| Komponente | SnapCenter Plug-in for VMware vSphere 6.2.1 
+
+
+| Java Laufzeitumgebung | OpenJDK 21.0.12 
+
+
+| .NET Laufzeit | .NET 10.0.11 
+
+
+| Betriebssystem der Appliance | Debian 13 
+|===
+
+
+[[fixed-issues]]
+== Behobene Probleme
+
+Es empfiehlt sich, vor dem Upgrade auf ein Release die bekannten Probleme zu prüfen, die in diesem Release behoben wurden.
+
+* VMDP-7072: Cloud-managed ONTAP auf Oracle Cloud kann als Storage-System hinzugefügt werden.
+* VMDP-7052: Bei der Wiederherstellung einer VM an einem anderen Speicherort bleibt die VM Storage-Richtlinie erhalten, sodass die Wiederherstellung für VMs, die eine Nicht-Standard-Richtlinie verwenden, nicht mehr abgelehnt wird.
+* VMDP-7027: Die Support-Log-Bundles enthalten die Liste der konfigurierten Storage-Systeme.
+* VMDP-6987: Das Anhängen oder Wiederherstellen einer virtuellen Festplatte schlägt nicht mehr fehl, wenn vCenter den Datenspeicher kurzzeitig als nicht verfügbar meldet.
+* VMDP-6965: Die Seite „Zeitpläne“ wird jetzt auch dann geladen, wenn ein Zeitplaneintrag unvollständig ist.
+* VMDP-6952: Wenn ein Benutzer nicht berechtigt ist, eine Ressourcengruppe zu löschen, erscheint die Berechtigungsmeldung.
+* VMDP-6939: Die Wartungskonsole meldet nicht mehr, dass VMware Tools fehlen.
+* VMDP-6935: Das Durchsuchen einer Sicherung zur Wiederherstellung einzelner Dateien schlägt nicht mehr fehl.
+* VMDP-6933: Das Deployment einer neuen Appliance kann bei der erstmaligen Einrichtung nun erfolgreich abgeschlossen werden.
+* VMDP-6931: Die Bereinigung sekundärer Backups wartet nicht mehr stundenlang auf ein nicht erreichbares Volume. Andere Volumes werden weiterhin verarbeitet.
+* VMDP-6817: Das Umbenennen eines ONTAP Quellvolumes führt nicht mehr dazu, dass sekundäre Backups unter dem alten Namen hängen bleiben oder Einträge anzeigen, die nicht mehr gültig sind.
+
+
+
+
+[[supported-snapcenter-releases]]
+== Unterstützte SnapCenter Versionen
+
+Die aktuellsten Informationen zu unterstützten Versionen finden Sie in https://imt.netapp.com/matrix/imt.jsp?components=121034;&solution=1517&isHWU&src=IMT["NetApp Interoperabilitäts-Matrix-Tool"^] (IMT).
